@@ -1,4 +1,4 @@
-# Session ID - Session Title
+# IN162 -  Real-time data for AI agents: Grounding with event-driven architecture
 
 ## Description
 
