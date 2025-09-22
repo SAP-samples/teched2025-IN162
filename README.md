@@ -6,7 +6,7 @@ This repository contains the material for the SAP TechEd 2025 session called Ses
 
 ## Overview
 
-This session introduces attendees to...
+This session introduces attendees to..
 
 ## Requirements
 
