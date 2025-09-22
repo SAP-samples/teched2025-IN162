@@ -1,4 +1,4 @@
-# IN162 -  Real-time data for AI agents: Grounding with event-driven architecture
+# IN162 -  Real-time data for AI agents: Grounding with event-driven architecture.
 
 ## Description
 
