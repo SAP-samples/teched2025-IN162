@@ -65,11 +65,11 @@ After completing these steps you will have created a queue in Advanced Event Mes
 
 	![Pic 5](./images/ex1-5.png)        
 
-5. In the pop up enter the queue name: **IN162_XXX_Sales_Order** (replace **XXX** with your assigned user number) and click **"Create"**
+5. In the pop up enter the queue name: **IN162-XXX_Sales_Order** (replace **XXX** with your assigned user number) and click **"Create"**
 
 	![Pic 6](./images/ex1-6.png)      
 
-6. On the next screen keep all the default settings and click **"Apply"**
+6. On the next screen change the **Access Type** to **Non-Exclusive**, leave the remaining settings to default and click **"Apply"**
 
 	![Pic 7](./images/ex1-7.png)       
 
@@ -84,7 +84,7 @@ After completing these steps you will have created a queue in Advanced Event Mes
 
 	![Pic 9](./images/ex1-9.png)  
 
-3. Enter following topic: **"sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1 "**  (replace **XXX** with your assigned user number). Click on **"Create"**.
+3. Enter following topic: **"sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1 "**. Click on **"Create"**.
 
 	![Pic 11](./images/ex1-10.png)  
 
@@ -97,8 +97,8 @@ After completing these steps you will have created a queue in Advanced Event Mes
 
 Create one additional queue with a different topic subscription.
 
-- queue name: **IN162_XXX_Support_Case** (replace **XXX** with your assigned user number)
-- topic subscription: **"sap/teched/2025/servicecloud/supportcase/created"**  (replace **XXX** with your assigned user number)
+- queue name: **IN162-XXX_Support_Case** (replace **XXX** with your assigned user number)
+- topic subscription: **"sap/teched/2025/servicecloud/supportcase/created"**
 
 There are now two queues contain your user number.
 
