@@ -138,10 +138,27 @@ As you may have observed, the event triggered upon sales order creation provides
 <br>![](../ex3/images/image26.png)
 
 1. Click on the 'Connection' tab of the property sheet of the Adapter. Enter the following values in the connection details section.
-<br>![](../ex3/images/image27.png)
+    | Field | Value |
+    | ----- | ----- |
+    | Address | `https://my427029-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_salesorder/srvd_a2x/sap/salesorder/0001/` |
+    | Proxy Type | Internet |
+    | Authentication | Basic|
+    | Credentials Name  | s4hana_credentials |
+    
+    <br>![](../ex3/images/image27.png)
 
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image28.png)
+1. Next, proceed to the 'Processing' section. Enter the following values in the 'Processing Details' section:
+  
+    | Field | Value |
+    | ----- | ----- |
+    | Operation Details | Query (GET) |
+    | Resource path| ````SalesOrder(SalesOrder='${property.salesOrderID}')```` |
+    | Query Options | ````$select=SalesOrder,SoldToParty,SalesOrderDate,PurchaseOrderByCustomer,RequestedDeliveryDate,TotalNetAmount,TransactionCurrency&$expand=_Item($select=SalesOrder,SalesOrderItem,SalesOrderItemText,Product,RequestedQuantity,RequestedQuantityISOUnit,NetAmount,TransactionCurrency,ConfirmedDeliveryDate),_Partner($select=SalesOrder,PartnerFunction,Customer,BusinessPartnerName1,StreetName,CityName,PostalCode,Region,Country)````|
+
+    <br>![](../ex3/images/image28.png)
+
+## Exercise 3.5 - Eliminate noise from unintended events 
+Since we have subscribed to the Sales Order create event, naturally an event will be emitted when a sales order is created by each participant. This will obviously lead to a situation where a participant may .
 
 1. Next, proceed to the 'Processing' section.
 <br>![](../ex3/images/image29.png)
@@ -274,3 +291,76 @@ As you may have observed, the event triggered upon sales order creation provides
 
 1. Next, proceed to the 'Processing' section.
 <br>![](../ex3/images/image66.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image67.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image68.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image69.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image70.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image71.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image72.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image73.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image74.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image75.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image76.png)
+
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image77.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image78.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image79.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image80.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image81.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image82.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image83.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image84.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image85.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image86.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image87.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image88.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image89.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image90.png)
