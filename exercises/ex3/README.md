@@ -196,3 +196,81 @@ As you may have observed, the event triggered upon sales order creation provides
 
 1. Next, proceed to the 'Processing' section.
 <br>![](../ex3/images/image46.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image41.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image42.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image43.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image44.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image45.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image46.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image47.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image48.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image49.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image50.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image51.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image52.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image53.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image54.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image55.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image56.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image57.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image58.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image59.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image60.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image61.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image62.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image63.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image64.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image65.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image66.png)
