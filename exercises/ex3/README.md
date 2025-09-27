@@ -142,3 +142,57 @@ As you may have observed, the event triggered upon sales order creation provides
 
 1. Next, proceed to the 'Processing' section.
 <br>![](../ex3/images/image28.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image29.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image30.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image31.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image32.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image33.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image34.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image35.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image36.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image37.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image38.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image39.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image40.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image41.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image42.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image43.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image44.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image45.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image46.png)
