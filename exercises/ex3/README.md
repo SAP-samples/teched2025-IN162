@@ -57,40 +57,88 @@ In this step, we will setup the configure the AEM Adapter to receive events from
     We are done with the first block. Click 'Save' so that you don't lose your work if the session times out. 
 
 ## Exercise 3.3 - Massage the notification event event received from the Adapter
-In the next few steps f this section, we will tailor the data we receive for further processing.
+In the next few steps of this section, we will tailor the data we receive for further processing.
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
+1. Click on the (+) Add Flow Step button to add a new step.
 <br>![](../ex3/images/image10.png)
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
+1. Select a 'Groovy Script' in the Add Flow Step dialog.
 <br>![](../ex3/images/image11.png)
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
+1. Let's title this step as 'Log Sales Order Event Payload'. As the name suggests, we will log the payload we recieve from the AEM Adapter
 <br>![](../ex3/images/image12.png)
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
-<br>![](../ex3/images/image13.png)
+1. Copy the following lines of code and paste it into the script editor window.
+    ```groovy
+    import com.sap.gateway.ip.core.customdev.util.Message
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
+    def Message processData(Message message) {
+        def body = message.getBody(java.lang.String) 
+        def messageLog = messageLogFactory.getMessageLog(message)
+        if (messageLog != null) {
+            messageLog.addAttachmentAsString('Sales Order Event Payload', body, 'application/json')
+        }
+        return message
+    }
+    ```
+    <br>![](../ex3/images/image13.png)
+    > [!TIP]
+    > Click on 'Apply' to save your changes. Note that you may receive a warning.
+    > you can ignore the warning and click on 'Close' and move ahead.
+    
+
+2. Next, after the script step, go ahead and add a new flow step.
 <br>![](../ex3/images/image14.png)
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
+1. Look for the 'JSON to XML Converter' step. The default settings of this step are sufficient. No changes are needed.
 <br>![](../ex3/images/image15.png)
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
+1. Next, after this Converter step, go ahead and add a new flow step.
 <br>![](../ex3/images/image16.png)
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
+1. Select the 'Content Modifier' step in this dialog that pops out.
 <br>![](../ex3/images/image17.png)
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
+1. Name this step as 'Extract Sales Orer ID'. As you may have guessed, we will extract the Sales Order ID from the XML document's XPath expression.
+   
+    Go to the 'Exchange Property' tab of the property sheet of this step. Click on 'Add' twice to add two properties.
 <br>![](../ex3/images/image18.png)
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
-<br>![](../ex3/images/image19.png)
+1. Copy the values from the table for Property settings.
+   | Action | Name | Source Type | Source Value | Data Type |
+    | ----- | ----- | ----- | ----- | ----- |
+    | Create | salesOrderID | XPath | root/data/SalesOrder | java.lang.String
+    | Create | assignedParticipantID | Constant | IN162-`000` (replace `000`)|
+    
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
-<br>![](../ex3/images/image1.png)
+    <br>![](../ex3/images/image19.png)
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
-<br>![](../ex3/images/image1.png)
+## Exercise 3.4 - Call the S/4HANA system to get the full data object
+As you may have observed, the event triggered upon sales order creation provides only the Sales Order ID — essentially serving as a notification event. To retrieve the complete details, we must use this ID to query the S/4HANA system and obtain the full set of sales order attributes.
+
+1. Add a new Flow Step after the 'Extract Sales Order ID' content modifier step.
+<br>![](../ex3/images/image20.png)
+
+1. Select 'Request-Reply' step from the 'Add Flow Step' dialog.
+<br>![](../ex3/images/image21.png)
+
+1. Name the flow step as 'Get Sales Order Details'. Next, hold and drag the 'Receiver' shape from the right corner near the 'request-reply' shape.
+<br>![](../ex3/images/image22.png)
+
+1. Select the 'Connector' button. 
+<br>![](../ex3/images/image23.png)
+
+1. CLick and hold on the 'Connector' button and and drag it all the way down onto the 'Receiver' shape.
+<br>![](../ex3/images/image24.png)
+
+1. A dialog pops with a list of Adapters to choose from. Select the 'OData' Adapter.
+<br>![](../ex3/images/image25.png)
+
+1. Select OData version V2.
+<br>![](../ex3/images/image26.png)
+
+1. Click on the 'Connection' tab of the property sheet of the Adapter. Enter the following values in the connection details section.
+<br>![](../ex3/images/image27.png)
+
+1. Next, proceed to the 'Processing' section.
+<br>![](../ex3/images/image28.png)
