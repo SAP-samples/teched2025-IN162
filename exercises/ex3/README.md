@@ -202,40 +202,22 @@ Since we have subscribed to the Sales Order Create event, an event will be emitt
 1. Next, click on Route 2 and title it 'Others'. In the 'processing' tab, check this as the 'default' route.
 <br>![](../ex3/images/image42.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Click on the 'Set Custom Status' content modifier step. Navigate to the 'Exchange Property' tab in the property sheet. Add a propety titled `SAP_MessageProcessingLogCustomStatus` with the source type and value set to 'constant' and `Terminated: Customer ID mismatch` respectively
 <br>![](../ex3/images/image43.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Click on 'Add Flow step' right after this content modifier step.
 <br>![](../ex3/images/image44.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Look up the 'Terminate Message' step in the 'add flow step' dialog.
 <br>![](../ex3/images/image45.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Call on the 'terminate' step. This completes the logic for the 'others' route.
 <br>![](../ex3/images/image46.png)
 
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image41.png)
-
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image42.png)
-
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image43.png)
-
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image44.png)
-
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image45.png)
-
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image46.png)
-
-1. Next, proceed to the 'Processing' section.
+1. Let's get back to the 'Assigned' route. Click on the 'Add flow step' button to add a step on this route.
 <br>![](../ex3/images/image47.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Look up the 'content modifier' step 
 <br>![](../ex3/images/image48.png)
 
 1. Next, proceed to the 'Processing' section.
