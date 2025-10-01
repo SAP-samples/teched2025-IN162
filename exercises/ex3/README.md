@@ -158,48 +158,48 @@ As you may have observed, the event triggered upon sales order creation provides
     <br>![](../ex3/images/image28.png)
 
 ## Exercise 3.5 - Eliminate noise from unintended events 
-Since we have subscribed to the Sales Order create event, naturally an event will be emitted when a sales order is created by each participant. This will obviously lead to a situation where a participant may .
+Since we have subscribed to the Sales Order Create event, an event will be emitted on the shared topic whenever a participant creates a sales order. Naturally, this could result in each participant receiving more sales orders than expected, leading to inaccurate or misleading summarizations. To prevent this, we will introduce additional filtering steps to eliminate unnecessary noise and ensure the data remains relevant and accurate.
 
-1. Next, proceed to the 'Processing' section.
+1. Click on the 'Add flow step' button to new a step.
 <br>![](../ex3/images/image29.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Select the 'Content Modifier' step.
 <br>![](../ex3/images/image30.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Name this step as 'Extract Customer ID' in the General tab of the properties sheet. In the 'Exchange Property' tab, click on 'Add' and add a new property named `customerID`. Set the Source type to `XPath`, source value to `/SalesOrder/SalesOrder_Type/PurchaseOrderByCustomer` and the Data Type to `java.lang.String`.
 <br>![](../ex3/images/image31.png)
 
-1. Next, proceed to the 'Processing' section.
+1. After this step, click on 'Add Flow Step'.
 <br>![](../ex3/images/image32.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Select the 'Router' step in the dialog.
 <br>![](../ex3/images/image33.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Name the step as `Route Customer ID` in the General tab of the Property Sheet.
 <br>![](../ex3/images/image34.png)
 
-1. Next, proceed to the 'Processing' section.
+1. We will create an addtional route now. Go to the 'search step' text box and look for a 'content modifier' step. Click on +.
 <br>![](../ex3/images/image35.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Click and place the step right below the router step.
 <br>![](../ex3/images/image36.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Title the content modifier step as 'set Customer Status'.
 <br>![](../ex3/images/image37.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Click-hold on the 'connector' button of the router step.
 <br>![](../ex3/images/image38.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Drag the connector and place it on the 'set custom status' content modifier.
 <br>![](../ex3/images/image39.png)
 
-1. Next, proceed to the 'Processing' section.
+1. You will notice two route paths created (Route 1 and Route 2). Click on Route 1 and title it 'Assigned'.
 <br>![](../ex3/images/image40.png)
 
-1. Next, proceed to the 'Processing' section.
+1. CLick on the 'Assigned' path and navigate to the 'Processsing' tab in the property sheet. Set the expression type to 'Non-XML' and the condition as `${property.customerID} = ${property.assignedParticipantID}`.
 <br>![](../ex3/images/image41.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Next, click on Route 2 and title it 'Others'. In the 'processing' tab, check this as the 'default' route.
 <br>![](../ex3/images/image42.png)
 
 1. Next, proceed to the 'Processing' section.
