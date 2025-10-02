@@ -217,40 +217,49 @@ Since we have subscribed to the Sales Order Create event, an event will be emitt
 1. Let's get back to the 'Assigned' route. Click on the 'Add flow step' button to add a step on this route.
 <br>![](../ex3/images/image47.png)
 
-1. Look up the 'content modifier' step 
+1. Click on the 'content modifier' step 
 <br>![](../ex3/images/image48.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Title the step as 'Set Application ID and Custom Status' in the General tab of the property sheet. Next go to the 'message header' tab and 'Add' a header with the following properties. 
+   
+   Action : `Create`, Name : `SAP_ApplicationID`, Source Type : `Property`, Source Value : `customerID`.
 <br>![](../ex3/images/image49.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Click on the 'Exchange Property' tab and add a Property as follows.
+   
+   Action : `Create`, Name : `SAP_MessageProcessingLogCustomStatus`, Source Type : `Constant`, Source Value : `Successful: Customer ID matched`.
 <br>![](../ex3/images/image50.png)
 
-1. Next, proceed to the 'Processing' section.
+## Exercise 3.6 - Perform a message mapping to cleanse the data 
+write text here.
+
+1. Click anywhere on the editor canvas (not on any flow step) to activate the 'Integration Flow' panel in the propety sheet. Go to the 'References' tab, and in the Global subtab, click on the 'Add References' button and add a 'Message Mapping'.
 <br>![](../ex3/images/image51.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Here we will specify the source packge to import the pre-built mapping from. Bring up the 'Package' drop-down and select 'TechEd 2025 IN162 - Solution Package' as the source.
+   
+   Select the 'MM_SalesOrder_S4Hana_to_HanaVectorDB' Artifact and click 'ok'.
 <br>![](../ex3/images/image52.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Confirm that the mapping is successfully added.
 <br>![](../ex3/images/image53.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Head back to the 'Set Appliation ID and Custom Status' content modifier step and click on 'Add Flow Step' button.
 <br>![](../ex3/images/image54.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Select 'Message Mapping' from the Add Flow Step dialog.
 <br>![](../ex3/images/image55.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Click on the 'Assign' button. Here we will import the message mapping we referenced in the previous step.
 <br>![](../ex3/images/image56.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Navigate to the 'Global Resources' tab from the 'Select Mapping Resource' dialog. CLick on the imported message mapping resource and select OK.
 <br>![](../ex3/images/image57.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Verify that the mapping resource is listed in the 'Processing' tab of the flow step. Click on the resource, this will open a new window.
 <br>![](../ex3/images/image58.png)
 
-1. Next, proceed to the 'Processing' section.
+1. You can inspect the mapping we've created. Here you can see that the SalesOrder
 <br>![](../ex3/images/image59.png)
 
 1. Next, proceed to the 'Processing' section.
