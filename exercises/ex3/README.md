@@ -259,68 +259,126 @@ Write text here.
 1. Verify that the mapping resource is listed in the 'Processing' tab of the flow step. Click on the resource; this will open a new window.
 <br>![](../ex3/images/image58.png)
 
-1. You can inspect the mapping we've created. Here you can see that the SalesOrder
+1. You can inspect the mapping we've created. Here you can see that the SalesOrder entity from S/4HANA has be mapped to a simpler schema.
 <br>![](../ex3/images/image59.png)
 
-1. Next, proceed to the 'Processing' section.
+1. For example, the 'TotalNetAmount' and 'transaction unit' attributes have been fused into a single entity for better readibility. 
 <br>![](../ex3/images/image60.png)
 
-1. Next, proceed to the 'Processing' section.
+## Exercise 3.7 - Prepare data payload to invoke the embedding model of the AI Service 
+Write text here.
+
+1. CLick on (+) button to add a new flow step.
 <br>![](../ex3/images/image61.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Find and select the 'XML to JSON Converter' step in the add flow step dialog.
 <br>![](../ex3/images/image62.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Go to the 'Processing' block in the property sheet of the converter step and specify the properties as instructed in the table below:
+   | Field | Value |
+    | ----- | ----- |
+    | Use Namespace mapping | Uncheck |
+    | JSON Output Encoding |  UTF-8 |
+    | Suppress JSON Root Element | Check|
+    | Streaming  | Check |
+    | Convert XML Elements to JSON Array  | Specified Ones |
+    | XML Element  | `/SalesOrder/SalesOrderItems/SalesOrderItem` |
+  
+    <br>![](../ex3/images/image66.png)
+
+1. Click on (+) to add a new Flow Step
 <br>![](../ex3/images/image63.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Select 'groovy script' in the Add FLow Step dialog.
 <br>![](../ex3/images/image64.png)
 
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image65.png)
-
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image66.png)
-
-1. Next, proceed to the 'Processing' section.
+1. Title the groovy script step as 'Log Sales Order JSON Payload'. Click on the 'Create' button on the step.
 <br>![](../ex3/images/image67.png)
 
-1. Next, proceed to the 'Processing' section.
+
+1. Copy the code below and paste it in the code editor window.
+      ```groovy
+    import com.sap.gateway.ip.core.customdev.util.Message
+    import groovy.json.JsonOutput
+
+    def Message processData(Message message) {
+        def body = message.getBody(java.lang.String);
+        def messageLog = messageLogFactory.getMessageLog(message);
+        if (messageLog != null) {
+            messageLog.addAttachmentAsString('Sales Order JSON Payload', body, 'application/json');
+        }
+        // save sales order json as a property to be used later
+        message.setProperty("salesOrderJson", body);
+        
+        // Escape double quotes in sales order json and update the body
+        def escapedSalesOrderJson = JsonOutput.toJson(body); 
+        message.setBody(escapedSalesOrderJson);
+        
+        return message;
+    }
+    ```
+
+    Click on 'Apply', ignore any warnings if presented and 'Close' the eidtor
+    <br>![](../ex3/images/image65.png)
+
+1. After this step, click on the (+) button to add a new flow step .
 <br>![](../ex3/images/image68.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Select the 'content modifier' step in the 'add flow step' dialog.
 <br>![](../ex3/images/image69.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Title this this as 'Prepare Embedding Call'. Go to the 'Message Header' tab and click 'Add'. twice to prepare adding two header attributes.
 <br>![](../ex3/images/image70.png)
 
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image71.png)
+1. Manage the attribute entries as follows:
+   | Action | Name | Source Type | Source Value |
+    | ----- | ----- | ----- |----- |
+    | Create | content-type | Constant | application/json |
+    | Create |  ai-resource-group | Property | assignedParticipantID |
+   
+    <br>![](../ex3/images/image71.png)
 
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image72.png)
+2. Click on the 'Message Body' tab and enter the following text as an 'Expression'.
+   ```json
+    {
+        "config": {
+            "modules": {
+                "embeddings": {
+                    "model": {
+                        "name": "text-embedding-3-small"
+                    }
+                }
+            }
+        },
+        "input": {
+            "text": ${body}
+        }
+    }
+   ```
+    <br>![](../ex3/images/image72.png)
 
-1. Next, proceed to the 'Processing' section.
+## Exercise 3.8 - Prepare data payload to perist text embeddings into HANA Vector DB 
+enter text here...
+1. Click on the (+) button after the previous step to add a new flow step.
 <br>![](../ex3/images/image73.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Select 'Request-Reply step in the 'Add Flow step' dialog.
 <br>![](../ex3/images/image74.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Title this step as 'Get Text Embeddings'. Click on the 'search step' text box on the right and search for the 'Receiver' shape.
 <br>![](../ex3/images/image75.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Click and drag the reciever shape right below the request-reply step. You can call this box 'AI_Launchpad'.
 <br>![](../ex3/images/image76.png)
 
 
-1. Next, proceed to the 'Processing' section.
+1. Click on the 'connector' button and start dragging it all the way down to join the 'AI_Launchpad' Receiver box.
 <br>![](../ex3/images/image77.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Release the mouse button once the ends are joined. An 'Adapter Type' dialog will pop out.
 <br>![](../ex3/images/image78.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Select 'HTTP' for the 'Adapter Type'.
 <br>![](../ex3/images/image79.png)
 
 1. Next, proceed to the 'Processing' section.
