@@ -4,7 +4,7 @@ In this exercise, we will put together an IFlow to receive the notification even
 
 For your convenience, this exercise is offered in two formats:
 
-- Recommended Approach ([Exercise 3.1](./ex3_1_details.md)): Build the IFlow from scratch by following step-by-step instructions. This method provides deeper hands-on experience and better understanding of the flow design.
+- Recommended Approach ([Exercise 3.1](./ex3_1_details.md)): Build the IFlow from scratch by following step-by-step instructions. This method provides a deeper hands-on experience and a better understanding of the flow design.
 - Alternate Approach ([Exercise 3.2](./ex3_2_details.md)): Skip the build steps and instead copy a fully prepared IFlow, applying only minimal configuration before deployment. This option is ideal for participants who have limited time or prefer to work with pre-built content.
 
 Irrespective of the approach you choose, let's begin the exercise by creating a package to get started.
@@ -25,7 +25,7 @@ Irrespective of the approach you choose, let's begin the exercise by creating a 
     <br>![](../ex3/images/image2.png)
 After the Package is successfully created, go to the 'Artifacts' tab.
 
-3. Your Integration Package has been created and now you are ready to either create an IFlow from scratch or Import an existing one. 
+3. Your Integration Package has been created, and now you are ready to either create an IFlow from scratch or import an existing one. 
     <br>![](../ex3/images/image91.png)
 
     From this point on, follow either [Exercise 3.1](./ex3_1_details.md) or [Exercise 3.2](./ex3_2_details.md)
