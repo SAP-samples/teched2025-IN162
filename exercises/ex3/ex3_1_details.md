@@ -1,10 +1,10 @@
-# Exercise 3.1 - Create an IFlow from scratch to receive a Sales Order creation event, transform into embeddings and persist to HANA Vector DB
+# Exercise 3.1 - Create an IFlow from scratch to receive a Sales Order creation event, transform into embeddings, and persist to HANA Vector DB
 
 ## Step 1 - Create a new IFlow 
 
 1. In the Artifacts tab, click on 'Add' -> 'Integration Flow'
    <br>![](../ex3/images/image3.png)
-2. In the create dialog, name your integration flow as: 'IN162-`000` Sales Order Event to Hana Vector DB for AI Grounding' (replace `000` with your assgined user identifier). 
+2. In the create dialog, name your integration flow as: 'IN162-`000` Sales Order Event to Hana Vector DB for AI Grounding' (replace `000` with your assigned user identifier). 
 
     Click on 'Add and Open in Editor'.
 <br>![](../ex3/images/image4.png)
@@ -53,7 +53,7 @@ In the next few steps of this section, we will tailor the data we receive for fu
 1. Let's title this step as 'Log Sales Order Event Payload'. As the name suggests, we will log the payload we recieve from the AEM Adapter
 <br>![](../ex3/images/image12.png)
 
-1. Copy the following lines of code and paste it into the script editor window.
+1. Copy the following lines of code and paste them into the script editor window.
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message
 
@@ -303,16 +303,16 @@ Write text here.
     }
     ```
 
-    Click on 'Apply', ignore any warnings if presented and 'Close' the eidtor
+    Click on 'Apply', ignore any warnings if presented, and 'Close' the editor
     <br>![](../ex3/images/image65.png)
 
-1. After this step, click on the (+) button to add a new flow step .
+1. After this step, click on the (+) button to add a new flow step.
 <br>![](../ex3/images/image68.png)
 
 1. Select the 'content modifier' step in the 'add flow step' dialog.
 <br>![](../ex3/images/image69.png)
 
-1. Title this this as 'Prepare Embedding Call'. Go to the 'Message Header' tab and click 'Add'. twice to prepare adding two header attributes.
+1. Title this as 'Prepare Embedding Call'. Go to the 'Message Header' tab and click 'Add'. twice to prepare, adding two header attributes.
 <br>![](../ex3/images/image70.png)
 
 1. Manage the attribute entries as follows:
@@ -352,7 +352,7 @@ Write text here.
 1. Title this step as 'Get Text Embeddings'. Click on the 'search step' text box on the right and search for the 'Receiver' shape.
 <br>![](../ex3/images/image75.png)
 
-1. Click and drag the reciever shape right below the request-reply step. You can call this box 'AI_Launchpad'.
+1. Click and drag the receiver shape right below the request-reply step. You can call this box 'AI_Launchpad'.
 <br>![](../ex3/images/image76.png)
 
 
@@ -376,10 +376,10 @@ Write text here.
 
     <br>![](../ex3/images/image80.png)
 
-## Step 8 - Prepare data payload to perist text embeddings into HANA Vector DB 
+## Step 8 - Prepare data payload to persist text embeddings into HANA Vector DB 
 enter text here...
 
-1. After the 'Get Text Embeddings' step, Click on the (+) button to 'Add a Flow Step'.
+1. After the 'Get Text Embeddings' step, click on the (+) button to 'Add a Flow Step'.
 <br>![](../ex3/images/image81.png)
 
 1. Select 'Groovy Script' from the 'Add Flow step' dialog.
@@ -388,7 +388,7 @@ enter text here...
 1. Title the step as 'Prepare SQL Statement'. Click on the 'Create' button on the step.
 <br>![](../ex3/images/image83.png)
 
-2. Copy the following groovy script and paste it into the script editor.
+2. Copy the following Groovy script and paste it into the script editor.
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message;
     import groovy.json.JsonSlurper;
@@ -421,10 +421,10 @@ enter text here...
 
 1. Add a 'Request-Reply' step in the 'Add Flow step' dialog. Title the step as 'Insert Embeddings to Vector DB'. 
    
-   Click on 'Search Step' text box and look for a 'Receiver' step.
+   Click on the 'Search Step' text box and look for a 'Receiver' step.
 <br>![](../ex3/images/image86.png)
 
-1. Drag and place the reciever box below the request-reply step. Title the box as 'HANA_DB'. CLick on the 'Connector' button, drag an arrow connecting it to the 'HANA_DB' receiver box. A dialog to select the Adapter pops out.
+1. Drag and place the receiver box below the request-reply step. Title the box as 'HANA_DB'. Click on the 'Connector' button, drag an arrow connecting it to the 'HANA_DB' receiver box. A dialog to select the Adapter pops out.
 <br>![](../ex3/images/image87.png)
 
 1. Select 'JDBC' for the Adapter type.
