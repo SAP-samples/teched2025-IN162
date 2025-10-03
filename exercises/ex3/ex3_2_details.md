@@ -1,8 +1,8 @@
-# Exercise 3.2 - Copy an existing IFlow to receive a Sales Order creation event, transform into embeddings and persist to HANA Vector DB
+# Exercise 3.2 - Copy an existing IFlow to receive a Sales Order creation event, transform into embeddings, and persist to HANA Vector DB
 In this exercise, instead of building an IFlow from scratch, we will copy a completed IFlow from the source package and configure the parameters that have been externalized for the participants.
 
 > [!IMPORTANT]  
-> Note that we will be accessing the main solution package in this exercise. Please refrain from inadvartantly modifying anything in the solution package. 
+> Note that we will be accessing the main solution package in this exercise. Please don't change anything in the solution package in any way. 
 
 
 ## Step 1 - Copy the IFlow from the source Package 
@@ -22,13 +22,13 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
 1. Back in the 'Copy' dialog, title the Name of the IFlow as `Sales Order Event to Hana Vector DB for AI Grounding`. After this, click on 'Copy'.
 <br>![](../ex3/images/image95.png)
 
-1. After the copy is successful, navigate to the copied package by click on 'Navigate' button in the presented dialog.
+1. After the copy is successful, navigate to the copied package by clicking on the 'Navigate' button in the presented dialog.
 <br>![](../ex3/images/image96.png)
 
 ## Step 2 - Configure the IFlow with your user settings 
-Now that the IFlow has been copied, in the next few steps we will configure the IFlow with certain parameters that have been externalized. 
+Now that the IFlow has been copied, we will configure it with certain externalized parameters in the next few steps. 
 
-1. Make sure you are in the target package (TechEd 2025 IN162-`000`). Go to the 'Artifact' tab. Select the 'Sales Order Event to Hana Vector DB for AI Grounding' IFlow, click on the '...' Action menu button and click 'Configure'.
+1. Make sure you are in the target package (TechEd 2025 IN162-`000`). Go to the 'Artifact' tab. Select the 'Sales Order Event to Hana Vector DB for AI Grounding' IFlow, click on the '...' Action menu button, and click 'Configure'.
 <br>![](../ex3/images/image97.png)
 
 2. The configuration dialog will pop open. In the 'Sender' tab, enter 'IN162-`000`_Sales_Order' in the 'Queue Name' text box. (replace `000` with your actual user identifier)
@@ -43,7 +43,7 @@ Now that the IFlow has been copied, in the next few steps we will configure the 
 <br>![](../ex3/images/image100.png)
 
 ## Step 3 - Deploy the IFlow 
-Now that in the configuration is done, we will go ahead and deploy the IFlow.
+Now that the configuration is complete, we will move ahead and deploy the IFlow.
 
 1. Click on 'Deploy' in the configuration dialog from the previous step. Select the default 'Cloud Integration' as the runtime profile to deploy the content into.
 <br>![](../ex3/images/image102.png)
@@ -51,10 +51,10 @@ Now that in the configuration is done, we will go ahead and deploy the IFlow.
 1. A dialog will confirm the deploy action.
 <br>![](../ex3/images/image103.png)
 
-1. Head back to the 'Artifact' tab and a message toast will confirm the successful completeion of the deployment step.
+1. Head back to the 'Artifact' tab, and a message toast will confirm the successful completion of the deployment step.
 <br>![](../ex3/images/image104.png)
 
-1. The IFLow is in the 'starting' phase now. Click on the IFlow to bring up the model, after a minute or so, you should see the 'Runtime Status' change to 'Started'. This means that the IFlow is ready and listening for changes.
+1. The IFLow is in the 'starting' phase now. Click on the IFlow to bring up the model. After a minute or so, you should see the 'Runtime Status' change to 'Started'. This means that the IFlow is ready and listening for changes.
 <br>![](../ex3/images/image105.png)
 
 ## Step 4 - Study the sequence of steps in the IFlow 
