@@ -18,9 +18,9 @@
    - Division: **Division (00)**
 
    Finally click on **Continue**.
-
-   > [!TIP]
-   > You can use the value help for each field to select the desired entry.
+    
+    > [!TIP]
+    > You can use the value help for each field to select the desired entry.
 
 4. You need to fill further details for the Sales Order to be created
 
@@ -28,11 +28,11 @@
 
    - Sold-to Party: **Domestic US Customer 1 (17100001)**
    - Customer Reference: **IN162-`XXX`** (replace `XXX` with your assgined group identifier)
+  
+        > [!IMPORTANT]
+        > All participants are using the same **Sold-to Party**. Make sure to fill the **Customer Reference** with your proper group identifier. This will be used to associate the Sales Order to each participant.
 
-   > [!IMPORTANT]
-   > All participants are using the same **Sold-to Party**. Make sure to fill the **Customer Reference** with your proper group identifier. This will be used to associate the Sales Order to each participant.
-
-3. Scroll further down to the **Items** section\
+5. Scroll further down to the **Items** section\
    You can add as many items to your order as you would like.
 
    ![Pic S4 4](./images/ex5-s4-4.png)
@@ -47,11 +47,11 @@
    > Most of the time you can just ignore this and click on the **Save** button. 
    > ![Pic S4 5](./images/ex5-s4-5.png)
 
-4. The new Sales Order has been successfully created in the system. A new event has been published in the background to AEM. 
+6. The new Sales Order has been successfully created in the system. A new event has been published in the background to AEM. 
 
    ![Pic S4 6](./images/ex5-s4-6.png)
 
    > [!NOTE]
    > If you have seen warning message in the previous step, you'll also see a warning in the summary.
    > Still, your Sales Order should have been successfully created. Click on the **Close** button. 
-   > ![Pic S4 7](./images/ex5-s4-7.png)
+   > ![Pic S4 7](./images/ex-s4-7.png)
