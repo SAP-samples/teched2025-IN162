@@ -357,8 +357,7 @@ Write text here.
    ```
     <br>![](../ex3/images/image72.png)
 
-## Exercise 3.8 - Prepare data payload to perist text embeddings into HANA Vector DB 
-enter text here...
+
 1. Click on the (+) button after the previous step to add a new flow step.
 <br>![](../ex3/images/image73.png)
 
@@ -381,35 +380,73 @@ enter text here...
 1. Select 'HTTP' for the 'Adapter Type'.
 <br>![](../ex3/images/image79.png)
 
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image80.png)
+1. Proceed to the 'Connection' section in the property sheet for the Adapter. Maintain the following attributes for the properties:
+   | Field | Value |
+    | ----- | ----- |
+    | Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0` |
+    | Method | POST |
+    | Authentication | OAuth2Client Credentials|
+    | Credential Name  | `aicore_credentials` |
+    | Request Headers | * |
 
-1. Next, proceed to the 'Processing' section.
+    <br>![](../ex3/images/image80.png)
+
+## Exercise 3.8 - Prepare data payload to perist text embeddings into HANA Vector DB 
+enter text here...
+
+1. After the 'Get Text Embeddings' step, Click on the (+) button to 'Add a Flow Step'.
 <br>![](../ex3/images/image81.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Select 'Groovy Script' from the 'Add Flow step' dialog.
 <br>![](../ex3/images/image82.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Title the step as 'Prepare SQL Statement'. Click on the 'Create' button on the step.
 <br>![](../ex3/images/image83.png)
 
-1. Next, proceed to the 'Processing' section.
-<br>![](../ex3/images/image84.png)
+2. Copy the following groovy script and paste it into the script editor.
+    ```groovy
+    import com.sap.gateway.ip.core.customdev.util.Message;
+    import groovy.json.JsonSlurper;
 
-1. Next, proceed to the 'Processing' section.
+    def Message processData(Message message) {
+        def body = message.getBody(java.io.Reader);
+        // Parse the JSON string
+        def jsonSlurper = new JsonSlurper();
+        def jsonObject = jsonSlurper.parse(body);
+        def embeddings = jsonObject.final_result.data.embedding[0];
+        
+        //Properties
+        def properties = message.getProperties();
+        def customerID = properties.get("customerID");
+        def customerName = "BestRun " + customerID;
+        def escapedSalesOrderJson = properties.get("salesOrderJson");
+        
+        // Build SQL Insert Statement
+        def sqlInsertStatement = "INSERT INTO \"DBADMIN\".\"TechEd25_IN162_Table\" (CUSTOMER_ID, CUSTOMER_NAME, TEXT, TEXT_VECTOR) VALUES (\'${customerID}\',\'${customerName}\',\'${escapedSalesOrderJson}\',TO_REAL_VECTOR(\'${embeddings}\'))";
+
+        message.setBody(sqlInsertStatement);
+        return message;
+    }
+    ```
+    Click on 'Apply' and after the changes are applied, click  'Close' to exit the script editor. 
+    <br>![](../ex3/images/image84.png)
+
+1. After this step, click on (+) to add a new flow step.
 <br>![](../ex3/images/image85.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Add a 'Request-Reply' step in the 'Add Flow step' dialog. Title the step as 'Insert Embeddings to Vector DB'. 
+   
+   Click on 'Search Step' text box and look for a 'Receiver' step.
 <br>![](../ex3/images/image86.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Drag and place the reciever box below the request-reply step. Title the box as 'HANA_DB'. CLick on the 'Connector' button, drag an arrow connecting it to the 'HANA_DB' receiver box. A dialog to select the Adapter pops out.
 <br>![](../ex3/images/image87.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Select 'JDBC' for the Adapter type.
 <br>![](../ex3/images/image88.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Proceed to the 'Connection' tab of the property sheet and enter `SAPHANACloud` in the 'JDBC Data Source Alias' box. Note that this data source alias has already been built for you.
 <br>![](../ex3/images/image89.png)
 
-1. Next, proceed to the 'Processing' section.
+1. Make sure to save your changes. You can verify the data source by navigating to the 'Manage JDBC Material' tile in the 'Overview' section. You will find the SAPHANACloud data source pre-created in the 'Data Source' tab. 
 <br>![](../ex3/images/image90.png)
