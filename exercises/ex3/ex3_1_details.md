@@ -50,7 +50,7 @@ In the next few steps of this section, we will tailor the data we receive for fu
 1. Select a 'Groovy Script' in the Add Flow Step dialog.
 <br>![](../ex3/images/image11.png)
 
-1. Let's title this step as 'Log Sales Order Event Payload'. As the name suggests, we will log the payload we recieve from the AEM Adapter
+1. Let's title this step as 'Log Sales Order Event Payload'. As the name suggests, we will log the payload we receive from the AEM Adapter
 <br>![](../ex3/images/image12.png)
 
 1. Copy the following lines of code and paste them into the script editor window.
@@ -196,7 +196,7 @@ Since we have subscribed to the Sales Order Create event, an event will be emitt
 1. Look up the 'Terminate Message' step in the 'add flow step' dialog.
 <br>![](../ex3/images/image45.png)
 
-1. Call on the 'terminate' step. This completes the logic for the 'others' route.
+1. Title this step as 'Terminate'. This completes the logic for the 'others' route.
 <br>![](../ex3/images/image46.png)
 
 1. Let's get back to the 'Assigned' route. Click on the 'Add flow step' button to add a step on this route.

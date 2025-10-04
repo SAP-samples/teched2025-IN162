@@ -1,4 +1,4 @@
-# Exercise 3 - Integration Suite – Iflow S4Hana Sales Order to embedding model to SAP Hana Vector DB
+# Exercise 3 - Integration Suite – IFlow S4Hana Sales Order to embedding model to SAP Hana Vector DB
 
 In this exercise, we will put together an IFlow to receive the notification event that is emitted upon the creation of a Sales Order in S/4HANA with an AEM Adapter. Using the Sales Order ID, we will then retrieve the complete Sales Order details from the S/4HANA system. These details will be transformed into vector embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs. The resulting embeddings will be stored in a connected HANA Vector Database, enabling efficient retrieval and text summarization when queried through the Joule assistant.
 
