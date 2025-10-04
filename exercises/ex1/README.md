@@ -125,11 +125,10 @@ There are now two queues contain your user number.
 
 6. Press **"Connect"** button.
 
-    >[!Important] 
-    >If your browser asks to select a certificate for authentication, press **"Cancel"** otherwise the connection will fail! If you accidentially clicked on a certificate, please restart your browser to show the dialog again.
+>[!Important] 
+>If your browser asks to select a certificate for authentication, press **"Cancel"** otherwise the connection will fail! If you accidentially clicked on a certificate, please restart your browser to show the dialog again.
 
-
-    ![Pic 17](./images/ex1-17.png)  
+![Pic 17](./images/ex1-17.png)  
 
 7. Choose **"Topic"** and provide the name of the topic subscribed in step 4 of previous exercise: user**XXX**/businesspartner/change  (replace **XXX** with your user number).
 
