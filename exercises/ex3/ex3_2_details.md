@@ -11,7 +11,7 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
    
    Click on a Package titled 'TechEd 2025 IN162 - Solution Package
    <br>![](../ex3/images/image92.png)
-2. Navigate to the 'Artifacts' tab of this package, look for an Integration Flow titled 'Sales Order Event to Hana Vector DB for AI Grounding ' and click on the '...' Action button to bring up the action menu and click on 'Copy'.
+2. Navigate to the 'Artifacts' tab of this package, look for an Integration Flow titled 'Sales Order Event to Hana Vector DB for AI Grounding' and click on the '...' Action button to bring up the action menu and click on 'Copy'.
 <br>![](../ex3/images/image101.png)
 2. A copy dialog will pop open. **Do not** click on 'Copy' yet. Click on 'Select' to specify the target Package to copy this content into.
 <br>![](../ex3/images/image93.png)
