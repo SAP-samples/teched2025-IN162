@@ -100,22 +100,22 @@ In the next few steps of this section, we will tailor the data we receive from t
 
 ## Step 4 - Eliminate noise from unintended events 
 Since we have subscribed to the Support Case Create event, an event will be emitted on the shared topic whenever a participant logs a support case. Naturally, this could result in each participant receiving more support cases than expected, leading to inaccurate or misleading summarizations. To prevent this, we will introduce a  filtering step based on the customerID to eliminate unnecessary noise and ensure the data remains relevant and accurate.
-1. Add a new Flow step by clicking on the (+) button after the previous content modifer step.  Select the 'Router' step in the presented dialog.
+1. Add a new Flow step by clicking on the (+) button after the previous content modifier step.  Select the 'Router' step in the presented dialog.
 <br>![](../ex4/images/image-18.png)
 
-1. Title the step as `Route Customer ID` in the General tab of the Property Sheet. Click on the 'search step' text box in th right side of the screen and search for a 'content modifier' step. Click on the (+) next to the step to start adding it.
+1. Title the step as `Route Customer ID` in the General tab of the Property Sheet. Click on the 'search step' text box on the right side of the screen and search for a 'content modifier' step. Click on the (+) next to the step to start adding it.
 <br>![](../ex4/images/image-19.png)
 
 1. Place the box below the 'Route Customer ID' step. Title this step as 'Set Custom Status'.
 <br>![](../ex4/images/image-20.png)
 
-1. Click-hold on the 'connector' button of the router step, drag the connector and place it on the 'Set Custom Status' content modifier.
+1. Click-hold on the 'connector' button of the router step, drag the connector, and place it on the 'Set Custom Status' content modifier.
 <br>![](../ex4/images/image-21.png)
 
 1. After this second route is created, title it as 'Others'. Mark this as the 'Default Route' by checking the box. 
 <br>![](../ex4/images/image-22.png)
 
-1. Click on the first route (titled Route 1) and rename it to 'Assigned'. Click on the 'Processing' tab in the propety shet and set the 'Expression Type' to 'Non-XML' and the condition as `${property.customerID} = ${property.assignedParticipantID}`.
+1. Click on the first route (titled Route 1) and rename it to 'Assigned'. Click on the 'Processing' tab in the property sheet and set the 'Expression Type' to 'Non-XML' and the condition as `${property.customerID} = ${property.assignedParticipantID}`.
 <br>![](../ex4/images/image-23.png)
 
 1. Click on the 'Assigned' route and 'Add a Flow Step'.
@@ -127,7 +127,7 @@ Since we have subscribed to the Support Case Create event, an event will be emit
 1. Title the content modifier step as 'Set Application ID and Custom Status' in the General tab of the property sheet. Next, go to the 'message header' tab and 'Add' a header. 
 <br>![](../ex4/images/image-26.png)
 
-1. Set the Header properties as specifed below:
+1. Set the Header properties as specified below:
 
     Action : `Create`, Name : `SAP_ApplicationID`, Source Type : `Property`, Source Value : `customerID`.
 <br>![](../ex4/images/image-27.png)
@@ -141,7 +141,7 @@ Since we have subscribed to the Support Case Create event, an event will be emit
     Action: `Create`, Name: `SAP_MessageProcessingLogCustomStatus`, Source Type: `Constant`, Source Value: `Terminated: Customer ID mismatch`.
 <br>![](../ex4/images/image-70.png)
 
-1. After this, Click on the (+) button on the 'Set Custom Status' content modifier to add a new Flow step.
+1. After this, click on the (+) button on the 'Set Custom Status' content modifier to add a new Flow step.
 <br>![](../ex4/images/image-29.png)
 
 1. Look up and select the 'Terminate Message' step in the 'add flow step' dialog.
@@ -156,7 +156,7 @@ Write text here.
 1. Turning our attention now to the 'Assigned' route, click on (+) to add a flow step.
 <br>![](../ex4/images/image-32.png)
 
-1. Select the 'Request Reply' step in th Add flow step dialog.
+1. Select the 'Request Reply' step in the Add flow step dialog.
 <br>![](../ex4/images/image-33.png)
 
 1. Notice that the layout has a 'Receiver' box at the right end of the canvas. Click on the box and drag it all the way down below the Request Reply step. Rename the shape as 'SSCV2'.
@@ -165,7 +165,7 @@ Write text here.
 1. Click on the 'Connector' arrow of the 'Get Support Case Details' request reply shape and start dragging it down.
 <br>![](../ex4/images/image-35.png)
 
-1. Drag it all way down to connect with the SSCV2 reciever box. Release the cursor once the ends are joined. A dialog will pop out listing out all the different Adapter types. 
+1. Drag it all the way down to connect with the SSCV2 receiver box. Release the cursor once the ends are joined. A dialog will pop out listing all the different Adapter types. 
 <br>![](../ex4/images/image-36.png)
 
 1. Select 'HTTP' from the Adapter list.
@@ -194,7 +194,7 @@ Write text here.
 1.  Select 'Message Mapping' from the Add Flow Step dialog.
 <br>![](../ex4/images/image-42.png)
 
-1. Title the message mapping step as 'Message Mapping 1MM_SupportCase_ServiceCloud_to_HanaVectorDB' in the 'General tab of the property sheet. Navigate to the 'processing' tab from the property sheet for the message mapping step and click on 'Select' button.
+1. Title the message mapping step as 'Message Mapping 1MM_SupportCase_ServiceCloud_to_HanaVectorDB' in the 'General tab of the property sheet. Navigate to the 'processing' tab from the property sheet for the message mapping step and click on the 'Select' button.
 <br>![](../ex4/images/image-43.png)
 
 1. This will load a dialog that lets you import existing mapping references in the IFlow. Navigate to the 'Global Resources' section. This displays the mapping we imported in the previous step. Select the message mapping resource and click OK.
