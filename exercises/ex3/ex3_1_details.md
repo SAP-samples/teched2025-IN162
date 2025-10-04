@@ -218,7 +218,7 @@ Since we have subscribed to the Sales Order Create event, an event will be emitt
 ## Step 6 - Perform a message mapping to cleanse the data 
 Write text here.
 
-1. Click anywhere on the editor canvas (not on any flow step) to activate the 'Integration Flow' panel in the propety sheet. Go to the 'References' tab, and in the Global subtab, click on the 'Add References' button and add a 'Message Mapping'.
+1. Click anywhere on the editor canvas (not on any flow step) to activate the 'Integration Flow' panel in the property sheet. Go to the 'References' tab, and in the Global subtab, click on the 'Add References' button and add a 'Message Mapping'.
 <br>![](../ex3/images/image51.png)
 
 1. Here, we will specify the source package to import the pre-built mapping from. Bring up the 'Package' drop-down and select 'TechEd 2025 IN162 - Solution Package' as the source.
@@ -244,16 +244,16 @@ Write text here.
 1. Verify that the mapping resource is listed in the 'Processing' tab of the flow step. Click on the resource; this will open a new window.
 <br>![](../ex3/images/image58.png)
 
-1. You can inspect the mapping we've created. Here you can see that the SalesOrder entity from S/4HANA has be mapped to a simpler schema.
+1. You can inspect the mapping we've created. Here you can see that the SalesOrder entity from S/4HANA has been mapped to a simpler schema.
 <br>![](../ex3/images/image59.png)
 
-1. For example, the 'TotalNetAmount' and 'transaction unit' attributes have been fused into a single entity for better readibility. 
+1. For example, the 'TotalNetAmount' and 'transaction unit' attributes have been fused into a single entity for better readability. 
 <br>![](../ex3/images/image60.png)
 
 ## Step 7 - Prepare data payload to invoke the embedding model of the AI Service 
 Write text here.
 
-1. CLick on (+) button to add a new flow step.
+1. Click on (+) button to add a new flow step.
 <br>![](../ex3/images/image61.png)
 
 1. Find and select the 'XML to JSON Converter' step in the add flow step dialog.
