@@ -274,14 +274,14 @@ Write text here.
 1. Click on (+) to add a new Flow Step
 <br>![](../ex3/images/image63.png)
 
-1. Select 'groovy script' in the Add FLow Step dialog.
+1. Select 'groovy script' in the Add Flow Step dialog.
 <br>![](../ex3/images/image64.png)
 
-1. Title the groovy script step as 'Log Sales Order JSON Payload'. Click on the 'Create' button on the step.
+1. Title the Groovy script step as 'Log Sales Order JSON Payload'. Click on the 'Create' button on the step.
 <br>![](../ex3/images/image67.png)
 
 
-1. Copy the code below and paste it in the code editor window.
+1. Copy the code below and paste it into the code editor window.
       ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message
     import groovy.json.JsonOutput
