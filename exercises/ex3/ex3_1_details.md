@@ -312,7 +312,7 @@ Write text here.
 1. Select the 'content modifier' step in the 'add flow step' dialog.
 <br>![](../ex3/images/image69.png)
 
-1. Title this as 'Prepare Embedding Call'. Go to the 'Message Header' tab and click 'Add'. twice to prepare, adding two header attributes.
+1. Title this as 'Prepare Embedding Call'. Go to the 'Message Header' tab and click 'Add' twice to prepare to add two header attributes.
 <br>![](../ex3/images/image70.png)
 
 1. Manage the attribute entries as follows:
