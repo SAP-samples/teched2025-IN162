@@ -1,5 +1,7 @@
 # Exercise 3.1 - Create an IFlow from scratch to receive a Sales Order creation event, transform into embeddings, and persist to HANA Vector DB
 
+In this exercise, you will build an IFlow from scratch. Please ensure you follow the steps in the exact sequence outlined in this guide.
+
 ## Step 1 - Create a new IFlow 
 
 1. In the Artifacts tab, click on 'Add' -> 'Integration Flow'
@@ -9,7 +11,7 @@
     Click on 'Add and Open in Editor'.
 <br>![](../ex3/images/image4.png)
 
-1. Now you should see the basic skeleton of the IFlow ready for us to start building upon. 
+1. Now you should see the basic skeleton of the IFlow in the editor ready for us to start building upon. 
 
     Click on 'Edit' to get started.
    <br>![](../ex3/images/image5.png)
@@ -17,17 +19,17 @@
 ## Step 2 - AEM Sender Adapter to receive events from S/4HANA
 In this step, we will configure the AEM Adapter to receive events from S/4HANA.
 
-1. Connect the 'Sender' system to the 'Start' block by holding and dragging your mouse pointer. 
+1. Connect the 'Sender' system to the 'Start' block by click-holding and dragging your mouse pointer. 
 <br>![](../ex3/images/image6.png)
 
-1. A dialog with the different adapters will appear. Select the 'AdvancedEventMesh' adapter.
+1. A dialog with the different adapters will pop open. Select the 'AdvancedEventMesh' adapter.
 <br>![](../ex3/images/image7.png)
 
-1. Select this newly added Adapter and click on the 'Connection' tab from the properties sheet at the bottom of the screen. Add the following attributes to the 'Sender Connection Details' section.
+1. Click on this newly added Adapter and navigate on the 'Connection' tab from the properties sheet at the bottom of the screen. Add the following attributes to the 'Sender Connection Details' section.
     | Field | Value |
     | ----- | ----- |
     | Host | tcps://mr-connection-sq0b51wu6s3.messaging.solace.cloud:55443 |
-    | Message VPN | techend-2025-europe |
+    | Message VPN | teched-2025-europe |
     | Username | solace-cloud-client|
     | Authentication Type | Basic |
     | Password Secure Alias | teched-2025-europe-aem-password |
@@ -35,25 +37,31 @@ In this step, we will configure the AEM Adapter to receive events from S/4HANA.
     <br>![](../ex3/images/image8.png)
 
 2. Next, head over to the 'Processing' tab and enter IN162-`000`_Sales_Order in the Queue Name field (replace `000` with your assigned user identifier). 
+> [!IMPORTANT]
+> Refer to [Exercise 1](../ex1/README.md#exercise-12---create-a-queue-in-advanced-event-mesh) where we created this Queue.
    
-   Leave all other attributes with their default values.
+Leave all other attributes with their default values.
 <br>![](../ex3/images/image9.png)
 
-    We are done with the first block. Click 'Save' so that you don't lose your work if the session times out. 
+We are done with the first block. 
+>[!TIP]
+>Keep clicking 'Save' periodically over the course of this exercise so that you don't lose your work if the browser session were to time out.
 
-## Step 3 - Massage the notification event received from the Adapter
-In the next few steps of this section, we will tailor the data we receive for further processing.
+## Step 3 - Enriching the event data by fetching complete Sales Order information from S/4HANA
+In the next few steps, we will enrich the sales order data received from the Adapter and prepare it for further processing.
 
-1. Click on the (+) Add Flow Step button to add a new step.
+1. Click on the (+) Add Flow Step button (on the 'Start' message block) to add a new step.
 <br>![](../ex3/images/image10.png)
 
-1. Select a 'Groovy Script' in the Add Flow Step dialog.
+1. Select a 'Groovy Script' in the 'Add Flow Step' dialog.
 <br>![](../ex3/images/image11.png)
 
-1. Let's title this step as 'Log Sales Order Event Payload'. As the name suggests, we will log the payload we receive from the AEM Adapter
+1. Title this step 'Log Sales Order Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter. 
+    
+    Click on the 'Create' button of the script step to launch the script editor.
 <br>![](../ex3/images/image12.png)
 
-1. Copy the following lines of code and paste them into the script editor window.
+1. Copy the following lines of code and paste them into the script editor window. (after clearing out the generated script present in the editor)
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message
 
@@ -66,16 +74,21 @@ In the next few steps of this section, we will tailor the data we receive for fu
         return message
     }
     ```
+    The payload will be added as an attachment and can be inspected in the 'MPL' section when the message executes.
     <br>![](../ex3/images/image13.png)
     > [!TIP]
     > Click on 'Apply' to save your changes. Notice that you may receive a warning.
     > You can ignore the warning and click on 'Close' and move ahead.
+    > 
+    >Make sure to save your changes in the main IFlow editor.
     
 
-2. Next, after the script step, go ahead and add a new flow step.
+2. Next, after the script step, go ahead and add a new Flow Step.
 <br>![](../ex3/images/image14.png)
 
-1. Look for the 'JSON to XML Converter' step. The default settings of this step are sufficient. No changes are needed.
+1. Add a 'JSON to XML Converter' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
+
+    In the step, we are converting the JSON representation of the notification event to its XML equivalent so that it can be easily extracted later.
 <br>![](../ex3/images/image15.png)
 
 1. Next, after this Converter step, go ahead and add a new flow step.
@@ -84,36 +97,36 @@ In the next few steps of this section, we will tailor the data we receive for fu
 1. Select the 'Content Modifier' step in this dialog that pops out.
 <br>![](../ex3/images/image17.png)
 
-1. Name this step as 'Extract Sales Order ID'. As you may have guessed, we will extract the Sales Order ID from the XML document's XPath expression.
+1. Title this step as 'Extract Sales Order ID'. As you may have guessed, we will extract the Sales Order ID from the XML document's XPath expression.
    
-    Go to the 'Exchange Property' tab of the property sheet of this step. Click on 'Add' twice to add two properties.
+    Go to the 'Exchange Property' tab of the property sheet of this step. Click on 'Add' twice to add two Properties.
 <br>![](../ex3/images/image18.png)
 
-1. Copy the values from the table for Property settings.
+1. Copy the values from the table below for the Property settings.
    | Action | Name | Source Type | Source Value | Data Type |
     | ----- | ----- | ----- | ----- | ----- |
-    | Create | salesOrderID | XPath | root/data/SalesOrder | java.lang.String
-    | Create | assignedParticipantID | Constant | IN162-`000` (replace `000`)|
+    | Create | salesOrderID | XPath | `root/data/SalesOrder` | java.lang.String
+    | Create | assignedParticipantID | Constant | IN162-`000` (replace `000` with your assiged participant ID)|
     
 
     <br>![](../ex3/images/image19.png)
 
 ## Step 4 - Call the S/4HANA system to get the full data object
-As you may have observed, the event triggered upon sales order creation provides only the Sales Order ID — essentially serving as a notification event. To retrieve the complete details, we must use this ID to query the S/4HANA system and obtain the full set of sales order attributes.
+As you may have observed, the event triggered upon Sales Order creation provides only the Sales Order ID — essentially serving as a notification event. To retrieve the complete details, we must use this ID to query the S/4HANA system and obtain the full set of Sales Order attributes.
 
 1. Add a new Flow Step after the 'Extract Sales Order ID' content modifier step.
 <br>![](../ex3/images/image20.png)
 
-1. Select 'Request-Reply' step from the 'Add Flow Step' dialog.
+1. Select 'Request-Reply' step in the 'Add Flow Step' dialog.
 <br>![](../ex3/images/image21.png)
 
-1. Name the flow step as 'Get Sales Order Details'. Next, hold and drag the 'Receiver' shape from the right corner near the 'request-reply' shape.
+1. Title the Reqest-Reply step as 'Get Sales Order Details'. Next, hold and drag the 'Receiver' shape from the right corner of the editor and place it near the 'request-reply' shape.
 <br>![](../ex3/images/image22.png)
 
-1. Select the 'Connector' button. 
+1. Point your attention to the 'Connector' button. 
 <br>![](../ex3/images/image23.png)
 
-1. Click and hold on the 'Connector' button and drag it all the way down onto the 'Receiver' shape.
+1. Click and hold on the 'Connector' button and drag it all the way down onto the 'Receiver' shape and release your mouse pointer after the 'ends' are joined.
 <br>![](../ex3/images/image24.png)
 
 1. A dialog pops out with a list of Adapters to choose from. Select the 'OData' Adapter.
@@ -122,13 +135,13 @@ As you may have observed, the event triggered upon sales order creation provides
 1. Select OData version V2.
 <br>![](../ex3/images/image26.png)
 
-1. Click on the 'Connection' tab of the property sheet of the Adapter. Enter the following values in the connection details section.
+1. Click on the 'Connection' tab of the property sheet of the Adapter. Enter the following values in the 'Connection Details' section:
     | Field | Value |
     | ----- | ----- |
     | Address | `https://my427029-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_salesorder/srvd_a2x/sap/salesorder/0001/` |
-    | Proxy Type | Internet |
-    | Authentication | Basic|
-    | Credentials Name  | s4hana_credentials |
+    | Proxy Type | `Internet` |
+    | Authentication | `Basic`|
+    | Credentials Name  | `s4hana_credentials` (has been pre-created) |
     
     <br>![](../ex3/images/image27.png)
 
@@ -142,8 +155,10 @@ As you may have observed, the event triggered upon sales order creation provides
 
     <br>![](../ex3/images/image28.png)
 
-## Step 5 - Eliminate noise from unintended events 
-Since we have subscribed to the Sales Order Create event, an event will be emitted on the shared topic whenever a participant creates a sales order. Naturally, this could result in each participant receiving more sales orders than expected, leading to inaccurate or misleading summarizations. To prevent this, we will introduce additional filtering steps to eliminate unnecessary noise and ensure the data remains relevant and accurate.
+## Step 5 - ilter out unwanted events and keep your Sales Order data clean and accurate 
+Since we have subscribed to the Sales Order Create event, an event will be emitted on the shared topic (`sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1`) each time a participant creates a sales order. You may recall this step from [Exercise 1](../ex1/README.md#sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1).
+
+Although each participant has their own Queue subscription, the Topic itself is shared. As a result, your Queue will receive events for sales orders created by all participants, which could lead to inaccurate or misleading summarizations. To address this, we will implement additional filtering steps to remove unnecessary noise and ensure the data remains relevant and accurate.
 
 1. Click on the 'Add flow step' button to add a new step.
 <br>![](../ex3/images/image29.png)
@@ -151,7 +166,7 @@ Since we have subscribed to the Sales Order Create event, an event will be emitt
 1. Select the 'Content Modifier' step.
 <br>![](../ex3/images/image30.png)
 
-1. Name this step as 'Extract Customer ID' in the General tab of the properties sheet. In the 'Exchange Property' tab, click on 'Add' and add a new property named `customerID`. Set the Source type to `XPath`, source value to `/SalesOrder/SalesOrder_Type/PurchaseOrderByCustomer`, and the Data Type to `java.lang.String`.
+1. Title this step as 'Extract Customer ID' in the General tab of the property sheet. In the 'Exchange Property' tab, click on 'Add' and add a new property named `customerID`. Set the Source type to `XPath`, source value to `/SalesOrder/SalesOrder_Type/PurchaseOrderByCustomer`, and the Data Type to `java.lang.String`.
 <br>![](../ex3/images/image31.png)
 
 1. After this step, click on 'Add Flow Step'.

@@ -27,7 +27,7 @@ In this step, we will configure the AEM Adapter to receive events from the Suppo
     | Field | Value |
     | ----- | ----- |
     | Host | tcps://mr-connection-sq0b51wu6s3.messaging.solace.cloud:55443 |
-    | Message VPN | techend-2025-europe |
+    | Message VPN | teched-2025-europe |
     | Username | solace-cloud-client|
     | Authentication Type | Basic |
     | Password Secure Alias | teched-2025-europe-aem-password |
@@ -35,13 +35,16 @@ In this step, we will configure the AEM Adapter to receive events from the Suppo
     <br>![](../ex4/images/image-6.png)
 
 1.  Next, head over to the 'Processing' tab and enter 'IN162-`000`_Support_Case' in the Queue Name field (replace `000` with your assigned user identifier). 
+> [!IMPORTANT]
+> Refer to [Exercise 1](../ex1/README.md#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh) where we created this Queue. Make sure you enter the same Queue name.
    
-    Leave all other attributes with their default values.
+   
+Leave all other attributes with their default values.
 <br>![](../ex4/images/image-7.png)
 
-    We are done with the first block. 
+We are done with the first block. 
 >[!TIP]
->Click 'Save' periodically over the course of this exercise so that you don't lose your work if the browser session were to time out.
+>Keep clicking 'Save' periodically over the course of this exercise so that you don't lose your work if the browser session were to time out.
 
 ## Step 3 - Massage the data event received from the Adapter
 In the next few steps of this section, we will tailor the data we receive from the Adapter for further processing.

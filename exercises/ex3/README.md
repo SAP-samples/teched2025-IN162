@@ -1,6 +1,8 @@
 # Exercise 3 - Integration Suite – IFlow S4Hana Sales Order to embedding model to SAP Hana Vector DB
 
-In this exercise, we will put together an IFlow to receive the notification event that is emitted upon the creation of a Sales Order in S/4HANA with an AEM Adapter. Using the Sales Order ID, we will then retrieve the complete Sales Order details from the S/4HANA system. These details will be transformed into vector embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs. The resulting embeddings will be stored in a connected HANA Vector Database, enabling efficient retrieval and text summarization when queried through the Joule assistant.
+In this exercise, we will put together an IFlow to receive the notification event that is emitted upon the [creation](../ex5/README.md) of a Sales Order in S/4HANA with an AEM Adapter. Using the Sales Order ID, we will then retrieve the complete Sales Order details from the S/4HANA system. These details will be transformed into text embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs, as we accomplished in the [previous](../ex2/README.md) exercise. 
+
+The resulting embeddings will be stored in a connected HANA Vector Database, enabling efficient retrieval and text summarization when queried through the Joule assistant.
 
 For your convenience, this exercise is offered in two formats:
 
@@ -11,7 +13,7 @@ Irrespective of the approach you choose, let's begin the exercise by creating a 
 
 ## Step 1 - Create a package in your designated tenant
 
-1. Log into your assigned Integration Suite tenant and 'create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu.
+1. Log into your assigned Integration Suite tenant and 'Create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu (Click on the 'hamburger' icon on the left to launch the menu, if it's hidden).
 <br>![](../ex3/images/image1.png)
 
 2. Enter the following details to describe the package.
@@ -25,8 +27,8 @@ Irrespective of the approach you choose, let's begin the exercise by creating a 
     <br>![](../ex3/images/image2.png)
 After the Package is successfully created, go to the 'Artifacts' tab.
 
-3. Your Integration Package has been created, and now you are ready to either create an IFlow from scratch or import an existing one. 
+3. Your Integration Package has been created, and now at this point, you are ready to either create an IFlow from scratch or copy / import an existing one. 
     <br>![](../ex3/images/image91.png)
 
-    From this point on, follow either [Exercise 3.1](./ex3_1_details.md) or [Exercise 3.2](./ex3_2_details.md)
+    At this juncture, follow either [Exercise 3.1](./ex3_1_details.md) or [Exercise 3.2](./ex3_2_details.md).
 
