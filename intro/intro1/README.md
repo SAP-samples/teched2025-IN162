@@ -23,7 +23,7 @@ The advantage of event-driven integration is that you can easily add or remove s
 
 ## Scenario Architecture
 
-<img src="/intro/intro1/images/scenario_architecture.png" width=100% height=100%>
+<img src="/intro/intro1/images/IN162_scenario_architecture.png" width=100% height=100%>
 
 1. Add(hire) a new employee in <b>SAP SuccessFactors</b> system.
    <br> 1a. The new employee data event gets <b>published</b> using the <b>REST</b> interface directly to <b>SAP Integration Suite, advanced event mesh</b> topic `SuccessFactors/NewHire/{EmployeeId}` where `EmployeeId` gets dynamically resolved from the new hire payload. For this, we need to do the proper [configurations](/intro/intro2) and this has already been done on the given SAP SuccessFactors system.
