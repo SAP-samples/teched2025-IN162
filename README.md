@@ -1,4 +1,4 @@
-# IN162 -  Real-time data for AI agents: Grounding with event-driven architecture
+<img width="468" height="26" alt="image" src="https://github.com/user-attachments/assets/036a69e0-5463-49bc-8d8a-1c8f1f1216a5" /># IN162 -  Real-time data for AI agents: Grounding with event-driven architecture
 
 ## Description
 
@@ -43,10 +43,12 @@ You can also gain some further knowledge around SAP Integration Suite and SAP In
 ## System URL and login information
 
 For running through the exercises, you need access to the following applications:
-- [SAP S/4Hana Cloud system](https://my427029.s4hana.cloud.sap/ui)
-- [SAP Integration Suite, advanced event mesh tenant](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073)
-- [SAP Integration Suite tenant](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com)
+- [SAP Integration Suite, advanced event mesh](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073)
+- [SAP Integration Suite](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com)
+- [SAP AI Launchpad](https://in162-ntn259xc.ai-launchpad.prod.eu-central-1.aws.ai-prod.cloud.sap/)
+- [SAP S/4HANA Cloud](https://my427029.s4hana.cloud.sap/ui)
 - [SAP Service Cloud Version 2](https://my1001903.de1.demo.crm.cloud.sap/)
+- [SAP Joule: Sample Customer Success Digital Assistant](https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant)
 
 > [!IMPORTANT]
 > - We have done everything to make this experience enjoyable. Your tenants are pre-configured and you already have all the roles and definitions you need to complete this exercise.
