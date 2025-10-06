@@ -18,12 +18,15 @@ This session introduces attendees to..
 ## Requirements
 
 There are no dedicated requirement for this session. You would be able to execute the excercises by just following the descriptions even if you do not have any experience with SAP Integration Suite and SAP Integration Suite, advanced event mesh. <br/>
-However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite and SAP Build Process Automation.<br/>
+However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite, SAP AI Launchpad, SAP AI Core and SAP Build Process Automation.<br/>
 
-You can check out the following SAP Discovery Center missions that will help you in getting started with SAP Integration Suite, SAP Build Proces Automation and SAP Integration Suite, advanced event mesh 
+You can explore the following SAP Discovery Center missions to help you get started with the BTP services we are using in this hands-on session.
 
 * [SAP Integration Suite](https://discovery-center.cloud.sap/serviceCatalog/integration-suite)
 * [SAP Integration Suite, advanced event mesh](https://discovery-center.cloud.sap/serviceCatalog/advanced-event-mesh)
+* [SAP AI Launchpad](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-launchpad)
+* [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core)
+* [SAP Build Process Automation](https://discovery-center.cloud.sap/serviceCatalog/sap-build-process-automation)
 
 ## System URL and login information
 
