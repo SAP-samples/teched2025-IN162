@@ -26,14 +26,6 @@ Please check the following chapter to understand the scenario in detail:
 There are no dedicated requirement for this session. You would be able to execute the excercises by just following the descriptions even if you do not have any experience with SAP Integration Suite and SAP Integration Suite, advanced event mesh. <br/>
 However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite, SAP AI Launchpad, SAP AI Core and SAP Build Process Automation.<br/>
 
-> [!IMPORTANT]  
-> Check out the following chapters to understand and achieve the end-to-end grounding with event-driven architecture as documented in this session:
->
-> - 
-> - [SAP S/4Hana Cloud System configuration (for your information only)](intro/intro2/README.md)
-> - [SAP Service Cloud Version 2 configuration (for your information only)](intro/intro3/README.md)
-
-
 You can explore the following SAP Discovery Center missions to help you get started with the BTP services we are using in this hands-on session.
 
 * [SAP Integration Suite](https://discovery-center.cloud.sap/serviceCatalog/integration-suite)
@@ -42,6 +34,12 @@ You can explore the following SAP Discovery Center missions to help you get star
 * [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core)
 * [SAP Build Process Automation](https://discovery-center.cloud.sap/serviceCatalog/sap-build-process-automation)
 
+You can also gain some further knowledge around SAP Integration Suite and SAP Integration Suite, advanced event mesh by attending the following SAP TechEd Hands-on Workshop sessions:
+
+- [IN165 | Experience event-driven integration with advanced event mesh](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749789125498001xZYY)
+- [IN160 | Empower your business through enterprise automation](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711963531001B8Pr)
+- [IN163 | Implement exactly once in-order delivery in SAP Integration Suite](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748712337664001rclU)
+
 ## System URL and login information
 
 For running through the exercises, you need access to the following applications:
@@ -49,7 +47,6 @@ For running through the exercises, you need access to the following applications
 - [SAP Integration Suite, advanced event mesh tenant](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073)
 - [SAP Integration Suite tenant](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com)
 - [SAP Service Cloud Version 2](https://my1001903.de1.demo.crm.cloud.sap/)
-
 
 > [!IMPORTANT]
 > - We have done everything to make this experience enjoyable. Your tenants are pre-configured and you already have all the roles and definitions you need to complete this exercise.
@@ -62,6 +59,14 @@ For running through the exercises, you need access to the following applications
 
 The complete list of exercise steps are listed below, run through them in the given order.
 <br>You can use this section as a Table of Contents. Use the breadcrumb navigation on top of the pages to go back to the Table of Contents.
+
+> [!IMPORTANT]  
+> Check out the following chapters to understand and achieve the end-to-end grounding with event-driven architecture as documented in this session:
+>
+> - 
+> - [SAP S/4Hana Cloud System configuration (for your information only)](intro/intro2/README.md)
+> - [SAP Service Cloud Version 2 configuration (for your information only)](intro/intro3/README.md)
+
 
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Explore SAP Integration Suite, advanced event mesh](exercises/ex1/)
