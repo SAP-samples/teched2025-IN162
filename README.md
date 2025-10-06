@@ -52,25 +52,26 @@ For running through the exercises, you need access to the following applications
 - [SAP Service Cloud Version 2](https://my1001903.de1.demo.crm.cloud.sap/)
 - [SAP Joule: Sample Customer Success Digital Assistant](https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant)
 
+
 > [!IMPORTANT]
-> - We have done everything to make this experience enjoyable. Your tenants are pre-configured and you already have all the roles and definitions you need to complete this exercise.
-> - User ID and password information will be provided to you by the instructors.
-> - When you run through the exercise steps, you need to ensure that the technical IDs of the integration artifacts that you will create are unique. Hence, add a participant number to your integration artifacts. The instructors will assign the participant number to you.
-> - Please adhere strictly to the instructions regarding the naming conventions for the artifacts you create. This will ensure successful completion of the tasks without conflicting with other participants.
-> - Do not delete, change or undeploy any artifact in the tenant other than yours.
+> - _For a smooth experience, tenants have been preconfigured, and you already have all the roles and permissions needed to complete this exercise._
+> - _User ID and password information will be provided to you by the instructors._
+> - _When you run through the exercise steps, you need to ensure that the technical IDs of the integration artifacts that you will create are unique. Hence, add a participant number to your integration artifacts. The instructors will assign the participant number to you._
+> - _Please adhere strictly to the instructions regarding the naming conventions for the artifacts you create. This will ensure successful completion of the tasks without conflicting with other participants._
+> - _Do not delete, change or undeploy any artifact in the tenant other than yours._
 
 ## Exercises
 
 The complete list of exercise steps are listed below, run through them in the given order.
 <br>You can use this section as a Table of Contents. Use the breadcrumb navigation on top of the pages to go back to the Table of Contents.
 
-> [!IMPORTANT]  
-> Check out the following chapters to understand and achieve the end-to-end grounding with event-driven architecture as documented in this session:
->
-> - 
-> - [SAP S/4Hana Cloud System configuration (for your information only)](intro/intro2/README.md)
-> - [SAP Service Cloud Version 2 configuration (for your information only)](intro/intro3/README.md)
+### Predefined
+Check out the following chapters to understand and achieve the end-to-end grounding with event-driven architecture as documented in this session:
 
+- [SAP S/4Hana Cloud System configuration (for your information only)](intro/intro2/README.md)
+- [SAP Service Cloud Version 2 configuration (for your information only)](intro/intro3/README.md)
+
+### To Do
 
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Explore SAP Integration Suite, advanced event mesh](exercises/ex1/)
