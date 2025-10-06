@@ -17,7 +17,7 @@ In this session, we’ll explore how to apply real-time vector grounding by conn
 
 By the end of this session, you’ll understand the core principles behind real-time vector grounding, how to design an embedding strategy for structured entities, and how to integrate this into a sample AI workflow.
 
-Please check the following chapter to understand the scenario in detail:
+The following chapter explains the scenario in more detail:
 
 - [Scenario Introduction](intro/intro1/README.md)
 
