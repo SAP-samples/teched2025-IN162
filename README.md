@@ -6,7 +6,16 @@ This repository contains the material for the SAP TechEd 2025 Hands-on Workshop 
 
 ## Overview
 
-This session introduces attendees to..
+This session introduces attendees to the power of event-driven integration pattern using **SAP Integration Suite and SAP Integration Suite, advanced event mesh** to deliver real-time grounding data, equipping AI system's with the latest business context to make informed and accurate decisions
+
+> [!NOTE]  
+> AI Grounding is the process of connecting an AI system's abstract knowledge and responses to specific, real-world data and context, reducing "hallucinations" and increasing the reliability and accuracy of its outputs. 
+
+Although vector grounding is primarily used for unstructured text documents, it can also be extended to real-time structured business objects by embedding key attributes or metadata. This approach helps improve the factual accuracy and contextual relevance of AI responses.
+
+In this session, we’ll explore how to apply real-time vector grounding by connecting structured data to an LLM using a vector database. You’ll see how updates to the data can instantly influence the model’s responses, keeping them current and contextually accurate.
+
+By the end of this session, you’ll understand the core principles behind real-time vector grounding, how to design an embedding strategy for structured entities, and how to integrate this into a production AI workflow.
 
 > [!IMPORTANT]  
 > Check out the following chapters to understand and achieve the end-to-end grounding with event-driven architecture as documented in this session:
