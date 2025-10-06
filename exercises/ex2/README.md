@@ -32,47 +32,52 @@ In this exercise, we will create configuration and orchestration deployments in 
    <br>iv.	Choose the executable (orchestration)
 <br><br>![](/exercises/ex2/images/IN162-6.png)
 
+3.	Provide details: Create configuration -> **Input Parameters**
+<br> i.	Click next **(keep defaults)**
+<br><br>![](/exercises/ex2/images/IN162-7.png)
 
+4.	Provide details: Create configuration -> **Input Artifacts**
+<br>i.	Click Review
+<br><br>![](/exercises/ex2/images/IN162-8.png)
 
+5.	Provide details: Create configuration -> **Review**
+<br>i.	Click Create
+<br><br>![](/exercises/ex2/images/IN162-9.png)
 
+## Exercise 2.3 Create Deployment
+1.	Open Configuration details **(ML Operations->Configuration->IN162-0XX Config)**
+2.	Click Create Deployment button (top right)
+<br><br>![](/exercises/ex2/images/IN162-10.png)
 
+3.	Provide Details: Create Deployment -> **Select Scenario**
+<br> i.	Select Orchestration
+<br><br>![](/exercises/ex2/images/IN162-11.png)
 
+4.	Provide Details: Create Deployment -> **Select Executable**
+   <br> i.	Select orchestration and click next
+<br><br>![](/exercises/ex2/images/IN162-12.png)
 
-<br><br><br><br><br><br><br><br>
-----
-After completing these steps you will have created...
+5.	Provide Details: Create Deployment-> **Select Configuration**
+<br> i.	Select the Configuration (IN162-0XX Config) you created earlier
+<br> ii. Click next
+<br><br>![](/exercises/ex2/images/IN162-13.png)
 
-1. Click here.
-<br>![](/exercises/ex2/images/Login1.png)
+6.	Provide Details: Create Deployment -> **Duration**
+   <br> i.	Select standard and click next
+<br><br>![](/exercises/ex2/images/IN162-14.png)
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
+7.	Provide Details: Create Deployment -> **Review**
+   <br> i.	Click Create
 
+8.	Wait for the Deployment to start Running (it takes a minutes to start the deployment so we can start with other activities in this handson exercise)
+   <br> i.	**Come back on this screen** once the Deployment status is “running”
+  	<br> ii.	**We would need the deployment id and URL** in our Integration Suite
 
+<br><br>![](/exercises/ex2/images/IN162-15.png)
 
-## Exercise 2.2 Sub Exercise 2 Description
-
-After completing these steps you will have...
-
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
-
-```
-
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
 
 ## Summary
 
-You've now ...
+You've now a group specific deployment URL and deployment ID. This url and id will be used in Integration flow to automatically trigger data ingestion by creating embeddings and inserting the data in HANA vector DB. These details will be also used while preparing the latest report for customer.
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Exercise 3](../ex3/README.md)
