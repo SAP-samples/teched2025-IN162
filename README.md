@@ -11,13 +11,15 @@ This session introduces attendees to the power of event-driven integration patte
 > [!NOTE]  
 > AI Grounding is the process of connecting an AI system's abstract knowledge and responses to specific, real-world data and context, reducing "hallucinations" and increasing the reliability and accuracy of its outputs. 
 
-Although AI Grounding is primarily used for unstructured text documents, it can also be extended to real-time structured business objects by embedding key attributes or metadata. This approach helps improve the factual accuracy and contextual relevance of AI responses.
+Although AI Grounding is primarily used for unstructured text documents, it can also be extended to real-time structured business objects by embedding key attributes or metadata. This approach helps improve the factual accuracy and contextual relevance of AI responses when dealing with transactional business data.
 
 In this session, we’ll explore how to apply real-time vector grounding by connecting structured data to an LLM using a vector database using **SAP Integration Suite and SAP Integration Suite, advanced event mesh**. You’ll see how updates to the data can instantly influence the model’s responses, keeping them current and contextually accurate.
 
-[Scenario Introduction](intro/intro1/README.md)
+By the end of this session, you’ll understand the core principles behind real-time vector grounding, how to design an embedding strategy for structured entities, and how to integrate this into a sample AI workflow.
 
-By the end of this session, you’ll understand the core principles behind real-time vector grounding, how to design an embedding strategy for structured entities, and how to integrate this into a production AI workflow.
+Please check the following chapter to understand the scenario in detail:
+
+- [Scenario Introduction](intro/intro1/README.md)
 
 ## Requirements
 
