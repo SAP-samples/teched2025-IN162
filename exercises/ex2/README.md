@@ -1,4 +1,4 @@
-# Exercise 2 - Exercise 2 DescriptionS
+# Exercise 2 - Exercise 2 DescriptionPG
 
 In this exercise, we will create...
 
