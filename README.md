@@ -34,6 +34,7 @@ You can explore the following SAP Discovery Center missions to get started and b
 * [SAP Integration Suite, advanced event mesh](https://discovery-center.cloud.sap/serviceCatalog/advanced-event-mesh)
 * [SAP AI Launchpad](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-launchpad)
 * [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core)
+* [Joule Studio, skill builder](https://discovery-center.cloud.sap/ai-feature/e93aa292-e7f4-449d-9586-f1a8510d5ab6/)
 * [SAP Build Process Automation](https://discovery-center.cloud.sap/serviceCatalog/sap-build-process-automation)
 
 You can also gain some further knowledge around SAP Integration Suite and SAP Integration Suite, advanced event mesh by attending the following SAP TechEd Hands-on Workshop sessions:
