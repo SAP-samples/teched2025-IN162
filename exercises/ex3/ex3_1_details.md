@@ -155,10 +155,12 @@ As you may have observed, the event triggered upon Sales Order creation provides
 
     <br>![](../ex3/images/image28.png)
 
-## Step 5 - ilter out unwanted events and keep your Sales Order data clean and accurate 
+## Step 5 - Filter out 'noisy' events and keep your Sales Order data clean and accurate 
 Since we have subscribed to the Sales Order Create event, an event will be emitted on the shared topic (`sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1`) each time a participant creates a sales order. You may recall this step from [Exercise 1](../ex1/README.md#sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1).
 
-Although each participant has their own Queue subscription, the Topic itself is shared. As a result, your Queue will receive events for sales orders created by all participants, which could lead to inaccurate or misleading summarizations. To address this, we will implement additional filtering steps to remove unnecessary noise and ensure the data remains relevant and accurate.
+Although each participant has their own Queue subscription, the Topic itself is shared. As a result, your Queue will receive events for sales orders created by all participants, which could lead to inaccurate or misleading summarizations. To address this, we will implement additional filtering steps to remove unnecessary 'noise' and ensure the data remains relevant and accurate.
+
+We will now create two processing routes based on the customer ID retrieved from the Sales Order. If the customer ID matches your individual participant ID, the event will be treated as valid and processed further. If it does not match, it will be considered as belonging to another participant and will be filtered out. 
 
 1. Click on the 'Add flow step' button to add a new step.
 <br>![](../ex3/images/image29.png)
@@ -202,10 +204,14 @@ Although each participant has their own Queue subscription, the Topic itself is 
 1. Next, click on Route 2 and title it 'Others'. In the 'processing' tab, check this as the 'default' route.
 <br>![](../ex3/images/image42.png)
 
-1. Click on the 'Set Custom Status' content modifier step. Navigate to the 'Exchange Property' tab in the property sheet. Add a property titled `SAP_MessageProcessingLogCustomStatus` with the source type and value set to 'constant' and `Terminated: Customer ID mismatch` respectively
+1. Click on the 'Set Custom Status' content modifier step. Navigate to the 'Exchange Property' tab in the property sheet. Add a property titled `SAP_MessageProcessingLogCustomStatus` with the source type and value set to 'constant' and `Terminated: Customer ID mismatch` respectively.
+
+> [!NOTE]
+> We set `SAP_MessageProcessingLogCustomStatus` attribute here as an enabler to easily filter out meaningful entries from the noisy ones during the monitoring phase when we access the 'message processing logs' (MPL).
+> 
 <br>![](../ex3/images/image43.png)
 
-1. Click on 'Add Flow step' right after this content modifier step.
+16. Click on 'Add Flow step' right after this content modifier step.
 <br>![](../ex3/images/image44.png)
 
 1. Look up the 'Terminate Message' step in the 'add flow step' dialog.
@@ -214,7 +220,10 @@ Although each participant has their own Queue subscription, the Topic itself is 
 1. Title this step as 'Terminate'. This completes the logic for the 'others' route.
 <br>![](../ex3/images/image46.png)
 
-1. Let's get back to the 'Assigned' route. Click on the 'Add flow step' button to add a step on this route.
+> [!NOTE]
+> We have intentionally set the status to 'Terminate' to gracefully end the processing cycle of the 'others' route.
+
+19. Let's get back to the 'Assigned' route. Click on the 'Add flow step' button to add a step on this route.
 <br>![](../ex3/images/image47.png)
 
 1. Click on the 'content modifier' step 
@@ -229,6 +238,8 @@ Although each participant has their own Queue subscription, the Topic itself is 
    
    Action: `Create`, Name: `SAP_MessageProcessingLogCustomStatus`, Source Type: `Constant`, Source Value: `Successful: Customer ID matched`.
 <br>![](../ex3/images/image50.png)
+
+This ends the logic to separate out the valid entries from the noisy ones.
 
 ## Step 6 - Perform a message mapping to cleanse the data 
 Write text here.
