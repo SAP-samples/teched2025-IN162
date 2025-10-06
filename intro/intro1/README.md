@@ -1,25 +1,9 @@
 # Scenario Introduction
 
-This session scenario helps you to learn more about [**Enterprise Automation**](https://www.sap.com/india/products/technology-platform/enterprise-automation.html) by implementing an end-to-end event-driven scenario where you react and respond to a new hire business event from <b>SAP SuccessFactors</b> using <b>SAP Integration Suite</b> and <b>SAP Build Process Automation</b>.
-
-In this, we implement an end-to-end <b>Recruit-to-Retire (R2R)</b> business subprocess across a heterogeneous landscape. From <b>SAP Integration Suite</b> we would leverage <b>Advanced Event Mesh (AEM)</b> and <b>Cloud Integration</b> capabilities. This also includes human interactions to achieve an end-to-end employee onboarding business process using <b>SAP Build Process Automation</b>.
+This session scenario helps you to learn and apply real-time vector grounding by connecting structured data to an LLM using a **SAP Hana Cloud vector database, SAP Integration Suite and SAP Integration Suite, advanced event mesh**. You’ll see how updates to the data can instantly influence the model’s responses, keeping them current and contextually accurate. By the end, you’ll build an end-to-end, event-driven flow that reacts to **new sales order events from SAP S/4HANA Cloud and new support case events from SAP Service Cloud Version 2**, providing the context to AI assistant in real time.
 
 ## Business Scenario
-Presume in your organization, you are using <b>SAP SuccessFactors</b> as a central Human Capital Management (HCM) application and you like to automate a few aspects of a newly hired employee in real-time like:
-
-1. You like to send a welcome email to the newly hired candidate along with the survey link to understand the candidate's onboarding experience.
-
-2. You like to initiate the newly hired candidate's equipment and training approval workflow to the manager using the SAP Build Process Automation.
-
-3. Post manager approval, you also like to automate the creation of Purchase Requistion for the approved equipments in SAP S/4HANA Cloud or SAP Ariba system.
-
-Instead of developing point-to-point integration for the above three use cases, you will learn and understand how we can achieve the same via an event-driven integration pattern.
-
-### Scenario Extension Possibilities
-The advantage of event-driven integration is that you can easily add or remove subscribers to update your business processes. For example, the given scenario can be easily extended with the following two more integration use cases:
-
-* You like to replicate the new hired data to secondary HCM application in real-time to manage other supporting functions like Employee Benefits.
-* Post manager approval, you also like to automatically grant the access to the SAP BTP applications or any other application using the available APIs.
+Assume your organization uses an **AI-powered Customer Success Digital Assistant**. The assistant helps customer success managers prepare for customer meetings by highlighting and summarizing the latest sales orders and support tickets, and by suggesting key talking points. To ensure accurate, up-to-date context, the assistant needs real-time access to sales order and support ticket data. And for this we will leverage event-driven integration pattern to deliver real-time grounding data, equipping AI system's with the latest business context to make informed and accurate decisions.
 
 ## Scenario Architecture
 
