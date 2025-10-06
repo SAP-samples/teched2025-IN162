@@ -40,7 +40,7 @@ You can also gain some further knowledge around SAP Integration Suite and SAP In
 
 - [IN165 | Experience event-driven integration with advanced event mesh](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749789125498001xZYY)
 - [IN161 | Modernize and transform your integration to the cloud](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711963531001B8Pr)
-- [IN160 | Empower your business through enterprise automation](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711963531001B8Pr)
+- [IN160 | Empower your business through enterprise automation](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711728862001rC69)
 
 ## System URL and login information
 
