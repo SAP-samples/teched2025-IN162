@@ -76,11 +76,11 @@ In the next few steps, we will enrich the sales order data received from the Ada
     ```
     The payload will be added as an attachment and can be inspected in the 'MPL' section when the message executes.
     <br>![](../ex3/images/image13.png)
-    > [!TIP]
-    > Click on 'Apply' to save your changes. Notice that you may receive a warning.
-    > You can ignore the warning and click on 'Close' and move ahead.
-    > 
-    >Make sure to save your changes in the main IFlow editor.
+> [!TIP]
+> Click on 'Apply' to save your changes. Notice that you may receive a warning.
+> You can ignore the warning and click on 'Close' and move ahead.
+> 
+>Make sure to save your changes in the main IFlow editor.
     
 
 2. Next, after the script step, go ahead and add a new Flow Step.
