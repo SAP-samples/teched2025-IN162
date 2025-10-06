@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2025 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2025 Hands-on Workshop session [IN162 | Real-time data for AI agents: Grounding with event-driven architecture](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748712252655001fP5Z)  
 
 ## Overview
 
