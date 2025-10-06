@@ -1,4 +1,4 @@
-<img width="468" height="26" alt="image" src="https://github.com/user-attachments/assets/036a69e0-5463-49bc-8d8a-1c8f1f1216a5" /># IN162 -  Real-time data for AI agents: Grounding with event-driven architecture
+# IN162 -  Real-time data for AI agents: Grounding with event-driven architecture
 
 ## Description
 
