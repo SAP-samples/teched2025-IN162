@@ -9,24 +9,22 @@ Assume your organization uses an **AI-powered Customer Success Digital Assistant
 
 <img src="/intro/intro1/images/IN162_scenario_architecture.png" width=100% height=100%>
 
-1. Add(hire) a new employee in <b>SAP SuccessFactors</b> system.
-   <br> 1a. The new employee data event gets <b>published</b> using the <b>REST</b> interface directly to <b>SAP Integration Suite, advanced event mesh</b> topic `SuccessFactors/NewHire/{EmployeeId}` where `EmployeeId` gets dynamically resolved from the new hire payload. For this, we need to do the proper [configurations](/intro/intro2) and this has already been done on the given SAP SuccessFactors system.
+1. The events are triggered/published from source SAP Cloud Solutions.
+    <br><br> 1a. Create a new sales order in **SAP S/4HANA Cloud** system. The new sales order event gets **published** using the **REST** interface directly to **SAP Integration Suite, advanced event mesh (AEM)** topic `sap/teched/2025/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1`. For this, we need to do the proper [configurations](/intro/intro2) and this has already been done on the given **SAP S/4HANA Cloud** system.
+    <br><br> 1b. Create a new support case in **SAP Service Cloud Version 2** system. The new support case event gets **published** using the **REST** interface directly to **SAP Integration Suite, advanced event mesh (AEM)** topic `sap/teched/2025/servicecloud/supportcase/created`. For this, we need to do the proper [configurations](/intro/intro3) and this has already been done on the given **SAP Service Cloud Version 2** system.
 
-2. <b>First Subscriber</b> listens to the AEM queue that is subscribed to the topic `SuccessFactors/NewHire/{EmployeeId}` using the Cloud Integration <b>AMQP</b> sender adapter.
-    <br> 2a. It sends a welcome email to the given newly hired candidate's email ID along with the survey link using the Cloud Integration <b>Mail</b> receiver adapter.
-    <br> 2b. By clicking the survey link, candidate can provide the onboarding experience feedback.
+   > **Note:** The same can be accomplished with non-SAP applications as well—for example, **ServiceNow**.
 
-3. <b>Second Subscriber</b> listens to the different AEM queue that is also subscribed to the same topic `SuccessFactors/NewHire/{EmployeeId}` using the Cloud Integration <b>AMQP</b> sender adapter.
-    <br> 3a. It triggers the equipment and training approval workflow in SAP Build Process Automation with Equipment and Training <b>Decisions</b> and assigns the task to the manager on the given manager's email ID using the Cloud Integration <b>HTTPS</b> receiver adapter. This will be visible in the Manager's My Inbox.
-    <br> 3b. On manager's approval or rejection, workflow notify the same to the newly hired candidate on the given candidate's email ID.
-    <br> 3c. On manager's approval, it also <b>publishes</b> the approval event directly to the <b>SAP Integration Suite, advanced event mesh</b> topic `SBPA/NewHire/{EmployeeId}/Approval` where `EmployeeId` gets dynamically resolved from the new hire payload.
+2. Within the **Cloud Integration capability of SAP Integration Suite**, two Integration Flows subscribe to new Sales Order and Support Case events via the Cloud Integration **Advanced Event Mesh sender adapter**, which uses the **Solace Message Format (SMF) protocol**.
+   
+3. Both Integration Flows then **perform lookup calls** to the downstream systems — **SAP S/4HANA Cloud** and **SAP Service Cloud Version 2** to retrieve additional details for the respective sales order and support case. They then perform data transformation using message mapping and ultimately convert the payload to JSON format.
 
-4. <b>Third Subscriber</b> listens to the another AEM queue that is subscribed to the approval topic `SBPA/NewHire/{EmployeeId}/Approval` using the Cloud Integration <b>AMQP</b> sender adapter.
-    <br> 4a. It automatically creates a purchase requisition (PR) with the approved equipment list in the S/4HANA Cloud system using the <b>OData</b> receiver adapter.
-    <br> 4b. Once the purchase requisition gets created, Cloud Integration sends an email to the given newly hired candidate's email ID with the PR number and direct link to open the same in SAP S/4Hana Cloud system.
+4. The Integration Flows then **invoke the SAP AI Core API to generate embeddings for the JSON payload** using the `text-embedding-3-small` model.
+
+5. Finally, the **generated embeddings are inserted into the SAP HANA Cloud vector database**, ensuring real-time grounding of Sales Order and Support Case objects. In this session, we’ll create these two integration flows to demonstrate the complete real-time grounding process.
     
 ## Summary
 
 You should now be familiar with the session scenario.
 
-Now, to learn all the configurations that has been done in <b>SAP SuccessFactors</b> to enable new hire event publication to <b>SAP Integration Suite, advanced event mesh</b>, you can navigate to [SAP SuccessFactors Configuration](/intro/intro2/README.md) section.
+Now, to learn all the configurations that has been done in <b>SAP SuccessFactors</b> to enable new hire event publication to <b>SAP Integration Suite, advanced event mesh</b>, you can navigate to [SAP S/4HANA Cloud Configuration](/intro/intro2/README.md) section.
