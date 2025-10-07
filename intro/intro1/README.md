@@ -1,6 +1,6 @@
 # Scenario Introduction
 
-This session scenario helps you to learn and apply real-time vector grounding by connecting structured data to an LLM using a **SAP Hana Cloud vector database, SAP Integration Suite and SAP Integration Suite, advanced event mesh**. You’ll see how updates to the data can instantly influence the model’s responses, keeping them current and contextually accurate. By the end, you’ll build an end-to-end, event-driven flow that reacts to **new sales order events from SAP S/4HANA Cloud and new support case events from SAP Service Cloud Version 2**, providing the context to AI assistant in real time.
+This session scenario helps you to learn and apply real-time vector grounding by connecting structured data to a LLM using a **SAP Hana Cloud vector database, SAP Integration Suite and SAP Integration Suite, advanced event mesh**. You’ll see how updates to the data can instantly influence the model’s responses, keeping them current and contextually accurate. By the end, you’ll build an end-to-end, event-driven flow that reacts to **new sales order events from SAP S/4HANA Cloud and new support case events from SAP Service Cloud Version 2**, providing the context to AI assistant in real time.
 
 ## Business Scenario
 Assume your organization uses an **AI-powered Customer Success Digital Assistant**. The assistant helps customer success managers prepare for customer meetings by **highlighting and summarizing the latest sales orders and support tickets**, and by suggesting key talking points. To ensure accurate, up-to-date context, the assistant needs real-time access to sales order and support ticket data. And for this we will leverage event-driven integration pattern to deliver real-time grounding data, equipping AI system's with the latest business context to make informed and accurate decisions.
@@ -8,6 +8,8 @@ Assume your organization uses an **AI-powered Customer Success Digital Assistant
 ## Scenario Architecture
 
 <img src="/intro/intro1/images/IN162_scenario_architecture.png" width=100% height=100%>
+
+### Real-time grounding flow
 
 1. The events are triggered/published from source SAP Cloud Solutions.
     <br><br> 1a. Create a new sales order in **SAP S/4HANA Cloud** system. The new sales order event gets **published** using the **REST** interface directly to **SAP Integration Suite, advanced event mesh (AEM)** topic `sap/teched/2025/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1`. For this, we need to do the proper [configurations](/intro/intro2) and this has already been done on the given **SAP S/4HANA Cloud** system.
@@ -22,7 +24,18 @@ Assume your organization uses an **AI-powered Customer Success Digital Assistant
 4. The Integration Flows then **invoke the SAP AI Core API to generate embeddings for the JSON payload** using the `text-embedding-3-small` model.
 
 5. Finally, the **generated embeddings are inserted into the SAP HANA Cloud vector database**, ensuring real-time grounding of Sales Order and Support Case objects. In this session, we’ll create these two integration flows to demonstrate the complete real-time grounding process.
-    
+
+### Customer Success Digital Assistant flow
+
+As the integration flows have been set up to ensure that newly created Sales Orders and Support Tickets are grounded in real-time using event-driven integration pattern, let’s see how this grounded data can be leveraged by the Joule-powered digital assistant, whose role is to help Customer Success Managers prepare for customer meetings by highlighting and summarizing the latest Sales Orders and Support Tickets, and by suggesting key talking points.
+
+6. The Customer Success Manager enters a prompt into the Joule-powered digital assistant, seeking help to prepare for an upcoming meeting with one of their customers.
+7. The Joule-powered digital assistant is created using a Joule Skill that calls an SAP Build Process Automation action, which in turn triggers an integration flow within Cloud Integration.
+8. The integration flow then **invoke the SAP AI Core API to generate an embedding of the prompt** using the same `text-embedding-3-small` model.
+9. Using that embedding, the integration flow queries the SAP HANA Cloud vector database for top cosine-similarity matches among the customer’s sales orders and support tickets.
+10. The integration flow calls an LLM using the retreived context via SAP AI Core to summarize and produce meeting talking points (use a supported model, e.g., gpt-4o).
+11. The summarized talking points and key details are returned through the SAP Build Action to Joule and presented to the CSM.
+
 ## Summary
 
 You should now be familiar with the session scenario.
