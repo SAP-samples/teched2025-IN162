@@ -71,7 +71,6 @@ Chapters in this section provide pre-configured setups to support learning, with
 The complete list of exercise steps are listed below, run through them in the given order.
 <br>This section also serves as a Table of Contents; use the breadcrumb navigation at the top of the pages to return here at any time.
 
-- [Getting Started](exercises/ex0/)
 - [Exercise 1 - Explore SAP Integration Suite, advanced event mesh](exercises/ex1/)
   - [Exercise 1.1 - Log into Advanced Event Mesh and Explore it](exercises/ex1#exercise-11---log-into-advanced-event-mesh-and-explore-it)
   - [Exercise 1.2 - Create a Queue in Advanced Event Mesh ](exercises/ex1#exercise-12---create-a-queue-in-advanced-event-mesh)
