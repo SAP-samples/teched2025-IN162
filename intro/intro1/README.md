@@ -29,15 +29,20 @@ Assume your organization uses an **AI-powered Customer Success Digital Assistant
 
 As the integration flows have been set up to ensure that newly created Sales Orders and Support Tickets are grounded in real-time using event-driven integration pattern, let’s see how this grounded data can be leveraged by the Joule-powered digital assistant, whose role is to help Customer Success Managers prepare for customer meetings by highlighting and summarizing the latest Sales Orders and Support Tickets, and by suggesting key talking points.
 
-6. The Customer Success Manager enters a prompt into the Joule-powered digital assistant, seeking help to prepare for an upcoming meeting with one of their customers.
-7. The Joule-powered digital assistant is created using a Joule Skill that calls an SAP Build Process Automation action, which in turn triggers an integration flow within Cloud Integration.
+6. The **Customer Success Manager (CSM) enters a prompt** into the Joule-powered digital assistant, seeking assistance in preparing for an upcoming meeting with one of their customers.
+
+7. The Joule-powered digital assistant is **created using Joule Skill** that calls an SAP Build Process Automation action, which in turn **triggers an integration flow within Cloud Integration capability of SAP Integration Suite**.
+  
 8. The integration flow then **invoke the SAP AI Core API to generate an embedding of the prompt** using the same `text-embedding-3-small` model.
-9. Using that embedding, the integration flow queries the SAP HANA Cloud vector database for top cosine-similarity matches among the customer’s sales orders and support tickets.
-10. The integration flow calls an LLM using the retreived context via SAP AI Core to summarize and produce meeting talking points (use a supported model, e.g., gpt-4o).
-11. The summarized talking points and key details are returned through the SAP Build Action to Joule and presented to the CSM.
+
+9. Using that embedding, the integration flow **queries the SAP HANA Cloud vector database for top cosine-similarity** matches among the customer’s sales orders and support tickets.
+
+10. The integration flow ultimately invokes the `gpt-4.1` LLM via the SAP AI Core API using the AI Adapter. The retrieved contextual data is provided to the model to summarize recent sales orders and support tickets and generate relevant meeting talking points, which are then returned through an SAP Build Action to Joule and presented to the CSM.
+
+With this setup, the CSM’s prompt is turned into a vector, matched against up-to-date structured data in SAP HANA Cloud, and then summarized with an LLM to produce relevant, timely talking points. The result is a practical, secure, and real-time RAG workflow integrated across Joule, SAP Build Actions, SAP Integration Suite, SAP AI Core, and SAP HANA Cloud’s vector engine.
 
 ## Summary
 
 You should now be familiar with the session scenario.
 
-Now, to learn all the configurations that has been done in <b>SAP SuccessFactors</b> to enable new hire event publication to <b>SAP Integration Suite, advanced event mesh</b>, you can navigate to [SAP S/4HANA Cloud Configuration](/intro/intro2/README.md) section.
+Now, to learn all the configurations that has been done in **SAP S/4HANA Cloud** to enable new sales order event publication to **SAP Integration Suite, advanced event mesh**, you can navigate to [SAP S/4HANA Cloud Configuration](/intro/intro2/README.md) section.
