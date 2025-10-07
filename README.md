@@ -47,7 +47,7 @@ You can also gain some further knowledge around SAP Integration Suite and SAP In
 
 For running through the exercises, you need access to the following applications:
 - [SAP Integration Suite, advanced event mesh](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073)
-- [SAP Integration Suite](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com)
+- [SAP Integration Suite](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design)
 - [SAP AI Launchpad](https://in162-ntn259xc.ai-launchpad.prod.eu-central-1.aws.ai-prod.cloud.sap/)
 - [SAP S/4HANA Cloud](https://my427029.s4hana.cloud.sap/ui)
 - [SAP Service Cloud Version 2](https://my1001903.de1.demo.crm.cloud.sap/)
@@ -64,7 +64,7 @@ For running through the exercises, you need access to the following applications
 ## Pre-configured Setup
 Chapters in this section provide pre-configured setups to support learning, without being part of the hands-on exercises:
 
-- [SAP S/4Hana Cloud System Configurations](intro/intro2/README.md)
+- [SAP S/4HANA Cloud System Configurations](intro/intro2/README.md)
 - [SAP Service Cloud Version 2 System Configurations](intro/intro3/README.md)
 
 ## Exercises
@@ -92,15 +92,6 @@ The complete list of exercise steps are listed below, run through them in the gi
 - [Exercise 6 - SAP Build based Joule Assistant with Joule Skill](exercises/ex6/)
     - [Exercise 6.1 - Already been created with one IFlow and Gen AI Hub API](exercises/ex6/README.md)
     - [Exercise 6.2 - Execution with the prompt ](exercises/ex6/README.md)
-
-  
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
