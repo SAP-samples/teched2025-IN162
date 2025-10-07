@@ -23,7 +23,7 @@ Assume your organization uses an **AI-powered Customer Success Digital Assistant
 
 4. The Integration Flows then **invoke the SAP AI Core API to generate embeddings for the JSON payload** using the `text-embedding-3-small` model.
 
-5. Finally, the **generated embeddings are inserted into the SAP HANA Cloud vector database**, ensuring real-time grounding of Sales Order and Support Case objects. In this session, we’ll create these two integration flows to demonstrate the complete real-time grounding process.
+5. Finally, the **generated embeddings are inserted into the SAP HANA Cloud vector database** using JDBC receiver adapter, ensuring real-time grounding of Sales Order and Support Case objects. In this session, we’ll create these two integration flows to demonstrate the complete real-time grounding process.
 
 ### Customer Success Digital Assistant flow
 
