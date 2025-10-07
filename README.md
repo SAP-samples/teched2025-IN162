@@ -61,18 +61,17 @@ For running through the exercises, you need access to the following applications
 > - _Please adhere strictly to the instructions regarding the naming conventions for the artifacts you create. This will ensure successful completion of the tasks without conflicting with other participants._
 > - _Do not delete, change or undeploy any artifact in the tenant other than yours._
 
-## Exercises
-
-The complete list of exercise steps are listed below, run through them in the given order.
-<br>You can use this section as a Table of Contents. Use the breadcrumb navigation on top of the pages to go back to the Table of Contents.
-
-### Predefined
-Check out the following chapters to understand and achieve the end-to-end grounding with event-driven architecture as documented in this session:
+## Pre-configured Setup
+Chapters in this section provide pre-configured setups to support learning, without being part of the hands-on exercises:
 
 - [SAP S/4Hana Cloud System configuration (for your information only)](intro/intro2/README.md)
 - [SAP Service Cloud Version 2 configuration (for your information only)](intro/intro3/README.md)
 
-### To Do
+## Exercises
+Check out the following chapters to understand and achieve the end-to-end grounding with event-driven architecture as documented in this session:
+
+The complete list of exercise steps are listed below, run through them in the given order.
+<br>You can use this section as a Table of Contents. Use the breadcrumb navigation on top of the pages to go back to the Table of Contents.
 
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Explore SAP Integration Suite, advanced event mesh](exercises/ex1/)
