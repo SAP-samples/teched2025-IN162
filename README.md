@@ -64,8 +64,8 @@ For running through the exercises, you need access to the following applications
 ## Pre-configured Setup
 Chapters in this section provide pre-configured setups to support learning, without being part of the hands-on exercises:
 
-- [SAP S/4Hana Cloud System configuration (for your information only)](intro/intro2/README.md)
-- [SAP Service Cloud Version 2 configuration (for your information only)](intro/intro3/README.md)
+- [SAP S/4Hana Cloud System configurations](intro/intro2/README.md)
+- [SAP Service Cloud Version 2 configurations](intro/intro3/README.md)
 
 ## Exercises
 Check out the following chapters to understand and achieve the end-to-end grounding with event-driven architecture as documented in this session:
