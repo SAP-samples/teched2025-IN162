@@ -37,7 +37,7 @@ As the integration flows have been set up to ensure that newly created Sales Ord
 
 9. Using that embedding, the integration flow **queries the SAP HANA Cloud vector database for top cosine-similarity** matches among the customer’s sales orders and support tickets.
 
-10. The integration flow ultimately invokes the `gpt-4.1` LLM via the SAP AI Core API using the AI Adapter. The retrieved contextual data is provided to the model to summarize recent sales orders and support tickets and generate relevant meeting talking points, which are then returned through an SAP Build Action to Joule and presented to the CSM.
+10. The integration flow ultimately invokes the `gpt-4.1` **LLM via the SAP AI Core API using the AI Adapter**. The retrieved contextual data is provided to the model to summarize recent sales orders and support tickets and generate relevant meeting talking points, which are then returned through an SAP Build Action to Joule and presented to the CSM.
 
 With this setup, the CSM’s prompt is turned into a vector, matched against up-to-date structured data in SAP HANA Cloud, and then summarized with an LLM to produce relevant, timely talking points. The result is a practical, secure, and real-time RAG workflow integrated across Joule, SAP Build Actions, SAP Integration Suite, SAP AI Core, and SAP HANA Cloud’s vector engine.
 
