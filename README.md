@@ -68,10 +68,8 @@ Chapters in this section provide pre-configured setups to support learning, with
 - [SAP Service Cloud Version 2 System Configurations](intro/intro3/README.md)
 
 ## Exercises
-Check out the following chapters to understand and achieve the end-to-end grounding with event-driven architecture as documented in this session:
-
 The complete list of exercise steps are listed below, run through them in the given order.
-<br>You can use this section as a Table of Contents. Use the breadcrumb navigation on top of the pages to go back to the Table of Contents.
+<br>This section also serves as a Table of Contents; use the breadcrumb navigation at the top of the pages to return here at any time.
 
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Explore SAP Integration Suite, advanced event mesh](exercises/ex1/)
