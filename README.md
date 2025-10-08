@@ -72,12 +72,11 @@ Chapters in this section provide pre-configured setups to support learning, with
 The complete list of exercise steps are listed below, run through them in the given order.
 <br>This section also serves as a Table of Contents; use the breadcrumb navigation at the top of the pages to return here at any time.
 
-- [Exercise 1 - Explore and Configure SAP Integration Suite, advanced event mesh](exercises/ex1/)
-  - [Exercise 1.1 - Log into Advanced Event Mesh and Explore it](exercises/ex1#exercise-11---log-into-advanced-event-mesh-and-explore-it)
-  - [Exercise 1.2 - Create a Queue in Advanced Event Mesh ](exercises/ex1#exercise-12---create-a-queue-in-advanced-event-mesh)
-  - [Exercise 1.3 - Create a Queue Subscription in Advanced Event Mesh](exercises/ex1#exercise-13---create-a-queue-subscription-in-advanced-event-mesh)
-  - [Exercise 1.4 - Create an additional Queue and Queue Subscription in Advanced Event Mesh](exercises/ex1#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh)
-  - [Exercise 1.5 - Send an event from the Try Me! tool to your Topic](exercises/ex1#exercise-15---send-an-event-from-the-try-me-tool-to-your-topic)
+- [Exercise 1 - Explore and Configure SAP Integration Suite, advanced event mesh (AEM)](exercises/ex1/)
+  - [Exercise 1.1 - Log on to SAP Integration Suite, advanced event mesh (AEM) and explore it](exercises/ex1#exercise-11---log-on-to-sap-integration-suite-advanced-event-mesh-aem-and-explore-it)
+  - [Exercise 1.2 - Create first queue and subscribe to sales order topic in SAP Integration Suite, advanced event mesh (AEM)](exercises/ex1#exercise-12---create-first-queue-and-subscribe-to-sales-order-topic-in-sap-integration-suite-advanced-event-mesh-aem)
+  - [Exercise 1.3 - Create second queue and subscribe to support case topic in SAP Integration Suite, advanced event mesh (AEM)](exercises/ex1#exercise-13---create-second-queue-and-subscribe-to-support-case-topic-in-sap-integration-suite-advanced-event-mesh-aem)
+  - [Exercise 1.4 - Send an event from the Try Me! tool to your Topic](exercises/ex1#exercise-15---send-an-event-from-the-try-me-tool-to-your-topic)
 - [Exercise 2 - Gen AI Hub (With AI Core) – Use an embedding model and expose as an API](exercises/ex2/)
     - [Exercise 2.1 - Login into the SAP AI Launchpad and create configuration](exercises/ex2#exercise-21-login-into-the-sap-ai-launchpad-and-create-configuration)
     - [Exercise 2.2 - Create Deployment](exercises/ex2#exercise-22-create-deployment)
