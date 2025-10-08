@@ -77,8 +77,11 @@ After completing these steps, you will have created the first queue subscribed t
 
 	![Pic 6](./images/ex1-6.png)
 
-6. On the next screen, change the **Access Type** to **Non-Exclusive**, leave the remaining configurations at their default settings, and click on the **Apply** button.
-
+6. On the next screen, change the **Access Type** to **Non-Exclusive**, as this session does not require message order and exactly-once delivery. Leave the remaining configurations at their default settings, and click on the **Apply** button.
+	> Note:
+ 	> <br>**Non-exclusive queue** → multiple consumers, parallel processing, no EOIO guarantee.
+	> <br>**Exclusive queue** → single consumer, preserves EOIO (message order and exactly-once delivery).
+	
 	![Pic 7](./images/ex1-7.png)       
 
 7. Select and open the queue that you have just created i.e., <b>IN162-***_Sales_Order</b> *(replace *** with the participant number that is assigned to you)*
@@ -118,7 +121,10 @@ After completing these steps, you will have created the second queue subscribed 
 
 	![Pic 13-3](./images/ex13-3.png)
 
-4. On the next screen, change the **Access Type** to **Non-Exclusive**, leave the remaining configurations at their default settings, and click on the **Apply** button.
+4. On the next screen, change the **Access Type** to **Non-Exclusive**, as this session does not require message order and exactly-once delivery. Leave the remaining configurations at their default settings, and click on the **Apply** button.
+	> Note:
+ 	> <br>**Non-exclusive queue** → multiple consumers, parallel processing, no EOIO guarantee.
+	> <br>**Exclusive queue** → single consumer, preserves EOIO (message order and exactly-once delivery).
 
 	![Pic 13-4](./images/ex13-4.png)       
 
