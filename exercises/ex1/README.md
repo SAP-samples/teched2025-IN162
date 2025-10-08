@@ -35,7 +35,7 @@ After completing these steps, you will have familiarized yourself with AEM. Thes
 
    ![Pic 11-4](./images/ex11-4.png)
    
-5. Filter the "View by" **Protocol**. From these protocol connectivity option, **REST** connectivity details is used by **SAP S/4HANA Cloud and SAP Service Cloud Version 2 system** to send events to AEM.
+5. Filter the **View by Protocol**. From these protocol connectivity option, **REST** connectivity details is used by **SAP S/4HANA Cloud and SAP Service Cloud Version 2 system** to send events to AEM.
    <br>You can get more information about the configurations [here.](../../intro/intro2/README.md)
 
    ![Pic 11-5](./images/ex11-5.png)
