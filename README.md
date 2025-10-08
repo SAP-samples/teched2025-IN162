@@ -72,15 +72,15 @@ Chapters in this section provide pre-configured setups to support learning, with
 The complete list of exercise steps are listed below, run through them in the given order.
 <br>This section also serves as a Table of Contents; use the breadcrumb navigation at the top of the pages to return here at any time.
 
-- [Exercise 1 - Explore SAP Integration Suite, advanced event mesh](exercises/ex1/)
+- [Exercise 1 - Explore and Configure SAP Integration Suite, advanced event mesh](exercises/ex1/)
   - [Exercise 1.1 - Log into Advanced Event Mesh and Explore it](exercises/ex1#exercise-11---log-into-advanced-event-mesh-and-explore-it)
   - [Exercise 1.2 - Create a Queue in Advanced Event Mesh ](exercises/ex1#exercise-12---create-a-queue-in-advanced-event-mesh)
   - [Exercise 1.3 - Create a Queue Subscription in Advanced Event Mesh](exercises/ex1#exercise-13---create-a-queue-subscription-in-advanced-event-mesh)
   - [Exercise 1.4 - Create an additional Queue and Queue Subscription in Advanced Event Mesh](exercises/ex1#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh)
   - [Exercise 1.5 - Send an event from the Try Me! tool to your Topic](exercises/ex1#exercise-15---send-an-event-from-the-try-me-tool-to-your-topic)
 - [Exercise 2 - Gen AI Hub (With AI Core) – Use an embedding model and expose as an API](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - [Exercise 2.1 - Login into the SAP AI Launchpad and create configuration](exercises/ex2#exercise-21-login-into-the-sap-ai-launchpad-and-create-configuration)
+    - [Exercise 2.2 - Create Deployment](exercises/ex2#exercise-22-create-deployment)
 - [Exercise 3 - Integration Suite – Iflow S4Hana Sales Order to Embedding Model to SAP Hana Vector DB](exercises/ex3/README.md)
     - [Exercise 3.1 - Create an IFLow from scratch to receive a Sales Order creation event, transform into embeddings and persist to HANA Vector DB](./exercises/ex3/ex3_2_details.md)
     - [Exercise 3.2 (Optional and an alternate to Exercise 3.1)  - Copy an existing IFLow to reciever a Sales Order creation event, transform into embeddings and persist to HANA Vector DB](./exercises/ex3/ex3_2_details.md)
