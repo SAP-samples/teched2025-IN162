@@ -8,7 +8,7 @@ In this exercise, you will create configuration and orchestration deployments in
 3.	The Configuration is your specific recipe card that links the generic executable template to a particular LLM (like 'GPT-4') and sets its parameters (like Temperature) to control its behaviour
 4.	The Deployment is the final step that flips the power switch on your LLM configuration, turning it into a live service with a unique web address (URL) that SAP applications can use. In this case, it will be called by the integration flows in the Cloud Integration capability of SAP Integration Suite.
 
-## Exercise 2.1 Log on to SAP AI Launchpad and Create Configuration 
+## Exercise 2.1 - Log on to SAP AI Launchpad and Create Configuration 
 After completing these steps, you will have created the configuration in SAP AI launchpad
 
 1.	Log on to [SAP AI Launchpad](https://in162-ntn259xc.ai-launchpad.prod.eu-central-1.aws.ai-prod.cloud.sap/) tenant.
@@ -56,7 +56,7 @@ After completing these steps, you will have created the configuration in SAP AI 
 
    ![Pic 21-8](./images/ex21-8.png)
 
-## Exercise 2.2 Create Deployment
+## Exercise 2.2 - Create Deployment
 After completing these steps, your deployment will be created and running in SAP AI Launchpad.
 
 1.	Click the **Create Deployment** button in the top-right corner to create the deployment.
@@ -71,14 +71,15 @@ After completing these steps, your deployment will be created and running in SAP
 
   	![Pic 22-3](./images/ex22-3.png)
 
-5.	Wait for the deployment to start running. This may take a few minutes, so you can proceed with the next exercise in this hands-on session.
+4.	Wait for the deployment to start running. This may take a few minutes, so you can proceed with the next exercise in this hands-on session.
    Once the deployment status shows **RUNNING**, note the Deployment ID and URL to be used in the integration flows of the Cloud Integration capability in SAP Integration Suite.
 
   	![Pic 22-4](./images/ex22-4.png)
 
-      > **Note:** In case the deployment do not show the **RUNNING** status, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
-      > <br><br>Deployment ID: **db1ce5ede0291ce0** 
-      > <br>Deployment URL: **https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0**
+   
+   > **Note:** In case the deployment do not show the **RUNNING** status, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
+   > <br><br>Deployment ID: **db1ce5ede0291ce0** 
+   > <br>Deployment URL: **https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0**
 
 ## Summary
 
