@@ -82,6 +82,6 @@ After completing these steps, your deployment will be created and running in SAP
 
 ## Summary
 
-You've now a group specific deployment URL and deployment ID. This url and id will be used in Integration flow to automatically trigger data ingestion by creating embeddings and inserting the data in HANA vector DB. These details will be also used while preparing the latest report for customer.
+At the end of the second exercise, you created your exclusive configuration and orchestration deployments. The Deployment ID and URL can now be used in an integration flow to generate embeddings and insert them into the SAP HANA Cloud vector database. These details will also be used to summarize key talking points from recent sales orders and support tickets in the Joule-Powered Customer Success Digital Assistant.
 
 Continue to - [Exercise 3](../ex3/README.md)
