@@ -1,5 +1,10 @@
-# Exercise 1 - Explore SAP Integration Suite, advanced event mesh
-After completing these steps you will familiarize yourself with AEM.
+# Exercise 1 - Configure SAP Integration Suite, advanced event mesh
+
+## Overview
+
+To enable the event-driven architecture in this integration scenario, we use **SAP Integration Suite, advanced event mesh (AEM)**.<br/>
+In this exercise, you will familiarize yourself with AEM. Each participant has to create 2 queues and subscribe to the relevant topic.
+These queues are then required and subscribed in the later part of the session while creating or configuring the integration interfaces in the Cloud Integration capability of SAP Integration Suite.
 
 ## Exercise 1.1 - Log into Advanced Event Mesh and explore it
 
