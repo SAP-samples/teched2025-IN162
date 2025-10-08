@@ -1,14 +1,14 @@
-# Exercise 5.3 - Create a new support case  in SAP Sales and Service Cloud
+# Exercise 5.3 - Create a new support case in SAP Service Cloud Version 2
 
-In this exercise we will create a support case in SAP Sales and Service Cloud that will eventually trigger the IFlow we built in [Exercise 4](../ex4/README.md)
+In this exercise we will create a support case in SAP Service Cloud Version 2 that will eventually trigger the IFlow we built in [Exercise 4](../ex4/README.md)
 
-## Step 1 - Log into SAP Sales and Service Cloud
+## Step 1 - Log into SAP Service Cloud Version 2
 
 1.  Paste the URL : `https://my1001903.de1.demo.crm.cloud.sap/` in your browser window where you would have previous logged into the AEM URL (`https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073`) as part of [Exercise 1](../ex1/README.md#exercise-11---log-into-advanced-event-mesh-and-explore-it)
 > [!IMPORTANT]
 > The reason why you are expected to use the same windows is beacuse the login session to SAP Service Cloud utilizes SAML browser cookies to extend SSO from AEM.
 > 
-> If you have closed all browser windows, make sure to log into AEM and then open Service Cloud in a separate tab of the same window.
+> If you have closed all browser windows, make sure to log into AEM and then open SAP Service Cloud Version 2 in a separate tab of the same window.
 > 
 Click on 'Sign in using SSO'.
 <br>![](../ex5/images/image6.png)

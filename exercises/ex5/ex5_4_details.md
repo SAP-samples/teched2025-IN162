@@ -1,4 +1,4 @@
-# Exercise 5.4 - Monitor Integration Processing Logs for Support Ticket creation
+# Exercise 5.4 - Monitor Integration Processing Logs for Support Case creation
 
 In this exercise we will monitoring the processing logs from the Integration Suite's Monitoring tab
 
@@ -22,5 +22,5 @@ In this exercise we will monitoring the processing logs from the Integration Sui
 7. You can see messages to the same IFlow, but classified with the 'Terminated' custom status. Additionally you can look at the 'attachments' section and verify that that the `SupportCaseByCustomer` attribute carries a different identiifer from yours. 
    <br>![](../ex5/images/image15.png)
 
-
-   
+## Summary
+This concludes the monitoring steps, in the [next exercise](../ex6/README.md) let's go ahead and build a Joule skill to retrieve the summarizations from our AI model.
