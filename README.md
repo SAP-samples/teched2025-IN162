@@ -26,7 +26,7 @@ The following chapter explains the scenario in more detail:
 There are no dedicated requirement for this session. You would be able to execute the excercises by just following the descriptions even if you do not have any experience with **SAP Integration Suite and SAP Integration Suite, advanced event mesh.** 
 
 
-However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite, SAP AI Launchpad, SAP AI Core, SAP Joule Studio and SAP Build Process Automation Actions.<br/>
+However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite, SAP Joule Studio and SAP Build Process Automation Actions.<br/>
 
 You can explore the following SAP Discovery Center missions to get started and build expertise with the SAP BTP services used in this hands-on workshop session.
 
@@ -52,6 +52,7 @@ For running through the exercises, you need access to the following applications
 - [SAP S/4HANA Cloud](https://my427029.s4hana.cloud.sap/ui)
 - [SAP Service Cloud Version 2](https://my1001903.de1.demo.crm.cloud.sap/)
 - [SAP Joule: Sample Customer Success Digital Assistant](https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant)
+
 
 
 > [!IMPORTANT]
