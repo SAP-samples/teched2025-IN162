@@ -1,6 +1,6 @@
-# Exercise 5.1 - Create a new support case  in SAP Sales and Service Cloud
+# Exercise 5.2 - Create a new support case  in SAP Sales and Service Cloud
 
-In this exercise we will create a support case in SAP Sales and Service Cloud that will eventually trigger the IFlow we built in Exercise 4
+In this exercise we will create a support case in SAP Sales and Service Cloud that will eventually trigger the IFlow we built in [Exercise 4](../ex4/README.md)
 
 ## Step 1 - Log into SAP Sales and Service Cloud
 
@@ -31,14 +31,20 @@ Click on 'Sign in using SSO'.
    
     <br>![](../ex5/images/image2.png)
 
-5.  
+5.  Click on the F4 (drop-down) button for the 'Account' section.
     <br>![](../ex5/images/image3.png)
 
-6.  
+6.  A dialog loads all the configured Accounts. Make sure to select 'BestRun' from the list.
     <br>![](../ex5/images/image4.png)
 
-7.  
+7.  You will see that all other fields like 'Contact', 'Assigned To' etc. will be filled based on your section. Retain these values. Finalize the settings by creating 'Save and Open'. 
     <br>![](../ex5/images/image5.png)
+    
+
+    ## Summary
+    This wraps up the 'support case' creation process. An event would have been triggered now based on the settings we [defined](../ex1/README.md#exercise-13---create-second-queue-and-subscribe-to-support-case-topic-in-sap-integration-suite-advanced-event-mesh-aem) on the AEM side. The notification will be picked up the the AEM Adapter and trigger the IFlow.
+
+    Once the flow completes, we can review the execution path in the next exercise.
 
 
 
