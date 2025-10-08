@@ -80,14 +80,14 @@ After completing these steps, you will have created the first queue subscribed t
    <br>As mentioned earlier, each participant needs to create 2 queues and subscribe to the relevant topic.
    <br>In this exercise, we will create the first queue and subscribe to the given topic:
    
-    - Queue Name: <b>IN162-***_Sales_Order</b> *(replace *** with the participant number that is assigned to you)*
+    - Queue Name: <b>IN162-0**_Sales_Order</b> *(replace ** with the participant number that is assigned to you)*
    		- Topic Subscription: **"sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1"**
 
    Click the **+ Queue** button on the top right to create a queue.
    
 	![Pic 5](./images/ex1-5.png)        
 
-5. In the pop up, enter the queue name: <b>IN162-***_Sales_Order</b> *(replace *** with the participant number that is assigned to you)* and click on the **Create** button.
+5. In the pop up, enter the queue name: <b>IN162-0**_Sales_Order</b> *(replace ** with the participant number that is assigned to you)* and click on the **Create** button.
 
 	![Pic 6](./images/ex1-6.png)
 
@@ -98,7 +98,7 @@ After completing these steps, you will have created the first queue subscribed t
 	
 	![Pic 7](./images/ex1-7.png)       
 
-7. Select and open the queue that you have just created i.e., <b>IN162-***_Sales_Order</b> *(replace *** with the participant number that is assigned to you)*
+7. Select and open the queue that you have just created i.e., <b>IN162-0**_Sales_Order</b> *(replace ** with the participant number that is assigned to you)*
    
    ![Pic 8](./images/ex1-8.png)
    
@@ -124,14 +124,14 @@ After completing these steps, you will have created the second queue subscribed 
 
 2. In this exercise, we will create the second queue and subscribe to the given topic:
    
-	- Queue Name: <b>IN162-***_Support_Case</b> *(replace *** with the participant number that is assigned to you)*
+	- Queue Name: <b>IN162-0**_Support_Case</b> *(replace ** with the participant number that is assigned to you)*
    		- Topic Subscription: **"sap/teched/2025/servicecloud/supportcase/created"**
   	
 	Click the **+ Queue** button on the top right to create a queue.
    
 	![Pic 13-2](./images/ex13-2.png)
 
-3. In the pop up, enter the queue name: <b>IN162-***_Support_Case</b> *(replace *** with the participant number that is assigned to you)* and click on the **Create** button.
+3. In the pop up, enter the queue name: <b>IN162-0**_Support_Case</b> *(replace ** with the participant number that is assigned to you)* and click on the **Create** button.
 
 	![Pic 13-3](./images/ex13-3.png)
 
@@ -142,7 +142,7 @@ After completing these steps, you will have created the second queue subscribed 
 
 	![Pic 13-4](./images/ex13-4.png)       
 
-5. Select and open the queue that you have just created i.e., <b>IN162-***_Support_Case</b> *(replace *** with the participant number that is assigned to you)*
+5. Select and open the queue that you have just created i.e., <b>IN162-0**_Support_Case</b> *(replace ** with the participant number that is assigned to you)*
    
    ![Pic 13-5](./images/ex13-5.png)
    
