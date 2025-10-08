@@ -9,7 +9,7 @@ These queues will be used later in the session when creating or configuring inte
 ## Exercise 1.1 - Log on to SAP Integration Suite, advanced event mesh (AEM) and explore it
 After completing these steps, you will have familiarized yourself with AEM. These steps will give you a first impression and an overview of AEM.
 
-1. Log on to [SAP Integration Suite, advanced event mesh tenant](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073) using the user ID and password that is already provided by the instructors.
+1. Log on to [SAP Integration Suite, advanced event mesh](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073) tenant using the user ID and password that is already provided by the instructors.
 
 	![Pic 11-1](./images/ex11-1.png)
 
