@@ -7,7 +7,7 @@ In this exercise, we will create configuration and orchestration deployments in 
 3.	The Configuration is your specific recipe card that links the generic Executable template to a particular LLM (like 'GPT-4') and sets its parameters (like Temperature) to control its behaviour
 4.	The Deployment is the final step that flips the power switch on your LLM Configuration, making it a live service with a unique web address (URL) for SAP applications to use.
 
-## Exercise 2.1 Login into the SAP AI Launchpad  
+## Exercise 2.1 Login into the SAP AI Launchpad and create configuration  
 1.	Open URL: https://in162-ntn259xc.ai-launchpad.prod.eu-central-1.aws.ai-prod.cloud.sap/
 <br><br>![](/exercises/ex2/images/IN162-1.png)
 
@@ -18,33 +18,33 @@ In this exercise, we will create configuration and orchestration deployments in 
 <br><br>![](/exercises/ex2/images/IN162-3.png)
 
 4. Select the resource group IN162-0XX to enable 3 menu items in left pane (Generative AI Hub, ML Operations, SAP AI Core Administration)
+   
 5. Select ML Operations
 <br><br>![](/exercises/ex2/images/IN162-4.png)
 
-## Exercise 2.2 Create configuration 
-1. Select configuration in the left menu and then click on create button
+6. Select configuration in the left menu and then click on create button
 <br><br>![](/exercises/ex2/images/IN162-5.png)
 
-2. Provide details: Create configuration -> **Enter Name and executable**
+7. Provide details: Create configuration -> **Enter Name and executable**
    <br>i.	Enter Configuration Name as IN162-0XX Config (provide your group name at XX)
    <br>ii.	Choose default scenario (orchestration)
    <br>iii.	Choose the version available (0.0.1)
    <br>iv.	Choose the executable (orchestration)
 <br><br>![](/exercises/ex2/images/IN162-6.png)
 
-3.	Provide details: Create configuration -> **Input Parameters**
+8.	Provide details: Create configuration -> **Input Parameters**
 <br> i.	Click next **(keep defaults)**
 <br><br>![](/exercises/ex2/images/IN162-7.png)
 
-4.	Provide details: Create configuration -> **Input Artifacts**
+9.	Provide details: Create configuration -> **Input Artifacts**
 <br>i.	Click Review
 <br><br>![](/exercises/ex2/images/IN162-8.png)
 
-5.	Provide details: Create configuration -> **Review**
+10.	Provide details: Create configuration -> **Review**
 <br>i.	Click Create
 <br><br>![](/exercises/ex2/images/IN162-9.png)
 
-## Exercise 2.3 Create Deployment
+## Exercise 2.2 Create Deployment
 1.	Open Configuration details **(ML Operations->Configuration->IN162-0XX Config)**
 2.	Click Create Deployment button (top right)
 <br><br>![](/exercises/ex2/images/IN162-10.png)
