@@ -144,6 +144,9 @@ We will now create two processing routes based on the customer ID retrieved from
 1. Set the Header properties as specified below:
 
     Action : `Create`, Name : `SAP_ApplicationID`, Source Type : `Property`, Source Value : `customerID`.
+> [!NOTE]
+> The header attribute `SAP_ApplicationID` is a special one. It serves as an application-level correlation identifier. We introduce this to ease out your monitoring tasks. We can filter on this identifier, helping you to efficiently grab the log entry that corresponds to your execution. 
+> 
 <br>![](../ex4/images/image-27.png)
 
 1. Click on the 'Exchange Property' tab and add a Property as follows.

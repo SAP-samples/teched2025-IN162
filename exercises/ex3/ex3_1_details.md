@@ -394,7 +394,7 @@ Write text here.
 1. Proceed to the 'Connection' section in the property sheet for the Adapter. Maintain the following attributes for the properties:
    | Field | Value |
     | ----- | ----- |
-    | Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0` |
+    | Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<your-deployment-id>` (copy the deployment id from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) after you created the deployment) |
     | Method | POST |
     | Authentication | OAuth2Client Credentials|
     | Credential Name  | `aicore_credentials` |
