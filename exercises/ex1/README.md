@@ -24,12 +24,12 @@ After completing these steps, you will have familiarized yourself with AEM. Thes
 
 	![Pic 1](./images/ex1-1.png)
 
-3. Click on "**Cluster Manager**", and ensure that the **"Only show my services"** checkbox is unchecked.
+3. Click on **Cluster Manager**, and ensure that the **"Only show my services"** checkbox is unchecked.
    <br>Then, select the **teched-2025-europe** tile.
 
 	![Pic 2](./images/ex1-2.png)  
 
-4. On the right side of the screen, click the button labeled **"Open Broker Manager"**. It will open in a new browser tab or window.
+4. On the right side of the screen, click the button labeled **Open Broker Manager**. It will open in a new browser tab or window.
    
 	![Pic 14](./images/ex1-3.png)  
 
@@ -47,78 +47,103 @@ After completing these steps, you will have familiarized yourself with AEM. Thes
 
 	![Pic 15](./images/ex1-exploreBroker.png)  
 
-## Exercise 1.2 - Create a queue in SAP Integration Suite, advanced event mesh (AEM)
-After completing these steps, you will have created a queue in AEM.
+## Exercise 1.2 - Create first queue and subscribe to sales order topic in SAP Integration Suite, advanced event mesh (AEM)
+After completing these steps, you will have created the first queue subscribed to the sales order topic published from the SAP S/4HANA Cloud System in AEM.
 
-1. Go back to the original AEM tab in your browser and click on **"Cluster Manager"** on the left.
+1. Go back to the original AEM tab in your browser and click on **Cluster Manager** on the left.
    
-2. In the **"Cluster Manager: Services"** screen, click on the **"teched-2025-europe"** tile.
+2. In the **Cluster Manager: Services** screen, click on the **teched-2025-europe** tile.
 
-	**HINT:** If you cannot see the tile, uncheck the "**Only show my services**" checkbox.
+	**HINT:** If you cannot see the tile, uncheck the **"Only show my services"** checkbox.
 
 	![Pic 2](./images/ex1-2.png)  
 
-3. Switch to the **"Manage"** tab, and click on the **"Queues"** link button.
+3. Switch to the **Manage** tab, and click on the **Queues** link button.
 
 	![Pic 4](./images/ex1-4.png)     
 
 4. A new browser tab or window will open, listing all the available Queues.
-   <br>As mentioned earlier, each participant needs to create 2 queues and subscribe to the relevant topic. In this exercise, we will create the first queue and subscribe to the given topic:
+   <br>As mentioned earlier, each participant needs to create 2 queues and subscribe to the relevant topic.
+   <br>In this exercise, we will create the first queue and subscribe to the given topic:
    
-    - Queue Name: <b>IN162-***_Sales_Order</b>
+    - Queue Name: <b>IN162-***_Sales_Order</b> *(replace *** with the participant number that is assigned to you.)*
    		- Topic Subscription: **"sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1"**
 
-    <br>
-	
-	> Note:  
-	> Replace <b>***</b> with the participant number that is assigned to you.
+   Click the **+ Queue** button on the top right to create a queue.
    
-
-   Click the **"+ Queue"** button on the top right.
-   Click the <b>"+ Queue"</b> button on the top right area to create a first queue.
 	![Pic 5](./images/ex1-5.png)        
 
-6. In the pop up enter the queue name: **IN162-XXX_Sales_Order** (replace **XXX** with your assigned user number) and click **"Create"**
+5. In the pop up, enter the queue name: <b>IN162-***_Sales_Order</b> *(replace *** with the participant number that is assigned to you.)* and click on the **Create** button.
 
-	![Pic 6](./images/ex1-6.png)      
+	![Pic 6](./images/ex1-6.png)
 
-7. On the next screen change the **Access Type** to **Non-Exclusive**, leave the remaining settings to default and click **"Apply"**
+6. On the next screen, change the **Access Type** to **Non-Exclusive**, leave the remaining configurations at their default settings, and click on the **Apply** button.
 
 	![Pic 7](./images/ex1-7.png)       
 
+7. Select and open the queue that you have just created i.e., <b>IN162-***_Sales_Order</b> *(replace *** with the participant number that is assigned to you.)*
+   
+   ![Pic 8](./images/ex1-8.png)
+   
+8. Switch to the **Subscriptions** tab and click on the **+ Subscription** button on the top right area to create a new topic subscription.
 
-## Exercise 1.3 - Create a Queue Subscription in Advanced Event Mesh
+	![Pic 9](./images/ex1-9.png)
 
-1. Find the queue in the list that you crated in the previous exercise and click on it.
+9. In the pop up, enter the topic: **"sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1"** and click on the **Create** button.
 
-	![Pic 8](./images/ex1-8.png)  
+   ![Pic 10](./images/ex1-10.png)
 
-2. Switch to the **"Subscriptions"** tab and click on **"+ Subscription"**.
+10. Check whether your queue subscription has been created.
 
-	![Pic 9](./images/ex1-9.png)  
-
-3. Enter following topic: **"sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1 "**. Click on **"Create"**.
-
-	![Pic 11](./images/ex1-10.png)  
-
-4. Check on whether your queue subscription got created.
-
-	![Pic 12](./images/ex1-11.png)
+	![Pic 11](./images/ex1-11.png)
 
 
-## Exercise 1.4 - Create an additional Queue and Queue Subscription in Advanced Event Mesh
+## Exercise 1.3 - Create second queue and subscribe to support case topic in SAP Integration Suite, advanced event mesh (AEM)
+After completing these steps, you will have created the second queue subscribed to the support case topic published from the SAP Service Cloud Version 2 System in AEM.
 
-Create one additional queue with a different topic subscription.
+1. Navigate back to Queues.
 
-- queue name: **IN162-XXX_Support_Case** (replace **XXX** with your assigned user number)
-- topic subscription: **"sap/teched/2025/servicecloud/supportcase/created"**
+   ![Pic 13-1](./images/ex13-1.png) 
 
-There are now two queues contain your user number.
+2. In this exercise, we will create the second queue and subscribe to the given topic:
+   
+	- Queue Name: <b>IN162-***_Support_Case</b> *(replace *** with the participant number that is assigned to you.)*
+   		- Topic Subscription: **"sap/teched/2025/servicecloud/supportcase/created"**
+  	
+	Click the **+ Queue** button on the top right to create a queue.
+   
+	![Pic 13-2](./images/ex13-2.png)
 
-![Pic 23](./images/ex1-queuesFinal.png) 
+3. In the pop up, enter the queue name: <b>IN162-***_Support_Case</b> *(replace *** with the participant number that is assigned to you.)* and click on the **Create** button.
+
+	![Pic 13-3](./images/ex13-3.png)
+
+4. On the next screen, change the **Access Type** to **Non-Exclusive**, leave the remaining configurations at their default settings, and click on the **Apply** button.
+
+	![Pic 13-4](./images/ex13-4.png)       
+
+5. Select and open the queue that you have just created i.e., <b>IN162-***_Support_Case</b> *(replace *** with the participant number that is assigned to you.)*
+   
+   ![Pic 13-5](./images/ex13-5.png)
+   
+6. Switch to the **Subscriptions** tab and click on the **+ Subscription** button on the top right area to create a new topic subscription.
+
+   ![Pic 13-6](./images/ex13-6.png)
+
+7. In the pop up, enter the topic: **"sap/teched/2025/servicecloud/supportcase/created"** and click on the **Create** button.
+
+   ![Pic 13-7](./images/ex13-7.png)
+
+8. Check whether your queue subscription has been created.
+
+   ![Pic 13-8](./images/ex13-8.png)
+
+9. There are now two queues created for your participant number.
+
+	![Pic 13-9](./images/ex1-queuesFinal.png) 
 
 
-## Exercise 1.5 - Send an event from the Try Me! tool to your Topic
+## Exercise 1.4 - Send an event from the Try Me! tool to your Topic
 
 1. Switch to the **"Try Me!"** Section in the menu on the left.
 
