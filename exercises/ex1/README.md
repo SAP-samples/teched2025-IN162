@@ -11,6 +11,8 @@ After completing these steps, you will have familiarized yourself with AEM. Thes
 
 1. Log on to [SAP Integration Suite, advanced event mesh tenant](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073) using the user ID and password that is already provided by the instructors.
 
+	![Pic 11-1](./images/ex11-1.png)
+
 2. Explore **SAP Integration Suite, advanced event mesh (AEM)** tenant.
    <br>Check out the areas in the AEM cockpit to discover the different categories of services AEM offers:
 
@@ -22,18 +24,30 @@ After completing these steps, you will have familiarized yourself with AEM. Thes
 
 	- **Event Monitoring and Insights:** With Insights, we provide curated dashboards, easy-to-understand visualizations based on historical and real-time metrics, and timely notifications about your event broker services. This advanced information allows you to identify problems before they occur and helps you to better manage your services as your EDA scales. You can work with SAP to configure your monitoring to meet your needs. For advanced monitoring requirements, there's a single entry point to build custom visualizations to meet your organization's requirements. Coupled with visualizations is a notification email framework that alerts you when key metrics fall outside of your established thresholds. These notifications allow you to monitor what's occurring and correct developing issues before they impact or degrade your EDA. You can configure these notifications to integrate with your existing notification and logging systems.
 
-	![Pic 1](./images/ex1-1.png)
+	![Pic 11-2](./images/ex11-2.png)
 
 3. Click on **Cluster Manager**, and ensure that the **"Only show my services"** checkbox is unchecked.
    <br>Then, select the **teched-2025-europe** tile.
 
-	![Pic 2](./images/ex1-2.png)  
+	![Pic 11-3](./images/ex11-3.png)  
 
-4. On the right side of the screen, click the button labeled **Open Broker Manager**. It will open in a new browser tab or window.
+4. Switch to the **Connect** tab. This tab provides the various connectivity options and detaiuls based on language and protocol.
+
+   ![Pic 11-4](./images/ex11-4.png)
    
-	![Pic 14](./images/ex1-3.png)  
+5. Filter the "View by" **Protocol**. From these protocol connectivity option, **REST** connectivity details is used by **SAP S/4HANA Cloud and SAP Service Cloud Version 2 system** to send events to AEM.
+   <br>You can get more information about the configurations [here.](intro/intro2/README.md)
 
-5. Explore the **Broker Manager** screen.
+   ![Pic 11-5](./images/ex11-5.png)
+6. From these protocol connectivity option, **Solace Messaging** that is based on **Solace Message Format (SMF) protocol** details will be used by the Integration Flows in Cloud Integration capability of SAP Integration Suite to subscribe to AEM Queues.
+
+   ![Pic 11-6](./images/ex11-6.png)
+   
+7. On the right side of the screen, click the button labeled **Open Broker Manager**. It will open in a new browser tab or window.
+	
+	![Pic 11-7](./images/ex1-3.png)
+
+8. Explore the **Broker Manager** screen.
    <br>On the left side of the screen, you will find the main sections for navigation:
 
 	- **Message VPN:** VPN-level stats and config (a Message VPN is a virtual partition of a single broker. One AEM broker can host multiple Message VPNs, and each VPN can have different authorization schemes and topic spaces; client/messaging application activity happens within the scope of a VPN).
@@ -45,7 +59,7 @@ After completing these steps, you will have familiarized yourself with AEM. Thes
 		> Note: AEM brokers do not use replay for recovery of persistent data (like Kafka). There is a more fine-grained approach in AEM where each individual message is Acknowledged to the broker when the consumer application is done with it.
 	- **Try Me!:** Used to connect to WebSocket test applications.
 
-	![Pic 15](./images/ex1-exploreBroker.png)  
+	![Pic 11-8](./images/ex1-exploreBroker.png)  
 
 ## Exercise 1.2 - Create first queue and subscribe to sales order topic in SAP Integration Suite, advanced event mesh (AEM)
 After completing these steps, you will have created the first queue subscribed to the sales order topic published from the SAP S/4HANA Cloud System in AEM.
