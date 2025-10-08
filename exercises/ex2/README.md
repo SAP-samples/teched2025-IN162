@@ -57,30 +57,28 @@ After completing these steps, you will have created the configuration in SAP AI 
    ![Pic 21-8](./images/ex21-8.png)
 
 ## Exercise 2.2 Create Deployment
-After completing these steps, the deployment will be created and running in SAP AI Launchpad.
+After completing these steps, your deployment will be created and running in SAP AI Launchpad.
 
 1.	Click the **Create Deployment** button in the top-right corner to create the deployment.
 
   	![Pic 22-1](./images/ex22-1.png)
 
-2.	The wizard will automatically open **Step 4: Duration**. Keep the default selection (Standard), and then click the **Review** button.
+2.	The wizard will automatically open **Step 4: Duration**. Keep the default selection (**Standard**), and then click the **Review** button.
 
-   ![Pic 22-2](./images/ex22-2.png)
+  	![Pic 22-2](./images/ex22-2.png)
 
 3.	**Review** the provided details, and then click the **Create** button.
 
   	![Pic 22-3](./images/ex22-3.png)
 
-4.	Wait for the deployment to start running. This may take a few minutes, so you can proceed with the next exercise in this hands-on session.
+5.	Wait for the deployment to start running. This may take a few minutes, so you can proceed with the next exercise in this hands-on session.
    Once the deployment status shows **RUNNING**, note the Deployment ID and URL to be used in the integration flows of the Cloud Integration capability in SAP Integration Suite.
   	
   	   > **Note:** In case the deployment do not show the **RUNNING** status, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
       > <br><br>Deployment ID: **db1ce5ede0291ce0** 
       > <br>Deployment URL: **https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0**
     
-
       ![Pic 22-4](./images/ex22-4.png)
-     	![](/exercises/ex2/images/IN162-15.png)
 
 ## Summary
 
