@@ -1,24 +1,18 @@
-# Exercise 1 - Configure SAP Integration Suite, advanced event mesh
+# Exercise 1 - Explore and Configure SAP Integration Suite, advanced event mesh (AEM)
 
 ## Overview
 
-To enable the event-driven architecture in this integration scenario, we use **SAP Integration Suite, advanced event mesh (AEM)**.<br/>
-In this exercise, you will familiarize yourself with AEM. Each participant has to create 2 queues and subscribe to the relevant topic.
-These queues are then required and subscribed in the later part of the session while creating or configuring the integration interfaces in the Cloud Integration capability of SAP Integration Suite.
+To enable real-time grounding with an event-driven architecture, we use **SAP Integration Suite, advanced event mesh (AEM)**.<br/>
+In this exercise, you will explore and familiarize yourself with AEM. Each participant needs to create two queues and subscribe to the relevant topic.
+These queues will be used later in the session when creating or configuring integration interfaces in the Cloud Integration capability of SAP Integration Suite.
 
-## Exercise 1.1 - Log into Advanced Event Mesh and explore it
+## Exercise 1.1 - Log on to SAP Integration Suite, advanced event mesh (AEM) and explore it
+Run through the following steps in the given order:
 
-1. Log into **SAP Integration Suite, advanced event mesh**
+1. Log on to [SAP Integration Suite, advanced event mesh tenant](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073) using the user ID and password provided by the instructors.
 
-	Link: https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073
-
-	Usermame/Password: provided by the moderator
-
-2. Explore **SAP Integration Suite, advanced event mesh**  
-
-	![Pic 1](./images/ex1-1.png)
-
-	Check out the different areas in the Advanced Event Mesh cockpit, representing the different categories of services that AEM offers:
+2. Explore **SAP Integration Suite, advanced event mesh (AEM)** tenant.
+   <br>Check out the areas in the AEM cockpit to discover the different categories of services AEM offers:
 
 	- **Event Portal:** Event Portal provides event management services. This subscribed service provides powerful tools to create, design, share, and manage various aspects of an EDA based on event brokers or other streaming technologies (such as Kafka).
 
@@ -28,28 +22,30 @@ These queues are then required and subscribed in the later part of the session w
 
 	- **Event Monitoring and Insights:** With Insights, we provide curated dashboards, easy-to-understand visualizations based on historical and real-time metrics, and timely notifications about your event broker services. This advanced information allows you to identify problems before they occur and helps you to better manage your services as your EDA scales. You can work with SAP to configure your monitoring to meet your needs. For advanced monitoring requirements, there's a single entry point to build custom visualizations to meet your organization's requirements. Coupled with visualizations is a notification email framework that alerts you when key metrics fall outside of your established thresholds. These notifications allow you to monitor what's occurring and correct developing issues before they impact or degrade your EDA. You can configure these notifications to integrate with your existing notification and logging systems.
 
-3. Click on "**Cluster Manager**" and uncheck **"Only show my services"**. Select "**teched-2025-europe**".
+	![Pic 1](./images/ex1-1.png)
+
+3. Click on "**Cluster Manager**", and ensure that the **"Only show my services"** checkbox is unchecked.
+   <br>Then, select the **teched-2025-europe** tile.
 
 	![Pic 2](./images/ex1-2.png)  
 
-4. Click on the Button on the right and press **"Open Broker Manager"**.
-
+4. On the right side of the screen, click the button labeled **"Open Broker Manager"**. It will open in a new tab.
+   
 	![Pic 14](./images/ex1-3.png)  
 
-5. Explore the **Broker Manager**
+5. Explore the **Broker Manager** screen.
+   <br>On the left side of the screen, you will find the main sections for navigation:
+
+	- **Message VPN:** VPN-level stats and config (a Message VPN is a virtual partition of a single broker. One AEM broker can host multiple Message VPNs, and each VPN can have different authorization schemes and topic spaces; client/messaging application activity happens within the scope of a VPN).
+	- **Clients:** Information about connected and configured client applications.
+	- **Queues:** Used for guaranteed/persistent messaging.
+	- **Connector Wizards:** Used to connect to a variety of web services.
+	- **Access Control:** Used to create new client usernames, access control profiles, and client profiles.
+	- **Replay:** Used to enable replay functionality, to allow the broker to send previous messages again.
+		> Note: AEM brokers do not use replay for recovery of persistent data (like Kafka). There is a more fine-grained approach in AEM where each individual message is Acknowledged to the broker when the consumer application is done with it.
+	- **Try Me!:** Used to connect to WebSocket test applications.
 
 	![Pic 15](./images/ex1-exploreBroker.png)  
-
-	On the left side of the screen are the main sections to navigate through:
-
-	- **Message VPN:** VPN-level stats and config (a Message VPN is a virtual partition of a single broker... one AEM broker can host multiple Message VPNs, and each VPN can have different authorization schemes and topic spaces; client/messaging application activity happens within the scope of a VPN)
-	- **Clients:** information about connected and configured client applications
-	- **Queues:** used for Guaranteed / persistent messaging
-	- **Connector Wizards:** used to connect to a variety of web services
-	- **Access Control:** where you create new client usernames, ACL profiles, and client profiles
-	- **Replay:** where you can enable replay, to allow the broker to send previous messages again NOTE: Solace brokers do not use replay for recovery of persistent data (like Kafka)... there is a more fine-grained approach in Solace where each individual message is ACKnowledged to the broker when the consumer application is done with it
-	- **Try Me!:** this is where we will connect to WebSocket test applications
-
 
 ## Exercise 1.2 - Create a Queue in Advanced Event Mesh
 
