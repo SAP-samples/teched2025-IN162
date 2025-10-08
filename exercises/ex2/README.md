@@ -1,7 +1,8 @@
-# Exercise 2 - Gen AI Hub (With AI Core) – Use an embedding model and expose as an API
+# Exercise 2 - Expose Embedding and Summarization Models as an API Using Gen AI Hub (AI Core)
 
-In this exercise, we will create configuration and orchestration deployments in SAP Generative AI Hub. Orchestartion Deployment URL will be used for creating embeddings and to generate reports from historical data for sales orders and tickets for a customer. 
-### Background Information for understanding
+In this exercise, you will create configuration and orchestration deployments in SAP Generative AI Hub with AI Core. The Orchestration Deployment URL will then be used to generate embeddings and summarize talking points from recent sales orders and support tickets for a customer.
+
+### Conceptual Overview and Key Concepts
 1.	A Resource Group in SAP AI Launchpad is like a project folder that holds and separates all your AI assets (models, configurations, data, etc.) for a specific team or use case.
 2.	The Executable is the pre-built SAP template that handles all the technical complexity of connecting your application to external LLMs like Azure OpenAI or AWS Bedrock.
 3.	The Configuration is your specific recipe card that links the generic Executable template to a particular LLM (like 'GPT-4') and sets its parameters (like Temperature) to control its behaviour
