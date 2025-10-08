@@ -242,7 +242,7 @@ We will now create two processing routes based on the customer ID retrieved from
 This ends the logic to separate out the valid entries from the noisy ones.
 
 ## Step 6 - Perform a message mapping to cleanse the data 
-Write text here.
+In this step, we will utilize the 'message mapping' functionality to cleanse the quality of the sales order payload from the system. This step is needed to make the demonstration cleaner. We will concatenate and tailor certain files for better readibiilty.
 
 1. Click anywhere on the editor canvas (not on any flow step) to activate the 'Integration Flow' panel in the property sheet. Go to the 'References' tab, and in the Global subtab, click on the 'Add References' button and add a 'Message Mapping'.
 <br>![](../ex3/images/image51.png)

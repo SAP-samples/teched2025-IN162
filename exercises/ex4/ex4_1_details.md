@@ -1,5 +1,7 @@
 # Exercise 4.1 - Create an IFlow from scratch to receive a Support Case creation event, transform into embeddings, and persist to HANA Vector DB
 
+In this exercise, you will build an IFlow from scratch. Please ensure you follow the steps in the exact sequence outlined in this guide.
+
 ## Step 1 - Create a new IFlow
 
 1.  In the Artifacts tab, click on 'Add' -> 'Integration Flow'
@@ -47,17 +49,18 @@ We are done with the first block.
 >Keep clicking 'Save' periodically over the course of this exercise so that you don't lose your work if the browser session were to time out.
 
 ## Step 3 - Massage the data event received from the Adapter
-In the next few steps of this section, we will tailor the data we receive from the Adapter for further processing.
+In the next few steps, we will enrich the support case data received from the Adapter and prepare it for further processing.
 1. Click on the (+) Add Flow Step button to add a new step.
 <br>![](../ex4/images/image-8.png)
 
 1. Select a 'Groovy Script' in the Add Flow Step dialog.
 <br>![](../ex4/images/image-9.png)
 
-1. Let's title this step as 'Log Support Case Event Payload'. As the name suggests, we will log the payload we receive from the AEM Adapter
-<br>![](../ex4/images/image-10.png)
+1. Title this step 'Log Support Case Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter.
 
-1. Copy the following lines of code and paste them into the script editor window.
+    <br>![](../ex4/images/image-10.png)
+
+1. Copy the following lines of code and paste them into the script editor window (after clearing out the generated script present in the editor)
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message
 
@@ -75,11 +78,15 @@ In the next few steps of this section, we will tailor the data we receive from t
 > [!TIP]
     > Click on 'Apply' to save your changes. Notice that you may receive a warning.
     > You can ignore the warning and click on 'Close' and move ahead.
+    > 
+    > Make sure to save your changes in the main IFlow editor.
 
 5. Next, after the script step, go ahead and add a new flow step.
 <br>![](../ex4/images/image-12.png)
 
-1. Look for the 'JSON to XML Converter' step. The default settings of this step are sufficient. No changes are needed.
+1. Look for the 'JSON to XML Converter' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
+
+    In the step, we are converting the JSON representation of the data event to its XML equivalent so that it can be easily extracted later.
 <br>![](../ex4/images/image-13.png)
 
 1. Next, after this Converter step, go ahead and add a new flow step.
@@ -98,11 +105,15 @@ In the next few steps of this section, we will tailor the data we receive from t
     | ----- | ----- | ----- | ----- | ----- |
     | Create | supportCaseID | XPath | `root/data/currentImage/id` | java.lang.String
     | Create | customerID | XPath | `root/data/currentImage/extensions/SupportCaseByCustomer` | java.lang.String
-    | Create | assignedParticipantID | Constant | IN162-`000` (replace `000`)|
+    | Create | assignedParticipantID | Constant | IN162-`000` (replace `000` with your assiged participant ID)|
 <br>![](../ex4/images/image-17.png)
 
-## Step 4 - Eliminate noise from unintended events 
-Since we have subscribed to the Support Case Create event, an event will be emitted on the shared topic whenever a participant logs a support case. Naturally, this could result in each participant receiving more support cases than expected, leading to inaccurate or misleading summarizations. To prevent this, we will introduce a  filtering step based on the customerID to eliminate unnecessary noise and ensure the data remains relevant and accurate.
+## Step 4 - Filter out 'noisy' events and keep your Support Case data clean and accurate
+Since we have subscribed to the Support Case Create event, an event will be emitted on the shared topic (sap/teched/2025/servicecloud/supportcase/created) each time a participant logs a support ticket. You may recall this step from [Exercise 1](../ex1/README.md#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh).
+
+Although each participant has their own Queue subscription, the Topic itself is shared. As a result, your Queue will receive events for support cases created by all participants, which could lead to inaccurate or misleading summarizations. To address this, we will implement additional filtering steps to remove unnecessary 'noise' and ensure the data remains relevant and accurate.
+
+We will now create two processing routes based on the customer ID retrieved from the support case. If the customer ID matches your individual participant ID, the event will be treated as valid and processed further. If it does not match, it will be considered as belonging to another participant and will be filtered out.
 1. Add a new Flow step by clicking on the (+) button after the previous content modifier step.  Select the 'Router' step in the presented dialog.
 <br>![](../ex4/images/image-18.png)
 
