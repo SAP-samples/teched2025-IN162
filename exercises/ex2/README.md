@@ -1,49 +1,58 @@
 # Exercise 2 - Expose Embedding and Summarization Models as an API Using Gen AI Hub (AI Core)
 
-In this exercise, you will create configuration and orchestration deployments in SAP Generative AI Hub with AI Core. The Orchestration Deployment URL will then be used to generate embeddings and summarize talking points from recent sales orders and support tickets for a customer.
+In this exercise, you will create configuration and orchestration deployments in SAP Generative AI Hub with AI Core. The Orchestration Deployment URL will then be used to generate embeddings and summarize talking points derived from recent sales orders and support tickets for a customer.
 
 ### Conceptual Overview and Key Concepts
-1.	A Resource Group in SAP AI Launchpad is like a project folder that holds and separates all your AI assets (models, configurations, data, etc.) for a specific team or use case.
-2.	The Executable is the pre-built SAP template that handles all the technical complexity of connecting your application to external LLMs like Azure OpenAI or AWS Bedrock.
-3.	The Configuration is your specific recipe card that links the generic Executable template to a particular LLM (like 'GPT-4') and sets its parameters (like Temperature) to control its behaviour
-4.	The Deployment is the final step that flips the power switch on your LLM Configuration, making it a live service with a unique web address (URL) for SAP applications to use.
+1.	A Resource Group in SAP AI Launchpad is like a project folder that holds and separates all your AI assets (models, configurations, data, etc.) for a specific team or a use case.
+2.	The Executable is the pre-built SAP template that handles all the technical complexity of connecting your application to external LLMs like Azure, OpenAI or AWS Bedrock.
+3.	The Configuration is your specific recipe card that links the generic executable template to a particular LLM (like 'GPT-4') and sets its parameters (like Temperature) to control its behaviour
+4.	The Deployment is the final step that flips the power switch on your LLM configuration, turning it into a live service with a unique web address (URL) that SAP applications can use. In this case, it will be called by the integration flows in the Cloud Integration capability of SAP Integration Suite.
 
-## Exercise 2.1 Login into the SAP AI Launchpad and create configuration  
-1.	Open URL: https://in162-ntn259xc.ai-launchpad.prod.eu-central-1.aws.ai-prod.cloud.sap/
-<br><br>![](/exercises/ex2/images/IN162-1.png)
-
-2.	Enter Usermame/Password as provided by the moderator
-<br><br>![](/exercises/ex2/images/IN162-2.png)
-
-3. Check and confirm if you have the resource group IN162-0XX in the SAP AI Lauchpad. We have already created Resource Group for you every group as per your group name. (contact moderators if you do not have resource group as per your group name) 
-<br><br>![](/exercises/ex2/images/IN162-3.png)
-
-4. Select the resource group IN162-0XX to enable 3 menu items in left pane (Generative AI Hub, ML Operations, SAP AI Core Administration)
+## Exercise 2.1 Log on to SAP AI Launchpad and create configuration  
+1.	Log on to [SAP AI Launchpad](https://in162-ntn259xc.ai-launchpad.prod.eu-central-1.aws.ai-prod.cloud.sap/) tenant.
    
-5. Select ML Operations
-<br><br>![](/exercises/ex2/images/IN162-4.png)
+      > Note: The system login screen may not appear if you are already authenticated, as other systems connected to the same SAP Identity Authentication Service (IAS) tenant can trigger automatic login.
 
-6. Select configuration in the left menu and then click on create button
-<br><br>![](/exercises/ex2/images/IN162-5.png)
+      If the login page appears, log on using the user ID and password provided by the instructors.
+   
+      ![Pic 21-1](./images/ex21-1.png)
 
-7. Provide details: Create configuration -> **Enter Name and executable**
-   <br>i.	Enter Configuration Name as IN162-0XX Config (provide your group name at XX)
-   <br>ii.	Choose default scenario (orchestration)
-   <br>iii.	Choose the version available (0.0.1)
-   <br>iv.	Choose the executable (orchestration)
-<br><br>![](/exercises/ex2/images/IN162-6.png)
+2. Each team has been assigned a resource group according to the assigned participant number.
+   <br>Verify that the resource group <b>IN162-0**</b> *(replace ** with the participant number that is assigned to you)* is visible in the SAP AI Launchpad.
+   <br>Select the available resource group to enable the menu items in the left pane: **Generative AI Hub**, **SAP AI Core Administration** and **ML Operations**.
 
-8.	Provide details: Create configuration -> **Input Parameters**
-<br> i.	Click next **(keep defaults)**
-<br><br>![](/exercises/ex2/images/IN162-7.png)
+   > Note: If your resource group is missing or does not match your participant number, contact the instructor.
 
-9.	Provide details: Create configuration -> **Input Artifacts**
-<br>i.	Click Review
-<br><br>![](/exercises/ex2/images/IN162-8.png)
+   ![Pic 21-2](./images/ex21-2.png)
 
-10.	Provide details: Create configuration -> **Review**
-<br>i.	Click Create
-<br><br>![](/exercises/ex2/images/IN162-9.png)
+   
+3. From the left menu, select** ML Operations -> Configuration**, and then click **Create** button.
+
+   ![Pic 21-3](./images/ex21-3.png)
+
+4. Provide the following details under **Enter Name and Executable** wizard step, and then click **Next** button.
+   <br><br>a.	Enter Configuration Name as <b>IN162-0** Config</b> *(replace ** with the participant number that is assigned to you)*
+   <br>b.	Choose Scenario as **orchestration**
+   <br>c.	Choose the Version as **0.0.1**
+   <br>d.	Choose the Executable as **orchestration**
+
+   ![Pic 21-4](./images/ex21-4.png)
+   ![](/exercises/ex2/images/IN162-6.png)
+
+5.	Keep the default values in the **Input Parameters** wizard step, and then click **Next** button.
+
+   ![Pic 21-5](./images/ex21-5.png)
+   ![](/exercises/ex2/images/IN162-7.png)
+
+6.	No need to provide any detail in the **Input Artifacts** wizard step, and directlt click **Review** button.
+
+   ![Pic 21-6](./images/ex21-6.png)
+   ![](/exercises/ex2/images/IN162-8.png)
+
+7.	Finalyy, review the provided details, and then click the **Create** button.
+
+  	![Pic 21-7](./images/ex21-7.png)
+  	![](/exercises/ex2/images/IN162-9.png)
 
 ## Exercise 2.2 Create Deployment
 1.	Open Configuration details **(ML Operations->Configuration->IN162-0XX Config)**
