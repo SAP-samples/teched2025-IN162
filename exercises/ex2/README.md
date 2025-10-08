@@ -14,8 +14,8 @@ In this exercise, you will create configuration and orchestration deployments in
       > Note: The system login screen may not appear if you are already authenticated, as other systems connected to the same SAP Identity Authentication Service (IAS) tenant can trigger automatic login.
 
       If the login page appears, log on using the user ID and password provided by the instructors.
-   
-      ![Pic 21-1](./images/ex21-1.png)
+
+  	   <img src="/exercises/ex2/images/ex21-1.png" alt="Pic 21-1" width=40% height=40%>
 
 2. Each team has been assigned a resource group according to the assigned participant number.
    <br>Verify that the resource group <b>IN162-0**</b> *(replace ** with the participant number that is assigned to you)* is visible in the SAP AI Launchpad.
@@ -26,33 +26,29 @@ In this exercise, you will create configuration and orchestration deployments in
    ![Pic 21-2](./images/ex21-2.png)
 
    
-3. From the left menu, select** ML Operations -> Configuration**, and then click **Create** button.
+3. From the left menu, select **ML Operations -> Configuration**, and then click **Create** button.
 
    ![Pic 21-3](./images/ex21-3.png)
 
 4. Provide the following details under **Enter Name and Executable** wizard step, and then click **Next** button.
-   <br><br>a.	Enter Configuration Name as <b>IN162-0** Config</b> *(replace ** with the participant number that is assigned to you)*
+   <br>a.	Enter Configuration Name as <b>IN162-0** Config</b> *(replace ** with the participant number that is assigned to you)*
    <br>b.	Choose Scenario as **orchestration**
    <br>c.	Choose the Version as **0.0.1**
    <br>d.	Choose the Executable as **orchestration**
 
    ![Pic 21-4](./images/ex21-4.png)
-   ![](/exercises/ex2/images/IN162-6.png)
 
 5.	Keep the default values in the **Input Parameters** wizard step, and then click **Next** button.
 
-   ![Pic 21-5](./images/ex21-5.png)
-   ![](/exercises/ex2/images/IN162-7.png)
-
+  	![Pic 21-5](./images/ex21-5.png)
+ 
 6.	No need to provide any detail in the **Input Artifacts** wizard step, and directlt click **Review** button.
 
-   ![Pic 21-6](./images/ex21-6.png)
-   ![](/exercises/ex2/images/IN162-8.png)
+  	![Pic 21-6](./images/ex21-6.png)
 
-7.	Finalyy, review the provided details, and then click the **Create** button.
+7.	Finally, **review** the provided details, and then click the **Create** button.
 
   	![Pic 21-7](./images/ex21-7.png)
-  	![](/exercises/ex2/images/IN162-9.png)
 
 ## Exercise 2.2 Create Deployment
 1.	Open Configuration details **(ML Operations->Configuration->IN162-0XX Config)**
