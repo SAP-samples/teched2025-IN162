@@ -3,13 +3,13 @@
 ## Overview
 
 To enable real-time grounding with an event-driven architecture, we use **SAP Integration Suite, advanced event mesh (AEM)**.<br/>
-In this exercise, you will explore and familiarize yourself with AEM. Each participant needs to create two queues and subscribe to the relevant topic.
+In this exercise, you will explore and familiarize yourself with AEM. Each participant needs to create 2 queues and subscribe to the relevant topic.
 These queues will be used later in the session when creating or configuring integration interfaces in the Cloud Integration capability of SAP Integration Suite.
 
 ## Exercise 1.1 - Log on to SAP Integration Suite, advanced event mesh (AEM) and explore it
-Run through the following steps in the given order:
+After completing these steps, you will have familiarized yourself with AEM. These steps will give you a first impression and an overview of AEM.
 
-1. Log on to [SAP Integration Suite, advanced event mesh tenant](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073) using the user ID and password provided by the instructors.
+1. Log on to [SAP Integration Suite, advanced event mesh tenant](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073) using the user ID and password that is already provided by the instructors.
 
 2. Explore **SAP Integration Suite, advanced event mesh (AEM)** tenant.
    <br>Check out the areas in the AEM cockpit to discover the different categories of services AEM offers:
@@ -29,7 +29,7 @@ Run through the following steps in the given order:
 
 	![Pic 2](./images/ex1-2.png)  
 
-4. On the right side of the screen, click the button labeled **"Open Broker Manager"**. It will open in a new tab.
+4. On the right side of the screen, click the button labeled **"Open Broker Manager"**. It will open in a new browser tab or window.
    
 	![Pic 14](./images/ex1-3.png)  
 
@@ -47,30 +47,42 @@ Run through the following steps in the given order:
 
 	![Pic 15](./images/ex1-exploreBroker.png)  
 
-## Exercise 1.2 - Create a Queue in Advanced Event Mesh
+## Exercise 1.2 - Create a queue in SAP Integration Suite, advanced event mesh (AEM)
+After completing these steps, you will have created a queue in AEM.
 
-After completing these steps you will have created a queue in Advanced Event Mesh.
+1. Go back to the original AEM tab in your browser and click on **"Cluster Manager"** on the left.
+   
+2. In the **"Cluster Manager: Services"** screen, click on the **"teched-2025-europe"** tile.
 
-1. Go back to the original tab in your browser and click on **"Cluster Manager"** on the left.
-2. In the All Services screen click on the **"teched-2025-europe"** tile.
-
-	**HINT:** If you cannot see the tiles, uncheck the "**Only show my services**" box.
+	**HINT:** If you cannot see the tile, uncheck the "**Only show my services**" checkbox.
 
 	![Pic 2](./images/ex1-2.png)  
 
-3. Switch to **"Manage"** tab and click on the **"Queues"** button. A new browser tab/window will open.
+3. Switch to the **"Manage"** tab, and click on the **"Queues"** link button.
 
 	![Pic 4](./images/ex1-4.png)     
 
-4. Click the **"+ Queue"** button on the top right.
+4. A new browser tab or window will open, listing all the available Queues.
+   <br>As mentioned earlier, each participant needs to create 2 queues and subscribe to the relevant topic. In this exercise, we will create the first queue and subscribe to the given topic:
+   
+    - Queue Name: <b>IN162-***_Sales_Order</b>
+   		- Topic Subscription: **"sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1"**
 
+    <br>
+	
+	> Note:  
+	> Replace <b>***</b> with the participant number that is assigned to you.
+   
+
+   Click the **"+ Queue"** button on the top right.
+   Click the <b>"+ Queue"</b> button on the top right area to create a first queue.
 	![Pic 5](./images/ex1-5.png)        
 
-5. In the pop up enter the queue name: **IN162-XXX_Sales_Order** (replace **XXX** with your assigned user number) and click **"Create"**
+6. In the pop up enter the queue name: **IN162-XXX_Sales_Order** (replace **XXX** with your assigned user number) and click **"Create"**
 
 	![Pic 6](./images/ex1-6.png)      
 
-6. On the next screen change the **Access Type** to **Non-Exclusive**, leave the remaining settings to default and click **"Apply"**
+7. On the next screen change the **Access Type** to **Non-Exclusive**, leave the remaining settings to default and click **"Apply"**
 
 	![Pic 7](./images/ex1-7.png)       
 
