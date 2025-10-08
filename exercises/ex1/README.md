@@ -167,4 +167,4 @@ After completing these steps, you will have created the second queue subscribed 
 At the end of the first exercise, you should have familiarized yourself with SAP Integration Suite, advanced event mesh (AEM), created 2 queues, and subscribed to the relevant topics.
 Please make sure that you have used the right nomenclature and replaced <b>***</b> with the participant number that is assigned to you.
 
-Please continue with [Exercise 2](../ex2/README.md)
+Continue to - [Exercise 2 - Expose Embedding and Summarization Models as an API Using Gen AI Hub (AI Core)](../ex2/README.md)
