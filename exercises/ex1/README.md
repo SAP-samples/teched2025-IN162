@@ -45,7 +45,7 @@ After completing these steps, you will have familiarized yourself with AEM. Thes
    
 7. On the right side of the screen, click the button labeled **Open Broker Manager**. It will open in a new browser tab or window.
 	
-	![Pic 11-7](./images/ex1-3.png)
+	![Pic 11-7](./images/ex11-7.png)
 
 8. Explore the **Broker Manager** screen.
    <br>On the left side of the screen, you will find the main sections for navigation:
