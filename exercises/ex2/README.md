@@ -44,7 +44,7 @@ After completing these steps, you will have created the configuration in SAP AI 
 
   	![Pic 21-5](./images/ex21-5.png)
  
-6.	No need to provide any detail in the **Input Artifacts** wizard step, and directlt click **Review** button.
+6.	No need to provide any detail in the **Input Artifacts** wizard step, and directly click **Review** button.
 
   	![Pic 21-6](./images/ex21-6.png)
 
