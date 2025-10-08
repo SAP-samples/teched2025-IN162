@@ -72,12 +72,12 @@ After completing these steps, your deployment will be created and running in SAP
   	![Pic 22-3](./images/ex22-3.png)
 
 4.	Wait for the deployment to start running. This may take a few minutes, so you can proceed with the next exercise in this hands-on session.
-   Once the deployment status shows **RUNNING**, note the Deployment ID and URL to be used in the integration flows of the Cloud Integration capability in SAP Integration Suite.
+   Once the deployment status shows **RUNNING**, copy the Deployment ID and URL. You’ll need them in the next exercise when working with integration flows in the Cloud Integration capability of SAP Integration Suite.
 
   	![Pic 22-4](./images/ex22-4.png)
 
    
-   > **Note:** In case the deployment do not show the **RUNNING** status, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
+   > **Note:** In case the deployment do not show the **RUNNING** status even after some minutes, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
    > <br><br>Deployment ID: **db1ce5ede0291ce0** 
    > <br>Deployment URL: **https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0**
 
