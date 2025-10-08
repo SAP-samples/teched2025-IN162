@@ -31,15 +31,15 @@ After completing these steps, you will have familiarized yourself with AEM. Thes
 
 	![Pic 11-3](./images/ex11-3.png)  
 
-4. Switch to the **Connect** tab. This tab provides the various connectivity options and detaiuls based on language and protocol.
+4. Switch to the **Connect** tab. This tab provides the various connectivity options and details based on the language and protocol.
 
    ![Pic 11-4](./images/ex11-4.png)
    
 5. Filter the "View by" **Protocol**. From these protocol connectivity option, **REST** connectivity details is used by **SAP S/4HANA Cloud and SAP Service Cloud Version 2 system** to send events to AEM.
-   <br>You can get more information about the configurations [here.](intro/intro2/README.md)
+   <br>You can get more information about the configurations [here.](../../intro/intro2/README.md)
 
    ![Pic 11-5](./images/ex11-5.png)
-6. From these protocol connectivity option, **Solace Messaging** that is based on **Solace Message Format (SMF) protocol** details will be used by the Integration Flows in Cloud Integration capability of SAP Integration Suite to subscribe to AEM Queues.
+6. From these protocol connectivity options, **Solace Messaging** based on the **Solace Message Format (SMF) protocol** details will be used by the **Integration Flows in the Cloud Integration capability of SAP Integration Suite** to subscribe to AEM Queues.
 
    ![Pic 11-6](./images/ex11-6.png)
    
@@ -70,7 +70,7 @@ After completing these steps, you will have created the first queue subscribed t
 
 	**HINT:** If you cannot see the tile, uncheck the **"Only show my services"** checkbox.
 
-	![Pic 2](./images/ex1-2.png)  
+	![Pic 2](./images/ex11-2.png)  
 
 3. Switch to the **Manage** tab, and click on the **Queues** link button.
 
@@ -162,79 +162,9 @@ After completing these steps, you will have created the second queue subscribed 
 
 	![Pic 13-9](./images/ex1-queuesFinal.png) 
 
-
-## Exercise 1.4 - Send an event from the Try Me! tool to your Topic
-
-1. Switch to the **"Try Me!"** Section in the menu on the left.
-
-2. Press the **"expand" > Icon** to show the connection details. Please note, that the properties have to be adjusted else the connection will not work. We will update them in the next steps.
-	
- 	![Pic 13](./images/ex1-13.png) 
-
-3. Keep your current browser tab open and **go back to the other/main tab** and click on the **"Connect"** tab. Select **View by "Protocol"**.
-
-	![Pic 14](./images/ex1-14.png) 
-
-4. Open the **"Solace Web Messaging"** entry and select **"Solace JavaScript API"**. Now the section on the right shows you the connection details.
-
-5.  Copy these details into the relevant fields of the "**Try Me!**" opened in step 2 and overwrite the existing values.
-   
-	![Pic 15-1](./images/ex1-15.png) 
-
-6. Press **"Connect"** button.
-
->[!Important] 
->If your browser asks to select a certificate for authentication, press **"Cancel"** otherwise the connection will fail! If you accidentially clicked on a certificate, please restart your browser to show the dialog again.
-
-![Pic 17](./images/ex1-17.png)  
-
-7. Choose **"Topic"** and provide the name of the topic subscribed in step 4 of previous exercise: user**XXX**/businesspartner/change  (replace **XXX** with your user number).
-
-8. Change "Deliver Mode" to **"Persistent** and add the following "**Message Content**":
-	```json
-	{
-		"specversion": "1.0",
-		"type": "aif.businesspartner.change",
-		"source": "S4H/100",
-		"datacontenttype": "application/json",
-		"id": "iopoR}Qa7k{IeB7xyLljsm",
-		"time": "2024-07-23T15:09:31Z",
-		"data": {
-			"BusinessPartner": "A10",
-			"LastName": "John",
-			"FirstName": "Doe",
-			"Country": "DE",
-			"City": "Walldorf",
-			"PostCode": "69190",
-			"Street": "Dietmar-Hopp-Allee",
-			"HouseNumber": "16"
-		}
-	}
-	
-	```
-
-9. Click **"Publish"** to send your message to the topic.
-
-	![Pic 18](./images/ex1-18.png)  
-
-10. You should see 1 message got published.
-
-	![Pic 20](./images/ex1-19.png)  
-
-11. Switch back to the tab **"Queues"** and click on your queue.
-
-	![Pic 21](./images/ex1-20.png)  
-
-12. You should see 1 Message got Queued.
-
-	![Pic 22](./images/ex1-21.png)  
-
-	You have sent a message to a topic, and via the subscription this message has been persisted in your queue.
-
-13. You can leave it like this or you can play the same game a little longer: go back to the Try Me! tool and just click publish, and see in the other tab how the count of messages gets increased (don't forget to refresh the page).
-
 ## Summary
 
-You have now created a queue in SAP Integration Suite, advanced event mesh and have subscribed to events via a topic. You have sent events to this topic using the Try me! tool.
+At the end of the first exercise, you should have familiarized yourself with SAP Integration Suite, advanced event mesh (AEM), created 2 queues, and subscribed to the relevant topics.
+Please make sure that you have used the right nomenclature and replaced <b>***</b> with the participant number that is assigned to you.
 
 Please continue with [Exercise 2](../ex2/README.md)
