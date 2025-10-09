@@ -58,7 +58,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
 <br>![](../ex3/images/image10.png)
 
 1. Select a 'Groovy Script' in the 'Add Flow Step' dialog.
-<br><img src="../ex3/images/image11.png" width=80% height=80%>
+<br><img src="../ex3/images/image11.png" width=40% height=40%>
 
 1. Title this step 'Log Sales Order Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter. 
     
