@@ -2,7 +2,7 @@
 
 In this exercise, we will monitor the message processing logs in the Integration Suite Monitoring tab.
 
-1. Navigate to **'Monitor' -> 'Integration and APIs'** tab from the Integration Suite's main page. Click on the 'All Artifacts' tile.
+1. Navigate to **'Monitor' -> 'Integration and APIs'** tab from the Integration Suite's main page. Click on the **'All Artifacts'** tile.
    
    ![](../ex5/images/image9.png)
 
@@ -14,7 +14,7 @@ In this exercise, we will monitor the message processing logs in the Integration
 
    ![](../ex5/images/image17.png)
 
-4. Scroll down further, and in the **'Attachments'** section, you will be able to see 2 files as attachments. These files represent the incoming event payload and the final flattened payload produced after the message mapping step. 
+4. Scroll down further, and in the **'Attachments'** section, you will be able to see 2 files as attachments. These files represent the incoming event payload and the final flattened JSON payload produced after the message mapping step. 
 
    ![](../ex5/images/image18.png)
 
@@ -34,7 +34,7 @@ In this exercise, we will monitor the message processing logs in the Integration
 
    ![](../ex5/images/image22.png)
 
-9. You can see messages to the same IFlow, but classified with the **'Terminated: Customer ID mismatch'** custom status. Additionally, you can look at the 'attachments' section and verify that the `SalesOrder` attribute carries a different identifier from yours. 
+9. You can see messages to the same Integration Flow, but classified with the **'Terminated: Customer ID mismatch'** custom status. Additionally, you can look at the 'attachments' section and verify that the `SalesOrder` attribute carries a different identifier from yours. 
 
    ![](../ex5/images/image23.png)
 
