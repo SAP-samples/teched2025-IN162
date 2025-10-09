@@ -11,7 +11,7 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
     Click on 'Add and Open in Editor'.
 <br>![](../ex3/images/image4.png)
 
-1. Now you should see the basic skeleton of the IFlow in the editor ready for us to start building upon. 
+1. Now you should see the basic skeleton of the IFlow in the editor, ready for us to start building upon. 
 
     Click on 'Edit' to get started.
    <br>![](../ex3/images/image5.png)
@@ -25,7 +25,7 @@ In this step, we will configure the AEM Adapter to receive events from S/4HANA.
 1. A dialog with the different adapters will pop open. Select the 'AdvancedEventMesh' adapter.
 <br>![](../ex3/images/image7.png)
 
-1. Click on this newly added Adapter and navigate on the 'Connection' tab from the properties sheet at the bottom of the screen. Add the following attributes to the 'Sender Connection Details' section.
+1. Click on this newly added Adapter and navigate to the 'Connection' tab from the properties sheet at the bottom of the screen. Add the following attributes to the 'Sender Connection Details' section.
     | Field | Value |
     | ----- | ----- |
     | Host | tcps://mr-connection-sq0b51wu6s3.messaging.solace.cloud:55443 |
@@ -82,7 +82,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
 > Click on 'Apply' to save your changes. Notice that you may receive a warning.
 > You can ignore the warning and click on 'Close' and move ahead.
 > 
->Make sure to save your changes in the main IFlow editor.
+> Make sure to save your changes in the main IFlow editor.
     
 
 2. Next, after the script step, go ahead and add a new Flow Step.
@@ -90,7 +90,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
 
 1. Add a 'JSON to XML Converter' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
 
-    In the step, we are converting the JSON representation of the notification event to its XML equivalent so that it can be easily extracted later.
+    In this step, we are converting the JSON representation of the notification event to its XML equivalent so that it can be easily extracted later.
 <br>![](../ex3/images/image15.png)
 
 1. Next, after this Converter step, go ahead and add a new flow step.
@@ -122,7 +122,7 @@ As you may have observed, the event triggered upon Sales Order creation provides
 1. Select 'Request-Reply' step in the 'Add Flow Step' dialog.
 <br>![](../ex3/images/image21.png)
 
-1. Title the Reqest-Reply step as 'Get Sales Order Details'. Next, hold and drag the 'Receiver' shape from the right corner of the editor and place it near the 'request-reply' shape.
+1. Title the Request-Reply step as 'Get Sales Order Details'. Next, hold and drag the 'Receiver' shape from the right corner of the editor and place it near the 'request-reply' shape.
 <br>![](../ex3/images/image22.png)
 
 1. Point your attention to the 'Connector' button. 
@@ -241,10 +241,10 @@ We will now create two processing routes based on the customer ID retrieved from
    Action: `Create`, Name: `SAP_MessageProcessingLogCustomStatus`, Source Type: `Constant`, Source Value: `Successful: Customer ID matched`.
 <br>![](../ex3/images/image50.png)
 
-This ends the logic to separate out the valid entries from the noisy ones.
+This concludes the logic to separate out the valid entries from the noisy ones.
 
 ## Step 6 - Perform a message mapping to cleanse the data 
-In this step, we will utilize the 'message mapping' functionality to cleanse the quality of the sales order payload from the system. This step is needed to make the demonstration cleaner. We will concatenate and tailor certain files for better readibiilty.
+In this step, we will utilize the 'message mapping' functionality to cleanse the quality of the sales order payload from the system. This step is needed to make the demonstration cleaner. We will concatenate and tailor certain files for better readability.
 
 1. Click anywhere on the editor canvas (not on any flow step) to activate the 'Integration Flow' panel in the property sheet. Go to the 'References' tab, and in the Global subtab, click on the 'Add References' button and add a 'Message Mapping'.
 <br>![](../ex3/images/image51.png)
@@ -279,7 +279,7 @@ In this step, we will utilize the 'message mapping' functionality to cleanse the
 <br>![](../ex3/images/image60.png)
 
 ## Step 7 - Prepare data payload to invoke the embedding model of the AI Service 
-In this step we will utilize the deployment URL of the AI model we consumed in [Exercise 2](../ex2/README.md) using SAP Generative Hub and AI Core's capabilties to generate text embeddings of our sales order payload.
+In this step, we will utilize the deployment URL of the AI model we consumed in [Exercise 2](../ex2/README.md) using SAP Generative Hub and AI Core's capabilities to generate text embeddings of our sales order payload.
 
 1. Click on (+) button to add a new flow step.
 <br>![](../ex3/images/image61.png)
@@ -405,7 +405,7 @@ In this step we will utilize the deployment URL of the AI model we consumed in [
     <br>![](../ex3/images/image80.png)
 
 ## Step 8 - Prepare data payload to persist text embeddings into HANA Vector DB 
-In this step, the generated embeddings are inserted into the SAP HANA Cloud vector database using JDBC receiver adapter, ensuring real-time grounding of Sales Order objects.
+In this step, the generated embeddings are inserted into the SAP HANA Cloud vector database using the JDBC receiver adapter, ensuring real-time grounding of Sales Order objects.
 
 1. After the 'Get Text Embeddings' step, click on the (+) button to 'Add a Flow Step'.
 <br>![](../ex3/images/image81.png)
