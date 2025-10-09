@@ -380,3 +380,7 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 
 1. Proceed to the 'Connection' tab of the property sheet and enter `SAPHANACloud` in the 'JDBC Data Source Alias' box. Note that this data source alias has already been built for you.
 <br>![](../ex4/images/image-69.png)
+
+## Summary
+
+This completes Exercise 4, Next proceed to [Exercise 5](../ex5/README.md), where we will initate the creation of Sales Order and Support Cases from S/4HANA Cloud and SAP Support Cloud V2 respective and monitor the Integration Flows that finally get triggered via the AEM Adapters.

@@ -58,4 +58,4 @@ Now that the configuration is complete, we will move ahead and deploy the IFlow.
 <br>![](../ex3/images/image105.png)
 
 ## Step 4 - Study the sequence of steps in the IFlow 
-It is highly recommended that you review the IFlow in detail to gain a broader understanding of its functionality. You can do so by navigating to [Exercise 3.1](./ex3_1_details.md) and following the complete sequence.
+It is highly recommended that you review the IFlow in detail to gain a broader understanding of its functionality. You can do so by navigating to [Exercise 3.1](./ex3_1_details.md) and inspecting the complete sequence.

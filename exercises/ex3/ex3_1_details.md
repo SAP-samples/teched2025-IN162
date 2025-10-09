@@ -463,3 +463,7 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 
 1. Make sure to save your changes. You can verify the data source by navigating to the 'Manage JDBC Material' tile in the 'Overview' section. You will find the SAPHANACloud data source pre-created in the 'Data Source' tab. 
 <br>![](../ex3/images/image90.png)
+
+## Summary
+
+This completes Exercise 3, Next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted upon support case creation in SAP Service Cloud V2.
