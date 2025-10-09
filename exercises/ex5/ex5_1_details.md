@@ -1,4 +1,4 @@
-# Exercise 5.1 - Create a new Sales Order in S/HANA Cloud system
+# Exercise 5.1 - Create a new Sales Order in SAP S/HANA Cloud system
 
 In this exercise, we will create a new Sales Order in SAP S/4HANA Cloud system that will eventually trigger the integration flow that we built in [Exercise 3](../ex3/README.md)
 
