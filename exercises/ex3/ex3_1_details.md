@@ -88,18 +88,18 @@ In the next few steps, we will enrich the sales order data received from the Ada
     
 
 1. Next, after the script step, go ahead and add a new Flow Step.
-<br><img src="../ex3/images/image14.png" width=100% height=100%>
+<br><img src="../ex3/images/image14.png" width=60% height=60%>
 
 1. Add a 'JSON to XML Converter' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
 
     In this step, we are converting the JSON representation of the notification event to its XML equivalent so that it can be easily extracted later.
-<br><img src="../ex3/images/image15.png" width=100% height=100%>
+<br><img src="../ex3/images/image15.png" width=40% height=40%>
 
 1. Next, after this Converter step, go ahead and add a new flow step.
-<br><img src="../ex3/images/image16.png" width=100% height=100%>
+<br><img src="../ex3/images/image16.png" width=50% height=50%>
 
 1. Select the 'Content Modifier' step in this dialog that pops out.
-<br><img src="../ex3/images/image17.png" width=100% height=100%>
+<br><img src="../ex3/images/image17.png" width=40% height=40%>
 
 1. Title this step as 'Extract Sales Order ID'. As you may have guessed, we will extract the Sales Order ID from the XML document's XPath expression.
    
@@ -119,25 +119,25 @@ In the next few steps, we will enrich the sales order data received from the Ada
 As you may have observed, the event triggered upon Sales Order creation provides only the Sales Order ID — essentially serving as a notification event. To retrieve the complete details, we must use this ID to query the S/4HANA system and obtain the full set of Sales Order attributes.
 
 1. Add a new Flow Step after the 'Extract Sales Order ID' content modifier step.
-<br><img src="../ex3/images/image20.png" width=100% height=100%>
+<br><img src="../ex3/images/image20.png" width=60% height=60%>
 
 1. Select 'Request-Reply' step in the 'Add Flow Step' dialog.
-<br><img src="../ex3/images/image21.png" width=100% height=100%>
+<br><img src="../ex3/images/image21.png" width=40% height=40%>
 
 1. Title the Request-Reply step as 'Get Sales Order Details'. Next, hold and drag the 'Receiver' shape from the right corner of the editor and place it near the 'request-reply' shape.
 <br><img src="../ex3/images/image22.png" width=100% height=100%>
 
 1. Point your attention to the 'Connector' button. 
-<br><img src="../ex3/images/image23.png" width=100% height=100%>
+<br><img src="../ex3/images/image23.png" width=80% height=100%>
 
 1. Click and hold on the 'Connector' button and drag it all the way down onto the 'Receiver' shape and release your mouse pointer after the 'ends' are joined.
 <br><img src="../ex3/images/image24.png" width=100% height=100%>
 
 1. A dialog pops out with a list of Adapters to choose from. Select the 'OData' Adapter.
-<br><img src="../ex3/images/image25.png" width=100% height=100%>
+<br><img src="../ex3/images/image25.png" width=40% height=100%>
 
 1. Select OData version V2.
-<br><img src="../ex3/images/image26.png" width=100% height=100%>
+<br><img src="../ex3/images/image26.png" width=40% height=40%>
 
 1. Click on the 'Connection' tab of the property sheet of the Adapter. Enter the following values in the 'Connection Details' section:
     | Field | Value |
@@ -167,22 +167,22 @@ Although each participant has their own Queue subscription, the Topic itself is 
 We will now create two processing routes based on the customer ID retrieved from the Sales Order. If the customer ID matches your individual participant ID, the event will be treated as valid and processed further. If it does not match, it will be considered as belonging to another participant and will be filtered out. 
 
 1. Click on the 'Add flow step' button to add a new step.
-<br><img src="../ex3/images/image29.png" width=100% height=100%>
+<br><img src="../ex3/images/image29.png" width=60% height=100%>
 
 1. Select the 'Content Modifier' step.
-<br><img src="../ex3/images/image30.png" width=100% height=100%>
+<br><img src="../ex3/images/image30.png" width=60% height=100%>
 
 1. Title this step as 'Extract Customer ID' in the General tab of the property sheet. In the 'Exchange Property' tab, click on 'Add' and add a new property named `customerID`. Set the Source type to `XPath`, source value to `/SalesOrder/SalesOrder_Type/PurchaseOrderByCustomer`, and the Data Type to `java.lang.String`.
 <br><img src="../ex3/images/image31.png" width=100% height=100%>
 
 1. After this step, click on 'Add Flow Step'.
-<br><img src="../ex3/images/image32.png" width=100% height=100%>
+<br><img src="../ex3/images/image32.png" width=60% height=100%>
 
 1. Select the 'Router' step in the dialog.
-<br><img src="../ex3/images/image33.png" width=100% height=100%>
+<br><img src="../ex3/images/image33.png" width=40% height=100%>
 
 1. Name the step as `Route Customer ID` in the General tab of the Property Sheet.
-<br><img src="../ex3/images/image34.png" width=100% height=100%>
+<br><img src="../ex3/images/image34.png" width=80% height=100%>
 
 1. We will create an additional route now. Go to the 'search step' text box and look for a 'content modifier' step. Click on +.
 <br><img src="../ex3/images/image35.png" width=100% height=100%>
@@ -194,7 +194,7 @@ We will now create two processing routes based on the customer ID retrieved from
 <br><img src="../ex3/images/image37.png" width=100% height=100%>
 
 1. Click-hold on the 'connector' button of the router step.
-<br><img src="../ex3/images/image38.png" width=100% height=100%>
+<br><img src="../ex3/images/image38.png" width=80% height=100%>
 
 1. Drag the connector and place it on the 'set custom status' content modifier.
 <br><img src="../ex3/images/image39.png" width=100% height=100%>
@@ -216,10 +216,10 @@ We will now create two processing routes based on the customer ID retrieved from
 <br><img src="../ex3/images/image43.png" width=100% height=100%>
 
 16. Click on 'Add Flow step' right after this content modifier step.
-<br><img src="../ex3/images/image44.png" width=100% height=100%>
+<br><img src="../ex3/images/image44.png" width=70% height=100%>
 
 1. Look up the 'Terminate Message' step in the 'add flow step' dialog.
-<br><img src="../ex3/images/image45.png" width=100% height=100%>
+<br><img src="../ex3/images/image45.png" width=40% height=100%>
 
 1. Title this step as 'Terminate'. This completes the logic for the 'others' route.
 <br><img src="../ex3/images/image46.png" width=100% height=100%>
@@ -231,7 +231,7 @@ We will now create two processing routes based on the customer ID retrieved from
 <br><img src="../ex3/images/image47.png" width=100% height=100%>
 
 1. Click on the 'content modifier' step 
-<br><img src="../ex3/images/image48.png" width=100% height=100%>
+<br><img src="../ex3/images/image48.png" width=40% height=100%>
 
 1. Title the step as 'Set Application ID and Custom Status' in the General tab of the property sheet. Next, go to the 'message header' tab and 'Add' a header with the following properties. 
    
@@ -254,22 +254,22 @@ In this step, we will utilize the 'message mapping' functionality to cleanse the
 1. Here, we will specify the source package to import the pre-built mapping from. Bring up the 'Package' drop-down and select 'TechEd 2025 IN162 - Solution Package' as the source.
    
    Select the 'MM_SalesOrder_S4Hana_to_HanaVectorDB' Artifact and click 'ok'.
-<br><img src="../ex3/images/image52.png" width=100% height=100%>
+<br><img src="../ex3/images/image52.png" width=40% height=100%>
 
 1. Confirm that the mapping is successfully added.
 <br><img src="../ex3/images/image53.png" width=100% height=100%>
 
 1. Head back to the 'Set Application ID and Custom Status' content modifier step and click on the 'Add Flow Step' button.
-<br><img src="../ex3/images/image54.png" width=100% height=100%>
+<br><img src="../ex3/images/image54.png" width=80% height=100%>
 
 1. Select 'Message Mapping' from the Add Flow Step dialog.
-<br><img src="../ex3/images/image55.png" width=100% height=100%>
+<br><img src="../ex3/images/image55.png" width=40% height=100%>
 
 1. Click on the 'Assign' button. Here we will import the message mapping we referenced in the previous step.
-<br><img src="../ex3/images/image56.png" width=100% height=100%>
+<br><img src="../ex3/images/image56.png" width=80% height=100%>
 
 1. Navigate to the 'Global Resources' tab from the 'Select Mapping Resource' dialog. Click on the imported message mapping resource and select OK.
-<br><img src="../ex3/images/image57.png" width=100% height=100%>
+<br><img src="../ex3/images/image57.png" width=50% height=100%>
 
 1. Verify that the mapping resource is listed in the 'Processing' tab of the flow step. Click on the resource; this will open a new window.
 <br><img src="../ex3/images/image58.png" width=100% height=100%>
@@ -287,7 +287,7 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 <br><img src="../ex3/images/image61.png" width=100% height=100%>
 
 1. Find and select the 'XML to JSON Converter' step in the add flow step dialog.
-<br><img src="../ex3/images/image62.png" width=100% height=100%>
+<br><img src="../ex3/images/image62.png" width=80% height=100%>
 
 1. Go to the 'Processing' block in the property sheet of the converter step and specify the properties as instructed in the table below:
    | Field | Value |
@@ -302,13 +302,13 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
     <br><img src="../ex3/images/image66.png" width=100% height=100%>
 
 2. Click on (+) to add a new Flow Step
-<br><img src="../ex3/images/image63.png" width=100% height=100%>
+<br><img src="../ex3/images/image63.png" width=50% height=100%>
 
 1. Select 'groovy script' in the Add Flow Step dialog.
-<br><img src="../ex3/images/image64.png" width=100% height=100%>
+<br><img src="../ex3/images/image64.png" width=50% height=100%>
 
 1. Title the Groovy script step as 'Log Sales Order JSON Payload'. Click on the 'Create' button on the step.
-<br><img src="../ex3/images/image67.png" width=100% height=100%>
+<br><img src="../ex3/images/image67.png" width=80% height=100%>
 
 
 1. Copy the code below and paste it into the code editor window.
@@ -337,10 +337,10 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
     <br><img src="../ex3/images/image65.png" width=100% height=100%>
 
 1. After this step, click on the (+) button to add a new flow step.
-<br><img src="../ex3/images/image68.png" width=100% height=100%>
+<br><img src="../ex3/images/image68.png" width=80% height=100%>
 
 1. Select the 'content modifier' step in the 'add flow step' dialog.
-<br><img src="../ex3/images/image69.png" width=100% height=100%>
+<br><img src="../ex3/images/image69.png" width=50% height=100%>
 
 1. Title this as 'Prepare Embedding Call'. Go to the 'Message Header' tab and click 'Add' twice to prepare to add two header attributes.
 <br><img src="../ex3/images/image70.png" width=100% height=100%>
@@ -374,10 +374,10 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 
 
 1. Click on the (+) button after the previous step to add a new flow step.
-<br><img src="../ex3/images/image73.png" width=100% height=100%>
+<br><img src="../ex3/images/image73.png" width=80% height=100%>
 
 1. Select 'Request-Reply step in the 'Add Flow step' dialog.
-<br><img src="../ex3/images/image74.png" width=100% height=100%>
+<br><img src="../ex3/images/image74.png" width=50% height=100%>
 
 1. Title this step as 'Get Text Embeddings'. Click on the 'search step' text box on the right and search for the 'Receiver' shape.
 <br><img src="../ex3/images/image75.png" width=100% height=100%>
@@ -387,13 +387,13 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 
 
 1. Click on the 'connector' button and start dragging it all the way down to join the 'AI_Launchpad' Receiver box.
-<br><img src="../ex3/images/image77.png" width=100% height=100%>
+<br><img src="../ex3/images/image77.png" width=80% height=100%>
 
 1. Release the mouse button once the ends are joined. An 'Adapter Type' dialog will pop out.
 <br><img src="../ex3/images/image78.png" width=100% height=100%>
 
 1. Select 'HTTP' for the 'Adapter Type'.
-<br><img src="../ex3/images/image79.png" width=100% height=100%>
+<br><img src="../ex3/images/image79.png" width=50% height=100%>
 
 1. Proceed to the 'Connection' section in the property sheet for the Adapter. Maintain the following attributes for the properties:
    | Field | Value |
@@ -410,10 +410,10 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 In this step, the generated embeddings are inserted into the SAP HANA Cloud vector database using the JDBC receiver adapter, ensuring real-time grounding of Sales Order objects.
 
 1. After the 'Get Text Embeddings' step, click on the (+) button to 'Add a Flow Step'.
-<br><img src="../ex3/images/image81.png" width=100% height=100%>
+<br><img src="../ex3/images/image81.png" width=80% height=100%>
 
 1. Select 'Groovy Script' from the 'Add Flow step' dialog.
-<br><img src="../ex3/images/image82.png" width=100% height=100%>
+<br><img src="../ex3/images/image82.png" width=80% height=100%>
 
 1. Title the step as 'Prepare SQL Statement'. Click on the 'Create' button on the step.
 <br><img src="../ex3/images/image83.png" width=100% height=100%>
@@ -458,7 +458,7 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 <br><img src="../ex3/images/image87.png" width=100% height=100%>
 
 1. Select 'JDBC' for the Adapter type.
-<br><img src="../ex3/images/image88.png" width=100% height=100%>
+<br><img src="../ex3/images/image88.png" width=40% height=100%>
 
 1. Proceed to the 'Connection' tab of the property sheet and enter `SAPHANACloud` in the 'JDBC Data Source Alias' box. Note that this data source alias has already been built for you.
 <br><img src="../ex3/images/image89.png" width=100% height=100%>
