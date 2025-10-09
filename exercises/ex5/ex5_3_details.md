@@ -44,7 +44,7 @@ Click on 'Sign in using SSO'.
     ## Summary
     This wraps up the 'support case' creation process. An event would have been triggered now based on the settings we [defined](../ex1/README.md#exercise-13---create-second-queue-and-subscribe-to-support-case-topic-in-sap-integration-suite-advanced-event-mesh-aem) on the AEM side. The notification will be picked up the the AEM Adapter and trigger the IFlow.
 
-    Once the flow completes, we can review the execution path in the next exercise.
+    Once the flow completes, we can review the execution path in the [next exercise](./ex5_4_details.md).
 
 
 

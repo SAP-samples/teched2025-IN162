@@ -37,6 +37,8 @@ In this step, we will configure the AEM Adapter to receive events from S/4HANA.
     <br>![](../ex3/images/image8.png)
 
 2. Next, head over to the 'Processing' tab and enter IN162-`000`_Sales_Order in the Queue Name field (replace `000` with your assigned user identifier). 
+   
+   Set the 'Acknowledgement Mode' to 'Automatic on Exchange Complete'.
 > [!IMPORTANT]
 > Refer to [Exercise 1](../ex1/README.md#exercise-12---create-a-queue-in-advanced-event-mesh) where we created this Queue.
    
@@ -47,7 +49,7 @@ We are done with the first block.
 >[!TIP]
 >Keep clicking 'Save' periodically over the course of this exercise so that you don't lose your work if the browser session were to time out.
 
-## Step 3 - Enriching the event data by fetching complete Sales Order information from S/4HANA
+## Step 3 - Enrich the event data by fetching complete Sales Order information from S/4HANA
 In the next few steps, we will enrich the sales order data received from the Adapter and prepare it for further processing.
 
 1. Click on the (+) Add Flow Step button (on the 'Start' message block) to add a new step.
@@ -394,7 +396,7 @@ Write text here.
 1. Proceed to the 'Connection' section in the property sheet for the Adapter. Maintain the following attributes for the properties:
    | Field | Value |
     | ----- | ----- |
-    | Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<your-deployment-id>` (copy the deployment id from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) after you created the deployment) |
+    | Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<your-deployment-id>/v2/embeddings` (copy the deployment id from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) after you created the deployment) |
     | Method | POST |
     | Authentication | OAuth2Client Credentials|
     | Credential Name  | `aicore_credentials` |

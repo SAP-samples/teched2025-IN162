@@ -37,9 +37,11 @@ In this step, we will configure the AEM Adapter to receive events from the Suppo
     <br>![](../ex4/images/image-6.png)
 
 1.  Next, head over to the 'Processing' tab and enter 'IN162-`000`_Support_Case' in the Queue Name field (replace `000` with your assigned user identifier). 
+   
 > [!IMPORTANT]
 > Refer to [Exercise 1](../ex1/README.md#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh) where we created this Queue. Make sure you enter the same Queue name.
    
+Set the 'Acknowledgement Mode' to 'Automatic on Exchange Complete'.
    
 Leave all other attributes with their default values.
 <br>![](../ex4/images/image-7.png)
@@ -48,7 +50,7 @@ We are done with the first block.
 >[!TIP]
 >Keep clicking 'Save' periodically over the course of this exercise so that you don't lose your work if the browser session were to time out.
 
-## Step 3 - Massage the data event received from the Adapter
+## Step 3 - Enrich the data event received from the Adapter
 In the next few steps, we will enrich the support case data received from the Adapter and prepare it for further processing.
 1. Click on the (+) Add Flow Step button to add a new step.
 <br>![](../ex4/images/image-8.png)
@@ -97,7 +99,7 @@ In the next few steps, we will enrich the support case data received from the Ad
 
 1.  Name this step as 'Extract Support Case and Customer ID'. As you may have guessed, we will extract the Support Case & the Customer ID from the XML document's XPath expression.
    
-    Go to the 'Exchange Property' tab of the property sheet of this step. Click on 'Add' thrice to add three properties.
+    Go to the 'Exchange Property' tab of the property sheet of this step. Click on 'Add' thrice to add three new Properties.
 <br>![](../ex4/images/image-16.png)
 
 1. Copy the values from the table for Property settings.
@@ -109,7 +111,7 @@ In the next few steps, we will enrich the support case data received from the Ad
 <br>![](../ex4/images/image-17.png)
 
 ## Step 4 - Filter out 'noisy' events and keep your Support Case data clean and accurate
-Since we have subscribed to the Support Case Create event, an event will be emitted on the shared topic (sap/teched/2025/servicecloud/supportcase/created) each time a participant logs a support ticket. You may recall this step from [Exercise 1](../ex1/README.md#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh).
+Since we have subscribed to the Support Case Create event, an event will be emitted on the shared topic (`sap/teched/2025/servicecloud/supportcase/created`) each time a participant logs a support case. You may recall this step from [Exercise 1](../ex1/README.md#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh).
 
 Although each participant has their own Queue subscription, the Topic itself is shared. As a result, your Queue will receive events for support cases created by all participants, which could lead to inaccurate or misleading summarizations. To address this, we will implement additional filtering steps to remove unnecessary 'noise' and ensure the data remains relevant and accurate.
 
@@ -123,7 +125,7 @@ We will now create two processing routes based on the customer ID retrieved from
 1. Place the box below the 'Route Customer ID' step. Title this step as 'Set Custom Status'.
 <br>![](../ex4/images/image-20.png)
 
-1. Click-hold on the 'connector' button of the router step, drag the connector, and place it on the 'Set Custom Status' content modifier.
+1. Click-hold on the 'Connector' button of the router step, drag the connector, and place it on the 'Set Custom Status' content modifier.
 <br>![](../ex4/images/image-21.png)
 
 1. After this second route is created, title it as 'Others'. Mark this as the 'Default Route' by checking the box. 
@@ -310,7 +312,7 @@ Write text here
 1. Proceed to the 'Connection' section in the property sheet for the Adapter. Maintain the following attributes for the properties:
    | Field | Value |
     | ----- | ----- |
-    | Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0` |
+    | Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<your-deployment-id>/v2/embeddings` (replace `<your-deployment-id>` with the one from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) after you created the deployment) |
     | Method | POST |
     | Authentication | OAuth2Client Credentials|
     | Credential Name  | `aicore_credentials` |

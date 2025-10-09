@@ -1,6 +1,6 @@
 # Exercise 4 - Integration Suite – IFlow Support Case Event to Hana Vector DB for AI Grounding
 
-In this exercise, we will put together an IFlow to receive the notification event that is emitted upto the creation of a Support Case in SAP Service Cloud with an AEM Adapter. Unlike the case we dealt with in Exercise 3, SAP Service Cloud will emit the entire data as part of the event framework, as opposed to S/4HANA that only emitted a notification event. These relevant details from the Support Case event will be transformed into text embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs, as we accomplished in the [previous](../ex2/README.md) exercise. 
+In this exercise, we will put together an IFlow to receive the notification event that is emitted upto the creation of a Support Case in SAP Service Cloud Version V2 with an AEM Adapter. Unlike the case we dealt with in Exercise 3, SAP Service Cloud will emit the entire data as part of the event framework, as opposed to S/4HANA that only emitted a notification event. These relevant details from the Support Case event will be transformed into text embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs, as we accomplished in the [previous](../ex2/README.md) exercise. 
 
 The resulting embeddings will be stored in a connected HANA Vector Database, enabling efficient retrieval and text summarization when queried through the Joule assistant.
 

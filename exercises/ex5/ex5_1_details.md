@@ -51,14 +51,15 @@ In this exercise we will create a Sales Order in SAP S/4HANA that will eventuall
 
 6. The new Sales Order has been successfully created in the system. A new event has been published in the background to AEM. 
 
-   ![Pic S4 6](./images/ex5-s4-6.png)
+   ![Pic S4 6](./images/ex5-s4-8.png)
 
-   > [!NOTE]
-   > If you have seen warning message in the previous step, you'll also see a warning in the summary.
-   > Still, your Sales Order should have been successfully created. Click on the **Close** button. 
-   > ![Pic S4 7](./images/ex-s4-7.png)
+> [!NOTE]
+> If you have seen warning message in the previous step, you'll also see a warning in the summary.
+> Still, your Sales Order should have been successfully created. Click on the **Close** button. 
+
+![Pic S4 7](./images/ex-s4-7.png)
 
  ## Summary
  This wraps up the 'Sales Order' creation process. An event would have been triggered now based on the settings we [defined](../ex1/README.md#exercise-12---create-first-queue-and-subscribe-to-sales-order-topic-in-sap-integration-suite-advanced-event-mesh-aem) on the AEM side. The notification will be picked up the the AEM Adapter and trigger the IFlow.
 
- Once the flow completes, we can review the execution path in the next exercise.
+ Once the flow completes, we can review the execution path in the [next exercise](./ex5_2_details.md).
