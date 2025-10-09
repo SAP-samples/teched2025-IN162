@@ -1,4 +1,4 @@
-# Exercise 5 - Create a new Sales Order and a Support Case to trigger the respective integrations using an event-driven pattern.
+# Exercise 5 - Create a new Sales Order and a Support Case to trigger the respective integrations using an event-driven pattern
 
 Now that the required Integration Flows have been configured and deployed, the next step is to **trigger and validate the event-based integrations** between the systems by creating a **Sales Order** in the **SAP S/4HANA Cloud** system and a **Support Case** in the **SAP Service Cloud Version 2** system. These actions will emit the configured business events, which will subsequently trigger the respective downstream integrations, ensuring **real-time vector grounding of business objects** across the connected systems.
 
