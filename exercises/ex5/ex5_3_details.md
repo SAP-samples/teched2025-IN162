@@ -4,14 +4,14 @@ In this exercise, we will create a support case in SAP Service Cloud Version 2 t
 
 ## Step 1 - Log on to SAP Service Cloud Version 2 system
 
-1.  Paste the URL: `https://my1001903.de1.demo.crm.cloud.sap/` in your browser window where you would have previously logged into the AEM URL (`https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073`) as part of [Exercise 1](../ex1/README.md#exercise-11---log-into-advanced-event-mesh-and-explore-it)
+1.  Log on to [SAP Service Cloud Version 2](https://my1001903.de1.demo.crm.cloud.sap/) tenant using the user ID and password that is already provided by the instructors. Log on to the same browser window where you would have previously logged into the [AEM](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073) tenant as part of [Exercise 1](../ex1/README.md#exercise-11---log-into-advanced-event-mesh-and-explore-it)
 
-    > [!IMPORTANT]
-    > The reason why you are expected to use the same windows is that the login session to SAP Service Cloud utilizes SAML browser cookies to extend SSO from AEM.
+    > [Note:]
+    > <br>The reason why you are expected to use the same windows is that the login session to SAP Service Cloud utilizes SAML browser cookies to extend SSO from AEM.
     > 
     > If you have closed all browser windows, make sure to log into AEM and then open SAP Service Cloud Version 2 in a separate tab of the same window.
     > 
-    Click on 'Sign in using SSO'.
+    Click on **'Sign in using SSO'**.
 
     ![](../ex5/images/image6.png)
 
@@ -19,19 +19,19 @@ In this exercise, we will create a support case in SAP Service Cloud Version 2 t
 
     ![](../ex5/images/image7.png)
 
-3.  Click on 'Create Case'.
+3.  Click on **Create Case** tile.
 
     ![](../ex5/images/image1.png)
 
-4.  In the 'new case' window, use the pre-configured Case Type. Use the table to enter the values:
+4.  In the **'new case'** window, use the pre-configured Case Type. Use the table to enter the values:
     | Field | Value |
     | ----- | ----- |
-    | Case Type | Standard Service for TechEd 2025 IN162 Hands-on Session |
-    | Subject | Damaged goods received in Order#1620** (replace `**` with your assigned participant number) |
-    | Support Case By Customer | IN162-`0**` (replace `**` with your assigned participant number) |
-    | Priority | Urgent |
-    | Escalation Status | Escalated |
-    | Description | Dear Support Team, I am writing to report that some items in my recent order, #1620** (replace `**` with your assigned participant number), arrived damaged. The order was received on 20th of September 2025. I have attached photos showing the damage for your review. Please advise on the next steps to resolve this issue, such as a replacement or refund. Thank you for your assistance. |
+    | **Case Type** | Standard Service for TechEd 2025 IN162 Hands-on Session |
+    | **Subject** | Damaged goods received in Order#1620** (replace `**` with your assigned participant number) |
+    | **Support Case By Customer** | IN162-`0**` (replace `**` with your assigned participant number) |
+    | **Priority** | Urgent |
+    | **Escalation Status** | Escalated |
+    | **Description** | Dear Support Team, <br><br>I am writing to report that some items in my recent order, #1620** (replace `**` with your assigned participant number), arrived damaged. The order was received on 30th of October 2025. I have attached photos showing the damage for your review. Please advise on the next steps to resolve this issue, such as a replacement or refund. <br><br>Thank you for your assistance. |
    
     ![](../ex5/images/image2.png)
 
