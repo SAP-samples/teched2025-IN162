@@ -32,10 +32,34 @@ You need not build the any of the artifacts in this exercise but you will use th
 	1. https://in162-ntn259xc.eu10.build.cloud.sap/
 	2. Moderators will provide you the credentials
 2. Understand Action details for Joule Skill in SAP Build Process Automation
-	1.  "Joule Skill Prompt to GenAI Summarization with Vector Grounding" integration flow was used to create an Action
-	2.  The above action was added to "GenAI Summarization with Vector Grounding" Action Project
-	3.  Input and Output  were defined to take user input (prompt) as input and get the summarized output
-		
+	1. "Joule Skill Prompt to GenAI Summarization with Vector Grounding" integration flow was used to create an Action
+	2. The above action was added to "GenAI Summarization with Vector Grounding" Action Project
+	3. Input and Output  were defined to take user input (prompt) as input and get the summarized output
+    <br><br>
+   	![Pic 21-2](./images/ex62-1.png)
+	<br><br>
+	![Pic 21-2](./images/ex62-2.png)
+	<br><br>
+	![Pic 21-2](./images/ex62-3.png)
+	<br><br>
+	![Pic 21-2](./images/ex62-4.png)
+	<br><br>
+	![Pic 21-2](./images/ex62-5.png)
+	<br><br>
+	4. "Customer Success Assistant" Joule Skill was created in "IN162_Custome_Success_Assistant" project using the Action created in previous step.
+	<br><br>
+	![Pic 21-2](./images/ex62-6.png)
+	<br><br>
+	![Pic 21-2](./images/ex62-7.png)
+	<br><br>
+		![Pic 21-2](./images/ex62-8.png)
+	<br><br>
+		![Pic 21-2](./images/ex62-9.png)
+	<br><br>
+		![Pic 21-2](./images/ex62-10.png)
+	<br><br>
+		![Pic 21-2](./images/ex62-11.png)
+	<br><br>
 ## Exercise 6.3 - Generate customer specific sales order and support ticket summary of talking points
 
 1. Open the standalone Joule for testing purposes
@@ -43,6 +67,7 @@ You need not build the any of the artifacts in this exercise but you will use th
 	1. I will be meeting my customer, BestRun IN162-000, tomorrow as their Customer Success Partner. Could you help me prepare for the meeting by summarizing and displaying the recent sales order and support tickets? Gave this input
 3. Wait for the response from Joule
 	1. Response will have a list of historical sales order and list of tickets raised by the customer IN162-0XX
+
 
 
 
