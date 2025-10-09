@@ -8,13 +8,24 @@ You need not build the any of the artifacts in this exercise but you will use th
 1. You can view the pre-build Integration Flow on this system
     1. https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design
     2. Moderators will provide you the credentials
-4. Open the integration flow "Joule Skill Prompt to GenAI Summarization with Vector Grounding"
-5. Go through the steps to understand steps
+     
+2. Open the integration flow "Joule Skill Prompt to GenAI Summarization with Vector Grounding"
+	<br><br>
+   ![Pic 21-2](./images/ex61-1.png)
+	<br><br>
+   ![Pic 21-2](./images/ex61-2.png)
+   <br><br>
+   ![Pic 21-2](./images/ex61-3.png)
+   <br><br>
+   ![Pic 21-2](./images/ex61-4.png)
+   <br><br>
+4. Go through the steps to understand steps
    1. Integration Flows is triggered using HTTPS sender adapter, this helps us to easily expose Integration Flow as Action in SAP Build Process Automation (see Exercise 6.2 for details)
    2. The user input (entered in Joule) is send to AI Core for generation of embeddings. An embedding model
    3. These embedding are used to search the matching historical information (sales orders and service tickets) from HANA Vector DB through JDBC call
    4. The response is then summarized using AI Adapter and sent back 
-
+   ![Pic 21-2](./images/ex61-5.png)
+   <br><br>
 ## Exercise 6.2 - Go through pre-build Joule Skill to trigger the generation of key talking points for customer meeting
 
 1. You can access the pre-build Joule skill on this system
@@ -32,5 +43,6 @@ You need not build the any of the artifacts in this exercise but you will use th
 	1. I will be meeting my customer, BestRun IN162-000, tomorrow as their Customer Success Partner. Could you help me prepare for the meeting by summarizing and displaying the recent sales order and support tickets? Gave this input
 3. Wait for the response from Joule
 	1. Response will have a list of historical sales order and list of tickets raised by the customer IN162-0XX
+
 
 
