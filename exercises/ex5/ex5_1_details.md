@@ -1,8 +1,8 @@
 # Exercise 5.1 - Create a new Sales Order in S/HANA Cloud system
 
-In this exercise, we will create a Sales Order in SAP S/4HANA that will eventually trigger the IFlow we built in [Exercise 3](../ex3/README.md)
+In this exercise, we will create a new Sales Order in SAP S/4HANA Cloud system that will eventually trigger the integration flow that we built in [Exercise 3](../ex3/README.md)
 
-1. Log into [SAP S/4Hana Cloud system](https://my427029.s4hana.cloud.sap/ui)\
+1. Log on to [SAP S/4HANA Cloud](https://my427029.s4hana.cloud.sap/ui) system
    Username/Password: provided by the moderator
 
 2. Find on the displayed landing page the **Apps** section. Under **Recommended** you will find the **Create Sales Orders** app.\
@@ -57,7 +57,7 @@ In this exercise, we will create a Sales Order in SAP S/4HANA that will eventual
 > If you have seen a warning message in the previous step, you'll also see a warning in the summary.
 > Still, your Sales Order should have been successfully created. Click on the **Close** button. 
 
-![Pic S4 7](./images/ex-s4-7.png)
+![Pic S4 7](./images/ex5-s4-7.png)
 
  ## Summary
  This wraps up the 'Sales Order' creation process. An event would have been triggered now based on the settings we [defined](../ex1/README.md#exercise-12---create-first-queue-and-subscribe-to-sales-order-topic-in-sap-integration-suite-advanced-event-mesh-aem) on the AEM side. The notification will be picked up from the AEM Adapter and trigger the IFlow.
