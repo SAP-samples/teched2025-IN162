@@ -170,7 +170,8 @@ We will now create two processing routes based on the customer ID retrieved from
 <br>![](../ex4/images/image-31.png)
 
 ## Step 5 - Perform a message mapping to cleanse the data 
-Write text here.
+In this step, we will utilize the 'message mapping' functionality to cleanse the quality of the support case payload from the system. This step is needed to make the demonstration cleaner. We will concatenate and tailor certain files for better readibiilty.
+
 
 1. Turning our attention now to the 'Assigned' route, click on (+) to add a flow step.
 <br>![](../ex4/images/image-32.png)
@@ -224,7 +225,7 @@ Write text here.
 <br>![](../ex4/images/image-45.png)
 
 ## Step 6 - Prepare data payload to invoke the embedding model of the AI Service 
-Write text here
+In this step we will utilize the deployment URL of the AI model we consumed in [Exercise 2](../ex2/README.md) using SAP Generative Hub and AI Core's capabilties to generate text embeddings of our support case data payload. 
 
 1. Click on (+) button to add a new flow step.
 <br>![](../ex4/images/image-46.png)
@@ -321,7 +322,7 @@ Write text here
     <br>![](../ex4/images/image-59.png)
 
 ## Step 7 - Prepare data payload to persist text embeddings into HANA Vector DB 
-enter text here...
+In this step, the generated embeddings are inserted into the SAP HANA Cloud vector database using JDBC receiver adapter, ensuring real-time grounding of Support Case objects.
 
 1. After the 'Get Text Embeddings' step, click on the (+) button to 'Add a Flow Step'.
 <br>![](../ex4/images/image-60.png)

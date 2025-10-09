@@ -279,7 +279,7 @@ In this step, we will utilize the 'message mapping' functionality to cleanse the
 <br>![](../ex3/images/image60.png)
 
 ## Step 7 - Prepare data payload to invoke the embedding model of the AI Service 
-Write text here.
+In this step we will utilize the deployment URL of the AI model we consumed in [Exercise 2](../ex2/README.md) using SAP Generative Hub and AI Core's capabilties to generate text embeddings of our sales order payload.
 
 1. Click on (+) button to add a new flow step.
 <br>![](../ex3/images/image61.png)
@@ -299,7 +299,7 @@ Write text here.
   
     <br>![](../ex3/images/image66.png)
 
-1. Click on (+) to add a new Flow Step
+2. Click on (+) to add a new Flow Step
 <br>![](../ex3/images/image63.png)
 
 1. Select 'groovy script' in the Add Flow Step dialog.
@@ -405,7 +405,7 @@ Write text here.
     <br>![](../ex3/images/image80.png)
 
 ## Step 8 - Prepare data payload to persist text embeddings into HANA Vector DB 
-enter text here...
+In this step, the generated embeddings are inserted into the SAP HANA Cloud vector database using JDBC receiver adapter, ensuring real-time grounding of Sales Order objects.
 
 1. After the 'Get Text Embeddings' step, click on the (+) button to 'Add a Flow Step'.
 <br>![](../ex3/images/image81.png)
@@ -416,7 +416,7 @@ enter text here...
 1. Title the step as 'Prepare SQL Statement'. Click on the 'Create' button on the step.
 <br>![](../ex3/images/image83.png)
 
-2. Copy the following Groovy script and paste it into the script editor.
+1. Copy the following Groovy script and paste it into the script editor.
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message;
     import groovy.json.JsonSlurper;
@@ -444,7 +444,7 @@ enter text here...
     Click on 'Apply' and after the changes are applied, click  'Close' to exit the script editor. 
     <br>![](../ex3/images/image84.png)
 
-1. After this step, click on (+) to add a new flow step.
+2. After this step, click on (+) to add a new flow step.
 <br>![](../ex3/images/image85.png)
 
 1. Add a 'Request-Reply' step in the 'Add Flow step' dialog. Title the step as 'Insert Embeddings to Vector DB'. 
