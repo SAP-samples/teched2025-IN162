@@ -1,5 +1,7 @@
 # Exercise 4.2 - Copy an existing IFlow to receive a Support Case creation event, transform into embeddings, and persist to HANA Vector DB
 
+Make sure you come to this exercise after completing [Exercise 4](./README.md).
+
 In this exercise, instead of building an IFlow from scratch, we will copy a completed IFlow from the source package and configure the parameters that have been externalized for the participants.
 
 > [!IMPORTANT]  

@@ -1,5 +1,7 @@
 # Exercise 3.1 - Create an IFlow from scratch to receive a Sales Order creation event, transform into embeddings, and persist to HANA Vector DB
 
+Make sure you come to this exercise after completing [Exercise 3](./README.md).
+
 In this exercise, you will build an IFlow from scratch. Please ensure you follow the steps in the exact sequence outlined in this guide.
 
 ## Step 1 - Create a new IFlow 
@@ -56,7 +58,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
 <br>![](../ex3/images/image10.png)
 
 1. Select a 'Groovy Script' in the 'Add Flow Step' dialog.
-<br>![](../ex3/images/image11.png)
+<br><img src="../ex3/images/image11.png" width=80% height=80%>
 
 1. Title this step 'Log Sales Order Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter. 
     

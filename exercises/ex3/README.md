@@ -9,11 +9,17 @@ For your convenience, this exercise is offered in two formats:
 - Recommended Approach ([Exercise 3.1](./ex3_1_details.md)): Build the IFlow from scratch by following step-by-step instructions. This method provides a deeper hands-on experience and a better understanding of the flow design.
 - Alternate Approach ([Exercise 3.2](./ex3_2_details.md)): Skip the build steps and instead copy a fully prepared IFlow, applying only minimal configuration before deployment. This option is ideal for participants who have limited time or prefer to work with pre-built content.
 
-Irrespective of the approach you choose, let's begin the exercise by creating a package to get started.
+Irrespective of the approach you choose, let's begin the exercise by logging into your designated tenant and creating a package to get started.
 
-## Step 1 - Create a package in your designated tenant
+## Step 1 - Log into your designated Integration Suite tenant
 
-1. Log into your assigned Integration Suite tenant and 'Create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu (Click on the 'hamburger' icon on the left to launch the menu, if it's hidden).
+1. Log on to [SAP Integration Suite](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design) tenant using the user ID and password that is already provided by the instructors.
+     <br><img src="../ex3/images/image106.png" width=40% height=40%>
+     > **Note**: Pay attention that we are using the user`**` pattern to log into the Integration Suite tenant and not the IN162-`***` pattern as you have used in the previous exercise. However, for the subsequent steps of the exercise you will need to present IN162-`***` as your unique user identifier.
+
+## Step 2 - Create a package in your Integration Suite tenant
+
+1. Now that you are logged into the tenant,  'Create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu (Click on the 'hamburger' icon on the left to launch the menu, if it's hidden).
 <br>![](../ex3/images/image1.png)
 
 2. Enter the following details to describe the package.
