@@ -17,7 +17,7 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
     Click on 'Edit' to get started.
 <br>![](../ex4/images/image-3.png)
 
-## Step 2 - AEM Sender Adapter to receive events from Support Cloud system
+## Step 2 - AEM Sender Adapter to receive events from the Support Cloud system
 In this step, we will configure the AEM Adapter to receive events from the Support Cloud System
 1. Connect the 'Sender' system (titled AEM) to the 'Start' event by holding and dragging your mouse pointer. 
 <br>![](../ex4/images/image-4.png)
@@ -39,7 +39,7 @@ In this step, we will configure the AEM Adapter to receive events from the Suppo
 1.  Next, head over to the 'Processing' tab and enter 'IN162-`000`_Support_Case' in the Queue Name field (replace `000` with your assigned user identifier). 
    
 > [!IMPORTANT]
-> Refer to [Exercise 1](../ex1/README.md#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh) where we created this Queue. Make sure you enter the same Queue name.
+> Refer to [Exercise 1](../ex1/README.md#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh) where we created this Queue. Confirm that the queue name entered here matches the one defined previously.
    
 Set the 'Acknowledgement Mode' to 'Automatic on Exchange Complete'.
    
@@ -88,7 +88,7 @@ In the next few steps, we will enrich the support case data received from the Ad
 
 1. Look for the 'JSON to XML Converter' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
 
-    In the step, we are converting the JSON representation of the data event to its XML equivalent so that it can be easily extracted later.
+    In this step, we convert the JSON representation of the data event into its XML equivalent to enable easier data extraction later.
 <br>![](../ex4/images/image-13.png)
 
 1. Next, after this Converter step, go ahead and add a new flow step.
