@@ -8,11 +8,11 @@ In this exercise, we will create a new Sales Order in SAP S/4HANA Cloud system t
 2. Find on the displayed landing page the **Apps** section. Under **Recommended** you will find the **Create Sales Orders** app.\
    Click the tile to start the Sales Order creation wizard.   
 
-   ![Pic S4 1](./images/ex5-s4-1.png)
+   <img src="../ex5/images/ex5-s4-1.png" width=100% height=100%>
 
 3. Provide the following details to create the new Sales Order:
 
-   ![Pic S4 2](./images/ex5-s4-2.png)
+   <img src="../ex5/images/ex5-s4-2.png" width=50% height=100%>
 
    - Sales Order Type: **Standard Order (OR)**
    - Sales Organization: **US Sales Org. (1710)**
@@ -26,7 +26,7 @@ In this exercise, we will create a new Sales Order in SAP S/4HANA Cloud system t
 
 4. You need to fill in further details for the Sales Order to be created
 
-   ![Pic S4 3](./images/ex5-s4-3.png)
+   <img src="../ex5/images/ex5-s4-3.png" width=80% height=100%>
 
    - Sold-to Party: **Domestic US Customer 1 (17100001)**
    - Customer Reference: **IN162-`XXX`** (replace `XXX` with your assigned group identifier)
@@ -37,7 +37,7 @@ In this exercise, we will create a new Sales Order in SAP S/4HANA Cloud system t
 5. Scroll further down to the **Items** section\
    You can add as many items to your order as you would like.
 
-   ![Pic S4 4](./images/ex5-s4-4.png)
+   <img src="../ex5/images/ex5-s4-4.png" width=80% height=100%>
 
    - Select any of the available products from the list. A good starting point is the products starting with `FG`. :wink:
    - Provide the amount that you would like to order and hit `ENTER` key to complete the entry.
@@ -47,17 +47,17 @@ In this exercise, we will create a new Sales Order in SAP S/4HANA Cloud system t
 > [!NOTE]
 > Depending on the products that you selected, you might see a warning message.
 > In most cases, you can safely ignore this message and simply click **Save**. 
-![Pic S4 5](./images/ex5-s4-5.png)
+<img src="../ex5/images/ex5-s4-5.png" width=80% height=100%>
 
 6. The new Sales Order has been successfully created in the system. A new event has been published in the background to AEM. 
 
-   ![Pic S4 6](./images/ex5-s4-8.png)
+   <img src="../ex5/images/ex5-s4-8.png" width=100% height=100%>
 
 > [!NOTE]
 > If you have seen a warning message in the previous step, you'll also see a warning in the summary.
 > Still, your Sales Order should have been successfully created. Click on the **Close** button. 
 
-![Pic S4 7](./images/ex5-s4-7.png)
+<img src="../ex5/images/ex5-s4-7.png" width=50% height=100%>
 
  ## Summary
  This wraps up the 'Sales Order' creation process. An event would have been triggered now based on the settings we [defined](../ex1/README.md#exercise-12---create-first-queue-and-subscribe-to-sales-order-topic-in-sap-integration-suite-advanced-event-mesh-aem) on the AEM side. The notification event will be picked up from the AEM Adapter and trigger the integration flow.
