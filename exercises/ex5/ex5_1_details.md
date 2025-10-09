@@ -60,6 +60,6 @@ In this exercise, we will create a new Sales Order in SAP S/4HANA Cloud system t
 ![Pic S4 7](./images/ex5-s4-7.png)
 
  ## Summary
- This wraps up the 'Sales Order' creation process. An event would have been triggered now based on the settings we [defined](../ex1/README.md#exercise-12---create-first-queue-and-subscribe-to-sales-order-topic-in-sap-integration-suite-advanced-event-mesh-aem) on the AEM side. The notification will be picked up from the AEM Adapter and trigger the IFlow.
+ This wraps up the 'Sales Order' creation process. An event would have been triggered now based on the settings we [defined](../ex1/README.md#exercise-12---create-first-queue-and-subscribe-to-sales-order-topic-in-sap-integration-suite-advanced-event-mesh-aem) on the AEM side. The notification event will be picked up from the AEM Adapter and trigger the integration flow.
 
  Once the flow completes, we can review the execution path in the [next exercise](./ex5_2_details.md).
