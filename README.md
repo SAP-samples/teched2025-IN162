@@ -85,13 +85,17 @@ The complete list of exercise steps are listed below, run through them in the gi
 - [Exercise 4 - Integration Suite - IFlow Service Cloud Support Case to Embedding Model to SAP Hana Vector DB](exercises/ex4/)
     - [Exercise 4.1 - Create an IFLow from scratch to receive a Support Case creation event, transform into embeddings and persist to HANA Vector DB](exercises/ex4/README.md)
     - [Exercise 4.2 (Optional and an alternate to Exercise 4.1) - Copy an existing IFLow to receive a Support Case creation event, transform into embeddings and persist to HANA Vector DB](exercises/ex4/README.md)
-- [Exercise 5 - Triggering the Integration by creating a Sales Order and Monitoring the runtime flows](exercises/ex5/README.md)
-    - [Exercise 5.1 - Create a new Sales Order in S/4HANA Cloud system](exercises/ex5/README.md)
-    - [Exercise 5.2 - Monitor IFlow execution](exercises/ex5/README.md)
+- [Exercise 5 - Create a new Sales Order and a Support Case to trigger the respective integrations using an event-driven pattern](exercises/ex5/README.md)
+    - [Exercise 5.1 - Create a new Sales Order in SAP S/4HANA Cloud system](exercises/ex5_1_details.md)
+    - [Exercise 5.2 - Monitor Message Processing Logs in Cloud Integration after Sales Order Creation](exercises/ex5_2_details.md)
+    - [Exercise 5.3 - Create a new Support Case in SAP Service Cloud Version 2 system](exercises/ex5_3_details.md)
+    - [Exercise 5.4 - Monitor Message Processing Logs in Cloud Integration after Support Case Creation](exercises/ex5_4_details.md)
 - [Exercise 6 - Generate summary of talking points for Customer meeting by estending Joule with Joule Skill](exercises/ex6/)
     - [Exercise 6.1 - Go through pre-build Integration Flow to summarize the current status of the customer using Generative AI Hub](exercises/ex6#exercise-62---go-through-pre-build-joule-skill-to-trigger-the-generation-of-key-talking-points-for-customer-meeting) 
     - [Exercise 6.2 - Go through pre-build Joule Skill to trigger the generation of key talking points for customer meeting](exercises/ex6#exercise-63---generate-customer-specific-sales-order-and-support-ticket-summary-of-talking-points)
     - [Exercise 6.3 - Generate customer specific sales order and support ticket summary of talking points](exercises/ex6#exercise-63---generate-customer-specific-sales-order-and-support-ticket-summary-of-talking-points)
+
+## Troubleshooting Guide
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
