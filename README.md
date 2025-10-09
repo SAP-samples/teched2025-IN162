@@ -88,9 +88,10 @@ The complete list of exercise steps are listed below, run through them in the gi
 - [Exercise 5 - Triggering the Integration by creating a Sales Order and Monitoring the runtime flows](exercises/ex5/README.md)
     - [Exercise 5.1 - Create a new Sales Order in S/4HANA Cloud system](exercises/ex5/README.md)
     - [Exercise 5.2 - Monitor IFlow execution](exercises/ex5/README.md)
-- [Exercise 6 - SAP Build based Joule Assistant with Joule Skill](exercises/ex6/)
-    - [Exercise 6.1 - Already been created with one IFlow and Gen AI Hub API](exercises/ex6/README.md)
-    - [Exercise 6.2 - Execution with the prompt ](exercises/ex6/README.md)
+- [Exercise 6 - Generate summary of talking points for Customer meeting by estending Joule with Joule Skill](exercises/ex6/)
+    - [Exercise 6.1 - Go through pre-build Integration Flow to summarize the current status of the customer using Generative AI Hub](exercises/ex6#exercise-62---go-through-pre-build-joule-skill-to-trigger-the-generation-of-key-talking-points-for-customer-meeting) 
+    - [Exercise 6.2 - Go through pre-build Joule Skill to trigger the generation of key talking points for customer meeting](exercises/ex6#exercise-63---generate-customer-specific-sales-order-and-support-ticket-summary-of-talking-points)
+    - [Exercise 6.3 - Generate customer specific sales order and support ticket summary of talking points](exercises/ex6#exercise-63---generate-customer-specific-sales-order-and-support-ticket-summary-of-talking-points)
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
