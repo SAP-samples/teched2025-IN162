@@ -11,7 +11,7 @@ In this exercise, we will monitor the processing logs from the Integration Suite
 3. You may remember that we had assigned the Application_ID header only when a matching condition was met. Hence, you will see the message entries filtered only for your individual execution runs. You can verify that the 'Custom Status' will always point to 'Successful: Customer ID matched'.
    <br>![](../ex5/images/image17.png)
 
-4. Scroll down further, and in the 'Attachments' section, you will be able to see 2 files as attachments. These files are the representation of the incoming event payload and the final flattened payload we generated after the message mapping step. 
+4. Scroll down further, and in the 'Attachments' section, you will be able to see 2 files as attachments. These files represent the incoming event payload and the final flattened payload produced after the message mapping step. 
     <br>![](../ex5/images/image18.png)
 
 5. Click on the 'Sales Order Event Payload' link. This will render the attachment in a new window. You can verify that the value of the `SalesOrder` attribute matches the one that we had created in the final step of the previous exercise.
