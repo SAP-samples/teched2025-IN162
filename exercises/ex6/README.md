@@ -1,14 +1,12 @@
-# Exercise 6 - Generate summary of talking points for Customer meeting by estending Joule with Joule Skill
-In this final exercise, you will provide a user input as prompt to Joule to generate the summary of talking points. You will also understand how Customer Success Manager can use Joule Skill and Integration Flows to prepare customer meeting with latest information about the Sales Orders and Support Tickets
-The focus of the hands-on is to build and run real time grounding for LLMs using Integration Suite thus in this exercise we provide you a pre-build Integration Flow and pre-build Joule Skill. Integration Flow "Joule Skill Prompt to GenAI Summarization with Vector Grounding" is exposed as an API which intern is called from Joule Skill "Customer Success Assistant". 
+# Exercise 6 - Customer Success Digital Assistant: Extending Joule with Joule Skill using Real-Time Vector Grounding
+In this last exercise, you will provide a user input as a prompt to the Joule-powered Customer Success Digital Assistant to generate a summary of talking points for a customer meeting with the latest information on Sales Orders and Support Tickets.
+The focus of this hands-on session is to build and run real-time grounding for LLMs using the SAP Integration Suite. In this exercise, you will use a pre-built Integration Flow and a pre-built Joule Skill. The Integration Flow, **“Joule Skill Prompt to GenAI Summarization with Vector Grounding”** is exposed as an API, which is invoked by the Joule Skill **“Customer Success Assistant”** using the SAP Build Action to generate contextually grounded responses.
 
-### *You need not build any of the artifacts in this exercise. You will use the pre-build artifacts to generate the summarized report.*
+### No artifact development is required in this exercise. You will use the pre-built artifacts to generate a summary for the customer meeting as a Customer Success Manager.
 
-## Exercise 6.1 - Go through pre-build Integration Flow to summarize the current status of the customer using Generative AI Hub
+## Exercise 6.1 - Go through pre-built Integration Flow to summarize the current status of the customer using Generative AI Hub (Optional)
 
-**You need not build any of the artifacts in this exercise integration flow is provided pre-build**
-
-1. You can view the pre-build Integration Flow on this system
+1. You can view the pre-built Integration Flow on this system
     1. https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design
     2. Moderators will provide you the credentials
      
@@ -22,7 +20,7 @@ The focus of the hands-on is to build and run real time grounding for LLMs using
    <br><br>
    ![Pic 21-2](./images/ex61-4.png)
    <br><br>
-4. Go through the steps to understand steps
+4. Go through the steps to understand it
    1. Integration Flows is triggered using HTTPS sender adapter, this helps us to easily expose Integration Flow as Action in SAP Build Process Automation (see Exercise 6.2 for details)
    2. The user input (entered in Joule) is send to AI Core for generation of embeddings. An embedding model
    3. These embedding are used to search the matching historical information (sales orders and service tickets) from HANA Vector DB through JDBC call
@@ -30,12 +28,9 @@ The focus of the hands-on is to build and run real time grounding for LLMs using
    ![Pic 21-2](./images/ex61-5.png)
    <br><br>
 
-## Exercise 6.2 - Go through pre-build Joule Skill to trigger the generation of key talking points for customer meeting
+## Exercise 6.2 - Go through pre-built Joule Skill to trigger the generation of key talking points for customer meeting (Optional)
 
-**You need not build any of the artifacts in this exercise Joule Skill is provided pre-build to generate the summarized report.**
-
-
-1. You can access the pre-build Joule skill on this system
+1. You can access the pre-built Joule skill on this system
 	1. https://in162-ntn259xc.eu10.build.cloud.sap/
 	2. Moderators will provide you the credentials
 2. Understand Action details for Joule Skill in SAP Build Process Automation
@@ -67,6 +62,7 @@ The focus of the hands-on is to build and run real time grounding for LLMs using
 	<br><br>
 		![Pic 21-2](./images/ex62-11.png)
 	<br><br>
+
 ## Exercise 6.3 - Generate customer specific sales order and support ticket summary of talking points
 
 1. Open the standalone Joule for testing purposes
@@ -75,8 +71,8 @@ The focus of the hands-on is to build and run real time grounding for LLMs using
  	<br><br>
 		![Pic 21-2](./images/ex63-1.png)
 	<br><br>
-2. Change below prompt as per your user / customer name **(change IN162-000 to IN162-0/*/* according to your user group)** and enter it in joule
-	1. I am Customer Success Partner for BestRun IN162-045 customer. Could you prepare talking points and summary for my meeting with customer. Search and show all the recent sales orders and service tickets raised by this customer. Also, summarize what the response in 3 categories list of sale orders, list of service tickets and propose actions to resolve issues in service tickets.
+2. Change below prompt as per your assigned user / customer name
+	1. "I am Customer Success Partner for BestRun <b>IN162-0**</b> *(replace ** with your assigned participant number)*. Could you prepare talking points and summary for my meeting with customer. Search and show all the recent sales orders and service tickets raised by this customer. Also, summarize what the response in 3 categories list of sale orders, list of service tickets and propose actions to resolve issues in service tickets."
  	<br><br>
 	![Pic 21-2](./images/ex63-2.png)
 	<br><br>
@@ -96,8 +92,3 @@ The focus of the hands-on is to build and run real time grounding for LLMs using
 
 # Summary
 We have successfully executed the completed the hands-on exercise from real time ingestion of Sales order and service ticket data to the generation of talking points along with proposal for remedial actions and proposals to avoid issues in future based on the latest information available.
-
-
-
-
-
