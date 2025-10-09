@@ -63,10 +63,32 @@ You need not build the any of the artifacts in this exercise but you will use th
 ## Exercise 6.3 - Generate customer specific sales order and support ticket summary of talking points
 
 1. Open the standalone Joule for testing purposes
-2. Change below prompt as per your user / customer name **(change IN162-000 to IN162-0XX according to your user group)**
-	1. I will be meeting my customer, BestRun IN162-000, tomorrow as their Customer Success Partner. Could you help me prepare for the meeting by summarizing and displaying the recent sales order and support tickets? Gave this input
-3. Wait for the response from Joule
-	1. Response will have a list of historical sales order and list of tickets raised by the customer IN162-0XX
+	1. https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant
+ 	2. Moderators will provide you the credentials
+ 	<br><br>
+		![Pic 21-2](./images/ex63-1.png)
+	<br><br>
+2. Change below prompt as per your user / customer name **(change IN162-000 to IN162-0/*/* according to your user group)** and enter it in joule
+	1. I am Customer Success Partner for BestRun IN162-045 customer. Could you prepare talking points and summary for my meeting with customer. Search and show all the recent sales orders and service tickets raised by this customer. Also, summarize what the response in 3 categories list of sale orders, list of service tickets and propose actions to resolve issues in service tickets.
+ 	<br><br>
+	![Pic 21-2](./images/ex63-2.png)
+	<br><br>
+	2. Click Send and wait for the response
+	<br><br>
+    ![Pic 21-2](./images/ex63-3.png)
+	<br><br>
+3. Check and observe the response from Joule
+	1. Response will have a list of historical sales order and list of tickets raised by the customer IN162-0**
+    <br><br>
+    ![Pic 21-2](./images/ex63-4.png)
+	<br><br>
+	2. You can also find the propose actions to resolve and reduce the issues in future
+    <br><br>
+    ![Pic 21-2](./images/ex63-5.png)
+	<br><br>
+
+# Summary
+We have successfully executed the completed the hands-on exercise from real time ingestion of Sales order and service ticket data to the generation of talking points along with proposal for remedial actions and proposals to avoid issues in future based on the latest information available.
 
 
 
