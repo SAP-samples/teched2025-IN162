@@ -2,9 +2,12 @@
 In this final exercise, you will provide a user input as prompt to Joule to generate the summary of talking points. You will also understand how Customer Success Manager can use Joule Skill and Integration Flows to prepare customer meeting with latest information about the Sales Orders and Support Tickets
 The focus of the hands-on is to build and run real time grounding for LLMs using Integration Suite thus in this exercise we provide you a pre-build Integration Flow and pre-build Joule Skill. Integration Flow "Joule Skill Prompt to GenAI Summarization with Vector Grounding" is exposed as an API which intern is called from Joule Skill "Customer Success Assistant". 
 
-You need not build the any of the artifacts in this exercise but you will use the Joule Skill to generate the summarized report.
+### *You need not build any of the artifacts in this exercise. You will use the pre-build artifacts to generate the summarized report.*
 
 ## Exercise 6.1 - Go through pre-build Integration Flow to summarize the current status of the customer using Generative AI Hub
+
+**You need not build any of the artifacts in this exercise integration flow is provided pre-build**
+
 1. You can view the pre-build Integration Flow on this system
     1. https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design
     2. Moderators will provide you the credentials
@@ -26,7 +29,11 @@ You need not build the any of the artifacts in this exercise but you will use th
    4. The response is then summarized using AI Adapter and sent back 
    ![Pic 21-2](./images/ex61-5.png)
    <br><br>
+
 ## Exercise 6.2 - Go through pre-build Joule Skill to trigger the generation of key talking points for customer meeting
+
+**You need not build any of the artifacts in this exercise Joule Skill is provided pre-build to generate the summarized report.**
+
 
 1. You can access the pre-build Joule skill on this system
 	1. https://in162-ntn259xc.eu10.build.cloud.sap/
@@ -89,6 +96,7 @@ You need not build the any of the artifacts in this exercise but you will use th
 
 # Summary
 We have successfully executed the completed the hands-on exercise from real time ingestion of Sales order and service ticket data to the generation of talking points along with proposal for remedial actions and proposals to avoid issues in future based on the latest information available.
+
 
 
 
