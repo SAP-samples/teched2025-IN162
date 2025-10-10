@@ -15,7 +15,7 @@ Irrespective of the approach you choose, let's begin the exercise by logging int
 
 1. Log on to [SAP Integration Suite](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design) tenant using the user ID and password that is already provided by the instructors.
      <br><img src="../ex3/images/image106.png" width=40% height=40%>
-     > **Note**: Pay attention that we are using the user`**` pattern to log into the Integration Suite tenant and not the IN162-`***` pattern as you have used in the previous exercise. However, for the subsequent steps of the exercise you will need to present IN162-`***` as your unique user identifier.
+     > **Note**: Pay attention that we are using the user`**` pattern to log into the Integration Suite tenant and not the IN162-`***` pattern as you have used in the previous exercise. However, for the subsequent steps of the exercise, you will need to present your corresponding IN162-`***` as the unique user identifier.
 
 ## Step 2 - Create a package in your Integration Suite tenant
 
