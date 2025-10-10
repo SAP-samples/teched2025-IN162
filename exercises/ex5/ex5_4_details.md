@@ -30,5 +30,8 @@ In this exercise, we will monitor the message processing logs in the Integration
 
    <img src="../ex5/images/image15.png" width=100% height=100%>
 
+9.  Though inspecting the HANA Database is not part of our hands-on execise, here is a screenshot of the `TechEd25_IN162_Table` table in HANA, that is populated with the SalesOrder and SupportCase payload and the corresponding vectorized text embeddings.
+    <img src="../ex5/images/image26.png" width=100% height=100%>
+
 ## Summary
 This concludes the monitoring aspects of the Support Case object. In the [next exercise](../ex6/README.md), let's go ahead and provide a prompt in the Joule-powered customer success digital assistant to retrieve the summarizations based on these latest sales orders and suport cases.

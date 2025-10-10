@@ -40,5 +40,8 @@ In this exercise, we will monitor the message processing logs in the Integration
 
    <img src="../ex5/images/image24.png" width=100% height=100%>
 
+10. Though inspecting the HANA Database is not part of our hands-on execise, here is a screenshot of the `TechEd25_IN162_Table` table in HANA, that is populated with the SalesOrder payload and the corresponding vectorized text embeddings.
+    <img src="../ex5/images/image25.png" width=100% height=100%>
+
 ## Summary
 This concludes the monitoring aspects of the Sales Order object. In the [next exercise](./ex5_3_details.md), we will set things up to trigger a Support Case in SAP Service Cloud Version 2 and monitor it in SAP Integration Suite.
