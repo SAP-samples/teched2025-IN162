@@ -13,7 +13,7 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
 1. Navigate to the 'Integration and APIs' section from the 'Design' tab of your Integration Suite tenant.
    
    Click on a Package titled 'TechEd 2025 IN162 - Solution Package
-   <br>![](../ex3/images/image92.png" width=100% height=100%>
+   <br><img src="../ex3/images/image92.png" width=100% height=100%>
 
 2. Navigate to the 'Artifacts' tab of this package, look for an Integration Flow titled 'Support Case Event to Hana Vector DB for AI Grounding' and click on the '...' Action button to bring up the action menu and click on 'Copy'.
 <br><img src="../ex4/images/image-71.png" width=100% height=100%>
@@ -64,3 +64,6 @@ Now that the configuration is complete, we will move ahead and deploy the IFlow.
 
 ## Step 4 - Study the sequence of steps in the IFlow 
 It is highly recommended that you review the IFlow in detail to gain a broader understanding of its functionality. You can do so by navigating to [Exercise 4.1](./ex4_1_details.md) and inspecting the complete sequence.
+
+## Summary
+This completes Exercise 4, Next proceed to [Exercise 5](../ex5/README.md), where we will initate the creation of Sales Order and Support Cases from S/4HANA Cloud and SAP Support Cloud V2 respective and monitor the Integration Flows that finally get triggered via the AEM Adapters.

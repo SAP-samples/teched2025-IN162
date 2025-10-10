@@ -11,21 +11,21 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
 2. In the create dialog, name your integration flow as: 'IN162-`000` Sales Order Event to Hana Vector DB for AI Grounding' (replace `000` with your assigned user identifier). 
 
     Click on 'Add and Open in Editor'.
-<br><img src="../ex3/images/image4.png" width=100% height=100%>
+<br><img src="../ex3/images/image4.png" width=80% height=100%>
 
 1. Now you should see the basic skeleton of the IFlow in the editor, ready for us to start building upon. 
 
     Click on 'Edit' to get started.
-   <br><img src="../ex3/images/image5.png" width=100% height=100%>
+   <br><img src="../ex3/images/image5.png" width=80% height=100%>
 
 ## Step 2 - AEM Sender Adapter to receive events from S/4HANA
 In this step, we will configure the AEM Adapter to receive events from S/4HANA.
 
 1. Connect the 'Sender' system to the 'Start' block by click-holding and dragging your mouse pointer. 
-<br><img src="../ex3/images/image6.png" width=100% height=100%>
+<br><img src="../ex3/images/image6.png" width=80% height=100%>
 
 1. A dialog with the different adapters will pop open. Select the 'AdvancedEventMesh' adapter.
-<br><img src="../ex3/images/image7.png" width=100% height=100%>
+<br><img src="../ex3/images/image7.png" width=60% height=100%>
 
 1. Click on this newly added Adapter and navigate to the 'Connection' tab from the properties sheet at the bottom of the screen. Add the following attributes to the 'Sender Connection Details' section.
     | Field | Value |
@@ -55,7 +55,7 @@ We are done with the first block.
 In the next few steps, we will enrich the sales order data received from the Adapter and prepare it for further processing.
 
 1. Click on the (+) Add Flow Step button (on the 'Start' message block) to add a new step.
-<br><img src="../ex3/images/image10.png" width=100% height=100%>
+<br><img src="../ex3/images/image10.png" width=90% height=100%>
 
 1. Select a 'Groovy Script' in the 'Add Flow Step' dialog.
 <br><img src="../ex3/images/image11.png" width=40% height=40%>
@@ -284,7 +284,7 @@ In this step, we will utilize the 'message mapping' functionality to cleanse the
 In this step, we will utilize the deployment URL of the AI model we consumed in [Exercise 2](../ex2/README.md) using SAP Generative Hub and AI Core's capabilities to generate text embeddings of our sales order payload.
 
 1. Click on (+) button to add a new flow step.
-<br><img src="../ex3/images/image61.png" width=100% height=100%>
+<br><img src="../ex3/images/image61.png" width=90% height=100%>
 
 1. Find and select the 'XML to JSON Converter' step in the add flow step dialog.
 <br><img src="../ex3/images/image62.png" width=80% height=100%>
@@ -390,7 +390,7 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 <br><img src="../ex3/images/image77.png" width=80% height=100%>
 
 1. Release the mouse button once the ends are joined. An 'Adapter Type' dialog will pop out.
-<br><img src="../ex3/images/image78.png" width=100% height=100%>
+<br><img src="../ex3/images/image78.png" width=80% height=100%>
 
 1. Select 'HTTP' for the 'Adapter Type'.
 <br><img src="../ex3/images/image79.png" width=50% height=100%>
@@ -463,8 +463,26 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 1. Proceed to the 'Connection' tab of the property sheet and enter `SAPHANACloud` in the 'JDBC Data Source Alias' box. Note that this data source alias has already been built for you.
 <br><img src="../ex3/images/image89.png" width=100% height=100%>
 
-1. Make sure to save your changes. You can verify the data source by navigating to the 'Manage JDBC Material' tile in the 'Overview' section. You will find the SAPHANACloud data source pre-created in the 'Data Source' tab. 
-<br><img src="../ex3/images/image90.png" width=100% height=100%>
+1. Make sure to save your changes. You can verify the data source by navigating to the 'Manage JDBC Material' tile in the 'Overview' section. You will find the `SAPHANACloud` data source pre-created in the 'Data Source' tab. 
+<br><img src="../ex3/images/image90.png" width=80% height=100%>
+
+1. Access to the HANA Database itself is not part of this hands-on exercise, but just for your understadnding here is how the structure for the table `TechEd25_IN162_Table` has been defined in the default `DBADMIN` schema. 
+<br><img src="../ex3/images/image107.png" width=80% height=100%>
+
+## Step 9 - Deploying the IFlow
+1. Congratulations ! At this point you are done with creating the IFlow. You final model should look like the one pasted in the screenshot below. The deployment status is naturally 'Not deployed' at this point. 
+   
+    Click on **Save** and the '**Deploy**' button to trigger the deployment.
+ <br><img src="../ex3/images/image108.png" width=100% height=100%>
+
+ 2. Click '**Yes**' in the deployment confirmation dialog to deploy the IFlow into the selected 'Cloud Integration' profile.
+   <br><img src="../ex3/images/image109.png" width=40% height=100%>
+ 3. Click 'OK' to close the dialog.
+   <br><img src="../ex3/images/image110.png" width=50% height=100%>
+ 2. Finally, you should see the deployment status change to 'Deployed'. 
+   
+    This concludes the exercise.
+   <br><img src="../ex3/images/image111.png" width=100% height=100%>
 
 ## Summary
 

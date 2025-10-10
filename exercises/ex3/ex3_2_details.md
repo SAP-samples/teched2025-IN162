@@ -61,3 +61,7 @@ Now that the configuration is complete, we will move ahead and deploy the IFlow.
 
 ## Step 4 - Study the sequence of steps in the IFlow 
 It is highly recommended that you review the IFlow in detail to gain a broader understanding of its functionality. You can do so by navigating to [Exercise 3.1](./ex3_1_details.md) and inspecting the complete sequence.
+
+## Summary
+
+This completes Exercise 3, Next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted upon support case creation in SAP Service Cloud V2.

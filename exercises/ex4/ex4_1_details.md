@@ -382,6 +382,24 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 1. Proceed to the 'Connection' tab of the property sheet and enter `SAPHANACloud` in the 'JDBC Data Source Alias' box. Note that this data source alias has already been built for you.
 <br><img src="../ex4/images/image-69.png" width=80% height=100%>
 
+1. Access to the HANA Database itself is not part of this hands-on exercise, but just for your understadnding here is how the structure for the table `TechEd25_IN162_Table` has been defined in the default `DBADMIN` schema. 
+<br><img src="../ex3/images/image107.png" width=80% height=100%>
+
+## Step 8 - Deploying the IFlow
+1. Congratulations ! At this point you are done with creating the IFlow. You final model should look like the one pasted in the screenshot below. The deployment status is naturally 'Not deployed' at this point. 
+   
+    Click on **Save** and then '**Deploy**' button to trigger the deployment.
+ <br><img src="../ex4/images/image-84.png" width=100% height=100%>
+
+ 2. Click '**Yes**' in the deployment confirmation dialog to deploy the IFlow into the selected 'Cloud Integration' profile.
+   <br><img src="../ex3/images/image109.png" width=40% height=100%>
+ 3. Click 'OK' to close the dialog.
+   <br><img src="../ex4/images/image-85.png" width=50% height=100%>
+ 2. Finally, you should see the deployment status change to 'Deployed'. 
+   
+    This concludes the exercise.
+   <br><img src="../ex4/images/image-86.png" width=100% height=100%>
+
 ## Summary
 
 This completes Exercise 4, Next proceed to [Exercise 5](../ex5/README.md), where we will initate the creation of Sales Order and Support Cases from S/4HANA Cloud and SAP Support Cloud V2 respective and monitor the Integration Flows that finally get triggered via the AEM Adapters.
