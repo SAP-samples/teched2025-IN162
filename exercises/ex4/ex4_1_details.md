@@ -1,5 +1,5 @@
 # Exercise 4.1 - Create an IFlow from scratch to receive a Support Case creation event, transform into embeddings, and persist to HANA Vector DB
-Make sure you come to this exercise after completing [Exercise 4](./README.md).
+Make sure you come to this exercise after completing the steps in this [README.md](./README.md).
 
 In this exercise, you will build an IFlow from scratch. Please ensure you follow the steps in the exact sequence outlined in this guide.
 

@@ -1,6 +1,6 @@
 # Exercise 3.1 - Create an IFlow from scratch to receive a Sales Order creation event, transform into embeddings, and persist to HANA Vector DB
 
-Make sure you come to this exercise after completing [Exercise 3](./README.md).
+Make sure you come to this exercise after completing the steps in this [README.md](./README.md).
 
 In this exercise, you will build an IFlow from scratch. Please ensure you follow the steps in the exact sequence outlined in this guide.
 
@@ -188,10 +188,10 @@ We will now create two processing routes based on the customer ID retrieved from
 <br><img src="../ex3/images/image35.png" width=100% height=100%>
 
 1. Click and place the step right below the router step.
-<br><img src="../ex3/images/image36.png" width=100% height=100%>
+<br><img src="../ex3/images/image36.png" width=80% height=100%>
 
 1. Title the content modifier step as 'set Customer Status'.
-<br><img src="../ex3/images/image37.png" width=100% height=100%>
+<br><img src="../ex3/images/image37.png" width=80% height=100%>
 
 1. Click-hold on the 'connector' button of the router step.
 <br><img src="../ex3/images/image38.png" width=80% height=100%>
@@ -203,10 +203,10 @@ We will now create two processing routes based on the customer ID retrieved from
 <br><img src="../ex3/images/image40.png" width=100% height=100%>
 
 1. Click on the 'Assigned' path and navigate to the 'Processing' tab in the property sheet. Set the expression type to 'Non-XML' and the condition as `${property.customerID} = ${property.assignedParticipantID}`.
-<br><img src="../ex3/images/image41.png" width=100% height=100%>
+<br><img src="../ex3/images/image41.png" width=90% height=100%>
 
 1. Next, click on Route 2 and title it 'Others'. In the 'processing' tab, check this as the 'default' route.
-<br><img src="../ex3/images/image42.png" width=100% height=100%>
+<br><img src="../ex3/images/image42.png" width=80% height=100%>
 
 1. Click on the 'Set Custom Status' content modifier step. Navigate to the 'Exchange Property' tab in the property sheet. Add a property titled `SAP_MessageProcessingLogCustomStatus` with the source type and value set to 'constant' and `Terminated: Customer ID mismatch` respectively.
 
@@ -222,13 +222,13 @@ We will now create two processing routes based on the customer ID retrieved from
 <br><img src="../ex3/images/image45.png" width=40% height=100%>
 
 1. Title this step as 'Terminate'. This completes the logic for the 'others' route.
-<br><img src="../ex3/images/image46.png" width=100% height=100%>
+<br><img src="../ex3/images/image46.png" width=80% height=100%>
 
 > [!NOTE]
 > We have intentionally set the status to 'Terminate' to gracefully end the processing cycle of the 'others' route.
 
 19. Let's get back to the 'Assigned' route. Click on the 'Add flow step' button to add a step on this route.
-<br><img src="../ex3/images/image47.png" width=100% height=100%>
+<br><img src="../ex3/images/image47.png" width=80% height=100%>
 
 1. Click on the 'content modifier' step 
 <br><img src="../ex3/images/image48.png" width=40% height=100%>
