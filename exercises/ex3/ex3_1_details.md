@@ -7,27 +7,29 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
 ## Step 1 - Create a new IFlow 
 
 1. In the Artifacts tab, click on 'Add' -> 'Integration Flow'
-   <br><img src="../ex3/images/image3.png" width=100% height=100%>
+   <br>![](../ex3/images/ex162-3-4.png)
 2. In the create dialog, name your integration flow as: 'IN162-`000` Sales Order Event to Hana Vector DB for AI Grounding' (replace `000` with your assigned user identifier). 
 
     Click on 'Add and Open in Editor'.
-<br><img src="../ex3/images/image4.png" width=80% height=100%>
+<br>![](../ex3/images/ex162-3-5.png)
 
 1. Now you should see the basic skeleton of the IFlow in the editor, ready for us to start building upon. 
 
     Click on 'Edit' to get started.
-   <br><img src="../ex3/images/image5.png" width=80% height=100%>
+  <br>![](../ex3/images/ex162-3-6.png)
 
 ## Step 2 - AEM Sender Adapter to receive events from S/4HANA
 In this step, we will configure the AEM Adapter to receive events from S/4HANA.
 
 1. Connect the 'Sender' system to the 'Start' block by click-holding and dragging your mouse pointer. 
-<br><img src="../ex3/images/image6.png" width=80% height=100%>
 
-1. A dialog with the different adapters will pop open. Select the 'AdvancedEventMesh' adapter.
-<br><img src="../ex3/images/image7.png" width=60% height=100%>
+<br>![](../ex3/images/ex162-3-7.png)
 
-1. Click on this newly added Adapter and navigate to the 'Connection' tab from the properties sheet at the bottom of the screen. Add the following attributes to the 'Sender Connection Details' section.
+2. A dialog with the different adapters will pop open. Select the 'AdvancedEventMesh' adapter.
+
+<br>![](../ex3/images/ex162-3-8.png)
+
+3. Click on this newly added Adapter and navigate to the 'Connection' tab from the properties sheet at the bottom of the screen. Add the following attributes to the 'Sender Connection Details' section.
     | Field | Value |
     | ----- | ----- |
     | Host | tcps://mr-connection-sq0b51wu6s3.messaging.solace.cloud:55443 |
@@ -36,17 +38,18 @@ In this step, we will configure the AEM Adapter to receive events from S/4HANA.
     | Authentication Type | Basic |
     | Password Secure Alias | teched-2025-europe-aem-password |
    
-    <br><img src="../ex3/images/image8.png" width=100% height=100%>
+ 
+   <br>![](../ex3/images/ex162-3-9.png)
 
-2. Next, head over to the 'Processing' tab and enter IN162-`000`_Sales_Order in the Queue Name field (replace `000` with your assigned user identifier). 
+4. Next, head over to the 'Processing' tab and enter IN162-`000`_Sales_Order in the Queue Name field (replace `000` with your assigned user identifier). 
    
    Set the 'Acknowledgement Mode' to 'Automatic on Exchange Complete'.
 > [!IMPORTANT]
 > Refer to [Exercise 1](../ex1/README.md#exercise-12---create-a-queue-in-advanced-event-mesh) where we created this Queue.
    
 Leave all other attributes with their default values.
-<br><img src="../ex3/images/image9.png" width=100% height=100%>
 
+<br>![](../ex3/images/ex162-3-10.png)
 We are done with the first block. 
 >[!TIP]
 >Keep clicking 'Save' periodically over the course of this exercise so that you don't lose your work if the browser session were to time out.
