@@ -20,7 +20,7 @@ Irrespective of the approach you choose, let's begin the exercise by logging int
 ## Step 2 - Create a package in your Integration Suite tenant
 
 1. Now that you are logged into the tenant,  'Create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu (Click on the 'hamburger' icon on the left to launch the menu, if it's hidden).
-<br>![](../ex3/images/image1.png)
+<br>![](../ex3/images/ex162-3-2.png)
 
 2. Enter the following details to describe the package.
     | Field | Value |
@@ -30,11 +30,11 @@ Irrespective of the approach you choose, let's begin the exercise by logging int
     | Version | 1.0.0|
     | Vendor | SAP |
 
-    <br>![](../ex3/images/image2.png)
+    <br>![](../ex3/images/ex162-3-3.png)
 After the Package is successfully created, go to the 'Artifacts' tab.
 
 3. Your Integration Package has been created, and now at this point, you are ready to either create an IFlow from scratch or copy / import an existing one. 
-    <br>![](../ex3/images/image91.png)
+    <br>![](../ex3/images/ex162-3-3-1.png)
 
     At this juncture, follow either [Exercise 3.1](./ex3_1_details.md) or [Exercise 3.2](./ex3_2_details.md).
 
