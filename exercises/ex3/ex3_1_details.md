@@ -68,8 +68,9 @@ In the next few steps, we will enrich the sales order data received from the Ada
 1. Title this step 'Log Sales Order Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter. 
     
     Click on the 'Create' button of the script step to launch the script editor.
-<br><img src="../ex3/images/image12.png" width=60% height=60%>
-<br>![](../ex3/images/ex162-3-12.png)
+
+<br>![](../ex3/images/ex162-3-12-0.png)
+
 1. Copy the following lines of code and paste them into the script editor window. (after clearing out the generated script present in the editor)
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message
@@ -84,7 +85,8 @@ In the next few steps, we will enrich the sales order data received from the Ada
     }
     ```
     The payload will be added as an attachment and can be inspected in the 'MPL' section when the message executes.
-    <br><img src="../ex3/images/image13.png" width=100% height=100%>
+
+    <br>![](../ex3/images/ex162-3-12.png)
 > [!TIP]
 > Click on 'Apply' to save your changes. Notice that you may receive a warning.
 > You can ignore the warning and click on 'Close' and move ahead.
