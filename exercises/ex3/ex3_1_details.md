@@ -94,7 +94,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
 > 
 > Make sure to save your changes in the main IFlow editor.
     
-<br.
+<br>
 
 5. Next, after the script step, go ahead and add a new Flow Step.
 
@@ -113,6 +113,8 @@ In the next few steps, we will enrich the sales order data received from the Ada
 
 <br>![](../ex3/images/ex162-3-15.png)
 <br>
+<br>
+
 > [!TIP]
 > Format the diagram if required, select the main process, select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-16-1.png)
@@ -121,30 +123,34 @@ In the next few steps, we will enrich the sales order data received from the Ada
 9. Title this step as 'Extract Sales Order ID'. As you may have guessed, we will extract the Sales Order ID from the XML document's XPath expression.
    
     Go to the 'Exchange Property' tab of the property sheet of this step. Click on 'Add' twice to add two Properties.
-<br><img src="../ex3/images/image18.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-16-2.png)
+<br>![](../ex3/images/ex162-3-16-3.png)
 
-
-10. Copy the values from the table below for the Property settings.
-   | Action | Name | Source Type | Source Value | Data Type |
+11. Copy the values from the table below for the Property settings.
+    | Action | Name | Source Type | Source Value | Data Type |
     | ----- | ----- | ----- | ----- | ----- |
     | Create | salesOrderID | XPath | `root/data/SalesOrder` | java.lang.String
     | Create | assignedParticipantID | Constant | IN162-`000` (replace `000` with your assiged participant ID)|
-    
-
-    <br><img src="../ex3/images/image19.png" width=100% height=100%>
-<br>![](../ex3/images/ex162-3-16-2.png)
+      
+<br>![](../ex3/images/ex162-3-17.png)
 
 ## Step 4 - Call the S/4HANA system to get the full data object
 As you may have observed, the event triggered upon Sales Order creation provides only the Sales Order ID — essentially serving as a notification event. To retrieve the complete details, we must use this ID to query the S/4HANA system and obtain the full set of Sales Order attributes.
 
 1. Add a new Flow Step after the 'Extract Sales Order ID' content modifier step.
-<br><img src="../ex3/images/image20.png" width=60% height=60%>
+<br>![](../ex3/images/ex162-3-18.png)
 
-1. Select 'Request-Reply' step in the 'Add Flow Step' dialog.
-<br><img src="../ex3/images/image21.png" width=40% height=40%>
+2. Select 'Request-Reply' step in the 'Add Flow Step' dialog.
 
-1. Title the Request-Reply step as 'Get Sales Order Details'. Next, hold and drag the 'Receiver' shape from the right corner of the editor and place it near the 'request-reply' shape.
-<br><img src="../ex3/images/image22.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-19.png)
+
+> [!TIP]
+> Format the diagram if required, select the main process, select Arrange Horizontally
+<br>![](../ex3/images/ex162-3-20-1.png)
+
+3. Title the Request-Reply step as 'Get Sales Order Details'. Next, hold and drag the 'Receiver' shape from the right corner of the editor and place it near the 'request-reply' shape.
+
+<br>![](../ex3/images/ex162-3-20-2.png)
 
 1. Point your attention to the 'Connector' button. 
 <br><img src="../ex3/images/image23.png" width=80% height=100%>
