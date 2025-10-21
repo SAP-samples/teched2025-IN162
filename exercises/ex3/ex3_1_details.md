@@ -58,16 +58,18 @@ We are done with the first block.
 In the next few steps, we will enrich the sales order data received from the Adapter and prepare it for further processing.
 
 1. Click on the (+) Add Flow Step button (on the 'Start' message block) to add a new step.
-<br><img src="../ex3/images/image10.png" width=90% height=100%>
+
+<br>![](../ex3/images/ex162-3-11-0.png)
 
 1. Select a 'Groovy Script' in the 'Add Flow Step' dialog.
-<br><img src="../ex3/images/image11.png" width=40% height=40%>
+
+<br>![](../ex3/images/ex162-3-11.png)
 
 1. Title this step 'Log Sales Order Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter. 
     
     Click on the 'Create' button of the script step to launch the script editor.
 <br><img src="../ex3/images/image12.png" width=60% height=60%>
-
+<br>![](../ex3/images/ex162-3-12.png)
 1. Copy the following lines of code and paste them into the script editor window. (after clearing out the generated script present in the editor)
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message
