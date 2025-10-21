@@ -61,17 +61,17 @@ In the next few steps, we will enrich the sales order data received from the Ada
 
 <br>![](../ex3/images/ex162-3-11-0.png)
 
-1. Select a 'Groovy Script' in the 'Add Flow Step' dialog.
+2. Select a 'Groovy Script' in the 'Add Flow Step' dialog.
 
 <br>![](../ex3/images/ex162-3-11.png)
 
-1. Title this step 'Log Sales Order Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter. 
+3. Title this step 'Log Sales Order Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter. 
     
     Click on the 'Create' button of the script step to launch the script editor.
 
 <br>![](../ex3/images/ex162-3-12-0.png)
 
-1. Copy the following lines of code and paste them into the script editor window. (after clearing out the generated script present in the editor)
+4. Copy the following lines of code and paste them into the script editor window. (after clearing out the generated script present in the editor)
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message
 
@@ -87,33 +87,44 @@ In the next few steps, we will enrich the sales order data received from the Ada
     The payload will be added as an attachment and can be inspected in the 'MPL' section when the message executes.
 
     <br>![](../ex3/images/ex162-3-12.png)
+   <br>
 > [!TIP]
 > Click on 'Apply' to save your changes. Notice that you may receive a warning.
 > You can ignore the warning and click on 'Close' and move ahead.
 > 
 > Make sure to save your changes in the main IFlow editor.
     
+<br.
 
-1. Next, after the script step, go ahead and add a new Flow Step.
-<br><img src="../ex3/images/image14.png" width=60% height=60%>
+5. Next, after the script step, go ahead and add a new Flow Step.
 
-1. Add a 'JSON to XML Converter' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
+<br>![](../ex3/images/ex162-3-13-1.png)
+
+6. Add a 'JSON to XML Converter' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
 
     In this step, we are converting the JSON representation of the notification event to its XML equivalent so that it can be easily extracted later.
-<br><img src="../ex3/images/image15.png" width=40% height=40%>
 
-1. Next, after this Converter step, go ahead and add a new flow step.
-<br><img src="../ex3/images/image16.png" width=50% height=50%>
+<br>![](../ex3/images/ex162-3-13-2.png)
 
-1. Select the 'Content Modifier' step in this dialog that pops out.
-<br><img src="../ex3/images/image17.png" width=40% height=40%>
+7. Next, after this Converter step, go ahead and add a new flow step.
 
-1. Title this step as 'Extract Sales Order ID'. As you may have guessed, we will extract the Sales Order ID from the XML document's XPath expression.
+<br>![](../ex3/images/ex162-3-14.png)
+8. Select the 'Content Modifier' step in this dialog that pops out.
+
+<br>![](../ex3/images/ex162-3-15.png)
+<br>
+> [!TIP]
+> Format the diagram if required, select the main process, select Arrange Horizontally
+<br>![](../ex3/images/ex162-3-16-1.png)
+
+
+9. Title this step as 'Extract Sales Order ID'. As you may have guessed, we will extract the Sales Order ID from the XML document's XPath expression.
    
     Go to the 'Exchange Property' tab of the property sheet of this step. Click on 'Add' twice to add two Properties.
 <br><img src="../ex3/images/image18.png" width=100% height=100%>
 
-1. Copy the values from the table below for the Property settings.
+
+10. Copy the values from the table below for the Property settings.
    | Action | Name | Source Type | Source Value | Data Type |
     | ----- | ----- | ----- | ----- | ----- |
     | Create | salesOrderID | XPath | `root/data/SalesOrder` | java.lang.String
@@ -121,6 +132,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
     
 
     <br><img src="../ex3/images/image19.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-16-2.png)
 
 ## Step 4 - Call the S/4HANA system to get the full data object
 As you may have observed, the event triggered upon Sales Order creation provides only the Sales Order ID — essentially serving as a notification event. To retrieve the complete details, we must use this ID to query the S/4HANA system and obtain the full set of Sales Order attributes.
