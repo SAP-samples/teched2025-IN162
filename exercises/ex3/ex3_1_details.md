@@ -152,19 +152,23 @@ As you may have observed, the event triggered upon Sales Order creation provides
 
 <br>![](../ex3/images/ex162-3-20-2.png)
 
-1. Point your attention to the 'Connector' button. 
-<br><img src="../ex3/images/image23.png" width=80% height=100%>
+4. Point your attention to the 'Connector' button. 
 
-1. Click and hold on the 'Connector' button and drag it all the way down onto the 'Receiver' shape and release your mouse pointer after the 'ends' are joined.
+<br>![](../ex3/images/ex162-3-21-0.png)
+
+6. Click and hold on the 'Connector' button and drag it all the way down onto the 'Receiver' shape and release your mouse pointer after the 'ends' are joined.
 <br><img src="../ex3/images/image24.png" width=100% height=100%>
 
-1. A dialog pops out with a list of Adapters to choose from. Select the 'OData' Adapter.
-<br><img src="../ex3/images/image25.png" width=40% height=100%>
 
-1. Select OData version V2.
-<br><img src="../ex3/images/image26.png" width=40% height=40%>
+7. A dialog pops out with a list of Adapters to choose from. Select the 'OData' Adapter.
 
-1. Click on the 'Connection' tab of the property sheet of the Adapter. Enter the following values in the 'Connection Details' section:
+<br>![](../ex3/images/ex162-3-21.png)
+
+8. Select OData version V2.
+
+<br>![](../ex3/images/ex162-3-22.png)
+
+9. Click on the 'Connection' tab of the property sheet of the Adapter. Enter the following values in the 'Connection Details' section:
     | Field | Value |
     | ----- | ----- |
     | Address | `https://my427029-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_salesorder/srvd_a2x/sap/salesorder/0001/` |
@@ -172,9 +176,10 @@ As you may have observed, the event triggered upon Sales Order creation provides
     | Authentication | `Basic`|
     | Credentials Name  | `s4hana_credentials` (has been pre-created) |
     
-    <br><img src="../ex3/images/image27.png" width=100% height=100%>
 
-1. Next, proceed to the 'Processing' section. Enter the following values in the 'Processing Details' section:
+      <br>![](../ex3/images/ex162-3-23.png)
+
+11. Next, proceed to the 'Processing' section. Enter the following values in the 'Processing Details' section:
   
     | Field | Value |
     | ----- | ----- |
@@ -182,7 +187,8 @@ As you may have observed, the event triggered upon Sales Order creation provides
     | Resource path| ````SalesOrder(SalesOrder='${property.salesOrderID}')```` |
     | Query Options | ````$select=SalesOrder,SoldToParty,SalesOrderDate,PurchaseOrderByCustomer,RequestedDeliveryDate,TotalNetAmount,TransactionCurrency&$expand=_Item($select=SalesOrder,SalesOrderItem,SalesOrderItemText,Product,RequestedQuantity,RequestedQuantityISOUnit,NetAmount,TransactionCurrency,ConfirmedDeliveryDate),_Partner($select=SalesOrder,PartnerFunction,Customer,BusinessPartnerName1,StreetName,CityName,PostalCode,Region,Country)````|
 
-    <br><img src="../ex3/images/image28.png" width=100% height=100%>
+
+    <br>![](../ex3/images/ex162-3-24.png)
 
 ## Step 5 - Filter out 'noisy' events and keep your Sales Order data clean and accurate 
 Since we have subscribed to the Sales Order Create event, an event will be emitted on the shared topic (`sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1`) each time a participant creates a sales order. You may recall this step from [Exercise 1](../ex1/README.md#sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1).
