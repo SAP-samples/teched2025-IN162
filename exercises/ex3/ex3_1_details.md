@@ -623,17 +623,26 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 1. Congratulations ! At this point you are done with creating the IFlow. You final model should look like the one pasted in the screenshot below. The deployment status is naturally 'Not deployed' at this point. 
    
     Click on **Save** and the '**Deploy**' button to trigger the deployment.
- <br><img src="../ex3/images/image108.png" width=100% height=100%>
+ 
+<br>![](../ex3/images/ex162-3-77-1.png)
+<br>
 
  2. Click '**Yes**' in the deployment confirmation dialog to deploy the IFlow into the selected 'Cloud Integration' profile.
-   <br><img src="../ex3/images/image109.png" width=40% height=100%>
+   
+   <br>![](../ex3/images/ex162-3-77-2.png)
+<br>
+
  3. Click 'OK' to close the dialog.
-   <br><img src="../ex3/images/image110.png" width=50% height=100%>
- 2. Finally, you should see the deployment status change to 'Deployed'. 
+   
+   <br>![](../ex3/images/ex162-3-77-3.png)
+<br>
+ 
+ 4. Finally, you should see the deployment status change to 'Deployed'. 
    
     This concludes the exercise.
-   <br><img src="../ex3/images/image111.png" width=100% height=100%>
-
+   
+<br>![](../ex3/images/ex162-3-77-4.png)
+<br>
 ## Summary
 
 This completes Exercise 3, Next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted upon support case creation in SAP Service Cloud V2.
