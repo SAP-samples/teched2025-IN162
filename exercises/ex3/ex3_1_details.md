@@ -306,36 +306,51 @@ This concludes the logic to separate out the valid entries from the noisy ones.
 In this step, we will utilize the 'message mapping' functionality to cleanse the quality of the sales order payload from the system. This step is needed to make the demonstration cleaner. We will concatenate and tailor certain files for better readability.
 
 1. Click anywhere on the editor canvas (not on any flow step) to activate the 'Integration Flow' panel in the property sheet. Go to the 'References' tab, and in the Global subtab, click on the 'Add References' button and add a 'Message Mapping'.
-<br><img src="../ex3/images/image51.png" width=100% height=100%>
 
-1. Here, we will specify the source package to import the pre-built mapping from. Bring up the 'Package' drop-down and select 'TechEd 2025 IN162 - Solution Package' as the source.
+<br>![](../ex3/images/ex162-3-42-1.png)
+<br>![](../ex3/images/ex162-3-42-2.png)
+
+2. Here, we will specify the source package to import the pre-built mapping from. Bring up the 'Package' drop-down and select 'TechEd 2025 IN162 - Solution Package' as the source.
    
    Select the 'MM_SalesOrder_S4Hana_to_HanaVectorDB' Artifact and click 'ok'.
-<br><img src="../ex3/images/image52.png" width=40% height=100%>
 
-1. Confirm that the mapping is successfully added.
-<br><img src="../ex3/images/image53.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-43-1.png)
+<br>![](../ex3/images/ex162-3-43-2.png)
 
-1. Head back to the 'Set Application ID and Custom Status' content modifier step and click on the 'Add Flow Step' button.
-<br><img src="../ex3/images/image54.png" width=80% height=100%>
+3. Confirm that the mapping is successfully added.
 
-1. Select 'Message Mapping' from the Add Flow Step dialog.
-<br><img src="../ex3/images/image55.png" width=40% height=100%>
+<br>![](../ex3/images/ex162-3-44.png)
 
-1. Click on the 'Assign' button. Here we will import the message mapping we referenced in the previous step.
-<br><img src="../ex3/images/image56.png" width=80% height=100%>
+4. Head back to the 'Set Application ID and Custom Status' content modifier step and click on the 'Add Flow Step' button.
+<br>![](../ex3/images/ex162-3-45.png)
 
-1. Navigate to the 'Global Resources' tab from the 'Select Mapping Resource' dialog. Click on the imported message mapping resource and select OK.
-<br><img src="../ex3/images/image57.png" width=50% height=100%>
+5. Select 'Message Mapping' from the Add Flow Step dialog.
 
-1. Verify that the mapping resource is listed in the 'Processing' tab of the flow step. Click on the resource; this will open a new window.
-<br><img src="../ex3/images/image58.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-46.png)
 
-1. You can inspect the mapping we've created. Here you can see that the SalesOrder entity from S/4HANA has been mapped to a simpler schema.
-<br><img src="../ex3/images/image59.png" width=100% height=100%>
+> [!TIP]
+> Format the diagram if required, select the main process, select Arrange Horizontally
+<br>![](../ex3/images/ex162-3-47-1.png)
+<br>
 
-1. For example, the 'TotalNetAmount' and 'transaction unit' attributes have been fused into a single entity for better readability. 
-<br><img src="../ex3/images/image60.png" width=100% height=100%>
+6. Click on the 'Assign' button. Here we will import the message mapping we referenced in the previous step.
+<br>![](../ex3/images/ex162-3-47-2.png)
+
+7. Navigate to the 'Global Resources' tab from the 'Select Mapping Resource' dialog. Click on the imported message mapping resource and select OK.
+
+<br>![](../ex3/images/ex162-3-48-1.png)
+<br>![](../ex3/images/ex162-3-48-2.png)
+
+8. Verify that the mapping resource is listed in the 'Processing' tab of the flow step. Click on the resource; this will open a new window.
+<br>![](../ex3/images/ex162-3-49-1.png)
+
+9. You can inspect the mapping we've created. Here you can see that the SalesOrder entity from S/4HANA has been mapped to a simpler schema.
+<br>![](../ex3/images/ex162-3-49-2.png)
+
+10. For example, the 'TotalNetAmount' and 'transaction unit' attributes have been fused into a single entity for better readability. 
+
+<br>![](../ex3/images/ex162-3-49-3.png)
+<br>
 
 ## Step 7 - Prepare data payload to invoke the embedding model of the AI Service 
 In this step, we will utilize the deployment URL of the AI model we consumed in [Exercise 2](../ex2/README.md) using SAP Generative Hub and AI Core's capabilities to generate text embeddings of our sales order payload.
