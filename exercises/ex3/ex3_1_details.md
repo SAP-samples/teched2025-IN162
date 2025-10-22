@@ -526,15 +526,25 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 In this step, the generated embeddings are inserted into the SAP HANA Cloud vector database using the JDBC receiver adapter, ensuring real-time grounding of Sales Order objects.
 
 1. After the 'Get Text Embeddings' step, click on the (+) button to 'Add a Flow Step'.
-<br><img src="../ex3/images/image81.png" width=80% height=100%>
+<br>![](../ex3/images/ex162-3-65.png)
+<br>
 
-1. Select 'Groovy Script' from the 'Add Flow step' dialog.
-<br><img src="../ex3/images/image82.png" width=80% height=100%>
+2. Select 'Groovy Script' from the 'Add Flow step' dialog.
 
-1. Title the step as 'Prepare SQL Statement'. Click on the 'Create' button on the step.
-<br><img src="../ex3/images/image83.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-66.png)
+<br>
 
-1. Copy the following Groovy script and paste it into the script editor.
+> [!TIP]
+> Format the diagram if required, select the main process, select Arrange Horizontally
+<br>![](../ex3/images/ex162-3-67-1.png)
+<br>
+
+3. Title the step as 'Prepare SQL Statement'. Click on the 'Create' button on the step.
+
+<br>![](../ex3/images/ex162-3-67-1-1.png)
+<br>
+
+4. Copy the following Groovy script and paste it into the script editor.
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message;
     import groovy.json.JsonSlurper;
@@ -560,28 +570,52 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
     }
     ```
     Click on 'Apply' and after the changes are applied, click  'Close' to exit the script editor. 
-    <br><img src="../ex3/images/image84.png" width=100% height=100%>
+    
 
-2. After this step, click on (+) to add a new flow step.
-<br><img src="../ex3/images/image85.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-67-2.png)
+<br>
 
-1. Add a 'Request-Reply' step in the 'Add Flow step' dialog. Title the step as 'Insert Embeddings to Vector DB'. 
+5. After this step, click on (+) to add a new flow step.
+
+<br>![](../ex3/images/ex162-3-68.png)
+<br>
+6. Add a 'Request-Reply' step in the 'Add Flow step' dialog. Title the step as 'Insert Embeddings to Vector DB'. 
    
    Click on the 'Search Step' text box and look for a 'Receiver' step.
-<br><img src="../ex3/images/image86.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-69.png)
+<br>
 
-1. Drag and place the receiver box below the request-reply step. Title the box as 'HANA_DB'. Click on the 'Connector' button, drag an arrow connecting it to the 'HANA_DB' receiver box. A dialog to select the Adapter pops out.
-<br><img src="../ex3/images/image87.png" width=100% height=100%>
+> [!TIP]
+> Format the diagram if required, select the main process, select Arrange Horizontally
+<br>![](../ex3/images/ex162-3-70-1.png)
+<br>
 
-1. Select 'JDBC' for the Adapter type.
-<br><img src="../ex3/images/image88.png" width=40% height=100%>
+<br>![](../ex3/images/ex162-3-70-2.png)
+<br>
 
-1. Proceed to the 'Connection' tab of the property sheet and enter `SAPHANACloud` in the 'JDBC Data Source Alias' box. Note that this data source alias has already been built for you.
-<br><img src="../ex3/images/image89.png" width=100% height=100%>
+7. Drag and place the receiver box below the request-reply step. Title the box as 'HANA_DB'. 
 
-1. Make sure to save your changes. You can verify the data source by navigating to the 'Manage JDBC Material' tile in the 'Overview' section. You will find the `SAPHANACloud` data source pre-created in the 'Data Source' tab. 
-<br><img src="../ex3/images/image90.png" width=80% height=100%>
+<br>![](../ex3/images/ex162-3-72.png)
+<br>
 
+8. Click on the 'Connector' button, drag an arrow connecting it to the 'HANA_DB' receiver box. A dialog to select the Adapter pops out.
+<br>![](../ex3/images/ex162-3-73-1.png)
+<br>
+
+
+9. Select 'JDBC' for the Adapter type.
+
+<br>![](../ex3/images/ex162-3-73-2.png)
+<br>
+
+10. Proceed to the 'Connection' tab of the property sheet and enter `SAPHANACloud` in the 'JDBC Data Source Alias' box. Note that this data source alias has already been built for you.
+<br>![](../ex3/images/ex162-3-74.png)
+<br>
+
+11. Make sure to save your changes. You can verify the data source by navigating to the 'Manage JDBC Material' tile in the 'Overview' section. You will find the `SAPHANACloud` data source pre-created in the 'Data Source' tab. 
+
+<br>![](../ex3/images/ex162-3-75.png)
+<br>
 1. Access to the HANA Database itself is not part of this hands-on exercise, but just for your understadnding here is how the structure for the table `TechEd25_IN162_Table` has been defined in the default `DBADMIN` schema. 
 <br><img src="../ex3/images/image107.png" width=80% height=100%>
 
