@@ -198,81 +198,107 @@ Although each participant has their own Queue subscription, the Topic itself is 
 We will now create two processing routes based on the customer ID retrieved from the Sales Order. If the customer ID matches your individual participant ID, the event will be treated as valid and processed further. If it does not match, it will be considered as belonging to another participant and will be filtered out. 
 
 1. Click on the 'Add flow step' button to add a new step.
-<br><img src="../ex3/images/image29.png" width=60% height=100%>
+<br>![](../ex3/images/ex162-3-25-1.png)
 
-1. Select the 'Content Modifier' step.
-<br><img src="../ex3/images/image30.png" width=60% height=100%>
+2. Select the 'Content Modifier' step.
+<br>![](../ex3/images/ex162-3-25-2.png)
+<br>
 
-1. Title this step as 'Extract Customer ID' in the General tab of the property sheet. In the 'Exchange Property' tab, click on 'Add' and add a new property named `customerID`. Set the Source type to `XPath`, source value to `/SalesOrder/SalesOrder_Type/PurchaseOrderByCustomer`, and the Data Type to `java.lang.String`.
-<br><img src="../ex3/images/image31.png" width=100% height=100%>
+> [!TIP]
+> Format the diagram if required, select the main process, select Arrange Horizontally
+<br>![](../ex3/images/ex162-3-26-1.png)
 
-1. After this step, click on 'Add Flow Step'.
-<br><img src="../ex3/images/image32.png" width=60% height=100%>
+3. Title this step as 'Extract Customer ID' in the General tab of the property sheet. In the 'Exchange Property' tab, click on 'Add' and add a new property named `customerID`. Set the Source type to `XPath`, source value to `/SalesOrder/SalesOrder_Type/PurchaseOrderByCustomer`, and the Data Type to `java.lang.String`.
+<br>![](../ex3/images/ex162-3-26-2.png)
+<br>![](../ex3/images/ex162-3-27.png)
 
-1. Select the 'Router' step in the dialog.
-<br><img src="../ex3/images/image33.png" width=40% height=100%>
+4. After this step, click on 'Add Flow Step'.
 
-1. Name the step as `Route Customer ID` in the General tab of the Property Sheet.
-<br><img src="../ex3/images/image34.png" width=80% height=100%>
+<br>![](../ex3/images/ex162-3-28-1.png)
 
-1. We will create an additional route now. Go to the 'search step' text box and look for a 'content modifier' step. Click on +.
-<br><img src="../ex3/images/image35.png" width=100% height=100%>
+5. Select the 'Router' step in the dialog.
 
-1. Click and place the step right below the router step.
-<br><img src="../ex3/images/image36.png" width=80% height=100%>
+<br>![](../ex3/images/ex162-3-28-2.png)
 
-1. Title the content modifier step as 'set Customer Status'.
-<br><img src="../ex3/images/image37.png" width=80% height=100%>
+6. Name the step as `Route Customer ID` in the General tab of the Property Sheet.
 
-1. Click-hold on the 'connector' button of the router step.
-<br><img src="../ex3/images/image38.png" width=80% height=100%>
+<br>![](../ex3/images/ex162-3-28-3.png)
 
-1. Drag the connector and place it on the 'set custom status' content modifier.
+7. We will create an additional route now. Go to the 'search step' text box and look for a 'content modifier' step. Click on +.
+
+<br>![](../ex3/images/ex162-3-29.png)
+
+8. Click and place the step right below the router step.
+
+<br>![](../ex3/images/ex162-3-30.png)
+
+9. Title the content modifier step as 'set Customer Status'.
+
+<br>![](../ex3/images/ex162-3-31.png)
+
+10. Click-hold on the 'connector' button of the router step.
+
+<br>![](../ex3/images/ex162-3-32-1.png)
+
+11. Drag the connector and place it on the 'set custom status' content modifier.
 <br><img src="../ex3/images/image39.png" width=100% height=100%>
 
-1. You will notice two route paths created (Route 1 and Route 2). Click on Route 1 and title it 'Assigned'.
-<br><img src="../ex3/images/image40.png" width=100% height=100%>
 
-1. Click on the 'Assigned' path and navigate to the 'Processing' tab in the property sheet. Set the expression type to 'Non-XML' and the condition as `${property.customerID} = ${property.assignedParticipantID}`.
-<br><img src="../ex3/images/image41.png" width=90% height=100%>
+12. You will notice two route paths created (Route 1 and Route 2). Click on Route 1 and title it 'Assigned'.
+<br>![](../ex3/images/ex162-3-32-2.png)
 
-1. Next, click on Route 2 and title it 'Others'. In the 'processing' tab, check this as the 'default' route.
-<br><img src="../ex3/images/image42.png" width=80% height=100%>
+13. Click on the 'Assigned' path and navigate to the 'Processing' tab in the property sheet. Set the expression type to 'Non-XML' and the condition as `${property.customerID} = ${property.assignedParticipantID}`.
+<br>![](../ex3/images/ex162-3-33.png)
 
-1. Click on the 'Set Custom Status' content modifier step. Navigate to the 'Exchange Property' tab in the property sheet. Add a property titled `SAP_MessageProcessingLogCustomStatus` with the source type and value set to 'constant' and `Terminated: Customer ID mismatch` respectively.
+14. Next, click on Route 2 and title it 'Others'. In the 'processing' tab, check this as the 'default' route.
+
+<br>![](../ex3/images/ex162-3-34-1.png)
+<br>![](../ex3/images/ex162-3-34-2.png)
+
+15. Click on the 'Set Custom Status' content modifier step. Navigate to the 'Exchange Property' tab in the property sheet. Add a property titled `SAP_MessageProcessingLogCustomStatus` with the source type and value set to 'constant' and `Terminated: Customer ID mismatch` respectively.
 
 > [!NOTE]
 > We set `SAP_MessageProcessingLogCustomStatus` attribute here as an enabler to easily filter out meaningful entries from the noisy ones during the monitoring phase when we access the 'message processing logs' (MPL).
 > 
-<br><img src="../ex3/images/image43.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-35.png)
 
 16. Click on 'Add Flow step' right after this content modifier step.
-<br><img src="../ex3/images/image44.png" width=70% height=100%>
+<br>![](../ex3/images/ex162-3-36-1.png)
 
-1. Look up the 'Terminate Message' step in the 'add flow step' dialog.
-<br><img src="../ex3/images/image45.png" width=40% height=100%>
+17. Look up the 'Terminate Message' step in the 'add flow step' dialog.
 
-1. Title this step as 'Terminate'. This completes the logic for the 'others' route.
-<br><img src="../ex3/images/image46.png" width=80% height=100%>
+<br>![](../ex3/images/ex162-3-36-2.png)
+
+
+18. Title this step as 'Terminate'. This completes the logic for the 'others' route.
+<br>![](../ex3/images/ex162-3-37.png)
+<br>
 
 > [!NOTE]
 > We have intentionally set the status to 'Terminate' to gracefully end the processing cycle of the 'others' route.
 
 19. Let's get back to the 'Assigned' route. Click on the 'Add flow step' button to add a step on this route.
-<br><img src="../ex3/images/image47.png" width=80% height=100%>
+<br>![](../ex3/images/ex162-3-38.png)
 
-1. Click on the 'content modifier' step 
-<br><img src="../ex3/images/image48.png" width=40% height=100%>
+20. Click on the 'content modifier' step 
+<br>![](../ex3/images/ex162-3-39.png)
+<br>
 
-1. Title the step as 'Set Application ID and Custom Status' in the General tab of the property sheet. Next, go to the 'message header' tab and 'Add' a header with the following properties. 
+> [!TIP]
+> Format the diagram if required, select the main process, select Arrange Horizontally
+<br>![](../ex3/images/ex162-3-40-1.png)
+<br>
+
+21. Title the step as 'Set Application ID and Custom Status' in the General tab of the property sheet. Next, go to the 'message header' tab and 'Add' a header with the following properties. 
    
    Action : `Create`, Name : `SAP_ApplicationID`, Source Type : `Property`, Source Value : `customerID`.
-<br><img src="../ex3/images/image49.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-40-2.png)
+<br>
 
-1. Click on the 'Exchange Property' tab and add a Property as follows.
+22. Click on the 'Exchange Property' tab and add a Property as follows.
    
    Action: `Create`, Name: `SAP_MessageProcessingLogCustomStatus`, Source Type: `Constant`, Source Value: `Successful: Customer ID matched`.
-<br><img src="../ex3/images/image50.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-41.png)
 
 This concludes the logic to separate out the valid entries from the noisy ones.
 
