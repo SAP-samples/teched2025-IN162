@@ -4,7 +4,7 @@
 
 This repository contains the material for the SAP TechEd 2025 Hands-on Workshop session [IN162 | Real-time data for AI agents: Grounding with event-driven architecture](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748712252655001fP5Z)  
 
-## Overview
+## Session Overview
 
 This session introduces attendees to the power of event-driven integration pattern to deliver real-time grounding data, equipping AI system's with the latest business context to make informed and accurate decisions
 
@@ -43,15 +43,29 @@ You can also gain some further knowledge around SAP Integration Suite and SAP In
 - [IN161 | Modernize and transform your integration to the cloud](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711963531001B8Pr)
 - [IN160 | Empower your business through enterprise automation](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711728862001rC69)
 
-## System URL and login information
+## System URL and login information 
 
-For running through the exercises, you need access to the following applications:
+This session is part of multiple SAP events, and all systems and exercises remain the same except for the **SAP Integration Suite Tenant**. Please choose the Integration Suite tenant according to your specific event. If you are uncertain about which tenant to use, consult your **workshop instructors**.
+
+To complete the exercises, you will need access to the following applications:
+
 - [SAP Integration Suite, advanced event mesh](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073)
 - [SAP AI Launchpad](https://in162-ntn259xc.ai-launchpad.prod.eu-central-1.aws.ai-prod.cloud.sap/)
-- [SAP Integration Suite](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design)
 - [SAP S/4HANA Cloud](https://my427029.s4hana.cloud.sap/ui)
 - [SAP Service Cloud Version 2](https://my1001903.de1.demo.crm.cloud.sap/)
 - [SAP Joule: Customer Success Digital Assistant](https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant)
+
+### 🇩🇪 SAP TechEd Berlin and 🇮🇳 SAP TechEd on Tour Bangalore Event
+- [SAP Integration Suite](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design)
+
+---
+
+### 🇺🇸 ASUG Tech Connect 2025 Event
+
+**SAP Integration Suite Tenant assignment:** Please verify which group you belong to before proceeding.
+- **Group 1 (Users 001 to 030):** [SAP Integration Suite - Tenant 1](https://workshop-us-01a.integrationsuite-cpi034.cfapps.us10-002.hana.ondemand.com/shell/design)
+- **Group 2 (Users 031 to 060):** [SAP Integration Suite - Tenant 2](https://workshop-us-01b.integrationsuite-cpi034.cfapps.us20.hana.ondemand.com/shell/design)
+- **Group 3 (Users 061 to 095):** [SAP Integration Suite - Tenant 3](https://workshop-us-01c.integrationsuite-cpi034.cfapps.us30.hana.ondemand.com/shell/design)
 
 
 
