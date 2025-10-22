@@ -492,28 +492,36 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 
 <br>![](../ex3/images/ex162-3-62-1.png)
 <br>
-
-17. Click on the 'connector' button and start dragging it all the way down to join the 'AI_Launchpad' Receiver box.
 <br>![](../ex3/images/ex162-3-62-2.png)
 <br>
 
+17. Click on the 'connector' button and start dragging it all the way down to join the 'AI_Launchpad' Receiver box.
+<br>![](../ex3/images/ex162-3-63.png)
+<br>
+
 18. Release the mouse button once the ends are joined. An 'Adapter Type' dialog will pop out.
-<br><img src="../ex3/images/image78.png" width=80% height=100%>
 
-1. Select 'HTTP' for the 'Adapter Type'.
-<br><img src="../ex3/images/image79.png" width=50% height=100%>
+<br>![](../ex3/images/ex162-3-64-1.png)
+<br>
 
-1. Proceed to the 'Connection' section in the property sheet for the Adapter. Maintain the following attributes for the properties:
-   | Field | Value |
-    | ----- | ----- |
-    | Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<your-deployment-id>/v2/embeddings` (copy the deployment id from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) after you created the deployment) |
-    | Method | POST |
-    | Authentication | OAuth2Client Credentials|
-    | Credential Name  | `aicore_credentials` |
-    | Request Headers | * |
+19. Select 'HTTP' for the 'Adapter Type'.
 
-    <br><img src="../ex3/images/image80.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-64-2.png)
+<br>
 
+20. Proceed to the 'Connection' section in the property sheet for the Adapter. Maintain the following attributes for the properties:
+    
+| Field | Value |
+| ----- | ----- |
+| Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<your-deployment-id>/v2/embeddings` (copy the deployment id from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) after you created the deployment) |
+| Method | POST |
+| Authentication | OAuth2Client Credentials|
+| Credential Name  | `aicore_credentials` |
+| Request Headers | * |
+
+
+<br>![](../ex3/images/ex162-3-64-3.png)
+<br>
 ## Step 8 - Prepare data payload to persist text embeddings into HANA Vector DB 
 In this step, the generated embeddings are inserted into the SAP HANA Cloud vector database using the JDBC receiver adapter, ensuring real-time grounding of Sales Order objects.
 
