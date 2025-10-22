@@ -356,12 +356,12 @@ In this step, we will utilize the 'message mapping' functionality to cleanse the
 In this step, we will utilize the deployment URL of the AI model we consumed in [Exercise 2](../ex2/README.md) using SAP Generative Hub and AI Core's capabilities to generate text embeddings of our sales order payload.
 
 1. Click on (+) button to add a new flow step.
-<br><img src="../ex3/images/image61.png" width=90% height=100%>
+<br>![](../ex3/images/ex162-3-50.png)
 
-1. Find and select the 'XML to JSON Converter' step in the add flow step dialog.
-<br><img src="../ex3/images/image62.png" width=80% height=100%>
+2. Find and select the 'XML to JSON Converter' step in the add flow step dialog.
+<br>![](../ex3/images/ex162-3-51.png)
 
-1. Go to the 'Processing' block in the property sheet of the converter step and specify the properties as instructed in the table below:
+3. Go to the 'Processing' block in the property sheet of the converter step and specify the properties as instructed in the table below:
    | Field | Value |
     | ----- | ----- |
     | Use Namespace mapping | Uncheck |
@@ -371,19 +371,28 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
     | Convert XML Elements to JSON Array  | Specified Ones |
     | XML Element  | `/SalesOrder/SalesOrderItems/SalesOrderItem` |
   
-    <br><img src="../ex3/images/image66.png" width=100% height=100%>
+    
+   <br>![](../ex3/images/ex162-3-52.png)
+   
+4. Click on (+) to add a new Flow Step
 
-2. Click on (+) to add a new Flow Step
-<br><img src="../ex3/images/image63.png" width=50% height=100%>
+<br>![](../ex3/images/ex162-3-53-0.png)
 
-1. Select 'groovy script' in the Add Flow Step dialog.
-<br><img src="../ex3/images/image64.png" width=50% height=100%>
+5. Select 'groovy script' in the Add Flow Step dialog.
 
-1. Title the Groovy script step as 'Log Sales Order JSON Payload'. Click on the 'Create' button on the step.
-<br><img src="../ex3/images/image67.png" width=80% height=100%>
+<br>![](../ex3/images/ex162-3-53.png)
 
+> [!TIP]
+> Format the diagram if required, select the main process, select Arrange Horizontally
+<br>![](../ex3/images/ex162-3-54-1.png)
+<br>
 
-1. Copy the code below and paste it into the code editor window.
+6. Title the Groovy script step as 'Log Sales Order JSON Payload'. Click on the 'Create' button on the step.
+
+<br>![](../ex3/images/ex162-3-54-2.png)
+<br>
+
+7. Copy the code below and paste it into the code editor window.
       ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message
     import groovy.json.JsonOutput
@@ -406,27 +415,40 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
     ```
 
     Click on 'Apply', ignore any warnings if presented, and 'Close' the editor
-    <br><img src="../ex3/images/image65.png" width=100% height=100%>
+    
+<br>![](../ex3/images/ex162-3-55.png)
+<br>
 
-1. After this step, click on the (+) button to add a new flow step.
-<br><img src="../ex3/images/image68.png" width=80% height=100%>
+8. After this step, click on the (+) button to add a new flow step.
 
-1. Select the 'content modifier' step in the 'add flow step' dialog.
-<br><img src="../ex3/images/image69.png" width=50% height=100%>
+<br>![](../ex3/images/ex162-3-56.png)
+<br>
 
-1. Title this as 'Prepare Embedding Call'. Go to the 'Message Header' tab and click 'Add' twice to prepare to add two header attributes.
-<br><img src="../ex3/images/image70.png" width=100% height=100%>
+9. Select the 'content modifier' step in the 'add flow step' dialog.
 
-1. Manage the attribute entries as follows:
+<br>![](../ex3/images/ex162-3-57-1.png)
+<br>
+> [!TIP]
+> Format the diagram if required, select the main process, select Arrange Horizontally
+<br>![](../ex3/images/ex162-3-57-2.png)
+<br>
+
+10. Title this as 'Prepare Embedding Call'. Go to the 'Message Header' tab and click 'Add' twice to prepare to add two header attributes.
+
+<br>![](../ex3/images/ex162-3-57-3.png)
+<br>
+
+11. Manage the attribute entries as follows:
    | Action | Name | Source Type | Source Value |
     | ----- | ----- | ----- |----- |
     | Create | content-type | Constant | application/json |
     | Create |  ai-resource-group | Property | assignedParticipantID |
    
-    <br><img src="../ex3/images/image71.png" width=100% height=100%>
-
-2. Click on the 'Message Body' tab and enter the following text as an 'Expression'.
-   ```json
+    
+<br>![](../ex3/images/ex162-3-58.png)
+<br>
+12. Click on the 'Message Body' tab and enter the following text as an 'Expression'.
+```json
     {
         "config": {
             "modules": {
@@ -442,26 +464,40 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
         }
     }
    ```
-    <br><img src="../ex3/images/image72.png" width=100% height=100%>
 
+<br>![](../ex3/images/ex162-3-59.png)
+<br>
 
-1. Click on the (+) button after the previous step to add a new flow step.
-<br><img src="../ex3/images/image73.png" width=80% height=100%>
+13. Click on the (+) button after the previous step to add a new flow step.
 
-1. Select 'Request-Reply step in the 'Add Flow step' dialog.
-<br><img src="../ex3/images/image74.png" width=50% height=100%>
+<br>![](../ex3/images/ex162-3-60.png)
+<br>
 
-1. Title this step as 'Get Text Embeddings'. Click on the 'search step' text box on the right and search for the 'Receiver' shape.
-<br><img src="../ex3/images/image75.png" width=100% height=100%>
+14. Select 'Request-Reply step in the 'Add Flow step' dialog.
 
-1. Click and drag the receiver shape right below the request-reply step. You can call this box 'AI_Launchpad'.
-<br><img src="../ex3/images/image76.png" width=100% height=100%>
+<br>![](../ex3/images/ex162-3-61-1.png)
+<br>
 
+> [!TIP]
+> Format the diagram if required, select the main process, select Arrange Horizontally
+<br>![](../ex3/images/ex162-3-61-2.png)
+<br>
 
-1. Click on the 'connector' button and start dragging it all the way down to join the 'AI_Launchpad' Receiver box.
-<br><img src="../ex3/images/image77.png" width=80% height=100%>
+15. Title this step as 'Get Text Embeddings'. Click on the 'search step' text box on the right and search for the 'Receiver' shape.
 
-1. Release the mouse button once the ends are joined. An 'Adapter Type' dialog will pop out.
+<br>![](../ex3/images/ex162-3-61-3.png)
+<br>
+
+16. Click and drag the receiver shape right below the request-reply step. You can call this box 'AI_Launchpad'.
+
+<br>![](../ex3/images/ex162-3-62-1.png)
+<br>
+
+17. Click on the 'connector' button and start dragging it all the way down to join the 'AI_Launchpad' Receiver box.
+<br>![](../ex3/images/ex162-3-62-2.png)
+<br>
+
+18. Release the mouse button once the ends are joined. An 'Adapter Type' dialog will pop out.
 <br><img src="../ex3/images/image78.png" width=80% height=100%>
 
 1. Select 'HTTP' for the 'Adapter Type'.
