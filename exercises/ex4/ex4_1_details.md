@@ -599,16 +599,25 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 <br><img src="../ex3/images/image107.png" width=80% height=100%>
 
 ## Step 8 - Deploying the IFlow
+
 1. Congratulations ! At this point you are done with creating the IFlow. You final model should look like the one pasted in the screenshot below. The deployment status is naturally 'Not deployed' at this point. 
    
     Click on **Save** and then '**Deploy**' button to trigger the deployment.
- <br><img src="../ex4/images/image-84.png" width=100% height=100%>
+ 
+![](../ex4/images/ex162-4-64.png)
+<br><br>
 
  2. Click '**Yes**' in the deployment confirmation dialog to deploy the IFlow into the selected 'Cloud Integration' profile.
-   <br><img src="../ex3/images/image109.png" width=40% height=100%>
+ 
+![](../ex4/images/ex162-4-65.png)
+<br><br>
+
  3. Click 'OK' to close the dialog.
-   <br><img src="../ex4/images/image-85.png" width=50% height=100%>
- 2. Finally, you should see the deployment status change to 'Deployed'. 
+ 
+   ![](../ex4/images/ex162-4-66.png)
+<br><br>
+
+ 4. Finally, you should see the deployment status change to 'Deployed'. 
    
     This concludes the exercise.
    <br><img src="../ex4/images/image-86.png" width=100% height=100%>
