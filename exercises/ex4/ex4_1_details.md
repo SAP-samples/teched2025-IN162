@@ -73,16 +73,20 @@ We are done with the first block.
 ## Step 3 - Enrich the data event received from the Adapter
 In the next few steps, we will enrich the support case data received from the Adapter and prepare it for further processing.
 1. Click on the (+) Add Flow Step button to add a new step.
-<br><img src="../ex4/images/image-8.png" width=70% height=100%>
 
-1. Select a 'Groovy Script' in the Add Flow Step dialog.
-<br><img src="../ex4/images/image-9.png" width=60% height=100%>
+<br>![](../ex4/images/ex162-4-8.png)
+<br><br>
 
-1. Title this step 'Log Support Case Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter.
+2. Select a 'Groovy Script' in the Add Flow Step dialog.
+<br>![](../ex4/images/ex162-4-9.png)
+<br><br>
 
-    <br><img src="../ex4/images/image-10.png" width=80% height=100%>
+3. Title this step 'Log Support Case Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter.
 
-1. Copy the following lines of code and paste them into the script editor window (after clearing out the generated script present in the editor)
+<br>![](../ex4/images/ex162-4-10.png)
+<br><br>
+
+4. Copy the following lines of code and paste them into the script editor window (after clearing out the generated script present in the editor)
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message
 
@@ -95,40 +99,66 @@ In the next few steps, we will enrich the support case data received from the Ad
         return message
     }
     ```
-    <br><img src="../ex4/images/image-11.png" width=100% height=100%>
+<br>![](../ex4/images/ex162-4-11.png)
+<br><br>
 
 > [!TIP]
-    > Click on 'Apply' to save your changes. Notice that you may receive a warning.
-    > You can ignore the warning and click on 'Close' and move ahead.
-    > 
-    > Make sure to save your changes in the main IFlow editor.
+> Click on 'Apply' to save your changes. Notice that you may receive a warning.
+> You can ignore the warning and click on 'Close' and move ahead.
+> 
+> Make sure to save your changes in the main IFlow editor.
 
 5. Next, after the script step, go ahead and add a new flow step.
-<br><img src="../ex4/images/image-12.png" width=80% height=100%>
+<br>![](../ex4/images/ex162-4-12.png)
+<br><br>
 
-1. Look for the 'JSON to XML Converter' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
+6. Look for the 'JSON to XML Converter' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
 
     In this step, we convert the JSON representation of the data event into its XML equivalent to enable easier data extraction later.
-<br><img src="../ex4/images/image-13.png" width=50% height=100%>
 
-1. Next, after this Converter step, go ahead and add a new flow step.
-<br><img src="../ex4/images/image-14.png" width=80% height=100%>
+<br>![](../ex4/images/ex162-4-13-1.png)
+<br><br>
 
-1. Select the 'Content Modifier' step in this dialog that pops out.
-<br><img src="../ex4/images/image-15.png" width=70% height=100%>
 
-1.  Name this step as 'Extract Support Case and Customer ID'. As you may have guessed, we will extract the Support Case & the Customer ID from the XML document's XPath expression.
-   
-    Go to the 'Exchange Property' tab of the property sheet of this step. Click on 'Add' thrice to add three new Properties.
-<br><img src="../ex4/images/image-16.png" width=100% height=100%>
+>[!TIP]
+> Resize the process lane to accomodate new steps, select the process and drag the rectangle to desired size, also move the end step accordingly
+<br>![](../ex4/images/ex162-4-14-1.png)
+<br><br>
 
-1. Copy the values from the table for Property settings.
-   | Action | Name | Source Type | Source Value | Data Type |
-    | ----- | ----- | ----- | ----- | ----- |
-    | Create | supportCaseID | XPath | `root/data/currentImage/id` | java.lang.String
-    | Create | customerID | XPath | `root/data/currentImage/extensions/SupportCaseByCustomer` | java.lang.String
-    | Create | assignedParticipantID | Constant | IN162-`000` (replace `000` with your assiged participant ID)|
-<br><img src="../ex4/images/image-17.png" width=100% height=100%>
+7. Next, after this Converter step, go ahead and add a new flow step.
+
+
+<br>![](../ex4/images/ex162-4-14-2.png)
+<br><br>
+
+
+8. Select the 'Content Modifier' step in this dialog that pops out.
+
+
+<br>![](../ex4/images/ex162-4-14-3.png)
+<br><br>
+
+9.  Name this step as 'Extract Support Case and Customer ID'.
+<br>![](../ex4/images/ex162-4-14-4.png)
+<br><br>
+
+10.  As you may have guessed, we will extract the Support Case & the Customer ID from the XML document's XPath expression. Go to the 'Exchange Property' tab of the property sheet of this step. Click on 'Add' thrice to add three new Properties.
+    
+
+<br>![](../ex4/images/ex162-4-15-1.png)
+<br><br>
+
+11. Copy the values from the table for Property settings.
+
+| Action | Name | Source Type | Source Value | Data Type |
+| ----- | ----- | ----- | ----- | ----- |
+| Create | supportCaseID | XPath | `root/data/currentImage/id` | java.lang.String
+| Create | customerID | XPath | `root/data/currentImage/extensions/SupportCaseByCustomer` | java.lang.String
+| Create | assignedParticipantID | Constant | IN162-`000` (replace `000` with your assiged participant ID)|
+
+
+<br>![](../ex4/images/ex162-4-15-2.png)
+<br><br>
 
 ## Step 4 - Filter out 'noisy' events and keep your Support Case data clean and accurate
 Since we have subscribed to the Support Case Create event, an event will be emitted on the shared topic (`sap/teched/2025/servicecloud/supportcase/created`) each time a participant logs a support case. You may recall this step from [Exercise 1](../ex1/README.md#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh).
