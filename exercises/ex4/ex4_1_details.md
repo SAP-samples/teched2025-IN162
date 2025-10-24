@@ -374,16 +374,31 @@ In this step, we will utilize the 'message mapping' functionality to cleanse the
 ## Step 6 - Prepare data payload to invoke the embedding model of the AI Service 
 In this step we will utilize the deployment URL of the AI model we consumed in [Exercise 2](../ex2/README.md) using SAP Generative Hub and AI Core's capabilties to generate text embeddings of our support case data payload. 
 
+>[!TIP]
+> Resize the process lane to accomodate new steps, move the receiver to right  
+> <br>![](../ex4/images/ex162-4-43-1.png)
+> <br><br>
+> Select the process and drag the rectangle to desired size, move the end step accordingly
+> <br>![](../ex4/images/ex162-4-43-2.png)
+<br>
+
+
 1. Click on (+) button to add a new flow step.
-<br><img src="../ex4/images/image-46.png" width=80% height=100%>
 
-1. Select 'groovy script' in the Add Flow Step dialog.
-<br><img src="../ex4/images/image-47.png" width=50% height=100%>
+![](../ex4/images/ex162-4-44-1.png)
+<br><br>
 
-1. Title the Groovy script step as 'Log Support Case JSON Payload'. Click on the 'Create' button on the step.
-<br><img src="../ex4/images/image-48.png" width=80% height=100%>
+2. Select 'groovy script' in the Add Flow Step dialog.
 
-1. Copy the code below and paste it into the code editor window.
+![](../ex4/images/ex162-4-44-2.png)
+<br><br>
+
+3. Title the Groovy script step as 'Log Support Case JSON Payload'. Click on the 'Create' button on the step.
+
+![](../ex4/images/ex162-4-44-3.png)
+<br><br>
+
+4. Copy the code below and paste it into the code editor window.
       ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message
     import groovy.json.JsonOutput
@@ -406,24 +421,33 @@ In this step we will utilize the deployment URL of the AI model we consumed in [
     ```
 
     Click on 'Apply', ignore any warnings if presented, and 'Close' the editor
-<br><img src="../ex4/images/image-49.png" width=100% height=100%>
 
-1.  After this step, click on the (+) button to add a new flow step.
-<br><img src="../ex4/images/image-50.png" width=80% height=100%>
+![](../ex4/images/ex162-4-45.png)
+<br><br>
 
-1. Select the 'content modifier' step in the 'Add flow step' dialog.
-<br><img src="../ex4/images/image-51.png" width=50% height=100%>
+5.  After this step, click on the (+) button to add a new flow step.
 
-1. Title this as 'Prepare Embedding Call'. Go to the 'Message Header' tab and click 'Add' twice to prepare to add two header attributes.
+![](../ex4/images/ex162-4-46-1.png)
+<br><br>
+
+6. Select the 'content modifier' step in the 'Add flow step' dialog.
+
+![](../ex4/images/ex162-4-46-2.png)
+<br><br>
+
+
+7. Title this as 'Prepare Embedding Call'. Go to the 'Message Header' tab and click 'Add' twice to prepare to add two header attributes.
     Manage the attribute entries as follows:
    | Action | Name | Source Type | Source Value |
     | ----- | ----- | ----- |----- |
     | Create | content-type | Constant | application/json |
     | Create |  ai-resource-group | Property | assignedParticipantID |
     
-    <br><img src="../ex4/images/image-52.png" width=100% height=100%>
+    
+<br>![](../ex4/images/ex162-4-46-3.png)
+<br><br>
 
-1. Click on the 'Message Body' tab and enter the following text as an 'Expression'.
+8. Click on the 'Message Body' tab and enter the following text as an 'Expression'.
    ```json
     {
         "config": {
@@ -440,33 +464,48 @@ In this step we will utilize the deployment URL of the AI model we consumed in [
         }
     }
    ```
-    <br><img src="../ex4/images/image-53.png" width=100% height=100%>
+    
+![](../ex4/images/ex162-4-46-4.png)
+<br><br>
 
-1. Click on the (+) button after the previous step to add a new flow step. Select 'Request-Reply step in the 'Add Flow step' dialog.
-<br><img src="../ex4/images/image-54.png" width=50% height=100%>
+9. Click on the (+) button after the previous step to add a new flow step. Select 'Request-Reply step in the 'Add Flow step' dialog.
 
-1. Title this step as 'Get Text Embeddings'. Click on the 'search step' text box on the right and search for the 'Receiver' shape.
-<br><img src="../ex4/images/image-55.png" width=100% height=100%>
+![](../ex4/images/ex162-4-47.png)
+<br><br>
 
-1. Click and drag the receiver shape right below the request-reply step. You can call this box 'AI_Launchpad'. Click on the 'connector' button.
-<br><img src="../ex4/images/image-56.png" width=70% height=100%>
+10. Title this step as 'Get Text Embeddings'. Click on the 'search step' text box on the right and search for the 'Receiver' shape.
 
-1. Start dragging the connector button all the way down to join the 'AI_Launchpad' Receiver box. Release the mouse button once the ends are joined. An 'Adapter Type' dialog will pop out.
-<br><img src="../ex4/images/image-57.png" width=70% height=100%>
+![](../ex4/images/ex162-4-48.png)
+<br><br>
 
-1. Select 'HTTP' for the 'Adapter Type'.
-<br><img src="../ex4/images/image-58.png" width=40% height=100%>
+11. Click and drag the receiver shape right below the request-reply step. You can call this box 'AI_Launchpad'. Click on the 'connector' button.
 
-1. Proceed to the 'Connection' section in the property sheet for the Adapter. Maintain the following attributes for the properties:
-   | Field | Value |
-    | ----- | ----- |
-    | Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<your-deployment-id>/v2/embeddings` (replace `<your-deployment-id>` with the one from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) after you created the deployment) |
-    | Method | POST |
-    | Authentication | OAuth2Client Credentials|
-    | Credential Name  | `aicore_credentials` |
-    | Request Headers | * |
+![](../ex4/images/ex162-4-49.png)
+<br><br>
 
-    <br><img src="../ex4/images/image-59.png" width=100% height=100%>
+12. Start dragging the connector button all the way down to join the 'AI_Launchpad' Receiver box. Release the mouse button once the ends are joined. An 'Adapter Type' dialog will pop out.
+
+![](../ex4/images/ex162-4-50.png)
+<br><br>
+
+13. Select 'HTTP' for the 'Adapter Type'.
+
+![](../ex4/images/ex162-4-51.png)
+<br><br>
+
+14. Proceed to the 'Connection' section in the property sheet for the Adapter. Maintain the following attributes for the properties:
+
+| Field | Value |
+| ----- | ----- |
+| Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<your-deployment-id>/v2/embeddings` (replace `<your-deployment-id>` with the one from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) after you created the deployment) |
+| Method | POST |
+| Authentication | OAuth2Client Credentials|
+| Credential Name  | `aicore_credentials` |
+| Request Headers | * |
+
+
+![](../ex4/images/ex162-4-52.png)
+<br><br>
 
 ## Step 7 - Prepare data payload to persist text embeddings into HANA Vector DB 
 In this step, the generated embeddings are inserted into the SAP HANA Cloud vector database using JDBC receiver adapter, ensuring real-time grounding of Support Case objects.
