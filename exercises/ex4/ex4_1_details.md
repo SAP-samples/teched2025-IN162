@@ -12,13 +12,13 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
 >[!TIP]
 >Click Edit button on top right if Add drop down is not visible
 
-1. In the create dialog, name your integration flow as: 'IN162-`000` Support Case Event to Hana Vector DB for AI Grounding' (replace `000` with your assigned user identifier). 
+2. In the create dialog, name your integration flow as: 'IN162-`000` Support Case Event to Hana Vector DB for AI Grounding' (replace `000` with your assigned user identifier). 
 
     Click on 'Add and Open in Editor'.
 <br>![](../ex4/images/ex162-4-2.png)
 <br>
 
-1. Now you should see the basic skeleton of the IFlow ready for us to start building upon. 
+3. Now you should see the basic skeleton of the IFlow ready for us to start building upon. 
 
     Click on 'Edit' to get started.
 <br>![](../ex4/images/ex162-4-3.png)
@@ -27,13 +27,21 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
 
 ## Step 2 - AEM Sender Adapter to receive events from the Support Cloud system
 In this step, we will configure the AEM Adapter to receive events from the Support Cloud System
-1. Connect the 'Sender' system (titled AEM) to the 'Start' event by holding and dragging your mouse pointer. 
-<br><img src="../ex4/images/image-4.png" width=100% height=100%>
+<br>
+1. Connect the 'Sender' system to the 'Start' event by holding and dragging your mouse pointer. 
 
-1. A dialog with the different adapters will appear. Select the 'AdvancedEventMesh' adapter.
-<br><img src="../ex4/images/image-5.png" width=50% height=100%>
+![](../ex4/images/ex162-4-4-1.png)
+<br>
 
-1. Select this newly added Adapter and click on the 'Connection' tab from the properties sheet at the bottom of the screen. Add the following attributes to the 'Sender Connection Details' section.
+<br>![](../ex4/images/ex162-4-4-2.png)
+<br><br>
+
+2. A dialog with the different adapters will appear. Select the 'AdvancedEventMesh' adapter.
+
+![](../ex4/images/ex162-4-5.png)
+<br><br>
+
+3. Select this newly added Adapter and click on the 'Connection' tab from the properties sheet at the bottom of the screen. Add the following attributes to the 'Sender Connection Details' section.
     | Field | Value |
     | ----- | ----- |
     | Host | tcps://mr-connection-sq0b51wu6s3.messaging.solace.cloud:55443 |
@@ -42,9 +50,11 @@ In this step, we will configure the AEM Adapter to receive events from the Suppo
     | Authentication Type | Basic |
     | Password Secure Alias | teched-2025-europe-aem-password |
 
-    <br><img src="../ex4/images/image-6.png" width=100% height=100%>
+    
+<br>![](../ex4/images/ex162-4-6.png)
+<br><br>
 
-1.  Next, head over to the 'Processing' tab and enter 'IN162-`000`_Support_Case' in the Queue Name field (replace `000` with your assigned user identifier). 
+4.  Next, head over to the 'Processing' tab and enter 'IN162-`000`_Support_Case' in the Queue Name field (replace `000` with your assigned user identifier). 
    
 > [!IMPORTANT]
 > Refer to [Exercise 1](../ex1/README.md#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh) where we created this Queue. Confirm that the queue name entered here matches the one defined previously.
@@ -52,7 +62,9 @@ In this step, we will configure the AEM Adapter to receive events from the Suppo
 Set the 'Acknowledgement Mode' to 'Automatic on Exchange Complete'.
    
 Leave all other attributes with their default values.
-<br><img src="../ex4/images/image-7.png" width=90% height=100%>
+
+<br>![](../ex4/images/ex162-4-7.png)
+<br><br>
 
 We are done with the first block. 
 >[!TIP]
