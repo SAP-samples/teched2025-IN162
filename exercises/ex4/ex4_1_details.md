@@ -272,57 +272,104 @@ We will now create two processing routes based on the customer ID retrieved from
 ## Step 5 - Perform a message mapping to cleanse the data 
 In this step, we will utilize the 'message mapping' functionality to cleanse the quality of the support case payload from the system. This step is needed to make the demonstration cleaner. We will concatenate and tailor certain files for better readibiilty.
 
+>[!TIP]
+> Resize the process lane to accomodate new steps, move the receiver to right  
+> <br>![](../ex4/images/ex162-4-30-1.png)
+> <br><br>
+> Select the process and drag the rectangle to desired size, move the end step accordingly
+> <br>![](../ex4/images/ex162-4-30-2.png)
+<br>
+
 
 1. Turning our attention now to the 'Assigned' route, click on (+) to add a flow step.
-<br><img src="../ex4/images/image-32.png" width=100% height=100%>
 
-1. Select the 'Request Reply' step in the Add flow step dialog.
-<br><img src="../ex4/images/image-33.png" width=50% height=100%>
 
-1. Notice that the layout has a 'Receiver' box at the right end of the canvas. Click on the box and drag it all the way down below the Request Reply step. Rename the shape as 'SSCV2'.
-<br><img src="../ex4/images/image-34.png" width=100% height=100%>
+![](../ex4/images/ex162-4-30-3.png)
+<br><br>
 
-1. Click on the 'Connector' arrow of the 'Get Support Case Details' request reply shape and start dragging it down.
-<br><img src="../ex4/images/image-35.png" width=70% height=100%>
+2. Select the 'Request Reply' step in the Add flow step dialog.
 
-1. Drag it all the way down to connect with the SSCV2 receiver box. Release the cursor once the ends are joined. A dialog will pop out listing all the different Adapter types. 
-<br><img src="../ex4/images/image-36.png" width=100% height=100%>
+![](../ex4/images/ex162-4-30-4.png)
+<br><br>
 
-1. Select 'HTTP' from the Adapter list.
-<br><img src="../ex4/images/image-37.png" width=40% height=100%>
+3. Rename the title of step to 'Get Support Case Details'. Notice that the layout has a 'Receiver' box at the right end of the canvas. Click on the box and drag it all the way down below the Request Reply step. 
+![](../ex4/images/ex162-4-30-5.png)
+<br><br>
 
-1. Proceed to the 'Connection' section in the property sheet for the Adapter. Maintain the following attributes for the properties:
-   | Field | Value |
-    | ----- | ----- |
-    | Address | `https://my1001903.de1.demo.crm.cloud.sap/sap/c4c/api/v1/case-service/cases/${property.supportCaseID}` |
-    | Authentication | Basic|
-    | Credential Name  | `sscv2_credentials` |
+4. Rename the shape as 'SSCV2'.
+![](../ex4/images/ex162-4-31.png)
+<br><br>
 
-    <br><img src="../ex4/images/image-38.png" width=100% height=100%>
+5. Click on the 'Connector' arrow of the 'Get Support Case Details' request reply shape and start dragging it down.
+![](../ex4/images/ex162-4-32.png)
+<br><br>
 
-1. Click anywhere on the editor canvas (not on any flow step) to activate the 'Integration Flow' panel in the property sheet. Go to the 'References' tab, and in the Global subtab, click on the 'Add References' button and add a 'Message Mapping'.
-<br><img src="../ex4/images/image-39.png" width=100% height=100%>
+6. Drag it all the way down to connect with the SSCV2 receiver box. Release the cursor once the ends are joined. A dialog will pop out listing all the different Adapter types. 
 
-1. Here, we will specify the source package to import the pre-built mapping from. Bring up the 'Package' drop-down and select 'TechEd 2025 IN162 - Solution Package' as the source.
+![](../ex4/images/ex162-4-33.png)
+<br><br>
+
+7. Select 'HTTP' from the Adapter list.
+
+![](../ex4/images/ex162-4-34.png)
+<br><br>
+
+8. Proceed to the 'Connection' section in the property sheet for the Adapter. Maintain the following attributes for the properties:
+| Field | Value |
+| ----- | ----- |
+| Address | `https://my1001903.de1.demo.crm.cloud.sap/sap/c4c/api/v1/case-service/cases/${property.supportCaseID}` |
+| Authentication | Basic|
+| Credential Name  | `sscv2_credentials` |
+
    
-   Select the 'MM_SupportCase_ServiceCloud_to_HanaVectorDB' Artifact and click 'OK'.
-<br><img src="../ex4/images/image-40.png" width=50% height=100%>
+<br> ![](../ex4/images/ex162-4-35.png)
+<br><br>
 
-1. Head back to the 'Get Support Case Details' request reply step and click on the 'Add Flow Step' button.
-<br><img src="../ex4/images/image-41.png" width=90% height=100%>
+9. Click anywhere on the editor canvas (not on any flow step) to activate the 'Integration Flow' panel in the property sheet. Go to the 'References' tab, and in the Global subtab, click on the 'Add References' button and add a 'Message Mapping'.
 
-1.  Select 'Message Mapping' from the Add Flow Step dialog.
-<br><img src="../ex4/images/image-42.png" width=70% height=100%>
+![](../ex4/images/ex162-4-36.png)
+<br><br>
 
-1. Title the message mapping step as 'Message Mapping 1MM_SupportCase_ServiceCloud_to_HanaVectorDB' in the 'General tab of the property sheet. Navigate to the 'processing' tab from the property sheet for the message mapping step and click on the 'Select' button.
-<br><img src="../ex4/images/image-43.png" width=80% height=100%>
+10. Here, we will specify the source package to import the pre-built mapping from. Bring up the 'Package' drop-down and select 'TechEd 2025 IN162 - Solution Package' as the source.
+   
 
-1. This will load a dialog that lets you import existing mapping references in the IFlow. Navigate to the 'Global Resources' section. This displays the mapping we imported in the previous step. Select the message mapping resource and click OK.
+![](../ex4/images/ex162-4-37-1.png)
+<br><br>
+
+11. Select the 'MM_SupportCase_ServiceCloud_to_HanaVectorDB' Artifact and click 'OK'.
+
+![](../ex4/images/ex162-4-37-2.png)
+<br><br>
+
+12. Head back to the 'Get Support Case Details' request reply step and click on the 'Add Flow Step' button.
+
+![](../ex4/images/ex162-4-38.png)
+<br><br>
+
+13.  Select 'Message Mapping' from the Add Flow Step dialog.
+
+![](../ex4/images/ex162-4-39-1.png)
+<br><br>
+
+14. Title the message mapping step as 'Message Mapping 1MM_SupportCase_ServiceCloud_to_HanaVectorDB' in the 'General tab of the property sheet. 
+
+![](../ex4/images/ex162-4-39-2.png)
+<br><br>
+
+15. Navigate to the 'processing' tab from the property sheet for the message mapping step and click on the 'Select' button.
+![](../ex4/images/ex162-4-40.png)
+<br><br>
+
+16. This will load a dialog that lets you import existing mapping references in the IFlow. Navigate to the 'Global Resources' section. This displays the mapping we imported in the previous step. Select the message mapping resource and click OK.
  
-    <br><img src="../ex4/images/image-44.png" width=50% height=100%>
+![](../ex4/images/ex162-4-41.png)
+<br><br>
 
-1. Click on the resource to view the mapping. This will load the mapping in a new window.
-<br><img src="../ex4/images/image-45.png" width=100% height=100%>
+
+17. Click on the resource to view the mapping. This will load the mapping in a new window.
+
+![](../ex4/images/ex162-4-42.png)
+<br><br>
 
 ## Step 6 - Prepare data payload to invoke the embedding model of the AI Service 
 In this step we will utilize the deployment URL of the AI model we consumed in [Exercise 2](../ex2/README.md) using SAP Generative Hub and AI Core's capabilties to generate text embeddings of our support case data payload. 
