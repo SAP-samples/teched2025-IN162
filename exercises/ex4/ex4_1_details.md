@@ -6,17 +6,24 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
 ## Step 1 - Create a new IFlow
 
 1.  In the Artifacts tab, click on 'Add' -> 'Integration Flow'
-<br><img src="../ex4/images/image-1.png" width=100% height=100%>
+
+<br>![](../ex4/images/ex162-4-1.png)
+<br>
+>[!TIP]
+>Click Edit button on top right if Add drop down is not visible
 
 1. In the create dialog, name your integration flow as: 'IN162-`000` Support Case Event to Hana Vector DB for AI Grounding' (replace `000` with your assigned user identifier). 
 
     Click on 'Add and Open in Editor'.
-<br><img src="../ex4/images/image-2.png" width=80% height=100%>
+<br>![](../ex4/images/ex162-4-2.png)
+<br>
 
 1. Now you should see the basic skeleton of the IFlow ready for us to start building upon. 
 
     Click on 'Edit' to get started.
-<br><img src="../ex4/images/image-3.png" width=100% height=100%>
+<br>![](../ex4/images/ex162-4-3.png)
+<br>
+
 
 ## Step 2 - AEM Sender Adapter to receive events from the Support Cloud system
 In this step, we will configure the AEM Adapter to receive events from the Support Cloud System
