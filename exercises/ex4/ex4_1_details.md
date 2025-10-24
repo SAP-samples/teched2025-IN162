@@ -511,15 +511,21 @@ In this step we will utilize the deployment URL of the AI model we consumed in [
 In this step, the generated embeddings are inserted into the SAP HANA Cloud vector database using JDBC receiver adapter, ensuring real-time grounding of Support Case objects.
 
 1. After the 'Get Text Embeddings' step, click on the (+) button to 'Add a Flow Step'.
-<br><img src="../ex4/images/image-60.png" width=80% height=100%>
 
-1. Select 'Groovy Script' from the 'Add Flow step' dialog.
-<br><img src="../ex4/images/image-61.png" width=40% height=100%>
+![](../ex4/images/ex162-4-53.png)
+<br><br>
 
-1. Title the step as 'Prepare SQL Statement'. Click on the 'Create' button on the step.
-<br><img src="../ex4/images/image-62.png" width=100% height=100%>
+2. Select 'Groovy Script' from the 'Add Flow step' dialog.
 
-1.  Copy the following Groovy script and paste it into the script editor.
+![](../ex4/images/ex162-4-54.png)
+<br><br>
+
+3. Title the step as 'Prepare SQL Statement'. Click on the 'Create' button on the step.
+
+![](../ex4/images/ex162-4-55.png)
+<br><br>
+
+4.  Copy the following Groovy script and paste it into the script editor.
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message;
     import groovy.json.JsonSlurper;
@@ -545,29 +551,51 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
     }
     ```
     Click on 'Apply' and after the changes are applied, click  'Close' to exit the script editor. 
-<br><img src="../ex4/images/image-63.png" width=100% height=100%>
 
-1. After this step, click on (+) to add a new flow step.
-<br><img src="../ex4/images/image-64.png" width=70% height=100%>
+![](../ex4/images/ex162-4-56.png)
+<br><br>
 
-1. Add a 'Request-Reply' step in the 'Add Flow step' dialog.
-<br><img src="../ex4/images/image-65.png" width=50% height=100%>
+5. After this step, click on (+) to add a new flow step.
 
-1. Title the step as 'Insert Embeddings to Vector DB'. 
+![](../ex4/images/ex162-4-57.png)
+<br><br>
+
+6. Add a 'Request-Reply' step in the 'Add Flow step' dialog.
+
+![](../ex4/images/ex162-4-58.png)
+<br><br>
+
+7. Title the step as 'Insert Embeddings to Vector DB'. 
    
    Click on the 'Search Step' text box and look for a 'Receiver' step.
-<br><img src="../ex4/images/image-66.png" width=100% height=100%>
 
-1. Drag and place the receiver box below the request-reply step. Title the box as 'HANA_DB'. Click on the 'Connector' button, drag an arrow connecting it to the 'HANA_DB' receiver box. A dialog to select the Adapter pops out.
-<br><img src="../ex4/images/image-67.png" width=80% height=100%>
+![](../ex4/images/ex162-4-59.png)
+<br><br>
 
-1. Select 'JDBC' for the Adapter type.
-<br><img src="../ex4/images/image-68.png" width=60% height=100%>
+8. Drag and place the receiver box below the request-reply step.Title the box as 'HANA_DB'. 
 
-1. Proceed to the 'Connection' tab of the property sheet and enter `SAPHANACloud` in the 'JDBC Data Source Alias' box. Note that this data source alias has already been built for you.
-<br><img src="../ex4/images/image-69.png" width=80% height=100%>
+![](../ex4/images/ex162-4-60.png)
+<br><br>
 
-1. Access to the HANA Database itself is not part of this hands-on exercise, but just for your understadnding here is how the structure for the table `TechEd25_IN162_Table` has been defined in the default `DBADMIN` schema. 
+    
+9. Click on the 'Connector' button, drag an arrow connecting it to the 'HANA_DB' receiver box. A dialog to select the Adapter pops out.
+![](../ex4/images/ex162-4-61-1.png)
+<br><br>
+
+![](../ex4/images/ex162-4-61-2.png)
+<br><br>
+
+10. Select 'JDBC' for the Adapter type.
+
+![](../ex4/images/ex162-4-62.png)
+<br><br>
+
+11. Proceed to the 'Connection' tab of the property sheet and enter `SAPHANACloud` in the 'JDBC Data Source Alias' box. Note that this data source alias has already been built for you.
+
+![](../ex4/images/ex162-4-63.png)
+<br><br>
+
+12. Access to the HANA Database itself is not part of this hands-on exercise, but just for your understadnding here is how the structure for the table `TechEd25_IN162_Table` has been defined in the default `DBADMIN` schema. 
 <br><img src="../ex3/images/image107.png" width=80% height=100%>
 
 ## Step 8 - Deploying the IFlow
