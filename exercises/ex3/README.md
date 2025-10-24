@@ -13,7 +13,11 @@ Irrespective of the approach you choose, let's begin the exercise by logging int
 
 ## Step 1 - Log into your designated Integration Suite tenant
 
-1. Log on to [SAP Integration Suite](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design) tenant using the user ID and password that is already provided by the instructors.
+1. Identity your assigned SAP Integration Suite tenant to log into. Note that we are running this workshop across multiple events / geographies. So, it is important that you log into the right tenant. Refer to [this](https://github.com/SAP-samples/teched2025-IN162/tree/main?tab=readme-ov-file#-sap-teched-berlin-and--sap-teched-on-tour-bangalore-event) section to locate your tenant URL, if you are attending this session from SAP TechEd In Berlin or TechEd on Tour Bangalore. 
+
+    If you are attenting this session from ASUG TechConnect, refer to [this](https://github.com/SAP-samples/teched2025-IN162/tree/main?tab=readme-ov-file#-asug-tech-connect-2025-event) section to identity your tenant based in your assigned participant identifier. 
+
+2. Log in to right SAP Integration Suite tenant using the user ID and password that has been provided by the instructors.
      <br><img src="../ex3/images/image106.png" width=40% height=40%>
      > **Note**: Pay attention that we are using the user`**` pattern to log into the Integration Suite tenant and not the IN162-`***` pattern as you have used in the previous exercise. However, for the subsequent steps of the exercise, you will need to present your corresponding IN162-`***` as the unique user identifier.
 
