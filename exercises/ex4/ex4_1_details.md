@@ -167,57 +167,107 @@ Although each participant has their own Queue subscription, the Topic itself is 
 
 We will now create two processing routes based on the customer ID retrieved from the support case. If the customer ID matches your individual participant ID, the event will be treated as valid and processed further. If it does not match, it will be considered as belonging to another participant and will be filtered out.
 1. Add a new Flow step by clicking on the (+) button after the previous content modifier step.  Select the 'Router' step in the presented dialog.
-<br><img src="../ex4/images/image-18.png" width=50% height=100%>
 
-1. Title the step as `Route Customer ID` in the General tab of the Property Sheet. Click on the 'search step' text box on the right side of the screen and search for a 'content modifier' step. Click on the (+) next to the step to start adding it.
-<br><img src="../ex4/images/image-19.png" width=100% height=100%>
 
-1. Place the box below the 'Route Customer ID' step. Title this step as 'Set Custom Status'.
-<br><img src="../ex4/images/image-20.png" width=100% height=100%>
+<br>![](../ex4/images/ex162-4-16.png)
+<br><br>
 
-1. Click-hold on the 'Connector' button of the router step, drag the connector, and place it on the 'Set Custom Status' content modifier.
-<br><img src="../ex4/images/image-21.png" width=70% height=100%>
+2. Title the step as `Route Customer ID` in the General tab of the Property Sheet. Click on the 'search step' text box on the right side of the screen and search for a 'content modifier' step. Click on the (+) next to the step to start adding it.
 
-1. After this second route is created, title it as 'Others'. Mark this as the 'Default Route' by checking the box. 
-<br><img src="../ex4/images/image-22.png" width=100% height=100%>
 
-1. Click on the first route (titled Route 1) and rename it to 'Assigned'. Click on the 'Processing' tab in the property sheet and set the 'Expression Type' to 'Non-XML' and the condition as `${property.customerID} = ${property.assignedParticipantID}`.
-<br><img src="../ex4/images/image-23.png" width=100% height=100%>
+<br>![](../ex4/images/ex162-4-17.png)
+<br><br>
 
-1. Click on the 'Assigned' route and 'Add a Flow Step'.
-<br><img src="../ex4/images/image-24.png" width=70% height=100%>
+3. Place the box below the 'Route Customer ID' step. Title this step as 'Set Custom Status'.
 
-1. Select 'content modifier' in the 'Add Flow Step' dialog that pops out.
-<br><img src="../ex4/images/image-25.png" width=50% height=100%>
 
-1. Title the content modifier step as 'Set Application ID and Custom Status' in the General tab of the property sheet. Next, go to the 'message header' tab and 'Add' a header. 
-<br><img src="../ex4/images/image-26.png" width=100% height=100%>
+<br>![](../ex4/images/ex162-4-18-1.png)
+<br><br>
 
-1. Set the Header properties as specified below:
+4. Click-hold on the 'Connector' button of the router step, drag the connector, and place it on the 'Set Custom Status' content modifier.
+
+
+<br>![](../ex4/images/ex162-4-18-2.png)
+<br><br>
+
+5. After this second route is created, title it as 'Others'. Mark this as the 'Default Route' by checking the box. 
+
+
+<br>![](../ex4/images/ex162-4-19.png)
+<br><br>
+
+6. Click on the first route (titled Route 1) and rename it to 'Assigned'. Click on the 'Processing' tab in the property sheet and set the 'Expression Type' to 'Non-XML' and the condition as `${property.customerID} = ${property.assignedParticipantID}`.
+
+
+<br>![](../ex4/images/ex162-4-20.png)
+<br><br>
+
+7. Click on the 'Assigned' route and 'Add a Flow Step'.
+
+
+<br>![](../ex4/images/ex162-4-21.png)
+<br><br>
+
+8. Select 'content modifier' in the 'Add Flow Step' dialog that pops out.
+
+
+<br>![](../ex4/images/ex162-4-22.png)
+<br><br>
+
+9. Title the content modifier step as 'Set Application ID and Custom Status' in the General tab of the property sheet. 
+   
+<br>![](../ex4/images/ex162-4-23-1.png)
+<br><br>
+
+10. Next, go to the 'message header' tab and 'Add' a header.
+
+<br>![](../ex4/images/ex162-4-23-2.png)
+<br><br>
+   
+11. Set the Header properties as specified below:
 
     Action : `Create`, Name : `SAP_ApplicationID`, Source Type : `Property`, Source Value : `customerID`.
 > [!NOTE]
 > The header attribute `SAP_ApplicationID` is a special one. It serves as an application-level correlation identifier. We introduce this to ease out your monitoring tasks. We can filter on this identifier, helping you to efficiently grab the log entry that corresponds to your execution. 
 > 
-<br><img src="../ex4/images/image-27.png" width=100% height=100%>
 
-1. Click on the 'Exchange Property' tab and add a Property as follows.
+
+<br>![](../ex4/images/ex162-4-24.png)
+<br><br>
+
+
+12. Click on the 'Exchange Property' tab and add a Property as follows.
    
    Action: `Create`, Name: `SAP_MessageProcessingLogCustomStatus`, Source Type: `Constant`, Source Value: `Successful: Customer ID matched`.
-<br><img src="../ex4/images/image-28.png" width=100% height=100%>
 
-1. Let's turn our attention back to the 'Others' route now. Click on the 'Set Custom Status' content modifier step. Navigate to the 'Exchange Property' tab in the property sheet and 'Add' a Property. Set the attributes for the Property as follows:
+
+<br>![](../ex4/images/ex162-4-25.png)
+<br><br>
+
+13. Let's turn our attention back to the 'Others' route now. Click on the 'Set Custom Status' content modifier step. Navigate to the 'Exchange Property' tab in the property sheet and 'Add' a Property. Set the attributes for the Property as follows:
     Action: `Create`, Name: `SAP_MessageProcessingLogCustomStatus`, Source Type: `Constant`, Source Value: `Terminated: Customer ID mismatch`.
-<br><img src="../ex4/images/image-70.png" width=100% height=100%>
 
-1. After this, click on the (+) button on the 'Set Custom Status' content modifier to add a new Flow step.
-<br><img src="../ex4/images/image-29.png" width=80% height=100%>
 
-1. Look up and select the 'Terminate Message' step in the 'add flow step' dialog.
-<br><img src="../ex4/images/image-30.png" width=50% height=100%>
+<br>![](../ex4/images/ex162-4-26.png)
+<br><br>
 
-1. Title this step as 'Terminate'. This completes the logic for the 'others' route.
-<br><img src="../ex4/images/image-31.png" width=100% height=100%>
+14. After this, click on the (+) button on the 'Set Custom Status' content modifier to add a new Flow step.
+
+
+<br>![](../ex4/images/ex162-4-27.png)
+<br><br>
+
+15. Look up and select the 'Terminate Message' step in the 'add flow step' dialog.
+
+
+<br>![](../ex4/images/ex162-4-28.png)
+<br><br>
+
+16. Title this step as 'Terminate'. This completes the logic for the 'others' route.
+
+
+<br>![](../ex4/images/ex162-4-29.png)
+<br><br>
 
 ## Step 5 - Perform a message mapping to cleanse the data 
 In this step, we will utilize the 'message mapping' functionality to cleanse the quality of the support case payload from the system. This step is needed to make the demonstration cleaner. We will concatenate and tailor certain files for better readibiilty.
