@@ -81,7 +81,11 @@ In the next few steps, we will enrich the support case data received from the Ad
 <br>![](../ex4/images/ex162-4-9.png)
 <br><br>
 
-3. Title this step 'Log Support Case Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter.
+3. Title this step 
+```
+Log Support Case Event Payload
+``` 
+&emsp;&emsp; in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter.
 
 <br>![](../ex4/images/ex162-4-10.png)
 <br><br>
@@ -138,7 +142,10 @@ In the next few steps, we will enrich the support case data received from the Ad
 <br>![](../ex4/images/ex162-4-14-3.png)
 <br><br>
 
-9.  Name this step as 'Extract Support Case and Customer ID'.
+9.  Name this step as 
+```
+Extract Support Case and Customer ID
+``` 
 <br>![](../ex4/images/ex162-4-14-4.png)
 <br><br>
 
@@ -172,9 +179,11 @@ We will now create two processing routes based on the customer ID retrieved from
 <br>![](../ex4/images/ex162-4-16.png)
 <br><br>
 
-2. Title the step as `Route Customer ID` in the General tab of the Property Sheet. Click on the 'search step' text box on the right side of the screen and search for a 'content modifier' step. Click on the (+) next to the step to start adding it.
-
-
+2. Title the step as 
+```
+Route Customer ID
+``` 
+&emsp;&emsp; in the General tab of the Property Sheet. Click on the 'search step' text box on the right side of the screen and search for a 'content modifier' step. Click on the (+) next to the step to start adding it.
 <br>![](../ex4/images/ex162-4-17.png)
 <br><br>
 
