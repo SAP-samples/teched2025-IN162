@@ -36,7 +36,7 @@ Now that the IFlow has been copied, we will configure it with certain externaliz
 2. The configuration dialog will pop open. In the 'Sender' tab, enter 'IN162-`000`_Sales_Order' in the 'Queue Name' text box. (replace `000` with your actual user identifier)
 <br><img src="../ex3/images/image98.png" width=100% height=100%>
 
-1. Next, navigate to the 'Receiver' tab and enter the URL `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0` in the AI_Launchpad_URL textbox.
+1. Next, navigate to the 'Receiver' tab and enter the URL https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/your-deployment-id/v2/embeddings in the AI_Launchpad_URL textbox. (Copy the deployment-id from Exercise 2 after you created the deployment)
 <br><img src="../ex3/images/image99.png" width=100% height=100%>
 
 1. Move over to the 'More' tab and enter 'IN162-`000`' in the Assigned_Participant_ID text box. (replace `000` with your actual user identifier)
