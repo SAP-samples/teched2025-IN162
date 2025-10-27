@@ -64,8 +64,8 @@ To complete the exercises, you will need access to the following applications:
 
 **SAP Integration Suite Tenant assignment:** Please verify which group you belong to before proceeding.
 - **Group 1 (Users 001 to 030):** [SAP Integration Suite - Tenant 1](https://workshop-us-01a.integrationsuite-cpi034.cfapps.us10-002.hana.ondemand.com/shell/design)
-- **Group 2 (Users 031 to 060):** [SAP Integration Suite - Tenant 2](https://workshop-us-01b.integrationsuite-cpi034.cfapps.us20.hana.ondemand.com/shell/design)
-- **Group 3 (Users 061 to 095):** [SAP Integration Suite - Tenant 3](https://workshop-us-01c.integrationsuite-cpi034.cfapps.us30.hana.ondemand.com/shell/design)
+- **Group 2 (Users 031 to 060):** [SAP Integration Suite - Tenant 2](https://workshop-us-01b.integrationsuite.cfapps.us20.hana.ondemand.com/shell/design)
+- **Group 3 (Users 061 to 095):** [SAP Integration Suite - Tenant 3](https://workshop-us-01c.integrationsuite.cfapps.us30.hana.ondemand.com/shell/design)
 
 
 
