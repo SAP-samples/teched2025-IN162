@@ -29,6 +29,8 @@ In this exercise, we will create a new Sales Order in SAP S/4HANA Cloud system t
    <img src="../ex5/images/ex5-s4-3.png" width=80% height=100%>
 
    - Sold-to Party: **Domestic US Customer 1 (17100001)**
+   > [!TIP]
+   > Search for the Business Partner ID **17100001**
    - Customer Reference: **IN162-`XXX`** (replace `XXX` with your assigned group identifier)
   
 > [!IMPORTANT]
