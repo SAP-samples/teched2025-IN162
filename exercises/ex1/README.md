@@ -56,7 +56,6 @@ After completing these steps, you will have familiarized yourself with AEM. Thes
 	- **Connector Wizards:** Used to connect to a variety of web services.
 	- **Access Control:** Used to create new client usernames, access control profiles, and client profiles.
 	- **Replay:** Used to enable replay functionality, to allow the broker to send previous messages again.
-		> Note: AEM brokers do not use replay for recovery of persistent data (like Kafka). There is a more fine-grained approach in AEM where each individual message is Acknowledged to the broker when the consumer application is done with it.
 	- **Try Me!:** Used to connect to WebSocket test applications.
 
 	![Pic 11-8](./images/ex1-exploreBroker.png)  
