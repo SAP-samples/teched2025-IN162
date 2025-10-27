@@ -92,8 +92,8 @@ After completing these steps, you will have created the first queue subscribed t
 
 6. On the next screen, change the **Access Type** to **Non-Exclusive**, as this session does not require message order and exactly-once delivery. Leave the remaining configurations at their default settings, and click on the **Apply** button.
 	> Note:
- 	> <br>**Non-exclusive queue** → multiple consumers, parallel processing, no EOIO guarantee.
-	> <br>**Exclusive queue** → single consumer, preserves EOIO (message order and exactly-once delivery).
+ 	> <br>**Non-exclusive queue** → multiple consumers, parallel processing, no guarantee of in-order message delivery
+	> <br>**Exclusive queue** → single consumer, messages are delivered in-order
 	
 	![Pic 7](./images/ex1-7.png)       
 
@@ -136,8 +136,8 @@ After completing these steps, you will have created the second queue subscribed 
 
 4. On the next screen, change the **Access Type** to **Non-Exclusive**, as this session does not require message order and exactly-once delivery. Leave the remaining configurations at their default settings, and click on the **Apply** button.
 	> Note:
- 	> <br>**Non-exclusive queue** → multiple consumers, parallel processing, no EOIO guarantee.
-	> <br>**Exclusive queue** → single consumer, preserves EOIO (message order and exactly-once delivery).
+ 	> <br>**Non-exclusive queue** → multiple consumers, parallel processing, no guarantee of in-order message delivery
+	> <br>**Exclusive queue** → single consumer, messages are delivered in-order
 
 	![Pic 13-4](./images/ex13-4.png)       
 
