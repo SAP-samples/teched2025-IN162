@@ -1,6 +1,6 @@
 # Scenario Introduction
 
-This session immerses you in real-time vector grounding — connecting structured enterprise data to a large language model through **SAP HANA Cloud’s vector database, SAP Integration Suite, and Advanced Event Mesh.** You’ll experience how dynamic data updates can instantly refine the model’s responses, ensuring they remain current and contextually precise. By the end, you’ll have built an end-to-end, event-driven flow that reacts to **new sales order events from SAP S/4HANA Cloud** and **support case events from SAP Service Cloud Version 2**, providing the AI assistant with live contextual intelligence.
+This session immerses you in real-time vector grounding — connecting structured enterprise data to a large language model through **SAP HANA Cloud’s vector database, SAP Integration Suite and SAP Integration Suite, advanced event mesh.** You’ll experience how dynamic data updates can instantly refine the model’s responses, ensuring they remain current and contextually precise. By the end, you’ll have built an end-to-end, event-driven flow that reacts to **new sales order events from SAP S/4HANA Cloud** and **support case events from SAP Service Cloud Version 2**, providing the AI assistant with live contextual intelligence.
 
 ## Business Scenario
 
@@ -21,7 +21,7 @@ Imagine your organization employs an **AI-powered Customer Success Digital Assis
 
 2. Within the **Cloud Integration capability of SAP Integration Suite**, two Integration Flows subscribe to new Sales Order and Support Case events via the Cloud Integration **Advanced Event Mesh sender adapter**, which uses the **Solace Message Format (SMF) protocol**.
    
-3. Both Integration Flows then **perform lookup calls** to the downstream systems — **SAP S/4HANA Cloud** and **SAP Service Cloud Version 2** to retrieve additional details for the respective sales order and support case. They then perform data transformation using message mapping and ultimately convert the payload to JSON format.
+3. Both Integration Flows then **perform lookup calls** to the downstream backend systems — **SAP S/4HANA Cloud** and **SAP Service Cloud Version 2** - to retrieve additional details for the respective sales order and support case. They then perform data transformation using message mapping and ultimately convert the payload to JSON format.
 
 4. The Integration Flows then **invoke the SAP AI Core API to generate embeddings for the JSON payload** using the `text-embedding-3-small` model.
 
