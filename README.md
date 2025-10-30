@@ -39,9 +39,10 @@ You can explore the following SAP Discovery Center missions to get started and b
 
 You can also gain some further knowledge around SAP Integration Suite and SAP Integration Suite, advanced event mesh by attending the following SAP TechEd Hands-on Workshop sessions:
 
-- [IN165 | Experience event-driven integration with advanced event mesh](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749789125498001xZYY)
-- [IN161 | Modernize and transform your integration to the cloud](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711963531001B8Pr)
-- [IN160 | Empower your business through enterprise automation](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711728862001rC69)
+- [IN103 | Helping systems talk smarter with a flexible event-driven architecture | Deep Dive](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1751642175552001awv9)
+- [IN165 | Experience event-driven integration with advanced event mesh | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749789125498001xZYY)
+- [IN160 | Empower your business through enterprise automation | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711728862001rC69)
+- [IN163 | Implement exactly once in-order delivery in SAP Integration Suite | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748712337664001rclU)
 
 ## System URL and login information 
 
@@ -51,22 +52,10 @@ To complete the exercises, you will need access to the following applications:
 
 - [SAP Integration Suite, advanced event mesh](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073)
 - [SAP AI Launchpad](https://in162-ntn259xc.ai-launchpad.prod.eu-central-1.aws.ai-prod.cloud.sap/)
+- [SAP Integration Suite](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design)
 - [SAP S/4HANA Cloud](https://my427029.s4hana.cloud.sap/ui)
 - [SAP Service Cloud Version 2](https://my1001903.de1.demo.crm.cloud.sap/)
 - [SAP Joule: Customer Success Digital Assistant](https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant)
-
-### 🇩🇪 SAP TechEd Berlin and 🇮🇳 SAP TechEd on Tour Bangalore Event
-- [SAP Integration Suite](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design)
-
----
-
-### 🇺🇸 ASUG Tech Connect 2025 Event
-
-**SAP Integration Suite Tenant assignment:** Please verify which group you belong to before proceeding.
-- **Group 1 (Users 001 to 030):** [SAP Integration Suite - Tenant 1](https://workshop-us-01a.integrationsuite-cpi034.cfapps.us10-002.hana.ondemand.com/shell/design)
-- **Group 2 (Users 031 to 060):** [SAP Integration Suite - Tenant 2](https://workshop-us-01b.integrationsuite.cfapps.us20.hana.ondemand.com/shell/design)
-- **Group 3 (Users 061 to 095):** [SAP Integration Suite - Tenant 3](https://workshop-us-01c.integrationsuite.cfapps.us30.hana.ondemand.com/shell/design)
-
 
 
 > [!IMPORTANT]
