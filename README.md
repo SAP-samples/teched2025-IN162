@@ -46,7 +46,7 @@ You can also gain some further knowledge around SAP Integration Suite and SAP In
 
 ## System URL and login information 
 
-This session is part of multiple SAP events, and all systems and exercises remain the same except for the **SAP Integration Suite Tenant**. Please choose the Integration Suite tenant according to your specific event. If you are uncertain about which tenant to use, consult your **workshop instructors**.
+This session is part of multiple SAP events, and all systems and exercises remain the same except for the **SAP Integration Suite Tenant**. If you are attending ASUG TechConnect, you are currently in the wrong GitHub branch — please switch to the asug2025 branch and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
 
 To complete the exercises, you will need access to the following applications:
 
