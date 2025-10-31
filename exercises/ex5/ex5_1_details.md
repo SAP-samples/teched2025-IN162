@@ -32,7 +32,9 @@ In this exercise, we will create a new Sales Order in SAP S/4HANA Cloud system t
    - Customer Reference: **IN162-`XXX`** (replace `XXX` with your assigned group identifier)
   
 > [!IMPORTANT]
-> All participants are using the same **Sold-to Party**. Enter your group identifier in the **Customer Reference** field. This ensures the Sales Order is correctly associated with your participant group.
+> All participants are using the same **Sold-to Party**. 
+> 
+> Enter your group identifier in the **Customer Reference** field. This ensures the Sales Order is correctly associated with your participant group. This is absolutely mandatory!
 
 5. Scroll further down to the **Items** section\
    You can add as many items to your order as you would like.
