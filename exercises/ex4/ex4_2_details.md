@@ -80,7 +80,7 @@ Now that the configuration is complete, we will move ahead and deploy the IFlow.
 <br>![](../ex4/images/ex162-42-12.png)
 <br><br>
 
-3. Head back to the 'Artifact' tab, and a message toast will confirm the successful completion of the deployment step.
+3. A message toast will confirm the successful completion of the deployment step.
 
 <br>![](../ex4/images/ex162-42-13.png)
 <br><br>
