@@ -60,14 +60,15 @@ Now that the IFlow has been copied, we will configure it with certain externaliz
 > Replace the `000` with your assigned user idenfifier.
 
   <br>![](../ex3/images/ex162-32-8.png)
-   <br>
-3. Next, navigate to the 'Receiver' tab and enter the URL https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/your-deployment-id/v2/embeddings in the AI_Launchpad_URL textbox. 
-> [!NOTE]
-> Copy the deployment-id from Exercise 2 after you created the deployment
+
+1. Next, navigate to the 'Receiver' tab and enter the URL  'https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/`your-deployment-id-here`' in the AI_Launchpad_URL textbox. 
+   
+   > [!NOTE]
+   > Copy the `deployment-id-here` from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) where you created the deployment. 
 
   <br>![](../ex3/images/ex162-32-9.png)
    <br>
-4. Move over to the 'More' tab and enter 'IN162-`000`' in the Assigned_Participant_ID text box. 
+1. Move over to the 'More' tab and enter 'IN162-`000`' in the Assigned_Participant_ID text box. 
 > [!NOTE]
 > Replace the `000` with your assigned user idenfifier.
 

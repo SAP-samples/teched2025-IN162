@@ -4,10 +4,10 @@ In this exercise, we will create a support case in SAP Service Cloud Version 2 t
 
 ## Step 1 - Log on to SAP Service Cloud Version 2 system
 
-1.  Log on to [SAP Service Cloud Version 2](https://my1001903.de1.demo.crm.cloud.sap/) tenant using the user ID and password that is already provided by the instructors. Log on to the same browser window where you would have previously logged into the [AEM](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073) tenant as part of [Exercise 1](../ex1/README.md#exercise-11---log-into-advanced-event-mesh-and-explore-it)
+1.  Log on to [SAP Service Cloud Version 2](https://my1001903.de1.demo.crm.cloud.sap/) tenant. Log on to the same browser window where you would have previously logged into the [AEM](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073) tenant as part of [Exercise 1](../ex1/README.md#exercise-11---log-into-advanced-event-mesh-and-explore-it)
 
     > [Note:]
-    > <br>The reason why you are expected to use the same windows is that the login session to SAP Service Cloud utilizes SAML browser cookies to extend SSO from AEM.
+    > <br>The reason why you are expected to use the same window is that the login session to SAP Service Cloud utilizes SAML browser cookies to extend SSO from AEM.
     > 
     > If you have closed all browser windows, make sure to log into AEM and then open SAP Service Cloud Version 2 in a separate tab of the same window.
     > 

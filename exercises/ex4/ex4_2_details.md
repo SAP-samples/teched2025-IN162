@@ -31,12 +31,18 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
 <br>![](../ex4/images/ex162-42-4.png)
 <br><br>
 
-5. Back in the 'Copy' dialog, title the Name of the IFlow as `Support Case Event to Hana Vector DB for AI Grounding`. After this, click on 'Copy'.
+1. Back in the 'Copy' dialog, title the Name of the IFlow as   
+ ```
+   Support Case Event to Hana Vector DB for AI Grounding - IN162-0**
+   ```
+> [!NOTE]
+> Replace the `0**` with your assigned user idenfifier.
+   After this, click on 'Copy'.
 
 <br>![](../ex4/images/ex162-42-5.png)
 <br><br>
 
-6. After the copy is successful, navigate to the copied package by clicking on the 'Navigate' button in the presented dialog.
+1. After the copy is successful, navigate to the copied package by clicking on the 'Navigate' button in the presented dialog.
 
 <br>![](../ex4/images/ex162-42-6.png)
 <br><br>
@@ -54,7 +60,9 @@ Now that the IFlow has been copied, we will configure it with certain externaliz
 <br>![](../ex4/images/ex162-42-8.png)
 <br><br>
 
-3. Next, navigate to the 'Receiver' tab and enter the URL `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0` in the AI_Launchpad_URL textbox.
+3. Next, navigate to the 'Receiver' tab and enter the URL: 'https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/`your-deployment-id`' in the AI_Launchpad_URL textbox.
+   > [!NOTE]
+   > Copy the `deployment-id-here` from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) where you created the deployment.
 
 <br>![](../ex4/images/ex162-42-9.png)
 <br><br>
