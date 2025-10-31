@@ -78,7 +78,8 @@ Click on 'Save' to save your configuration settings.
 ## Step 3 - Deploy the IFlow 
 Now that the configuration is complete, we will move ahead and deploy the IFlow.
 
-1. Click on 'Deploy' in the configuration dialog from the previous step. Select the default 'Cloud Integration' as the runtime profile to deploy the content into.
+1. Click on 'Deploy' in the configuration dialog from the previous step. OR you can open editor to 'Deploy' the flow
+   Select the default 'Cloud Integration' as the runtime profile to deploy the content into.
 
  <br>![](../ex3/images/ex162-32-12.png)
    <br>
@@ -89,9 +90,10 @@ Now that the configuration is complete, we will move ahead and deploy the IFlow.
 
 <br>![](../ex3/images/ex162-32-14.png)
    <br>
-3. Head back to the 'Artifact' tab, and a message toast will confirm the successful completion of the deployment step.
-<br><img src="../ex3/images/image104.png" width=100% height=100%>
+3. A message toast will confirm the successful completion of the deployment step.
 
+<br>![](../ex3/images/ex162-32-11-0.png)
+   <br>
 4. The IFLow is in the 'starting' phase now. Click on the IFlow to bring up the model. After a minute or so, you should see the 'Runtime Status' change to 'Started'. This means that the IFlow is ready and listening for changes.
 
 <br>![](../ex3/images/ex162-32-11-1.png)
