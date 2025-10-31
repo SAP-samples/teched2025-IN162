@@ -73,9 +73,10 @@ After completing these steps, your deployment will be created and running in SAP
 
 4.	Wait for the deployment to start running. This may take a few minutes, so you can proceed with the next exercise in this hands-on session.
    Once the deployment status shows **RUNNING**, copy the Deployment ID and URL. You’ll need them in the next exercise when working with integration flows in the Cloud Integration capability of SAP Integration Suite.
+>[!TIP]
+>Use the copy button to copy URL correctly and avoid manual errors
 
-  	![Pic 22-4](./images/ex22-4.png)
-
+![Pic 22-4](./images/IN162-15-1.png)
    
    > **Note:** In case the deployment do not show the **RUNNING** status even after some minutes, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
    > <br><br>Deployment ID: **db1ce5ede0291ce0** 
