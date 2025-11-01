@@ -1,4 +1,4 @@
-# SAP S/4Hana Cloud System Configuration (for your information only)
+# SAP S/4HANA Cloud System Configuration (for your information only)
 
 As per the scenario, we need to create a new **Sales Order (SO)** in **SAP S/4HANA Cloud** system.\
 This will publish an event to **SAP Integration Suite, advanced event mesh** from where it will be subscribed by a **SAP Integration Suite integration flow**. As the standard Sales Order business event is only notification event, the integration flow will call the **Sales Order API** to fetch additional details. 
