@@ -81,8 +81,8 @@ To complete the exercises, you will need access to the following applications:
 ## Pre-configured Setup
 Chapters in this section provide pre-configured setups to support learning, without being part of the hands-on exercises:
 
-- [SAP S/4HANA Cloud System Configurations](intro/intro2/README.md)
-- [SAP Service Cloud Version 2 System Configurations](intro/intro3/README.md)
+- [SAP S/4HANA Cloud System Configurations (for your information only)](intro/intro2/README.md)
+- [SAP Service Cloud Version 2 System Configurations (for your information only)](intro/intro3/README.md)
 
 ## Exercises
 The complete list of exercise steps are listed below, run through them in the given order.
