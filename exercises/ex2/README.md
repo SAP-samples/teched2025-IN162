@@ -23,15 +23,17 @@ After completing these steps, you will have created the configuration in SAP AI 
    <br>Verify that the resource group <b>IN162-0**</b> *(replace ** with the participant number that is assigned to you)* is visible in the SAP AI Launchpad.
    <br>Select the available resource group to enable the menu items in the left pane: **Generative AI Hub**, **SAP AI Core Administration** and **ML Operations**.
 
-   > **Note**: If your resource group is missing contact the instructor. Also note that if your assigned participant ID is any of the following :`IN162-062`, `IN162-065`, `IN162-070`, `IN162-07`6, `IN162-088`, `IN162-093` you will be presented with a different resource group. This is intended.
-
    ![Pic 21-2](./images/ex21-2.png)
+
+   > **Note**: Participants with the following numbers — `IN162-062`, `IN162-065`, `IN162-070`, `IN162-076`, `IN162-086`, `IN162-088`, or `IN162-093` — will be assigned to a different resource group. This is intentional.
+   >
+   > Other than these, if your resource group is missing, please contact the instructor.
 
    
 3. From the left menu, select **ML Operations -> Configuration**, and then click **Create** button.
    ![Pic 21-3](./images/ex21-3.png)
 
-   > **Note**: If your participant number falls between **IN162-001** and **IN162-045**, you may see an existing configuration. This occurs because these participant numbers are also being used simultaneously at another location. You can safely disregard the existing entry and **proceed to create a new one**. 
+   > **Note**: If your participant number falls between **IN162-001** and **IN162-045**, you may see an existing Configuration. This occurs because these participant numbers are also being used simultaneously at another location. You can safely disregard the existing entry and **proceed to create a new one**. 
 
    ![Pic 21-3](./images/image1.png)
 
