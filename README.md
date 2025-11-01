@@ -1,8 +1,8 @@
-# IN162 -  Real-time data for AI agents: Grounding with event-driven architecture
+# Hands-on Lab: Real-Time Data for AI Agents: Grounding with Event-Driven Architecture
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2025 Hands-on Workshop session [IN162 | Real-time data for AI agents: Grounding with event-driven architecture](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748712252655001fP5Z)  
+This repository contains the material for **ASUG Tech Connect 2025** Hands-on Workshop session [Hands-on Lab: Real-Time Data for AI Agents: Grounding with Event-Driven Architecture](https://events.asug.com/event/e7bd56fe-4c89-4e90-bc2c-ff75b4cc099b/agenda?session=67940d63-053f-4348-8a8a-50da8e21cd8a)  
 
 ## Session Overview
 
@@ -46,13 +46,12 @@ You can also gain some further knowledge around SAP Integration Suite and SAP In
 
 ## System URL and login information 
 
-This session is part of multiple SAP events, and all systems and exercises remain the same except for the **SAP Integration Suite Tenant**. If you are attending ASUG TechConnect, you are currently in the wrong GitHub branch — please switch to the asug2025 branch and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
+This session is part of multiple SAP events, and all systems and exercises remain the same except for the **SAP Integration Suite Tenant**. Note that the system details for this exercise have been tailoed for particiants attending **ASUG Tech Connect 2025**. If you are attending TechEd Berlin or TechEd on tour, you are currently in the wrong GitHub branch — please switch to the main branch and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
 
 To complete the exercises, you will need access to the following applications:
 
 - [SAP Integration Suite, advanced event mesh](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073)
 - [SAP AI Launchpad](https://in162-ntn259xc.ai-launchpad.prod.eu-central-1.aws.ai-prod.cloud.sap/)
-- [SAP Integration Suite](https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design)
 - [SAP S/4HANA Cloud](https://my427029.s4hana.cloud.sap/ui)
 - [SAP Service Cloud Version 2](https://my1001903.de1.demo.crm.cloud.sap/)
 - [SAP Joule: Customer Success Digital Assistant](https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant)
@@ -62,7 +61,7 @@ To complete the exercises, you will need access to the following applications:
 **SAP Integration Suite Tenant assignment:** Please verify which group you belong to before proceeding.
 
 >[!NOTE]
->The tenant URLs listed below are intended only for participants of the **ASUG TechConnect** hands-on session.
+>The tenant URLs listed below are intended only for participants of the **ASUG Tech Connect** hands-on session.
 > If you are attending **TechEd Berlin**, you are currently looking the wrong GitHub branch — please switch to the **main** branch and follow the instructions provided there.
 
 - **Group 1 (Users 001 to 030):** [SAP Integration Suite - Tenant 1](https://workshop-us-01a.integrationsuite-cpi034.cfapps.us10-002.hana.ondemand.com/shell/design)
