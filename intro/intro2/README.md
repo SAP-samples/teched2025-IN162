@@ -11,7 +11,7 @@ To enable the publishing of **Sales Order event** to **SAP Integration Suite, ad
 
 **This section is just for your knowledge and information only.**
 
-## Sales Order Integration - SAP_COM_0109 Communication Scenario
+## 1. Sales Order Integration - SAP_COM_0109 Communication Scenario
 
 ![Pic 2](./images/in2-2.png)
 
@@ -20,7 +20,7 @@ We then utilized the Sales Order API and communication user credentials in the C
 
 To know more about how to create a Communication Arrangement in SAP S/4HANA Cloud system, kindly check the [help documentation link](https://help.sap.com/docs/SAP_S4HANA_CLOUD/03c04db2a7434731b7fe21dca77440da/a5550ea977b24a6eb6ce1ce832088567.html).
 
-## SAP Integration Suite, Advanced Event Mesh Integration - SAP_COM_0492 Communication Scenario
+## 2. SAP Integration Suite, Advanced Event Mesh Integration - SAP_COM_0492 Communication Scenario
 
 With the SAP Event Mesh Advanced Plan, you can connect directly to your own SAP AEM instance. You can use SAP Event Mesh Advanced Plan for very large projects, where performance is crucial.
 
@@ -48,7 +48,7 @@ Details for each parameter can be found in the [help](https://help.sap.com/docs/
 > Note that the connection to the SAP Integration Suite, advanced event mesh only becomes active after creation of **SAP_COM_0493** communication scenario.
 
 
-## SAP Integration Suite, Advanced Event Mesh Integration, Validation Service - SAP_COM_0493 Communication Scenario
+## 3. SAP Integration Suite, Advanced Event Mesh Integration, Validation Service - SAP_COM_0493 Communication Scenario
 
 This Communication Arrangement is needed to validate the SAP AEM broker destination URL.
 
@@ -59,7 +59,7 @@ During creation process of **SAP_COM_0493** you need to provide the SAP AEM **Se
 Details for each parameter can be found in the [help](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/42c97263becd4aeb9932499db666c7d2.html?version=2508.500).
 
 
-## Enterprise Event Enablement - Configure Channel Binding
+## 4. Enterprise Event Enablement - Configure Channel Binding
 
 You can define which event types shall be published or consumed using a connection defined through the communication arrangement. Each event type is assigned to one topic. Topics form a logical tree to organize events, such as a folder hierarchy in a file system. Thus, the topics appear as strings that consist of multiple segments and are separated by one defined delimiter, similar to file paths.
 
