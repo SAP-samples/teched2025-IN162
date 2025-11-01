@@ -1,6 +1,10 @@
-# Exercise 1 - Exercise 1 Description
+# SAP Service Cloud Version 2 System Configurations (for your information only)
 
-In this exercise, we will create...
+As per the scenario, we also need to create a new **Support Case** in **SAP Service Cloud Version 2** system.
+This will **publish an event** to **SAP Integration Suite, advanced event mesh** from where it will be subscribed by a **SAP Integration Suite integration flow**. Although the standard Support Case business event is the data event but still the integration flow will call the Support Case API to fetch the additional details.
+
+To enable the publishing of **Support Case event** to **SAP Integration Suite, advanced event mesh**, the following configuration steps have already been completed in **SAP Service Cloud Version 2** system for you. 
+<br>**This section is just for your knowledge and information only.**
 
 ## Exercise 1.1 Sub Exercise 1 Description
 

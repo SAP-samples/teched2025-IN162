@@ -47,4 +47,4 @@ With this setup, the CSM’s prompt is turned into a vector, matched against up-
 
 You should now be familiar with the session scenario.
 
-Now, to learn all the configurations that has been done in **SAP S/4HANA Cloud** to enable new sales order event publication to **SAP Integration Suite, advanced event mesh**, you can navigate to [SAP S/4HANA Cloud Configuration](/intro/intro2/README.md) section.
+Now, to learn all the configurations that has been done in **SAP S/4HANA Cloud** system to enable new sales order event publication to **SAP Integration Suite, advanced event mesh**, you can navigate to [SAP S/4HANA Cloud System Configuration](/intro/intro2/README.md) section.
