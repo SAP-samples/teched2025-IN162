@@ -3,7 +3,7 @@
 As per the scenario, we need to create a new **Sales Order (SO)** in **SAP S/4HANA Cloud** system.\
 This will publish an event to **SAP Integration Suite, advanced event mesh** from where it will be subscribed by a **SAP Integration Suite integration flow**. As the standard Sales Order business event is only notification event, the integration flow will call the **Sales Order API** to fetch additional details. 
 
-Details about the [Sales Order API](https://api.sap.com/api/CE_SALESORDER_0001/overview) and the [Sales Order Events](https://api.sap.com/event/CE_SALESORDEREVENTS/overview) can be found in the [SAP Business Accelerator Hub](https://api.sap.com/).
+Details about the [Sales Order Events](https://api.sap.com/event/CE_SALESORDEREVENTS/overview) and [Sales Order API](https://api.sap.com/api/CE_SALESORDER_0001/overview) can be found in the [SAP Business Accelerator Hub](https://api.sap.com/).
 
 To enable the publishing of **Sales Order event** to **SAP Integration Suite, advanced event mesh** and to invoke the **Sales Order API**, the following communication arrangements have already been created in **SAP S/4HANA Cloud** system for you. 
 
