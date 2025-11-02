@@ -7,13 +7,24 @@ To enable the publishing of **Support Case event** to **SAP Integration Suite, a
 
 **This section is just for your knowledge and information only.**
 
-## Configurations
+## Configurations for dispatching outbound events to SAP Integration Suite, advanced event mesh
 
-Assign the sap.crm.service.eventBridgeService business service to your user to enable Standard Events and Standard Events Monitoring UI in the Admin Settings.
-For dispatching outbound events to external systems, complete the following steps:
-Go to User Menu  Settings  All Settings  Integration  Communication Systems.
-Create a Communication System and maintain the hostname and the credentials of the external system to which the events must be dispatched. Activate the communication system.
-Next, in the Communication Configuration page Send Events to External Systems needs to be configured.
+1. Assigned the **sap.crm.service.eventBridgeService** business service to **Admin** user role that is assigned to **ADMINISTRATION01** business user to **enable Standard Events and Standard Events Monitoring UI** in the Admin Settings.
+
+   ![Pic 3-1](./images/in3-1.png)
+   ![Pic 3-2](./images/in3-2.png)
+   
+3. Then navigated to **User Menu -> Settings -> All Settings  -> Integration -> Communication Systems**
+
+   <img src="./images/in3-3.png" alt="Pic 3-3" width=25% height=25%>
+
+   ![Pic 3-4](./images/in3-4.png)
+
+4. Created a **Communication System** and maintained the hostname and the credentials of the **SAP Integration Suite, advanced event mesh** to which the events must be dispatched. You can use the REST endpoint of SAP AEM broker obtained from the SAP AEM. Activate the communication system.
+
+    ![Pic 3-5](./images/in3-5.png)
+   
+5. Next, in the Communication Configuration page Send Events to External Systems needs to be configured.
 Open the Communication Configuration  Send Events to External Systems, and select Copy.
 In the copied Communication Configuration, select the Communication System created already.
 In the same Communication Configuration, under the HTTP Data section, maintain the API path of the external system and Activate the Communication Configuration. The {host_name of the Communication System + API Path} is where the outbound events is dispatched. The event payload is dispatched to the configured endpoint as an HTTP POST call.
