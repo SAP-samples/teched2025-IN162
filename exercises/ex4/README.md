@@ -12,6 +12,6 @@ For your convenience, this exercise is provided in two formats, following the sa
 > [!TIP] 
 > Even if you follow the recommended approach, it is strongly advised to review Exercise 4.1 in detail to gain a comprehensive understanding of its functionality.
 
-We will assume that you have already completed Exercise 3 and, hence, you are logged into the the assigned Integration Suite tenant and have created an Integration Package titled 'TechEd 2025 IN162-`000`' (replace `000` with your assigned user identifier). If not, navigate to [this](../ex3/README.md#step-1---log-into-your-designated-integration-suite-tenant) section to log in to the right tenant, create a Package and come back to this section.
+We will assume that you have already completed Exercise 3 and, hence, you are logged into the assigned Integration Suite tenant and have created an Integration Package titled 'TechEd 2025 IN162-`000`' (replace `000` with your assigned user identifier). If not, navigate to [this](../ex3/README.md#step-1---log-into-your-designated-integration-suite-tenant) section to log in to the right tenant, create a Package, and come back to this section.
 
  From this point on, follow either [Exercise 4.2](./ex4_2_details.md)(recommended - easy and quick) or [Exercise 4.1](./ex4_1_details.md)(expert grade - thorough and long).
