@@ -43,7 +43,7 @@ In this step, we will configure the AEM Adapter to receive events from S/4HANA.
 
 4. Next, head over to the 'Processing' tab and enter IN162-`0**`_Sales_Order in the Queue Name field (replace `0**` with your assigned user identifier). 
    
-   Set the 'Acknowledgement Mode' to 'Automatic on Exchange Complete'.
+   Set the 'Acknowledgment Mode' to 'Automatic on Exchange Complete'.
 > [!IMPORTANT]
 > Refer to [Exercise 1](../ex1/README.md#exercise-12---create-a-queue-in-advanced-event-mesh) where we created this Queue.
    
@@ -116,7 +116,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
 <br>
 
 > [!TIP]
-> Format the diagram if required, select the main process, select Arrange Horizontally
+> Format the diagram if required, select the main process, and select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-16-1.png)
 
 
@@ -145,7 +145,7 @@ As you may have observed, the event triggered upon Sales Order creation provides
 <br>![](../ex3/images/ex162-3-19.png)
 
 > [!TIP]
-> Format the diagram if required, select the main process, select Arrange Horizontally
+> Format the diagram if required, select the main process, and select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-20-1.png)
 
 3. Title the Request-Reply step as 'Get Sales Order Details'. Next, hold and drag the 'Receiver' shape from the right corner of the editor and place it near the 'request-reply' shape.
@@ -156,7 +156,7 @@ As you may have observed, the event triggered upon Sales Order creation provides
 
 <br>![](../ex3/images/ex162-3-21-0.png)
 
-6. Click and hold on the 'Connector' button and drag it all the way down onto the 'Receiver' shape and release your mouse pointer after the 'ends' are joined.
+6. Click and hold on the 'Connector' button and drag it all the way down onto the 'Receiver' shape, and release your mouse pointer after the 'ends' are joined.
 <br><img src="../ex3/images/image24.png" width=100% height=100%>
 
 
@@ -205,7 +205,7 @@ We will now create two processing routes based on the customer ID retrieved from
 <br>
 
 > [!TIP]
-> Format the diagram if required, select the main process, select Arrange Horizontally
+> Format the diagram if required, select the main process, and select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-26-1.png)
 
 3. Title this step as 'Extract Customer ID' in the General tab of the property sheet. In the 'Exchange Property' tab, click on 'Add' and add a new property named `customerID`. Set the Source type to `XPath`, source value to `/SalesOrder/SalesOrder_Type/PurchaseOrderByCustomer`, and the Data Type to `java.lang.String`.
@@ -285,7 +285,7 @@ We will now create two processing routes based on the customer ID retrieved from
 <br>
 
 > [!TIP]
-> Format the diagram if required, select the main process, select Arrange Horizontally
+> Format the diagram if required, select the main process, and select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-40-1.png)
 <br>
 
@@ -329,7 +329,7 @@ In this step, we will utilize the 'message mapping' functionality to cleanse the
 <br>![](../ex3/images/ex162-3-46.png)
 
 > [!TIP]
-> Format the diagram if required, select the main process, select Arrange Horizontally
+> Format the diagram if required, select the main process, and select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-47-1.png)
 <br>
 
@@ -383,7 +383,7 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 <br>![](../ex3/images/ex162-3-53.png)
 
 > [!TIP]
-> Format the diagram if required, select the main process, select Arrange Horizontally
+> Format the diagram if required, select the main process, and select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-54-1.png)
 <br>
 
@@ -429,7 +429,7 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 <br>![](../ex3/images/ex162-3-57-1.png)
 <br>
 > [!TIP]
-> Format the diagram if required, select the main process, select Arrange Horizontally
+> Format the diagram if required, select the main process, and select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-57-2.png)
 <br>
 
@@ -479,7 +479,7 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 <br>
 
 > [!TIP]
-> Format the diagram if required, select the main process, select Arrange Horizontally
+> Format the diagram if required, select the main process, and select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-61-2.png)
 <br>
 
@@ -535,7 +535,7 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 <br>
 
 > [!TIP]
-> Format the diagram if required, select the main process, select Arrange Horizontally
+> Format the diagram if required, select the main process, and select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-67-1.png)
 <br>
 
@@ -586,7 +586,7 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 <br>
 
 > [!TIP]
-> Format the diagram if required, select the main process, select Arrange Horizontally
+> Format the diagram if required, select the main process, and select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-70-1.png)
 <br>
 
@@ -616,11 +616,11 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 
 <br>![](../ex3/images/ex162-3-75.png)
 <br>
-1. Access to the HANA Database itself is not part of this hands-on exercise, but just for your understadnding here is how the structure for the table `TechEd25_IN162_Table` has been defined in the default `DBADMIN` schema. 
+1. Access to the HANA Database itself is not part of this hands-on exercise, but just for your understanding, here is how the structure for the table `TechEd25_IN162_Table` has been defined in the default `DBADMIN` schema. 
 <br><img src="../ex3/images/image107.png" width=80% height=100%>
 
 ## Step 9 - Deploying the IFlow
-1. Congratulations ! At this point you are done with creating the IFlow. You final model should look like the one pasted in the screenshot below. The deployment status is naturally 'Not deployed' at this point. 
+1. Congratulations! At this point,you are done with creating the IFlow. Your final model should look like the one pasted in the screenshot below. The deployment status is naturally 'Not deployed' at this point. 
    
     Click on **Save** and the '**Deploy**' button to trigger the deployment.
  
@@ -645,4 +645,4 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 <br>
 ## Summary
 
-This completes Exercise 3, Next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted upon support case creation in SAP Service Cloud V2.
+This completes Exercise 3. Next, proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted upon support case creation in SAP Service Cloud V2.
