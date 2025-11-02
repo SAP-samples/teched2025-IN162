@@ -6,7 +6,7 @@ This repository contains the material for **ASUG Tech Connect 2025** Hands-on Wo
 
 ## Session Overview
 
-This session introduces attendees to the power of event-driven integration pattern to deliver real-time grounding data, equipping AI system's with the latest business context to make informed and accurate decisions
+This session introduces attendees to the power of event-driven integration patterns to deliver real-time grounding data, equipping AI systems with the latest business context to make informed and accurate decisions
 
 > [!NOTE]  
 > AI Grounding is the process of connecting an AI system's abstract knowledge and responses to specific, real-world data and context, reducing "hallucinations" and increasing the reliability and accuracy of its outputs. 
@@ -23,10 +23,10 @@ The following chapter explains the scenario in more detail:
 
 ## Requirements
 
-There are no strict learning requirements for this session. You would be able to execute the excercises by simply following the descriptions even if you do not have any experience with **SAP Integration Suite and SAP Integration Suite, advanced event mesh.** 
+There are no strict learning requirements for this session. You would be able to execute the exercises by simply following the descriptions, even if you do not have any experience with **SAP Integration Suite and SAP Integration Suite, advanced event mesh.** 
 
 
-However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite, SAP Joule Studio and SAP Build Process Automation Actions.<br/>
+However, you will be able to derive more value from this session if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions, along with SAP Integration Suite, SAP Joule Studio, and SAP Build Process Automation Actions.<br/>
 
 You can explore the following SAP Discovery Center missions to get started and build expertise with the SAP BTP services used in this hands-on workshop session.
 
@@ -47,7 +47,7 @@ You can also gain some further knowledge around SAP Integration Suite and SAP In
 
 ## System URL and login information 
 
-This session is part of multiple SAP events, and all systems and exercises remain the same except for the **SAP Integration Suite Tenant**. Note that the system details for this exercise have been tailoed for particiants attending **ASUG Tech Connect 2025**. If you are attending TechEd Berlin or TechEd on tour, you are currently in the wrong GitHub branch — please switch to the **main** branch and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
+This session is part of multiple SAP events, and all systems and exercises remain the same except for the **SAP Integration Suite Tenant**. Ensure you are reading this page from within the **asug2025 branch** of this GitHub repository. Note that the system details for this exercise have been tailored exclusively for participants attending **ASUG Tech Connect 2025**. If you are attending TechEd Berlin or TechEd on tour, you are currently in the wrong GitHub branch — please switch to the **main** branch and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
 
 To complete the exercises, you will need access to the following applications:
 
@@ -63,7 +63,7 @@ To complete the exercises, you will need access to the following applications:
 
 >[!NOTE]
 >The tenant URLs listed below are intended only for participants of the **ASUG Tech Connect** hands-on session.
-> If you are attending **TechEd Berlin**, you are currently looking the wrong GitHub branch — please switch to the **main** branch and follow the instructions provided there.
+> If you are attending **TechEd Berlin**, you are currently looking at the wrong GitHub branch — please switch to the **main** branch and follow the instructions provided there.
 
 - **Group 1 (Users 001 to 030):** [SAP Integration Suite - Tenant 1](https://workshop-us-01a.integrationsuite-cpi034.cfapps.us10-002.hana.ondemand.com/shell/design)
 - **Group 2 (Users 031 to 060):** [SAP Integration Suite - Tenant 2](https://workshop-us-01b.integrationsuite.cfapps.us20.hana.ondemand.com/shell/design)
@@ -73,10 +73,10 @@ To complete the exercises, you will need access to the following applications:
 
 > [!IMPORTANT]
 > - _For a smooth experience, tenants have been preconfigured, and you already have all the roles and permissions needed to complete this exercise._
-> - Refer to your session handout for participant numbers and password details. For any questions, reach out to your session moderations._
+>   _Refer to your session handout for participant numbers and password details. For any questions, reach out to your session moderators._
 > - _When completing the exercise steps, ensure that the technical IDs of your integration artifacts are unique. To achieve this, append your assigned participant number to the names of the artifacts you create. Each participant has been given a unique number by the instructors._
 > - _Please adhere strictly to the instructions regarding the naming conventions for the artifacts you create. This will ensure successful completion of the tasks without conflicting with other participants._
-> - _Do not delete, change or undeploy any artifact in the tenant._
+> - _Do not delete, change, or undeploy any artifact in the tenant._
 
 ## Pre-configured Setup
 Chapters in this section provide pre-configured setups to support learning, without being part of the hands-on exercises:
@@ -85,7 +85,7 @@ Chapters in this section provide pre-configured setups to support learning, with
 - [SAP Service Cloud Version 2 System Configurations (for your information only)](intro/intro3/README.md)
 
 ## Exercises
-The complete list of exercise steps are listed below, run through them in the given order.
+The complete list of exercise steps is listed below; run through them in the given order.
 <br>This section also serves as a Table of Contents; use the breadcrumb navigation at the top of the pages to return here at any time.
 
 - [Exercise 1 - Explore and Configure SAP Integration Suite, advanced event mesh (AEM)](exercises/ex1/README.md)
@@ -96,11 +96,11 @@ The complete list of exercise steps are listed below, run through them in the gi
     - [Exercise 2.1 - Log on to SAP AI Launchpad and Create Configuration](exercises/ex2#exercise-21---log-on-to-sap-ai-launchpad-and-create-configuration)
     - [Exercise 2.2 - Create Deployment](exercises/ex2#exercise-22---create-deployment)
 - [Exercise 3 - Integration Suite – IFlow S/4HANA Sales Order to Embedding Model to SAP Hana Vector DB](./exercises/ex3/README.md)
-    - [Exercise 3.1 - Create an IFLow from scratch to receive a Sales Order creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex3/ex3_1_details.md)
-    - [Exercise 3.2 (Optional and an alternate to Exercise 3.1)  - Copy an existing IFLow to reciever a Sales Order creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex3/ex3_2_details.md)
+    - [Exercise 3.1 - Create an IFlow from scratch to receive a Sales Order creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex3/ex3_1_details.md)
+    - [Exercise 3.2 (Optional and an alternate to Exercise 3.1)  - Copy an existing IFlow to receive a Sales Order creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex3/ex3_2_details.md)
 - [Exercise 4 - Integration Suite - IFlow Service Cloud Support Case to Embedding Model to SAP HANA Vector DB](./exercises/ex4/README.md)
-    - [Exercise 4.1 - Create an IFLow from scratch to receive a Support Case creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex4/ex4_1_details.md)
-    - [Exercise 4.2 (Optional and an alternate to Exercise 4.1) - Copy an existing IFLow to receive a Support Case creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex4/ex4_2_details.md)
+    - [Exercise 4.1 - Create an IFlow from scratch to receive a Support Case creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex4/ex4_1_details.md)
+    - [Exercise 4.2 (Optional and an alternate to Exercise 4.1) - Copy an existing IFlow to receive a Support Case creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex4/ex4_2_details.md)
 - [Exercise 5 - Create a new Sales Order and a Support Case to trigger the respective integrations using an event-driven pattern](./exercises/ex5/README.md)
     - [Exercise 5.1 - Create a new Sales Order in SAP S/4HANA Cloud system](./exercises/ex5/ex5_1_details.md)
     - [Exercise 5.2 - Monitor Message Processing Logs in Cloud Integration after Sales Order Creation](./exercises/ex5/ex5_2_details.md)
@@ -109,7 +109,7 @@ The complete list of exercise steps are listed below, run through them in the gi
 - [Exercise 6 - Customer Success Digital Assistant: Extending Joule with Joule Skill using Real-Time Vector Grounding](./exercises/ex6/README.md)
     - [Exercise 6.1 - Go through pre-built Integration Flow to summarize the current status of the customer using Generative AI Hub (Optional)](exercises/ex6#exercise-61---go-through-pre-built-integration-flow-to-summarize-the-current-status-of-the-customer-using-generative-ai-hub-optional) 
     - [Exercise 6.2 - Go through pre-built Joule Skill to trigger the generation of key talking points for customer meeting (Optional)](exercises/ex6#exercise-62---go-through-pre-built-joule-skill-to-trigger-the-generation-of-key-talking-points-for-customer-meeting-optional)
-    - [Exercise 6.3 - Generate customer specific sales order and support ticket summary of talking points](exercises/ex6#exercise-63---generate-customer-specific-sales-order-and-support-ticket-summary-of-talking-points)
+    - [Exercise 6.3 - Generate customer-specific sales order and support ticket summary of talking points](exercises/ex6#exercise-63---generate-customer-specific-sales-order-and-support-ticket-summary-of-talking-points)
 
 ## Troubleshooting Guide
 
