@@ -26,7 +26,7 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
    <br>
 4. A package Selection dialog will open up. Select the target package as 'TechEd 2025 IN162-`0**`. Note that we created this Package in the first segment of Exercise 3. 
 > [!NOTE]
-> Replace the `0**` with your assigned user idenfifier.
+> Replace the `0**` with your assigned user identifier.
 
    <br>![](../ex3/images/ex162-32-4.png)
    <br>
@@ -36,7 +36,7 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
    Sales Order Event to Hana Vector DB for AI Grounding - IN162-0**
    ```
 > [!NOTE]
-> Replace the `0**` with your assigned user idenfifier.
+> Replace the `0**` with your assigned user identifier.
    After this, click on 'Copy'.
    <br>![](../ex3/images/ex162-32-5.png)
    <br>
@@ -50,14 +50,14 @@ Now that the IFlow has been copied, we will configure it with certain externaliz
 
 1. Make sure you are in the target package (TechEd 2025 IN162-`0**`). Go to the 'Artifact' tab. Select the '**Sales Order Event to Hana Vector DB for AI Grounding**' IFlow, click on the '...' Action menu button, and click 'Configure'.
 > [!NOTE]
-> Replace the `0**` with your assigned user idenfifier.
+> Replace the `0**` with your assigned user identifier.
 
   <br>![](../ex3/images/ex162-32-7.png)
    <br>
    
 2. The configuration dialog will pop open. In the 'Sender' tab, enter 'IN162-`0**`_Sales_Order' in the 'Queue Name' text box. 
 > [!NOTE]
-> Replace the `0**` with your assigned user idenfifier.
+> Replace the `0**` with your assigned user identifier.
 
   <br>![](../ex3/images/ex162-32-8.png)
 
@@ -70,7 +70,7 @@ Now that the IFlow has been copied, we will configure it with certain externaliz
    <br>
 1. Move over to the 'More' tab and enter 'IN162-`0**`' in the Assigned_Participant_ID text box. 
 > [!NOTE]
-> Replace the `0**` with your assigned user idenfifier.
+> Replace the `0**` with your assigned user identifier.
 
 Click on 'Save' to save your configuration settings.
 
@@ -79,7 +79,7 @@ Click on 'Save' to save your configuration settings.
 ## Step 3 - Deploy the IFlow 
 Now that the configuration is complete, we will move ahead and deploy the IFlow.
 
-1. Click on 'Deploy' in the configuration dialog from the previous step. OR you can open editor to 'Deploy' the flow
+1. Click on 'Deploy' in the configuration dialog from the previous step. OR you can open the editor to 'Deploy' the flow
    Select the default 'Cloud Integration' as the runtime profile to deploy the content into.
 
  <br>![](../ex3/images/ex162-32-12.png)
