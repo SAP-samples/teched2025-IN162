@@ -9,7 +9,10 @@ To enable the publishing of **Support Case event** to **SAP Integration Suite, a
 
 ## Configurations
 
-Assign the sap.crm.service.eventBridgeService business service to your user to enable Standard Events and Standard Events Monitoring UI in the Admin Settings.
+1. Assign the **sap.crm.service.eventBridgeService** business service to your user to **enable Standard Events and Standard Events Monitoring UI in the Admin Settings**.
+   ![Pic 3-1](./images/in3-1.png)
+   ![Pic 3-2](./images/in3-2.png)
+   
 For dispatching outbound events to external systems, complete the following steps:
 Go to User Menu  Settings  All Settings  Integration  Communication Systems.
 Create a Communication System and maintain the hostname and the credentials of the external system to which the events must be dispatched. Activate the communication system.
