@@ -42,7 +42,7 @@ To enable the publishing of **Support Case event** to **SAP Integration Suite, a
  
 7. You've now configured the event processing, and the events raised by the application services are dispatched to the configured end point.
 
-8. Navigate to **Admin Settings -> Integration -> Standard Events -> Monitoring** to monitor the outbound events, if in case of any errors.
+8. Navigate to **Admin Settings -> Integration -> Standard Events Monitoring** to monitor the outbound events, if in case of any errors.
 
    ![Pic 3-11](./images/in3-11.png)
    
@@ -52,7 +52,9 @@ To enable the publishing of **Support Case event** to **SAP Integration Suite, a
 
 ## Summary
 
-You've now ...
+You should now be familiar with all the configurations that have been done in the **SAP Service Cloud Version 2** system to enable the ppublishing of the new support case event.
+Now that you have gone through all the introductory chapters, you should have a clear picture of the overall integration scenario and the pre-configuration steps that have been performed on the systems.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+
+You can now proceed with the actual exercises. To do this, navigate to the [Exercises]() section.
 
