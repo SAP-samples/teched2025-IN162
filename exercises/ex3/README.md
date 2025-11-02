@@ -6,11 +6,11 @@ The resulting embeddings will be stored in a connected SAP HANA Vector Database,
 
 For your convenience, this exercise is offered in two formats:
 
-- Recommended Approach ([Exercise 3.2](./ex3_2_details.md)): Copy a fully prepared IFlow, applying only minimal configuration before deployment. This option is ideal for participants who have limited time or prefer to work with pre-built content.
-- Alternate Approach ([Exercise 3.1](./ex3_1_details.md)): Build the IFlow from scratch by following step-by-step instructions. This method provides a deeper hands-on experience and a better understanding of the flow design.
+- **Recommended Approach** ([Exercise 3.2](./ex3_2_details.md)): Copy a fully prepared IFlow, applying only minimal configuration before deployment. This option is ideal for participants who have limited time or prefer to work with pre-built content.
+- **Alternate Approach** ([Exercise 3.1](./ex3_1_details.md)): Build the IFlow from scratch by following step-by-step instructions. This method provides a deeper hands-on experience and a better understanding of the flow design.
 
 > [!TIP] 
-> Even if you follow the recommended approach, it is strongly advised to review Exercise 3.1 in detail to gain a comprehensive understanding of its functionality.
+> Even if you follow the recommended approach, it is strongly advised to review **Exercise 3.1** in detail to gain a comprehensive understanding of its functionality.
 
 Irrespective of the approach you choose, let's begin the exercise by logging into your designated tenant and creating a package to get started.
 
@@ -43,5 +43,5 @@ After the Package is successfully created, go to the 'Artifacts' tab.
 3. Your Integration Package has been created, and now at this point, you are ready to either create an IFlow from scratch or copy / import an existing one. 
     <br>![](../ex3/images/ex162-3-3-1.png)
 
-    At this juncture, follow either [Exercise 3.1](./ex3_1_details.md) or [Exercise 3.2](./ex3_2_details.md).
+    At this juncture, follow either [Exercise 3.2](./ex3_2_details.md) (recommended - easy and quick) or [Exercise 3.1](./ex3_1_details.md) (expert grade - thorough and long).
 

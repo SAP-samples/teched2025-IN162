@@ -8,7 +8,7 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
 
 1. In the Artifacts tab, click on 'Add' -> 'Integration Flow'
    <br>![](../ex3/images/ex162-3-4.png)
-2. In the create dialog, name your integration flow as: 'IN162-`000` Sales Order Event to Hana Vector DB for AI Grounding' (replace `000` with your assigned user identifier). 
+2. In the create dialog, name your integration flow as: 'IN162-`0**` Sales Order Event to Hana Vector DB for AI Grounding' (replace `0**` with your assigned user identifier). 
 
     Click on 'Add and Open in Editor'.
 <br>![](../ex3/images/ex162-3-5.png)
@@ -25,7 +25,7 @@ In this step, we will configure the AEM Adapter to receive events from S/4HANA.
 
 <br>![](../ex3/images/ex162-3-7.png)
 
-2. A dialog with the different adapters will pop open. Select the 'AdvancedEventMesh' adapter.
+2. A dialog with the different adapters will pop open. Select the '**AdvancedEventMesh**' adapter.
 
 <br>![](../ex3/images/ex162-3-8.png)
 
@@ -41,7 +41,7 @@ In this step, we will configure the AEM Adapter to receive events from S/4HANA.
  
    <br>![](../ex3/images/ex162-3-9.png)
 
-4. Next, head over to the 'Processing' tab and enter IN162-`000`_Sales_Order in the Queue Name field (replace `000` with your assigned user identifier). 
+4. Next, head over to the 'Processing' tab and enter IN162-`0**`_Sales_Order in the Queue Name field (replace `0**` with your assigned user identifier). 
    
    Set the 'Acknowledgement Mode' to 'Automatic on Exchange Complete'.
 > [!IMPORTANT]
@@ -61,11 +61,11 @@ In the next few steps, we will enrich the sales order data received from the Ada
 
 <br>![](../ex3/images/ex162-3-11-0.png)
 
-2. Select a 'Groovy Script' in the 'Add Flow Step' dialog.
+2. Select a '**Groovy Script**' in the 'Add Flow Step' dialog.
 
 <br>![](../ex3/images/ex162-3-11.png)
 
-3. Title this step 'Log Sales Order Event Payload' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter. 
+3. Title this step '**Log Sales Order Event Payload**' in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter. 
     
     Click on the 'Create' button of the script step to launch the script editor.
 
@@ -100,7 +100,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
 
 <br>![](../ex3/images/ex162-3-13-1.png)
 
-6. Add a 'JSON to XML Converter' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
+6. Add a '**JSON to XML Converter**' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
 
     In this step, we are converting the JSON representation of the notification event to its XML equivalent so that it can be easily extracted later.
 
@@ -109,7 +109,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
 7. Next, after this Converter step, go ahead and add a new flow step.
 
 <br>![](../ex3/images/ex162-3-14.png)
-8. Select the 'Content Modifier' step in this dialog that pops out.
+8. Select the '**Content Modifier**' step in this dialog that pops out.
 
 <br>![](../ex3/images/ex162-3-15.png)
 <br>
@@ -122,7 +122,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
 
 9. Title this step as 'Extract Sales Order ID'. As you may have guessed, we will extract the Sales Order ID from the XML document's XPath expression.
    
-    Go to the 'Exchange Property' tab of the property sheet of this step. Click on 'Add' twice to add two Properties.
+    Go to the '**Exchange Property**' tab of the property sheet of this step. Click on 'Add' twice to add two Properties.
 <br>![](../ex3/images/ex162-3-16-2.png)
 <br>![](../ex3/images/ex162-3-16-3.png)
 
@@ -130,7 +130,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
     | Action | Name | Source Type | Source Value | Data Type |
     | ----- | ----- | ----- | ----- | ----- |
     | Create | salesOrderID | XPath | `root/data/SalesOrder` | java.lang.String
-    | Create | assignedParticipantID | Constant | IN162-`000` (replace `000` with your assiged participant ID)|
+    | Create | assignedParticipantID | Constant | IN162-`0**` (replace `0**` with your assiged participant ID)|
       
 <br>![](../ex3/images/ex162-3-17.png)
 

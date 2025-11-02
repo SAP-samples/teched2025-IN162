@@ -12,7 +12,7 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
 >[!TIP]
 >Click Edit button on top right if Add drop down is not visible
 
-2. In the create dialog, name your integration flow as: 'IN162-`000` Support Case Event to Hana Vector DB for AI Grounding' (replace `000` with your assigned user identifier). 
+2. In the create dialog, name your integration flow as: 'IN162-`0**` Support Case Event to Hana Vector DB for AI Grounding' (replace `0**` with your assigned user identifier). 
 
     Click on 'Add and Open in Editor'.
 <br>![](../ex4/images/ex162-4-2.png)
@@ -26,7 +26,7 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
 
 
 ## Step 2 - AEM Sender Adapter to receive events from the Support Cloud system
-In this step, we will configure the AEM Adapter to receive events from the Support Cloud System
+In this step, we will configure the **AEM Adapter** to receive events from the Support Cloud System
 <br>
 1. Connect the 'Sender' system to the 'Start' event by holding and dragging your mouse pointer. 
 
@@ -36,7 +36,7 @@ In this step, we will configure the AEM Adapter to receive events from the Suppo
 <br>![](../ex4/images/ex162-4-4-2.png)
 <br><br>
 
-2. A dialog with the different adapters will appear. Select the 'AdvancedEventMesh' adapter.
+2. A dialog with the different adapters will appear. Select the '**AdvancedEventMesh**' adapter.
 
 ![](../ex4/images/ex162-4-5.png)
 <br><br>
@@ -54,12 +54,12 @@ In this step, we will configure the AEM Adapter to receive events from the Suppo
 <br>![](../ex4/images/ex162-4-6.png)
 <br><br>
 
-4.  Next, head over to the 'Processing' tab and enter 'IN162-`000`_Support_Case' in the Queue Name field (replace `000` with your assigned user identifier). 
+4.  Next, head over to the 'Processing' tab and enter 'IN162-`0**`_Support_Case' in the Queue Name field (replace `0**` with your assigned user identifier). 
    
 > [!IMPORTANT]
 > Refer to [Exercise 1](../ex1/README.md#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh) where we created this Queue. Confirm that the queue name entered here matches the one defined previously.
    
-Set the 'Acknowledgement Mode' to 'Automatic on Exchange Complete'.
+Set the '**Acknowledgement Mode**' to '**Automatic on Exchange Complete**'.
    
 Leave all other attributes with their default values.
 
@@ -77,20 +77,16 @@ In the next few steps, we will enrich the support case data received from the Ad
 <br>![](../ex4/images/ex162-4-8.png)
 <br><br>
 
-2. Select a 'Groovy Script' in the Add Flow Step dialog.
+2. Select a '**Groovy Script**' in the Add Flow Step dialog.
 <br>![](../ex4/images/ex162-4-9.png)
 <br><br>
 
-3. Title this step 
-```
-Log Support Case Event Payload
-``` 
-&emsp;&emsp; in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter.
+3. Title this step `Log Support Case Event Payload` in the 'General' tab of the property sheet. This step captures and logs the payload received from the AEM Adapter.
 
 <br>![](../ex4/images/ex162-4-10.png)
 <br><br>
 
-4. Copy the following lines of code and paste them into the script editor window (after clearing out the generated script present in the editor)
+1. Copy the following lines of code and paste them into the script editor window (after clearing out the generated script present in the editor)
     ```groovy
     import com.sap.gateway.ip.core.customdev.util.Message
 
@@ -161,7 +157,7 @@ Extract Support Case and Customer ID
 | ----- | ----- | ----- | ----- | ----- |
 | Create | supportCaseID | XPath | `root/data/currentImage/id` | java.lang.String
 | Create | customerID | XPath | `root/data/currentImage/extensions/SupportCaseByCustomer` | java.lang.String
-| Create | assignedParticipantID | Constant | IN162-`000` (replace `000` with your assiged participant ID)|
+| Create | assignedParticipantID | Constant | IN162-`0**` (replace `0**` with your assiged participant ID)|
 
 
 <br>![](../ex4/images/ex162-4-15-2.png)

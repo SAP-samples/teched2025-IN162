@@ -12,11 +12,11 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
 
 1. Navigate to the 'Integration and APIs' section from the 'Design' tab of your Integration Suite tenant.
    
-   Click on a Package titled 'TechEd 2025 IN162 - Solution Package
+   Click on a Package titled '**TechEd 2025 IN162 - Solution Package**'
   
 <br>![](../ex4/images/ex162-42-1.png)
 <br><br>
-2. Navigate to the 'Artifacts' tab of this package, look for an Integration Flow titled 'Support Case Event to Hana Vector DB for AI Grounding' and click on the '...' Action button to bring up the action menu and click on 'Copy'.
+2. Navigate to the 'Artifacts' tab of this package, look for an Integration Flow titled '**Support Case Event to Hana Vector DB for AI Grounding**' and click on the '...' Action button to bring up the action menu and click on '**Copy**'.
 
 <br>![](../ex4/images/ex162-42-2.png)
 <br><br>
@@ -26,7 +26,7 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
 <br>![](../ex4/images/ex162-42-3.png)
 <br><br>
 
-4. A package Selection dialog will open up. Select the target package as 'TechEd 2025 IN162-`000`. Note that we created this Package in the first segment of Exercise 4. (`000` will be replaced with your assigned user identifier).
+4. A package Selection dialog will open up. Select the target package as 'TechEd 2025 IN162-`0**`. Note that we created this Package in the first segment of Exercise 4. (`0**` will be replaced with your assigned user identifier).
 
 <br>![](../ex4/images/ex162-42-4.png)
 <br><br>
@@ -50,12 +50,12 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
 ## Step 2 - Configure the IFlow with your user settings 
 Now that the IFlow has been copied, we will configure it with certain externalized parameters in the next few steps. 
 
-1. Make sure you are in the target package (TechEd 2025 IN162-`000`). Go to the 'Artifact' tab. Select the 'Support Case Event to Hana Vector DB for AI Grounding' IFlow, click on the '...' Action menu button, and click 'Configure'.
+1. Make sure you are in the target package (TechEd 2025 IN162-`0**`). Go to the 'Artifact' tab. Select the '**Support Case Event to Hana Vector DB for AI Grounding**' IFlow, click on the '...' Action menu button, and click 'Configure'.
 
 <br>![](../ex4/images/ex162-42-7.png)
 <br><br>
 
-2. The configuration dialog will pop open. In the 'Sender' tab, enter 'IN162-`000`_Support_Case' in the 'Queue Name' text box. (replace `000` with your actual user identifier)
+2. The configuration dialog will pop open. In the 'Sender' tab, enter 'IN162-`0**`_Support_Case' in the 'Queue Name' text box. (replace `0**` with your actual user identifier)
 
 <br>![](../ex4/images/ex162-42-8.png)
 <br><br>
@@ -67,7 +67,7 @@ Now that the IFlow has been copied, we will configure it with certain externaliz
 <br>![](../ex4/images/ex162-42-9.png)
 <br><br>
 
-4. Move over to the 'More' tab and enter 'IN162-`000`' in the Assigned_Participant_ID text box. (replace `000` with your actual user identifier)
+4. Move over to the 'More' tab and enter 'IN162-`0**`' in the Assigned_Participant_ID text box. (replace `0**` with your actual user identifier)
 
     Click on 'Save' to save your configuration settings.
 
@@ -104,4 +104,4 @@ It is highly recommended that you review the IFlow in detail to gain a broader u
 <br>![](../ex4/images/ex162-42-15.png)
 <br><br>
 ## Summary
-This completes Exercise 4, Next proceed to [Exercise 5](../ex5/README.md), where we will initate the creation of Sales Order and Support Cases from S/4HANA Cloud and SAP Support Cloud V2 respective and monitor the Integration Flows that finally get triggered via the AEM Adapters.
+This completes Exercise 4, Next proceed to [Exercise 5](../ex5/README.md), where we will initate the creation of Sales Order and Support Cases from **S/4HANA Cloud** and **SAP Support Cloud V2** respective and monitor the Integration Flows that finally get triggered via the AEM Adapters.

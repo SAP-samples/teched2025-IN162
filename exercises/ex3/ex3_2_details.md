@@ -11,11 +11,11 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
 
 1. Navigate to the 'Integration and APIs' section from the 'Design' tab of your Integration Suite tenant.
    
-   Click on a Package titled 'TechEd 2025 IN162 - Solution Package
+   Click on a Package titled '**TechEd 2025 IN162 - Solution Package**
   
    <br>![](../ex3/images/ex162-32-1.png)
    <br>
-2. Navigate to the 'Artifacts' tab of this package, look for an Integration Flow titled 'Sales Order Event to Hana Vector DB for AI Grounding' and click on the '...' Action button to bring up the action menu and click on 'Copy'.
+2. Navigate to the 'Artifacts' tab of this package, look for an Integration Flow titled '**Sales Order Event to Hana Vector DB for AI Grounding**' and click on the '...' Action button to bring up the action menu and click on 'Copy'.
 
    <br>![](../ex3/images/ex162-32-2.png)
    <br>
@@ -24,19 +24,19 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
 
    <br>![](../ex3/images/ex162-32-3.png)
    <br>
-4. A package Selection dialog will open up. Select the target package as 'TechEd 2025 IN162-`000`. Note that we created this Package in the first segment of Exercise 3. 
+4. A package Selection dialog will open up. Select the target package as 'TechEd 2025 IN162-`0**`. Note that we created this Package in the first segment of Exercise 3. 
 > [!NOTE]
-> Replace the `000` with your assigned user idenfifier.
+> Replace the `0**` with your assigned user idenfifier.
 
    <br>![](../ex3/images/ex162-32-4.png)
    <br>
    
 5. Back in the 'Copy' dialog, title the Name of the IFlow as
    ```
-   Sales Order Event to Hana Vector DB for AI Grounding - IN162-000
+   Sales Order Event to Hana Vector DB for AI Grounding - IN162-0**
    ```
 > [!NOTE]
-> Replace the `000` with your assigned user idenfifier.
+> Replace the `0**` with your assigned user idenfifier.
    After this, click on 'Copy'.
    <br>![](../ex3/images/ex162-32-5.png)
    <br>
@@ -48,16 +48,16 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
 ## Step 2 - Configure the IFlow with your user settings 
 Now that the IFlow has been copied, we will configure it with certain externalized parameters in the next few steps. 
 
-1. Make sure you are in the target package (TechEd 2025 IN162-`000`). Go to the 'Artifact' tab. Select the 'Sales Order Event to Hana Vector DB for AI Grounding' IFlow, click on the '...' Action menu button, and click 'Configure'.
+1. Make sure you are in the target package (TechEd 2025 IN162-`0**`). Go to the 'Artifact' tab. Select the '**Sales Order Event to Hana Vector DB for AI Grounding**' IFlow, click on the '...' Action menu button, and click 'Configure'.
 > [!NOTE]
-> Replace the `000` with your assigned user idenfifier.
+> Replace the `0**` with your assigned user idenfifier.
 
   <br>![](../ex3/images/ex162-32-7.png)
    <br>
    
-2. The configuration dialog will pop open. In the 'Sender' tab, enter 'IN162-`000`_Sales_Order' in the 'Queue Name' text box. 
+2. The configuration dialog will pop open. In the 'Sender' tab, enter 'IN162-`0**`_Sales_Order' in the 'Queue Name' text box. 
 > [!NOTE]
-> Replace the `000` with your assigned user idenfifier.
+> Replace the `0**` with your assigned user idenfifier.
 
   <br>![](../ex3/images/ex162-32-8.png)
 
@@ -68,9 +68,9 @@ Now that the IFlow has been copied, we will configure it with certain externaliz
 
   <br>![](../ex3/images/ex162-32-9.png)
    <br>
-1. Move over to the 'More' tab and enter 'IN162-`000`' in the Assigned_Participant_ID text box. 
+1. Move over to the 'More' tab and enter 'IN162-`0**`' in the Assigned_Participant_ID text box. 
 > [!NOTE]
-> Replace the `000` with your assigned user idenfifier.
+> Replace the `0**` with your assigned user idenfifier.
 
 Click on 'Save' to save your configuration settings.
 
@@ -105,4 +105,4 @@ It is highly recommended that you review the IFlow in detail to gain a broader u
    <br>
 ## Summary
 
-This completes Exercise 3, Next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted upon support case creation in SAP Service Cloud V2.
+This completes Exercise 3, Next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted upon support case creation in **SAP Service Cloud V2**.
