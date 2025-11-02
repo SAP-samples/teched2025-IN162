@@ -7,15 +7,17 @@ To enable the publishing of **Support Case event** to **SAP Integration Suite, a
 
 **This section is just for your knowledge and information only.**
 
-## Configurations
+## Configurations for dispatching outbound events to SAP Integration Suite, advanced event mesh
 
-1. Assign the **sap.crm.service.eventBridgeService** business service to your user to **enable Standard Events and Standard Events Monitoring UI in the Admin Settings**.
+1. Assigned the **sap.crm.service.eventBridgeService** business service to **Admin** user role that is assigned to **ADMINISTRATION01** business user to **enable Standard Events and Standard Events Monitoring UI** in the Admin Settings.
    ![Pic 3-1](./images/in3-1.png)
    ![Pic 3-2](./images/in3-2.png)
    
-For dispatching outbound events to external systems, complete the following steps:
-Go to User Menu  Settings  All Settings  Integration  Communication Systems.
-Create a Communication System and maintain the hostname and the credentials of the external system to which the events must be dispatched. Activate the communication system.
+2. Created a **Communication System** by navigating to **User Menu -> Settings -> All Settings  -> Integration -> Communication Systems**
+   ![Pic 3-3](./images/in3-3.png)
+   ![Pic 3-4](./images/in3-4.png)
+
+3. Create a Communication System and maintain the hostname and the credentials of the external system to which the events must be dispatched. Activate the communication system.
 Next, in the Communication Configuration page Send Events to External Systems needs to be configured.
 Open the Communication Configuration  Send Events to External Systems, and select Copy.
 In the copied Communication Configuration, select the Communication System created already.
