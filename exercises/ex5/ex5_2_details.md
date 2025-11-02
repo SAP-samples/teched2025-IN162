@@ -42,7 +42,7 @@ Head back to your Integration Suite tenants.
 
    <img src="../ex5/images/image24.png" width=100% height=100%>
 
-10. Though inspecting the HANA Database is not part of our hands-on execise, here is a screenshot of the `TechEd25_IN162_Table` table in HANA, that is populated with the SalesOrder payload and the corresponding vectorized text embeddings.
+10. Though inspecting the HANA Database is not part of our hands-on exercise, here is a screenshot of the `TechEd25_IN162_Table` table in HANA, which is populated with the SalesOrder payload and the corresponding vectorized text embeddings.
     <img src="../ex5/images/image25.png" width=100% height=100%>
 
 ## Summary
