@@ -10,7 +10,7 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
 <br>![](../ex4/images/ex162-4-1.png)
 <br>
 >[!TIP]
->Click Edit button on top right if Add drop down is not visible
+>Click the Edit button on the top right if the Add drop-down is not visible
 
 2. In the create dialog, name your integration flow as: 'IN162-`0**` Support Case Event to Hana Vector DB for AI Grounding' (replace `0**` with your assigned user identifier). 
 
@@ -59,7 +59,7 @@ In this step, we will configure the **AEM Adapter** to receive events from the S
 > [!IMPORTANT]
 > Refer to [Exercise 1](../ex1/README.md#exercise-14---create-an-additional-queue-and-queue-subscription-in-advanced-event-mesh) where we created this Queue. Confirm that the queue name entered here matches the one defined previously.
    
-Set the '**Acknowledgement Mode**' to '**Automatic on Exchange Complete**'.
+Set the '**Acknowledgment Mode**' to '**Automatic on Exchange Complete**'.
    
 Leave all other attributes with their default values.
 
@@ -121,7 +121,7 @@ In the next few steps, we will enrich the support case data received from the Ad
 
 
 >[!TIP]
-> Resize the process lane to accomodate new steps, select the process and drag the rectangle to desired size, also move the end step accordingly
+> Resize the process lane to accommodate new steps, select the process and drag the rectangle to the desired size, also move the end step accordingly
 <br>![](../ex4/images/ex162-4-14-1.png)
 <br><br>
 
@@ -233,7 +233,7 @@ Route Customer ID
 
     Action : `Create`, Name : `SAP_ApplicationID`, Source Type : `Property`, Source Value : `customerID`.
 > [!NOTE]
-> The header attribute `SAP_ApplicationID` is a special one. It serves as an application-level correlation identifier. We introduce this to ease out your monitoring tasks. We can filter on this identifier, helping you to efficiently grab the log entry that corresponds to your execution. 
+> The header attribute `SAP_ApplicationID` is a special one. It serves as an application-level correlation identifier. We introduce this to ease your monitoring tasks. We can filter on this identifier, helping you to efficiently grab the log entry that corresponds to your execution. 
 > 
 
 
@@ -275,13 +275,13 @@ Route Customer ID
 <br><br>
 
 ## Step 5 - Perform a message mapping to cleanse the data 
-In this step, we will utilize the 'message mapping' functionality to cleanse the quality of the support case payload from the system. This step is needed to make the demonstration cleaner. We will concatenate and tailor certain files for better readibiilty.
+In this step, we will utilize the 'message mapping' functionality to cleanse the quality of the support case payload from the system. This step is needed to make the demonstration cleaner. We will concatenate and tailor certain files for better readability.
 
 >[!TIP]
-> Resize the process lane to accomodate new steps, move the receiver to right  
+> Resize the process lane to accommodate new steps, move the receiver to the right  
 > <br>![](../ex4/images/ex162-4-30-1.png)
 > <br><br>
-> Select the process and drag the rectangle to desired size, move the end step accordingly
+> Select the process and drag the rectangle to the desired size, move the end step accordingly
 > <br>![](../ex4/images/ex162-4-30-2.png)
 <br>
 
@@ -297,7 +297,7 @@ In this step, we will utilize the 'message mapping' functionality to cleanse the
 ![](../ex4/images/ex162-4-30-4.png)
 <br><br>
 
-3. Rename the title of step to 'Get Support Case Details'. Notice that the layout has a 'Receiver' box at the right end of the canvas. Click on the box and drag it all the way down below the Request Reply step. 
+3. Rename the title of the step to 'Get Support Case Details'. Notice that the layout has a 'Receiver' box at the right end of the canvas. Click on the box and drag it all the way down below the Request Reply step. 
 ![](../ex4/images/ex162-4-30-5.png)
 <br><br>
 
@@ -377,13 +377,13 @@ In this step, we will utilize the 'message mapping' functionality to cleanse the
 <br><br>
 
 ## Step 6 - Prepare data payload to invoke the embedding model of the AI Service 
-In this step we will utilize the deployment URL of the AI model we consumed in [Exercise 2](../ex2/README.md) using SAP Generative Hub and AI Core's capabilties to generate text embeddings of our support case data payload. 
+In this step, we will utilize the deployment URL of the AI model we consumed in [Exercise 2](../ex2/README.md) using SAP Generative Hub and AI Core's capabilities to generate text embeddings of our support case data payload. 
 
 >[!TIP]
-> Resize the process lane to accomodate new steps, move the receiver to right  
+> Resize the process lane to accommodate new steps, move the receiver to the right  
 > <br>![](../ex4/images/ex162-4-43-1.png)
 > <br><br>
-> Select the process and drag the rectangle to desired size, move the end step accordingly
+> Select the process and drag the rectangle to the desired size, move the end step accordingly
 > <br>![](../ex4/images/ex162-4-43-2.png)
 <br>
 
@@ -513,7 +513,7 @@ In this step we will utilize the deployment URL of the AI model we consumed in [
 <br><br>
 
 ## Step 7 - Prepare data payload to persist text embeddings into HANA Vector DB 
-In this step, the generated embeddings are inserted into the SAP HANA Cloud vector database using JDBC receiver adapter, ensuring real-time grounding of Support Case objects.
+In this step, the generated embeddings are inserted into the SAP HANA Cloud vector database using the JDBC receiver adapter, ensuring real-time grounding of Support Case objects.
 
 1. After the 'Get Text Embeddings' step, click on the (+) button to 'Add a Flow Step'.
 
@@ -577,7 +577,7 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 ![](../ex4/images/ex162-4-59.png)
 <br><br>
 
-8. Drag and place the receiver box below the request-reply step.Title the box as 'HANA_DB'. 
+8. Drag and place the receiver box below the request-reply step. Title the box as 'HANA_DB'. 
 
 ![](../ex4/images/ex162-4-60.png)
 <br><br>
@@ -600,12 +600,12 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 ![](../ex4/images/ex162-4-63.png)
 <br><br>
 
-12. Access to the HANA Database itself is not part of this hands-on exercise, but just for your understadnding here is how the structure for the table `TechEd25_IN162_Table` has been defined in the default `DBADMIN` schema. 
+12. Access to the HANA Database itself is not part of this hands-on exercise, but just for your understanding, here is how the structure for the table `TechEd25_IN162_Table` has been defined in the default `DBADMIN` schema. 
 <br><img src="../ex3/images/image107.png" width=80% height=100%>
 
 ## Step 8 - Deploying the IFlow
 
-1. Congratulations ! At this point you are done with creating the IFlow. You final model should look like the one pasted in the screenshot below. The deployment status is naturally 'Not deployed' at this point. 
+1. Congratulations! At this point, you are done with creating the IFlow. Your final model should look like the one pasted in the screenshot below. The deployment status is naturally 'Not deployed' at this point. 
    
     Click on **Save** and then '**Deploy**' button to trigger the deployment.
  
@@ -629,4 +629,4 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 
 ## Summary
 
-This completes Exercise 4, Next proceed to [Exercise 5](../ex5/README.md), where we will initate the creation of Sales Order and Support Cases from S/4HANA Cloud and SAP Support Cloud V2 respective and monitor the Integration Flows that finally get triggered via the AEM Adapters.
+This completes Exercise 4. Next, proceed to [Exercise 5](../ex5/README.md), where we will initiate the creation of Sales Order and Support Cases from S/4HANA Cloud and SAP Support Cloud V2, respectively, and monitor the Integration Flows that finally get triggered via the AEM Adapters.
