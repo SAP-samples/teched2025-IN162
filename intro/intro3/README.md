@@ -16,13 +16,13 @@ To enable the publishing of **Support Case event** to **SAP Integration Suite, a
    
 3. Then navigated to **User Menu -> Settings -> All Settings  -> Integration -> Communication Systems**
 
-   <img src="./images/in3-3.png" alt="Pic 3-3" width=30% height=30%>
+   <img src="./images/in3-3.png" alt="Pic 3-3" width=25% height=25%>
 
    ![Pic 3-4](./images/in3-4.png)
 
 4. Created a **Communication System** and maintained the hostname and the credentials of the **SAP Integration Suite, advanced event mesh** to which the events must be dispatched. You can use the REST endpoint of SAP AEM broker obtained from the SAP AEM. Activate the communication system.
 
-    ![Pic 3-5](./images/in3-4.png)
+    ![Pic 3-5](./images/in3-5.png)
    
 5. Next, in the Communication Configuration page Send Events to External Systems needs to be configured.
 Open the Communication Configuration  Send Events to External Systems, and select Copy.
