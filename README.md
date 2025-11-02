@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the material for **ASUG Tech Connect 2025** Hands-on Workshop session [Hands-on Lab: Real-Time Data for AI Agents: Grounding with Event-Driven Architecture](https://events.asug.com/event/e7bd56fe-4c89-4e90-bc2c-ff75b4cc099b/agenda?session=67940d63-053f-4348-8a8a-50da8e21cd8a)  
+This repository contains the material for **ASUG Tech Connect 2025** Hands-on Workshop session [Hands-on Lab: Real-Time Data for AI Agents: Grounding with Event-Driven Architecture](https://events.asug.com/event/e7bd56fe-4c89-4e90-bc2c-ff75b4cc099b/agenda?session=67940d63-053f-4348-8a8a-50da8e21cd8a&shareLink=true)  
 
 ## Session Overview
 
