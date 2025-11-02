@@ -1,6 +1,6 @@
 # Exercise 5.3 - Create a new Support Case in SAP Service Cloud Version 2 system
 
-In this exercise, we will create a support case in SAP Service Cloud Version 2 that will eventually trigger the integration flos that we built in [Exercise 4](../ex4/README.md)
+In this exercise, we will create a support case in SAP Service Cloud Version 2 that will eventually trigger the integration flow that we built in [Exercise 4](../ex4/README.md)
 
 ## Step 1 - Log on to SAP Service Cloud Version 2 system
 
@@ -43,7 +43,7 @@ In this exercise, we will create a support case in SAP Service Cloud Version 2 t
 
     <img src="../ex5/images/image4.png" width=60% height=100%>
 
-7.  You will see that all other fields, like **'Contact'**, **'Assigned To'**, etc., will be auto filled based on your selection. Retain these values and finalize the settings by creating **'Save and Open'**. 
+7.  You will see that all other fields, like **'Contact'**, **'Assigned To'**, etc., will be auto-filled based on your selection. Retain these values and finalize the settings by creating **'Save and Open'**. 
 
     <img src="../ex5/images/image5.png" width=70% height=100%>
     
