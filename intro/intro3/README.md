@@ -20,27 +20,41 @@ To enable the publishing of **Support Case event** to **SAP Integration Suite, a
 
    ![Pic 3-4](./images/in3-4.png)
 
-4. Created a **Communication System** and maintained the hostname and the credentials of the **SAP Integration Suite, advanced event mesh** to which the events must be dispatched. You can use the REST endpoint of SAP AEM broker obtained from the SAP AEM. Activate the communication system.
+4. Created a **Communication System - "teched2025_aem_tenant"** and maintained the hostname and the credentials of the **SAP Integration Suite, advanced event mesh** to which the events must be dispatched. You can use the REST endpoint of SAP AEM broker obtained from the SAP AEM. Activate the communication system.
 
-    ![Pic 3-5](./images/in3-5.png)
+   ![Pic 3-5](./images/in3-5.png)
    
-5. Next, in the Communication Configuration page Send Events to External Systems needs to be configured.
-Open the Communication Configuration  Send Events to External Systems, and select Copy.
-In the copied Communication Configuration, select the Communication System created already.
-In the same Communication Configuration, under the HTTP Data section, maintain the API path of the external system and Activate the Communication Configuration. The {host_name of the Communication System + API Path} is where the outbound events is dispatched. The event payload is dispatched to the configured endpoint as an HTTP POST call.
-Under Admin Settings  Integration  Standard Events, enable the events to be dispatched.
-You've now configured the event processing, and the events raised by the application services are dispatched to the configured end point.
-Note
-Any configuration changes might take up to 15 minutes for it to reflect, as configuration is cached and the cache is refreshed once in 15 minutes.
+5. Next, in the **Communication Configuration** page, **Send Events to External Systems** has been configured.\
+   a. Open the **Communication Configuration**,  **Send Events to External Systems**, and select **Copy**.\
+   b. In the copied Communication Configuration, select the **Communication System - "teched2025_aem_tenant"** that we created in step 4.\
+   c. In the same Communication Configuration, under the **HTTP Data section**, maintain the **API path** that specify the **Topic** of the **SAP Integration Suite, advanced event mesh**\
+   d. Activate the Communication Configuration.\
+   c. The **host_name of the Communication System + API Path** is where the outbound events is dispatched. The event payload is dispatched to the configured endpoint as an HTTP POST call.
 
-Navigate to Admin Settings  Integration  Standard Events Monitoring to monitor the outbound events, if in case of any errors.
-Note
-Outbound events are always dispatched in order. If for a given entity, an earlier event failed to be processed successfully, even after retry, then such events are moved to ABORTED status. Subsequent events for the same entity instance remain in PENDING status. The resend functionality is only enabled for ABORTED events. With the resend functionality, such ABORTED events can be retried manually from the Standard Events monitoring and if the retry succeeds, then, the subsequent PENDING events corresponding to the entity instance are dispatched automatically later by the system.
+   ![Pic 3-6](./images/in3-6.png)
+   ![Pic 3-7](./images/in3-7.png)
+   ![Pic 3-8](./images/in3-8.png)
+   
+6. Under **Admin Settings -> Integration -> Standard Events**, enabled the events to be dispatched.
+
+   ![Pic 3-9](./images/in3-9.png)
+   ![Pic 3-10](./images/in3-10.png)
+ 
+7. You've now configured the event processing, and the events raised by the application services are dispatched to the configured end point.
+
+8. Navigate to **Admin Settings -> Integration -> Standard Events Monitoring** to monitor the outbound events, if in case of any errors.
+
+   ![Pic 3-11](./images/in3-11.png)
+   
+>Note
+>Outbound events are always dispatched in order. If for a given entity, an earlier event failed to be processed successfully, even after retry, then such events are moved to ABORTED status. Subsequent events for the same entity instance remain in >PENDING status. The resend functionality is only enabled for ABORTED events. With the resend functionality, such ABORTED events can be retried manually from the Standard Events monitoring and if the retry succeeds, then, the subsequent PENDING events >corresponding to the entity instance are dispatched automatically later by the system.
 
 
 ## Summary
 
-You've now ...
+You should now be familiar with all the configurations that have been done in the **SAP Service Cloud Version 2** system to enable the ppublishing of the new support case event.
+Now that you have gone through all the introductory chapters, you should have a clear picture of the overall integration scenario and the pre-configuration steps that have been performed on the systems.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+
+You can now proceed with the actual exercises. To do this, navigate to the [Exercises]() section.
 
