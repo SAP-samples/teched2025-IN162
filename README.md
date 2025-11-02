@@ -19,11 +19,11 @@ By the end of this session, you’ll understand the core principles behind real-
 
 The following chapter explains the scenario in more detail:
 
-- [Scenario Introduction](intro/intro1/README.md)
+- [Scenario Introduction](/intro/intro1/README.md)
 
 ## Requirements
 
-There are no dedicated requirement for this session. You would be able to execute the excercises by just following the descriptions even if you do not have any experience with **SAP Integration Suite and SAP Integration Suite, advanced event mesh.** 
+There are no strict learning requirements for this session. You would be able to execute the excercises by simply following the descriptions even if you do not have any experience with **SAP Integration Suite and SAP Integration Suite, advanced event mesh.** 
 
 
 However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite, SAP Joule Studio and SAP Build Process Automation Actions.<br/>
@@ -37,16 +37,17 @@ You can explore the following SAP Discovery Center missions to get started and b
 * [Joule Studio, skill builder](https://discovery-center.cloud.sap/ai-feature/e93aa292-e7f4-449d-9586-f1a8510d5ab6/)
 * [SAP Build Process Automation](https://discovery-center.cloud.sap/serviceCatalog/sap-build-process-automation)
 
-You can also gain some further knowledge around SAP Integration Suite and SAP Integration Suite, advanced event mesh by attending the following SAP TechEd Hands-on Workshop sessions:
+You can also gain some further knowledge around SAP Integration Suite and SAP Integration Suite, advanced event mesh by tracking the following SAP TechEd and ASUG Tech Connect Hands-on Workshop sessions:
 
 - [IN103 | Helping systems talk smarter with a flexible event-driven architecture | Deep Dive](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1751642175552001awv9)
 - [IN165 | Experience event-driven integration with advanced event mesh | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749789125498001xZYY)
 - [IN160 | Empower your business through enterprise automation | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711728862001rC69)
 - [IN163 | Implement exactly once in-order delivery in SAP Integration Suite | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748712337664001rclU)
+- [Hands-on Lab: Modernize and Transform Your Integration to the Cloud](https://events.asug.com/event/e7bd56fe-4c89-4e90-bc2c-ff75b4cc099b/agenda?session=8afc1ef5-503e-4a0a-a57a-c15dd430f7bb&shareLink=true)
 
 ## System URL and login information 
 
-This session is part of multiple SAP events, and all systems and exercises remain the same except for the **SAP Integration Suite Tenant**. Note that the system details for this exercise have been tailoed for particiants attending **ASUG Tech Connect 2025**. If you are attending TechEd Berlin or TechEd on tour, you are currently in the wrong GitHub branch — please switch to the main branch and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
+This session is part of multiple SAP events, and all systems and exercises remain the same except for the **SAP Integration Suite Tenant**. Note that the system details for this exercise have been tailoed for particiants attending **ASUG Tech Connect 2025**. If you are attending TechEd Berlin or TechEd on tour, you are currently in the wrong GitHub branch — please switch to the **main** branch and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
 
 To complete the exercises, you will need access to the following applications:
 
@@ -72,10 +73,10 @@ To complete the exercises, you will need access to the following applications:
 
 > [!IMPORTANT]
 > - _For a smooth experience, tenants have been preconfigured, and you already have all the roles and permissions needed to complete this exercise._
-> - _User ID and password information will be provided to you by the instructors._
-> - _When you run through the exercise steps, you need to ensure that the technical IDs of the integration artifacts that you will create are unique. Hence, add a participant number to your integration artifacts. The instructors will assign the participant number to you._
+> - Refer to your session handout for participant numbers and password details. For any questions, reach out to your session moderations._
+> - _When completing the exercise steps, ensure that the technical IDs of your integration artifacts are unique. To achieve this, append your assigned participant number to the names of the artifacts you create. Each participant has been given a unique number by the instructors._
 > - _Please adhere strictly to the instructions regarding the naming conventions for the artifacts you create. This will ensure successful completion of the tasks without conflicting with other participants._
-> - _Do not delete, change or undeploy any artifact in the tenant other than yours._
+> - _Do not delete, change or undeploy any artifact in the tenant._
 
 ## Pre-configured Setup
 Chapters in this section provide pre-configured setups to support learning, without being part of the hands-on exercises:

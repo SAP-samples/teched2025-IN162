@@ -8,7 +8,7 @@ Imagine your organization employs an **AI-powered Customer Success Digital Assis
 
 ## Scenario Architecture
 
-<img src="/intro/intro1/images/IN162_scenario_architecture.png" width=100% height=100%>
+<img src="images/IN162_scenario_architecture.png" width=100% height=100%>
 
 ### Real-time grounding flow
 
@@ -45,6 +45,4 @@ With this setup, the CSM’s prompt is turned into a vector, matched against up-
 
 ## Summary
 
-You should now be familiar with the session scenario.
-
-Now, to learn all the configurations that has been done in **SAP S/4HANA Cloud** system to enable new sales order event publication to **SAP Integration Suite, advanced event mesh**, you can navigate to [SAP S/4HANA Cloud System Configuration](/intro/intro2/README.md) section.
+You should now be familiar with the session scenario. Let's back to our main chapter and continue look at the [system details](../../README.md#requirements).
