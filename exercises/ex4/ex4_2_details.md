@@ -36,7 +36,7 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
    Support Case Event to Hana Vector DB for AI Grounding - IN162-0**
    ```
 > [!NOTE]
-> Replace the `0**` with your assigned user idenfifier.
+> Replace the `0**` with your assigned user identifier.
    After this, click on 'Copy'.
 
 <br>![](../ex4/images/ex162-42-5.png)
@@ -77,7 +77,7 @@ Now that the IFlow has been copied, we will configure it with certain externaliz
  ## Step 3 - Deploy the IFlow 
 Now that the configuration is complete, we will move ahead and deploy the IFlow.
 
-1. Click on 'Deploy' in the configuration dialog from the previous step OR you can open editor to 'Deploy' the flow
+1. Click on 'Deploy' in the configuration dialog from the previous step OR you can open the editor to 'Deploy' the flow
    Select the default 'Cloud Integration' as the runtime profile to deploy the content into.
 
 <br>![](../ex4/images/ex162-42-11.png)
@@ -104,4 +104,4 @@ It is highly recommended that you review the IFlow in detail to gain a broader u
 <br>![](../ex4/images/ex162-42-15.png)
 <br><br>
 ## Summary
-This completes Exercise 4, Next proceed to [Exercise 5](../ex5/README.md), where we will initate the creation of Sales Order and Support Cases from **S/4HANA Cloud** and **SAP Support Cloud V2** respective and monitor the Integration Flows that finally get triggered via the AEM Adapters.
+This completes Exercise 4. Next, proceed to [Exercise 5](../ex5/README.md), where we will initiate the creation of Sales Order and Support Cases from **S/4HANA Cloud** and **SAP Support Cloud V2**, respectively, and monitor the Integration Flows that finally get triggered via the AEM Adapters.
