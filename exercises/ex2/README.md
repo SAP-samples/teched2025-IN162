@@ -4,8 +4,8 @@ In this exercise, you will create configuration and orchestration deployments in
 
 ### Key Concepts
 1.	A Resource Group in SAP AI Launchpad is like a project folder that holds and separates all your AI assets (models, configurations, data, etc.) for a specific team or a use case.
-2.	The Executable is the pre-built SAP template that handles all the technical complexity of connecting your application to external LLMs like Azure, OpenAI or AWS Bedrock.
-3.	The Configuration is your specific recipe card that links the generic executable template to a particular LLM (like 'GPT-4') and sets its parameters (like Temperature) to control its behaviour
+2.	The Executable is the pre-built SAP template that handles all the technical complexity of connecting your application to external LLMs like Azure, OpenAI, or AWS Bedrock.
+3.	The Configuration is your specific recipe card that links the generic executable template to a particular LLM (like 'GPT-4') and sets its parameters (like Temperature) to control its behavior
 4.	The Deployment is the final step that flips the power switch on your LLM configuration, turning it into a live service with a unique web address (URL) that SAP applications can use. In this case, it will be called by the integration flows in the Cloud Integration capability of SAP Integration Suite.
 
 ## Exercise 2.1 - Log on to SAP AI Launchpad and Create Configuration 
@@ -15,19 +15,19 @@ After completing these steps, you will have created the configuration in SAP AI 
    
       > Note: The system login screen may not appear if you are already authenticated, as other systems connected to the same SAP Identity Authentication Service (IAS) tenant can trigger automatic login.
 
-      If the login page appears, log on using the user ID and password provided by the instructors.
+      If the login page appears, log in using the user ID and password provided by the instructors.
 
   	   <img src="./images/ex21-1.png" alt="Pic 21-1" width=40% height=40%>
 
-2. Each participant has been assigned a resource group according to the assigned participant number.
+2. Each participant has been assigned a resource group according to her assigned participant number.
    <br>Verify that the resource group <b>IN162-0**</b> *(replace ** with the participant number that is assigned to you)* is visible in the SAP AI Launchpad.
-   <br>Select the available resource group to enable the menu items in the left pane: **Generative AI Hub**, **SAP AI Core Administration** and **ML Operations**.
+   <br>Select the available resource group to enable the menu items in the left pane: **Generative AI Hub**, **SAP AI Core Administration**, and **ML Operations**.
 
    ![Pic 21-2](./images/ex21-2.png)
 
    > **Note**: Participants with the following numbers — `IN162-062`, `IN162-065`, `IN162-070`, `IN162-076`, `IN162-086`, `IN162-088`, or `IN162-093` — will be assigned to a different resource group. This is intentional.
    >
-   > Other than these, if your resource group is missing, please contact the instructor.
+   > Other than these, if your resource group is missing, please get in touch with the instructor.
 
    
 3. From the left menu, select **ML Operations -> Configuration**, and then click **Create** button.
@@ -79,11 +79,11 @@ After completing these steps, your deployment will be created and running in SAP
 4.	Wait for the deployment to start running. This may take a few minutes, so you can proceed with the next exercise in this hands-on session.
    Once the deployment status shows **RUNNING**, copy the Deployment ID and URL. You’ll need them in the next exercise when working with integration flows in the Cloud Integration capability of SAP Integration Suite.
 >[!TIP]
->Use only the copy button to copy URL correctly. Right-clicking on the URL to copy it will result in an incorrect value !
+>Use only the copy button to copy the URL correctly. Right-clicking on the URL to copy it will result in an incorrect value!
 
 ![Pic 22-4](./images/IN162-15-1.png)
    
-   > **Note:** In case the deployment do not show the **RUNNING** status even after some minutes, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
+   > **Note:** In case the deployment does not show the **RUNNING** status even after some minutes, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
    > <br><br>Deployment ID: **db1ce5ede0291ce0** 
    > <br>Deployment URL: **https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0**
 
