@@ -78,12 +78,6 @@ To complete the exercises, you will need access to the following applications:
 > - _Please adhere strictly to the instructions regarding the naming conventions for the artifacts you create. This will ensure successful completion of the tasks without conflicting with other participants._
 > - _Do not delete, change, or undeploy any artifact in the tenant._
 
-## Pre-configured Setup
-Chapters in this section provide pre-configured setups to support learning, without being part of the hands-on exercises:
-
-- [SAP S/4HANA Cloud System Configurations (for your information only)](intro/intro2/README.md)
-- [SAP Service Cloud Version 2 System Configurations (for your information only)](intro/intro3/README.md)
-
 ## Exercises
 The complete list of exercise steps is listed below; run through them in the given order.
 <br>This section also serves as a Table of Contents; use the breadcrumb navigation at the top of the pages to return here at any time.
@@ -110,6 +104,13 @@ The complete list of exercise steps is listed below; run through them in the giv
     - [Exercise 6.1 - Go through pre-built Integration Flow to summarize the current status of the customer using Generative AI Hub (Optional)](exercises/ex6#exercise-61---go-through-pre-built-integration-flow-to-summarize-the-current-status-of-the-customer-using-generative-ai-hub-optional) 
     - [Exercise 6.2 - Go through pre-built Joule Skill to trigger the generation of key talking points for customer meeting (Optional)](exercises/ex6#exercise-62---go-through-pre-built-joule-skill-to-trigger-the-generation-of-key-talking-points-for-customer-meeting-optional)
     - [Exercise 6.3 - Generate customer-specific sales order and support ticket summary of talking points](exercises/ex6#exercise-63---generate-customer-specific-sales-order-and-support-ticket-summary-of-talking-points)
+
+## Pre-configured Setup
+Chapters in this section are purely educational and are not part of the hands-on exercises. We go through some of the configuration steps within **SAP S/4HANA Cloud** and **SAP Service Cloud Version 2** needed to support the hands-on.
+
+- [SAP S/4HANA Cloud System Configurations (for your information only)](intro/intro2/README.md)
+- [SAP Service Cloud Version 2 System Configurations (for your information only)](intro/intro3/README.md)
+
 
 ## Troubleshooting Guide
 
