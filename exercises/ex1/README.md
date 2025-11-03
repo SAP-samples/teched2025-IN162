@@ -69,7 +69,7 @@ After completing these steps, you will have created the first queue subscribed t
 
 	**HINT:** If you cannot see the tile, uncheck the **"Only show my services"** checkbox.
 
-	![Pic 2](./images/ex11-2.png)  
+	![Pic 2](./images/ex11-3.png)  
 
 3. Switch to the **Manage** tab, and click on the **Queues** link button.
 
