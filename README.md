@@ -4,6 +4,21 @@
 
 This repository contains the material for the SAP TechEd 2025 Hands-on Workshop session [IN162 | Real-time data for AI agents: Grounding with event-driven architecture](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748712252655001fP5Z)  
 
+## Requirements
+
+There are no dedicated requirement for this session. You would be able to execute the excercises by just following the descriptions even if you do not have any experience with **SAP Integration Suite and SAP Integration Suite, advanced event mesh.** 
+
+However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite, SAP Joule Studio and SAP Build Process Automation Actions.<br/>
+
+You can explore the following SAP Discovery Center missions to get started and build expertise with the SAP BTP services used in this hands-on workshop session.
+
+* [SAP Integration Suite](https://discovery-center.cloud.sap/serviceCatalog/integration-suite)
+* [SAP Integration Suite, advanced event mesh](https://discovery-center.cloud.sap/serviceCatalog/advanced-event-mesh)
+* [SAP AI Launchpad](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-launchpad)
+* [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core)
+* [Joule Studio, skill builder](https://discovery-center.cloud.sap/ai-feature/e93aa292-e7f4-449d-9586-f1a8510d5ab6/)
+* [SAP Build Process Automation](https://discovery-center.cloud.sap/serviceCatalog/sap-build-process-automation)
+
 ## Session Overview
 
 This session introduces attendees to the power of event-driven integration pattern to deliver real-time grounding data, equipping AI system's with the latest business context to make informed and accurate decisions
@@ -21,24 +36,16 @@ The following chapter explains the scenario in more detail:
 
 - [Scenario Introduction](intro/intro1/README.md)
 
-## Requirements
+## Pre-configured Setup
+Chapters in this section provide pre-configured setups to support learning, without being part of the hands-on exercises:
 
-There are no dedicated requirement for this session. You would be able to execute the excercises by just following the descriptions even if you do not have any experience with **SAP Integration Suite and SAP Integration Suite, advanced event mesh.** 
-
-However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite, SAP Joule Studio and SAP Build Process Automation Actions.<br/>
-
-You can explore the following SAP Discovery Center missions to get started and build expertise with the SAP BTP services used in this hands-on workshop session.
-
-* [SAP Integration Suite](https://discovery-center.cloud.sap/serviceCatalog/integration-suite)
-* [SAP Integration Suite, advanced event mesh](https://discovery-center.cloud.sap/serviceCatalog/advanced-event-mesh)
-* [SAP AI Launchpad](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-launchpad)
-* [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core)
-* [Joule Studio, skill builder](https://discovery-center.cloud.sap/ai-feature/e93aa292-e7f4-449d-9586-f1a8510d5ab6/)
-* [SAP Build Process Automation](https://discovery-center.cloud.sap/serviceCatalog/sap-build-process-automation)
+- [SAP S/4HANA Cloud System Configurations (for your information only)](intro/intro2/README.md)
+- [SAP Service Cloud Version 2 System Configurations (for your information only)](intro/intro3/README.md)
 
 ## System URL and login information 
 
-This session is part of multiple SAP events, and all systems and exercises remain the same except for the **SAP Integration Suite Tenant**. If you are attending ASUG TechConnect, you are currently in the wrong GitHub branch — please switch to the asug2025 branch and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
+> [!NOTE]
+> If you are attending **ASUG TechConnect**, you are currently in the wrong GitHub branch — please switch to the [**asug2025 branch**](https://github.com/SAP-samples/teched2025-IN162/tree/asug2025) and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
 
 To complete the exercises, you will need access to the following applications:
 
@@ -56,12 +63,6 @@ To complete the exercises, you will need access to the following applications:
 > - _When you run through the exercise steps, you need to ensure that the technical IDs of the integration artifacts that you will create are unique. Hence, add a participant number to your integration artifacts. The instructors will assign the participant number to you._
 > - _Please adhere strictly to the instructions regarding the naming conventions for the artifacts you create. This will ensure successful completion of the tasks without conflicting with other participants._
 > - _Do not delete, change or undeploy any artifact in the tenant other than yours._
-
-## Pre-configured Setup
-Chapters in this section provide pre-configured setups to support learning, without being part of the hands-on exercises:
-
-- [SAP S/4HANA Cloud System Configurations (for your information only)](intro/intro2/README.md)
-- [SAP Service Cloud Version 2 System Configurations (for your information only)](intro/intro3/README.md)
 
 ## Exercises
 The complete list of exercise steps are listed below, run through them in the given order.
