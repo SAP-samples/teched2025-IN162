@@ -45,13 +45,9 @@ In this exercise, we will create a support case in SAP Service Cloud Version 2 t
 
 7.  You will see that all other fields, like **'Contact'**, **'Assigned To'**, etc., will be auto-filled based on your selection. Retain these values and finalize the settings by creating **'Save and Open'**. 
 
-    <img src="../ex5/images/image5.png" width=70% height=100%>
+    <img src="../ex5/images/image5.png" width=60% height=60%>
     
+## Summary
+This wraps up the Support Case creation process. An event would have been triggered now based on the settings we [defined](../ex1/README.md#exercise-13---create-second-queue-and-subscribe-to-support-case-topic-in-sap-integration-suite-advanced-event-mesh-aem) on the AEM side. The notification will be picked up by the AEM Adapter and trigger the integration flow.
 
-    ## Summary
-    This wraps up the 'support case' creation process. An event would have been triggered now based on the settings we [defined](../ex1/README.md#exercise-13---create-second-queue-and-subscribe-to-support-case-topic-in-sap-integration-suite-advanced-event-mesh-aem) on the AEM side. The notification will be picked up by the AEM Adapter and trigger the IFlow.
-
-    Once the flow completes, we can review the execution path in the [next exercise](./ex5_4_details.md).
-
-
-
+Once the flow completes, we can review the execution path in the [next exercise](./ex5_4_details.md).
