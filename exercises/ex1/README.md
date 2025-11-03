@@ -47,7 +47,7 @@ After completing these steps, you will have familiarized yourself with AEM. Thes
 	
 	![Pic 11-7](./images/ex11-7.png)
 
-8. Explore the **Broker Manager** screen.
+8. **Learning purpose only** - Explore the **Broker Manager** screen.
    <br>On the left side of the screen, you will find the main sections for navigation:
 
 	- **Message VPN:** VPN-level stats and config (a Message VPN is a virtual partition of a single broker. One AEM broker can host multiple Message VPNs, and each VPN can have different authorization schemes and topic spaces; client/messaging application activity happens within the scope of a VPN).
