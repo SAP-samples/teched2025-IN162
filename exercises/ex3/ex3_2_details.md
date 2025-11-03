@@ -29,7 +29,7 @@ In this exercise, instead of building an integration flow from scratch, we will 
    ![](../ex3/images/ex162-32-4-0.png) 
 
 5. Select the target package that you had created in the first segment of Exercise 3 i.e. **TechEd 2025 IN162-`0**`**, replace the `**` with your assigned user idenfifier.
-    After this, click on 'Copy'.
+   After this, click on 'Copy'.
 
    ![](../ex3/images/ex162-32-4.png)
    
