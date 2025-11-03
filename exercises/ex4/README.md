@@ -12,6 +12,6 @@ For your convenience, this exercise is provided in two formats, following the sa
 > [!TIP] 
 > If time is limited and you’ve already worked through Exercise 3.1 from scratch, you can consider taking the alternate approach. 
 
-We assume that you have already completed Exercise 3 and, hence, you are logged into the SAP Integration Suite tenant and have created an Integration Package titled '**TechEd 2025 IN162-`0**`**', replace `**` with your assigned user identifier. If not, navigate to [this](../ex3/README.md#step-1---log-into-your-designated-integration-suite-tenant) section to log in and create a **Package** and come back to this section.
+We assume that you have already completed Exercise 3 and, hence, you are logged into the SAP Integration Suite tenant and have created an Integration Package titled '**TechEd 2025 IN162-0`**`**', replace `**` with your assigned user identifier. If not, navigate to [this](../ex3/README.md#step-1---log-into-your-designated-integration-suite-tenant) section to log in and create a **Package** and come back to this section.
 
  From this point on, follow either [Exercise 4.1](./ex4_1_details.md) or [Exercise 4.2](./ex4_2_details.md)
