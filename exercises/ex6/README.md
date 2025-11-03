@@ -39,8 +39,8 @@ The logical sequencing of this exercise can be as follows:
 	1. https://in162-ntn259xc.eu10.build.cloud.sap/
 	2. Moderators will provide you with the credentials
 2. Understand Action details for Joule Skill in SAP Build Process Automation
-	1. "Joule Skill Prompt to GenAI Summarization with Vector Grounding" integration flow was used to create an Action
-	2. The above action was added to "GenAI Summarization with Vector Grounding" Action Project
+	1. "**Joule Skill Prompt to GenAI Summarization with Vector Grounding**" integration flow was used to create an Action
+	2. The above action was added to "**GenAI Summarization with Vector Grounding**" Action Project
 	3. Input and Output  were defined to take user input (prompt) as input and get the summarized output
     <br><br>
    	![Pic 21-2](./images/ex62-1.png)
@@ -53,19 +53,17 @@ The logical sequencing of this exercise can be as follows:
 	<br><br>
 	![Pic 21-2](./images/ex62-5.png)
 	<br><br>
-	4. "Customer Success Assistant" Joule Skill was created in "IN162_Custome_Success_Assistant" project using the Action created in the previous step.
+	4. "**Customer Success Assistant**" Joule Skill was created in "**IN162_Custome_Success_Assistant**" project using the Action created in previous step.
 	<br><br>
 	![Pic 21-2](./images/ex62-6.png)
 	<br><br>
-	![Pic 21-2](./images/ex62-7.png)
+	![Pic 21-2](./images/ex62-8.png)
 	<br><br>
-		![Pic 21-2](./images/ex62-8.png)
+	![Pic 21-2](./images/ex62-9.png)
 	<br><br>
-		![Pic 21-2](./images/ex62-9.png)
+	![Pic 21-2](./images/ex62-10.png)
 	<br><br>
-		![Pic 21-2](./images/ex62-10.png)
-	<br><br>
-		![Pic 21-2](./images/ex62-11.png)
+	![Pic 21-2](./images/ex62-11.png)
 	<br><br>
 
 ## Exercise 6.3 - Generate a customer-specific summary of Sales Orders and Support Ticket insights as talking points for an upcoming meeting.
@@ -96,5 +94,4 @@ The logical sequencing of this exercise can be as follows:
 	<br><br>
 
 # Summary
-We have successfully executed the completed the hands-on exercise from real time ingestion of Sales order and service ticket data to the generation of talking points along with proposal for remedial actions and proposals to avoid issues in future based on the latest information available.
-
+We have successfully executed the completed the hands-on exercise from real time ingestion of Sales Order and Service Ticket data to the generation of talking points along with proposal for remedial actions and proposals to avoid issues in future based on the latest information available.
