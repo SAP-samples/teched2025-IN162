@@ -1,50 +1,42 @@
 # Exercise 3.2 - Copy an existing Integration Flow to receive a Sales Order creation event, transform into embeddings, and persist to HANA Vector DB
 Make sure you come to this exercise after completing [Exercise 3](./README.md).
 
-In this exercise, instead of building an integration flow from scratch, we will copy a completed integration flow from the source package and configure the parameters that have been externalized for the participants.
+In this exercise, instead of building an integration flow from scratch, we will copy a completed integration flow from the solution package and configure the parameters that have been externalized for the participants.
 
 > [!IMPORTANT]  
-> Note that we will be accessing the main solution package in this exercise. Please don't change anything in the solution package in any way. 
+> Note that we will be accessing the main solution package in this exercise.\
+> **Please don't change or delete anything in the solution package in any way.**
 
 
-## Step 1 - Copy the Integration Flow from the source Package 
+## Step 1 - Copy the Integration Flow from the Solution Package 
 
-1. Navigate to the 'Integration and APIs' section from the 'Design' tab of your Integration Suite tenant.
+1. Navigate to the '**Integration and APIs**' section from the '**Design**' tab of your SAP Integration Suite tenant.
    
-   Click on a Package titled '**TechEd 2025 IN162 - Solution Package**
-  
-   <br>![](../ex3/images/ex162-32-1.png)
-   <br>
-2. Navigate to the 'Artifacts' tab of this package, look for an Integration Flow titled '**Sales Order Event to Hana Vector DB for AI Grounding**' and click on the '...' Action button to bring up the action menu and click on 'Copy'.
+   Click on a Package titled '**TechEd 2025 IN162 - Solution Package**'
 
-   <br>![](../ex3/images/ex162-32-2.png)
-   <br>
+   ![](../ex3/images/ex162-32-1.png)
+
+2. Navigate to the '**Artifacts**' tab of this package, look for an integration flow titled '**Sales Order Event to Hana Vector DB for AI Grounding - Solution**' and click on the '**...**' action button to bring up the action menu and click on '**Copy**'.
+
+   ![](../ex3/images/ex162-32-2.png)
    
-3. A copy dialog will pop open. **Do not** click on 'Copy' yet. Click on 'Select' to specify the target Package to copy this content into.
+3. A copy dialog will pop open. **Do not** click on '**Copy**' yet. Change the name of the integration flow as **`Sales Order Event to Hana Vector DB for AI Grounding - IN162-0xx`**, replace the **`xx`** with your assigned user identifier.
 
-   <br>![](../ex3/images/ex162-32-3.png)
-   <br>
-4. A package Selection dialog will open up. Select the target package as 'TechEd 2025 IN162-`0**`. Note that we created this Package in the first segment of Exercise 3. 
-> [!NOTE]
-> Replace the `0**` with your assigned user identifier.
+   ![](../ex3/images/ex162-32-3.png)
 
-   <br>![](../ex3/images/ex162-32-4.png)
-   <br>
+4. Then click on the '**Select**' button to specify the target Package to copy this content into. A package selection dialog will open up. 
+
+   ![](../ex3/images/ex162-32-4-0.png) 
+
+5. Select the target package that you had created in the first segment of Exercise 3 i.e. '**TechEd 2025 IN162-`0xx`** replace the **`xx`** with your assigned user idenfifier.
+    After this, click on 'Copy'.
+
+   ![](../ex3/images/ex162-32-4.png)
    
-5. Back in the 'Copy' dialog, title the Name of the integration flow as
-   ```
-   Sales Order Event to Hana Vector DB for AI Grounding - IN162-0**
-   ```
-> [!NOTE]
-> Replace the `0**` with your assigned user identifier.
-   After this, click on 'Copy'.
-   <br>![](../ex3/images/ex162-32-5.png)
-   <br>
-   
-6. After the copy is successful, navigate to the copied package by clicking on the 'Navigate' button in the presented dialog.
+6. After the copy is successful, navigate to the copied package by clicking on the '**Navigate**' button in the presented dialog.
 
-   <br>![](../ex3/images/ex162-32-6.png)
-   <br>
+   ![](../ex3/images/ex162-32-6.png)
+
 ## Step 2 - Configure the Integration Flow with your user settings 
 Now that the integration flow has been copied, we will configure it with certain externalized parameters in the next few steps. 
 
