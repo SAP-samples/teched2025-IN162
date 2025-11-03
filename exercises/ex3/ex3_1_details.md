@@ -214,8 +214,6 @@ Query Option
 $select=SalesOrder,SoldToParty,SalesOrderDate,PurchaseOrderByCustomer,RequestedDeliveryDate,TotalNetAmount,TransactionCurrency&$expand=_Item($select=SalesOrder,SalesOrderItem,SalesOrderItemText,Product,RequestedQuantity,RequestedQuantityISOUnit,NetAmount,TransactionCurrency,ConfirmedDeliveryDate),_Partner($select=SalesOrder,PartnerFunction,Customer,BusinessPartnerName1,StreetName,CityName,PostalCode,Region,Country)
 ```
 
-
-
     <br>![](../ex3/images/ex162-3-24.png)
 
 ## Step 5 - Filter out 'noisy' events and keep your Sales Order data clean and accurate 
