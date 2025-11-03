@@ -34,7 +34,7 @@ The focus of this hands-on session is to build and run real-time grounding for L
     ![Pic 21-2](./images/ex63-5.png)
 	<br><br>
 
-## Exercise 6.2 - Go through pre-built Integration Flow that summarize the current status of the customer using Generative AI Hub (Optional)
+## Exercise 6.2 - Learning Purpose - Go through pre-built Integration Flow that summarize the current status of the customer using Generative AI Hub (Optional)
 
 1. You can view the pre-built integration flow on this system
     1. https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design
@@ -58,7 +58,7 @@ The focus of this hands-on session is to build and run real-time grounding for L
    ![Pic 21-2](./images/ex61-5.png)
    <br><br>
 
-## Exercise 6.3 - Go through pre-built Joule Skill to trigger the Integration Flow as an Action for generation of key talking points for customer meeting (Optional)
+## Exercise 6.3 - Learning Purpose - Go through pre-built Joule Skill to trigger the Integration Flow as an Action for generation of key talking points for customer meeting (Optional)
 
 1. You can access the pre-built Joule skill on this system
 	1. https://in162-ntn259xc.eu10.build.cloud.sap/
