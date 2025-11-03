@@ -98,7 +98,10 @@ The complete list of exercise steps are listed below, run through them in the gi
     - [Exercise 6.2 - Go through pre-built Joule Skill to trigger the generation of key talking points for customer meeting (Optional)](exercises/ex6#exercise-62---go-through-pre-built-joule-skill-to-trigger-the-generation-of-key-talking-points-for-customer-meeting-optional)
     - [Exercise 6.3 - Generate customer specific sales order and support ticket summary of talking points](exercises/ex6#exercise-63---generate-customer-specific-sales-order-and-support-ticket-summary-of-talking-points)
 
-## Troubleshooting Guide
+## Feedback
+Kindly provide your feedback on session **IN162** by scanning the QR code.
+
+![Pic Feedback QR](./images/feedback_QR.png)
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
