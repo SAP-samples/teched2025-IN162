@@ -1,18 +1,26 @@
-# Exercise 3.1 - Create an IFlow from scratch to receive a Sales Order creation event, transform into embeddings, and persist to HANA Vector DB
+# Exercise 3.1 - Create an Integration Flow from scratch to receive a Sales Order creation event, transform into embeddings, and persist to HANA Vector DB
 
 Make sure you come to this exercise after completing the steps in this [README.md](./README.md).
 
-In this exercise, you will build an IFlow from scratch. Please ensure you follow the steps in the exact sequence outlined in this guide.
+In this exercise, you will build an integration flow from scratch. Please ensure you follow the steps in the exact sequence outlined in this guide.
 
-## Step 1 - Create a new IFlow 
+## Step 1 - Create a new integration flow 
 
 1. In the Artifacts tab, click on 'Add' -> 'Integration Flow'
    <br>![](../ex3/images/ex162-3-4.png)
-2. In the create dialog, name your integration flow as: 
+2. In the create dialog, name your integration flow as:
+
+**Name**
+```
+'IN162-`000` Sales Order Event to Hana Vector DB for AI Grounding'
+```
+
+**Description**
 
 ```
-   'IN162-`000` Sales Order Event to Hana Vector DB for AI Grounding'
-   ```
+Integration flow to receive an event from S4/HANA and process it further
+```
+
 
 >[!NOTE]
 >Replace `000` with your assigned user identifier.
@@ -21,9 +29,9 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
 **Click on 'Add and Open in Editor'.**
 <br>![](../ex3/images/ex162-3-5.png)
 
-3. Now you should see the basic skeleton of the IFlow in the editor, ready for us to start building upon. 
+3. Now you should see the basic skeleton of the integration flow in the editor, ready for us to start building upon. 
 
-    Click on 'Edit' to get started.
+    **Click on 'Edit' to get started.**
   <br>![](../ex3/images/ex162-3-6.png)
 
 ## Step 2 - AEM Sender Adapter to receive events from S/4HANA
