@@ -8,12 +8,20 @@ In this exercise, you will build an IFlow from scratch. Please ensure you follow
 
 1. In the Artifacts tab, click on 'Add' -> 'Integration Flow'
    <br>![](../ex3/images/ex162-3-4.png)
-2. In the create dialog, name your integration flow as: 'IN162-`0**` Sales Order Event to Hana Vector DB for AI Grounding' (replace `0**` with your assigned user identifier). 
+2. In the create dialog, name your integration flow as: 
 
-    Click on 'Add and Open in Editor'.
+```
+   'IN162-`0**` Sales Order Event to Hana Vector DB for AI Grounding'
+   ```
+
+>[!NOTE]
+>Replace `0**` with your assigned user identifier.
+
+
+**Click on 'Add and Open in Editor'.**
 <br>![](../ex3/images/ex162-3-5.png)
 
-1. Now you should see the basic skeleton of the IFlow in the editor, ready for us to start building upon. 
+3. Now you should see the basic skeleton of the IFlow in the editor, ready for us to start building upon. 
 
     Click on 'Edit' to get started.
   <br>![](../ex3/images/ex162-3-6.png)
