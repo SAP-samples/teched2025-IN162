@@ -12,12 +12,12 @@ Irrespective of the approach you choose, let's begin the exercise by logging int
 
 ## Step 1 - Log into your assigned SAP Integration Suite tenant
 
-1. Identify your assigned SAP Integration Suite tenant to log into. Note that we are running this workshop across multiple events/geographies. So, it is important that you log into the right tenant. Refer to [this](../../README.md#system-url-and-login-information) section to locate your SAP Integration Suite tenant URL.
+1. Identify your assigned **SAP Integration Suite** tenant to log into. Note that we are running this workshop across multiple events/geographies. So, it is important that you log into the right tenant. Refer to [this](../../README.md#system-url-and-login-information) section to locate your SAP Integration Suite tenant URL.
 
 > [!NOTE]
 > If you are attending **ASUG TechConnect**, you are currently in the wrong GitHub branch — please switch to the [**asug2025 branch**](https://github.com/SAP-samples/teched2025-IN162/tree/asug2025) and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
 
-2. Log in to the SAP Integration Suite tenant using the user ID and password that has been provided by the instructors.
+2. Log on to the **SAP Integration Suite** tenant using the user ID and password that has been provided by the instructors.
 
    <img src="../ex3/images/image106.png" width=40% height=40%>
 
