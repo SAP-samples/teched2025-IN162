@@ -72,7 +72,7 @@ The **Enterprise Event Enablement ‒ Configure Channel Binding** app in SAP S/4
 We have added multiple **SalesOrder** events to our channel **IN162**.
 In our scenario we will only use the **sap/s4/beh/salesorder/v1/SalesOrder/Created/v1** events. It is to demonstrate that multiple events, even originating from multiple business objects can be combined in one channel.
 
-> [!TIP]
+> [!NOTE]
 > The final topic that will be used to publish the Sales Order event will consist of **\<topic-space\> / \<event-topic\>**. The **Topic Space** is defined in **SAP_COM_0492**. 
 > The topic used in our scernaio will look like: **sap/teched/2025/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1**
 
