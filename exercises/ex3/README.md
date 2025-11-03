@@ -24,7 +24,7 @@ Irrespective of the approach you choose, let's begin the exercise by logging int
 > [!NOTE]
 > Pay attention that we are using different user and password only for SAP Integration Suite tenant. Also use the User`**` pattern to log into the SAP Integration Suite tenant and not the IN162-`***` pattern as you have used in the previous exercise.
 
-## Step 2 - Create a package in your Integration Suite tenant
+## Step 2 - Create a package in your SAP Integration Suite tenant
 
 1. Now that you are logged into the tenant,  'Create' a new Package from the 'Integration and APIs' sub-menu under the 'Design' menu (Click on the 'hamburger' icon on the left to launch the menu, if it's hidden).
 <br>![](../ex3/images/ex162-3-2.png)
