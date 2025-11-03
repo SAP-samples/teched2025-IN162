@@ -28,7 +28,7 @@ In this exercise, instead of building an integration flow from scratch, we will 
 
    ![](../ex3/images/ex162-32-4-0.png) 
 
-5. Select the target package that you had created in the first segment of Exercise 3 i.e. '**TechEd 2025 IN162-`0xx`** replace the **`xx`** with your assigned user idenfifier.
+5. Select the target package that you had created in the first segment of Exercise 3 i.e. **TechEd 2025 IN162-`0xx`**, replace the **`xx`** with your assigned user idenfifier.
     After this, click on 'Copy'.
 
    ![](../ex3/images/ex162-32-4.png)
@@ -40,61 +40,50 @@ In this exercise, instead of building an integration flow from scratch, we will 
 ## Step 2 - Configure the Integration Flow with your user settings 
 Now that the integration flow has been copied, we will configure it with certain externalized parameters in the next few steps. 
 
-1. Make sure you are in the target package (TechEd 2025 IN162-`000`). Go to the 'Artifact' tab. Select the 'Sales Order Event to Hana Vector DB for AI Grounding' integration flow, click on the '**...**' Action menu button, and click '**Configure**'.
-> [!NOTE]
-> Replace the `000` with your assigned user idenfifier.
+1. Make sure you are in your own created package i.e. **TechEd 2025 IN162-`0xx`**, replace the **`xx`** with your assigned user identifier. \
+   Go to the '**Artifact**' tab. Select the copied integration flow i.e. **`Sales Order Event to Hana Vector DB for AI Grounding - IN162-0xx`**, replace the **`xx`** with your assigned user identifier. <br>Click on the '**...**' Action menu button, and click '**Configure**'.
 
-  <br>![](../ex3/images/ex162-32-7.png)
-   <br>
+   ![](../ex3/images/ex162-32-7.png)
    
-2. The configuration dialog will pop open. In the 'Sender' tab, enter 'IN162-`000`_Sales_Order' in the 'Queue Name' text box. 
-> [!NOTE]
-> Replace the `000` with your assigned user idenfifier.
+2. The configuration dialog will pop open. In the '**Queue Name**' text box of the '**Sender**' tab, enter **'IN162-`0xx`_Sales_Order'**, replace the **`xx`** with your assigned user identifier.
 
-  <br>![](../ex3/images/ex162-32-8.png)
+   ![](../ex3/images/ex162-32-8.png)
 
-1. Next, navigate to the 'Receiver' tab and enter the URL  'https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/`your-deployment-id-here`' in the AI_Launchpad_URL textbox. 
+3. Next, navigate to the '**Receiver**' tab and replace the entire value with deployment URL that you copied in [Exercise 2](../ex2/README.md#exercise-22---create-deployment) i.e. 'https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/`your-deployment-id-here`' in the '**AI_Launchpad_URL**' textbox.
+
+   ![](../ex3/images/ex162-32-9.png)
    
-   > [!NOTE]
-   > Copy the `deployment-id-here` from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) where you created the deployment. 
+4. Move over to the '**More**' tab, in the '**Assigned_Participant_ID**' text box, enter **IN162-`0xx`**, replace the **`xx`** with your assigned user identifier. \
+   Click on '**Save**' button to save your configuration settings.
 
-  <br>![](../ex3/images/ex162-32-9.png)
-   <br>
-1. Move over to the 'More' tab and enter 'IN162-`000`' in the Assigned_Participant_ID text box. 
-> [!NOTE]
-> Replace the `000` with your assigned user idenfifier.
+   ![](../ex3/images/ex162-32-10.png)
 
-Click on 'Save' to save your configuration settings.
-
- <br>![](../ex3/images/ex162-32-10.png)
-   <br>
 ## Step 3 - Deploy the Integration Flow 
 Now that the configuration is complete, we will move ahead and deploy the integration flow.
 
-1. Click on 'Deploy' in the configuration dialog from the previous step. OR you can open editor to 'Deploy' the flow
-   Select the default 'Cloud Integration' as the runtime profile to deploy the content into.
+1. Click on '**Deploy**' in the configuration dialog from the previous step. OR you can open editor to '**Deploy**' the flow
+   Select the default '**Cloud Integration**' as the runtime profile to deploy the content into.
 
- <br>![](../ex3/images/ex162-32-12.png)
-   <br>
-<br>![](../ex3/images/ex162-32-13.png)
-   <br>
+   ![](../ex3/images/ex162-32-12.png)
+   ![](../ex3/images/ex162-32-13.png)
 
 2. A dialog will confirm the deploy action.
 
-<br>![](../ex3/images/ex162-32-14.png)
-   <br>
+   ![](../ex3/images/ex162-32-14.png)
+
 3. A message toast will confirm the successful completion of the deployment step.
 
-<br>![](../ex3/images/ex162-32-11-0.png)
-   <br>
-4. The integration flow is in the '**starting**' phase now. Click on the integration flow to bring up the model. After a minute or so, you should see the 'Runtime Status' change to 'Started'. This means that the integration flow is ready and listening for changes.
+   ![](../ex3/images/ex162-32-11-0.png)
 
-<br>![](../ex3/images/ex162-32-11-1.png)
-   <br>
-## Step 4 - Study the sequence of steps in the Integration Flow 
+4. The integration flow is in the '**starting**' phase now. Click on the integration flow to bring up the model. After a minute or so, you should see the '**Runtime Status**' change to '**Started**'. This means that the integration flow is ready and listening for changes.
+
+   ![](../ex3/images/ex162-32-11-1.png)
+
+## Step 4 - Learning Purpose - Explore the sequence of steps used in the Integration Flow 
 It is highly recommended that you review the integration flow in detail to gain a broader understanding of its functionality. You can do so by navigating to [Exercise 3.1](./ex3_1_details.md) and inspecting the complete sequence.
-<br>![](../ex3/images/ex162-32-11.png)
-   <br>
+
+![](../ex3/images/ex162-32-11.png)
+
 ## Summary
 
-This completes Exercise 3, Next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted upon support case creation in SAP Service Cloud V2.
+This completes Exercise 3, Next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted from **support case creation in SAP Service Cloud V2 system**.
