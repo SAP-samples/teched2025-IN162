@@ -1,7 +1,7 @@
 # SAP Service Cloud Version 2 System Configurations (for your information only)
 
 >[!NOTE]
->**This section is just for your knowledge and information only.**
+>**This section has already been pre-configured for you, and the details provided are for your information only.**
 
 As per the scenario, we also need to create a new **Support Case** in **SAP Service Cloud Version 2** system.
 This will **publish an event** to **SAP Integration Suite, advanced event mesh** from where it will be subscribed by a **SAP Integration Suite integration flow**. Although the standard Support Case business event is the data event but still the integration flow will call the Support Case API to fetch the additional details.
