@@ -47,7 +47,8 @@ Chapters in this section provide pre-configured setups to support learning, with
 > [!NOTE]
 > If you are attending **ASUG TechConnect**, you are currently in the wrong GitHub branch — please switch to the [**asug2025 branch**](https://github.com/SAP-samples/teched2025-IN162/tree/asug2025) and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
 
-To complete the exercises, you will need access to the following applications:
+To complete the exercises, the access to the following systems have been provided. \
+**In case you are not able to access any of these systems please contact the workshop instructors**.
 
 - [SAP Integration Suite, advanced event mesh](https://eu10.console.pubsub.em.services.cloud.sap/login?tenant-id=8b4a1697-2b58-4571-a986-1377cc070073)
 - [SAP AI Launchpad](https://in162-ntn259xc.ai-launchpad.prod.eu-central-1.aws.ai-prod.cloud.sap/)
