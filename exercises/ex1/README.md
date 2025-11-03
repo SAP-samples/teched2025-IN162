@@ -71,7 +71,7 @@ After completing these steps, you will have created the first queue subscribed t
 
 	![Pic 2](./images/ex11-3.png)  
 
-3. Switch to the **Manage** tab, and click on the **Queues** link button.
+3. Switch to the **Manage** tab, and click on the **Queues** link button on the left panel.
 
 	![Pic 4](./images/ex1-4.png)     
 
