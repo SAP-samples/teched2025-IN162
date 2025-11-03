@@ -5,8 +5,8 @@ The resulting embeddings will be stored in a connected SAP HANA Vector Database,
 
 For your convenience, this exercise is offered in two formats:
 
-- Recommended Approach ([Exercise 3.1](./ex3_1_details.md)): Build the integration flow from scratch by following step-by-step instructions. This method provides a deeper hands-on experience and a better understanding of the flow design.
-- Alternate Approach ([Exercise 3.2](./ex3_2_details.md)): Skip the build steps and instead copy a fully prepared integration flow, applying only minimal configuration before deployment. This option is ideal for participants who have limited time or prefer to work with pre-built content.
+- **Recommended Approach ([Exercise 3.1](./ex3_1_details.md))**: Build the integration flow from scratch by following step-by-step instructions. This method provides a deeper hands-on experience and a better understanding of the flow design.
+- **Alternate Approach ([Exercise 3.2](./ex3_2_details.md))**: Skip the build steps and instead copy a fully prepared integration flow, applying only minimal configuration before deployment. This option is ideal for participants who have limited time or prefer to work with pre-built content.
 
 Irrespective of the approach you choose, let's begin the exercise by logging into your designated tenant and creating a package to get started.
 
