@@ -101,7 +101,7 @@ The complete list of exercise steps are listed below, run through them in the gi
 ## Feedback
 Kindly provide your feedback on session **IN162** by scanning the QR code.
 
-![Pic Feedback QR](./images/feedback_QR.png)
+![Pic Feedback QR](./feedback_QR.png)
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
