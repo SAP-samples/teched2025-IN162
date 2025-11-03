@@ -20,7 +20,7 @@ In this exercise, instead of building an integration flow from scratch, we will 
 
    ![](../ex3/images/ex162-32-2.png)
    
-3. A copy dialog will pop open. **Do not** click on '**Copy**' yet. Change the name of the integration flow as **`Sales Order Event to Hana Vector DB for AI Grounding - IN162-0xx`**, replace the **`xx`** with your assigned user identifier.
+3. A copy dialog will pop open. **Do not** click on '**Copy**' yet. Change the name of the integration flow as **`Sales Order Event to Hana Vector DB for AI Grounding - IN162-0**`**, replace the `**` with your assigned user identifier.
 
    ![](../ex3/images/ex162-32-3.png)
 
@@ -28,7 +28,7 @@ In this exercise, instead of building an integration flow from scratch, we will 
 
    ![](../ex3/images/ex162-32-4-0.png) 
 
-5. Select the target package that you had created in the first segment of Exercise 3 i.e. **TechEd 2025 IN162-`0xx`**, replace the **`xx`** with your assigned user idenfifier.
+5. Select the target package that you had created in the first segment of Exercise 3 i.e. **TechEd 2025 IN162-`0**`**, replace the `**` with your assigned user idenfifier.
     After this, click on 'Copy'.
 
    ![](../ex3/images/ex162-32-4.png)
@@ -40,12 +40,12 @@ In this exercise, instead of building an integration flow from scratch, we will 
 ## Step 2 - Configure the Integration Flow with your user settings 
 Now that the integration flow has been copied, we will configure it with certain externalized parameters in the next few steps. 
 
-1. Make sure you are in your own created package i.e. **TechEd 2025 IN162-`0xx`**, replace the **`xx`** with your assigned user identifier. \
-   Go to the '**Artifact**' tab. Select the copied integration flow i.e. **`Sales Order Event to Hana Vector DB for AI Grounding - IN162-0xx`**, replace the **`xx`** with your assigned user identifier. <br>Click on the '**...**' Action menu button, and click '**Configure**'.
+1. Make sure you are in your own created package i.e. **TechEd 2025 IN162-`0**`**, replace the `**` with your assigned user identifier. \
+   Go to the '**Artifact**' tab. Select the copied integration flow i.e. **`Sales Order Event to Hana Vector DB for AI Grounding - IN162-0**`**, replace the `**` with your assigned user identifier. <br>Click on the '**...**' Action menu button, and click '**Configure**'.
 
    ![](../ex3/images/ex162-32-7.png)
    
-2. The configuration dialog will pop open. In the '**Queue Name**' text box of the '**Sender**' tab, enter **'IN162-`0xx`_Sales_Order'**, replace the **`xx`** with your assigned user identifier.
+2. The configuration dialog will pop open. In the '**Queue Name**' text box of the '**Sender**' tab, enter **'IN162-`0**`_Sales_Order'**, replace the `**` with your assigned user identifier.
 
    ![](../ex3/images/ex162-32-8.png)
 
@@ -53,7 +53,7 @@ Now that the integration flow has been copied, we will configure it with certain
 
    ![](../ex3/images/ex162-32-9.png)
    
-4. Move over to the '**More**' tab, in the '**Assigned_Participant_ID**' text box, enter **IN162-`0xx`**, replace the **`xx`** with your assigned user identifier. \
+4. Move over to the '**More**' tab, in the '**Assigned_Participant_ID**' text box, enter **IN162-`0**`**, replace the `**` with your assigned user identifier. \
    Click on '**Save**' button to save your configuration settings.
 
    ![](../ex3/images/ex162-32-10.png)
