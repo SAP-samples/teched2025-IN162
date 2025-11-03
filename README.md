@@ -66,7 +66,7 @@ To complete the exercises, you will need access to the following applications:
 
 ## Exercises
 The complete list of exercise steps are listed below, run through them in the given order.
-<br>This section also serves as a Table of Contents; use the breadcrumb navigation at the top of the pages to return here at any time.
+<br>This section also serves as a **Table of Content**; use the breadcrumb navigation at the top of the pages to return here at any time.
 
 - [Exercise 1 - Explore and Configure SAP Integration Suite, advanced event mesh (AEM)](exercises/ex1/README.md)
   - [Exercise 1.1 - Log on to SAP Integration Suite, advanced event mesh (AEM) and explore it](exercises/ex1#exercise-11---log-on-to-sap-integration-suite-advanced-event-mesh-aem-and-explore-it)
