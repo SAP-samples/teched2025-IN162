@@ -1,7 +1,7 @@
 # SAP S/4HANA Cloud System Configurations (for your information only)
 
 >[!NOTE]
->**This section is just for your knowledge and information only.**
+>**This section has already been pre-configured for you, and the details provided are for your information only.**
 
 As per the scenario, we need to create a new **Sales Order (SO)** in **SAP S/4HANA Cloud** system.\
 This will publish an event to **SAP Integration Suite, advanced event mesh** from where it will be subscribed by a **SAP Integration Suite integration flow**. As the standard Sales Order business event is only notification event, the integration flow will call the **Sales Order API** to fetch additional details. 
@@ -21,7 +21,7 @@ We then utilized the Sales Order API and communication user credentials in the C
 
 To know more about how to create a Communication Arrangement in SAP S/4HANA Cloud system, kindly check the [help documentation link](https://help.sap.com/docs/SAP_S4HANA_CLOUD/03c04db2a7434731b7fe21dca77440da/a5550ea977b24a6eb6ce1ce832088567.html).
 
-## 2. SAP Integration Suite, Advanced Event Mesh Integration - SAP_COM_0492 Communication Scenario
+## 2. SAP Integration Suite, advanced event mesh Integration - SAP_COM_0492 Communication Scenario
 
 With the SAP Event Mesh Advanced Plan, you can connect directly to your own SAP AEM instance. You can use SAP Event Mesh Advanced Plan for very large projects, where performance is crucial.
 
