@@ -33,7 +33,7 @@ Irrespective of the approach you choose, let's begin the exercise by logging int
 2. Enter the following details to describe the package and '**Save**' it. After the Package is successfully created, go to the '**Artifacts**' tab.
     | Field | Value |
     | ----- | ----- |
-    | Name | TechEd 2025 IN162-`000` (replace `000` with your assigned user identifier) |
+    | Name | TechEd 2025 IN162-0`**` (replace `**` with your assigned user identifier) |
     | Short Description | Learn how to build an event-driven integration scenario using SAP Integration Suite and advanced event mesh to deliver real-time grounding data to SAP Hana Cloud Vector DB, empowering AI agents with accurate, context-aware insights and responses. |
     | Version | 1.0.0|
     | Vendor | SAP |
