@@ -25,7 +25,6 @@ The following chapter explains the scenario in more detail:
 
 There are no dedicated requirement for this session. You would be able to execute the excercises by just following the descriptions even if you do not have any experience with **SAP Integration Suite and SAP Integration Suite, advanced event mesh.** 
 
-
 However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite, SAP Joule Studio and SAP Build Process Automation Actions.<br/>
 
 You can explore the following SAP Discovery Center missions to get started and build expertise with the SAP BTP services used in this hands-on workshop session.
@@ -36,13 +35,6 @@ You can explore the following SAP Discovery Center missions to get started and b
 * [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core)
 * [Joule Studio, skill builder](https://discovery-center.cloud.sap/ai-feature/e93aa292-e7f4-449d-9586-f1a8510d5ab6/)
 * [SAP Build Process Automation](https://discovery-center.cloud.sap/serviceCatalog/sap-build-process-automation)
-
-You can also gain some further knowledge around SAP Integration Suite and SAP Integration Suite, advanced event mesh by attending the following SAP TechEd Hands-on Workshop sessions:
-
-- [IN103 | Helping systems talk smarter with a flexible event-driven architecture | Deep Dive](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1751642175552001awv9)
-- [IN165 | Experience event-driven integration with advanced event mesh | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749789125498001xZYY)
-- [IN160 | Empower your business through enterprise automation | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711728862001rC69)
-- [IN163 | Implement exactly once in-order delivery in SAP Integration Suite | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748712337664001rclU)
 
 ## System URL and login information 
 
@@ -102,6 +94,14 @@ The complete list of exercise steps are listed below, run through them in the gi
 Kindly provide your feedback on session **IN162** by scanning the QR code.
 
 ![Pic Feedback QR](./feedback_QR.png)
+
+## Additional Relevant Sessions
+You can also gain some further knowledge around SAP Integration Suite and SAP Integration Suite, advanced event mesh by attending the following SAP TechEd Hands-on Workshop sessions:
+
+- [IN103 | Helping systems talk smarter with a flexible event-driven architecture | Deep Dive](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1751642175552001awv9)
+- [IN165 | Experience event-driven integration with advanced event mesh | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1749789125498001xZYY)
+- [IN160 | Empower your business through enterprise automation | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748711728862001rC69)
+- [IN163 | Implement exactly once in-order delivery in SAP Integration Suite | Hands-on Workshop](https://www.sap.com/events/teched/berlin/flow/sap/te25/catalog-inperson/page/catalog/session/1748712337664001rclU)
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
