@@ -201,11 +201,19 @@ As you may have observed, the event triggered upon Sales Order creation provides
 
 11. Next, proceed to the 'Processing' section. Enter the following values in the 'Processing Details' section:
   
-    | Field | Value |
-    | ----- | ----- |
-    | Operation Details | Query (GET) |
-    | Resource path| ````SalesOrder(SalesOrder='${property.salesOrderID}')```` |
-    | Query Options | ````$select=SalesOrder,SoldToParty,SalesOrderDate,PurchaseOrderByCustomer,RequestedDeliveryDate,TotalNetAmount,TransactionCurrency&$expand=_Item($select=SalesOrder,SalesOrderItem,SalesOrderItemText,Product,RequestedQuantity,RequestedQuantityISOUnit,NetAmount,TransactionCurrency,ConfirmedDeliveryDate),_Partner($select=SalesOrder,PartnerFunction,Customer,BusinessPartnerName1,StreetName,CityName,PostalCode,Region,Country)````|
+**Fields:**\
+Operation Details : Query (GET)
+
+Resource Path
+```
+SalesOrder(SalesOrder='${property.salesOrderID}')
+```
+Query Option
+
+```
+$select=SalesOrder,SoldToParty,SalesOrderDate,PurchaseOrderByCustomer,RequestedDeliveryDate,TotalNetAmount,TransactionCurrency&$expand=_Item($select=SalesOrder,SalesOrderItem,SalesOrderItemText,Product,RequestedQuantity,RequestedQuantityISOUnit,NetAmount,TransactionCurrency,ConfirmedDeliveryDate),_Partner($select=SalesOrder,PartnerFunction,Customer,BusinessPartnerName1,StreetName,CityName,PostalCode,Region,Country)
+```
+
 
 
     <br>![](../ex3/images/ex162-3-24.png)
