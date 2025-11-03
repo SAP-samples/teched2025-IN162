@@ -1,6 +1,5 @@
-# Exercise 3 - Integration Suite – IFlow S/4HANA Sales Order to embedding model to SAP HANA Vector DB
-
-In this exercise, we will put together an IFlow to receive the notification event that is emitted upon the [creation](../ex5/README.md) of a Sales Order in S/4HANA with an AEM Adapter. Using the Sales Order ID, we will then retrieve the complete Sales Order details from the S/4HANA system. These details will be transformed into text embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs, as we accomplished in the [previous](../ex2/README.md) exercise. 
+# Exercise 3 - Create an Integration Flow for S/4HANA Sales Order to embedding model to SAP HANA Vector DB in SAP Integration Suite
+In this exercise, we will put together an integration flow to receive the notification event that is emitted upon the [creation](../ex5/README.md) of a Sales Order in **SAP S/4HANA Cloud** system using an AEM Adapter. Using the Sales Order ID, we will then retrieve the complete Sales Order details from the S/4HANA system. These details will be transformed into text embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs, as we accomplished in the [previous](../ex2/README.md) exercise. 
 
 The resulting embeddings will be stored in a connected SAP HANA Vector Database, enabling efficient retrieval and text summarization when queried through the Joule assistant.
 
@@ -12,17 +11,19 @@ For your convenience, this exercise is offered in two formats:
 > [!TIP] 
 > Even if you follow the recommended approach, it is strongly advised to review **Exercise 3.1** in detail to gain a comprehensive understanding of its functionality.
 
-Irrespective of the approach you choose, let's begin the exercise by logging in to your designated tenant and creating a package to get started.
+Irrespective of the approach you choose, let's begin the exercise by logging into your designated tenant and creating a package to get started.
 
 ## Step 1 - Log into your designated Integration Suite tenant
 
 1. Identify your assigned SAP Integration Suite tenant to log into. Note that we are running this workshop across multiple events/geographies. So, it is important that you log into the right tenant. Make sure that the Integration Suite tenant you are logging into has  `us10`or `us20`, or `us30` segments as part of the URL host.  
 
     Make sure you refer to [this](../../README.md#system-url-and-login-information) section to identify your tenant based on your assigned participant identifier. 
+2. Log in to the SAP Integration Suite tenant using the user ID and password that has been provided by the instructors.
 
-2. Log in to the right SAP Integration Suite tenant using the user ID and password that have been provided by the instructors.
-     <br><img src="../ex3/images/image106.png" width=40% height=40%>
-     > **Note**: Pay attention that we are using the user`**` pattern to log into the Integration Suite tenant and not the IN162-`***` pattern as you have used in the previous exercise. However, for the subsequent steps of the exercise, you will need to present your corresponding IN162-`***` as the unique user identifier.
+   <br><img src="../ex3/images/image106.png" width=40% height=40%>
+
+> [!NOTE]
+> Pay attention that we are using different user and password only for SAP Integration Suite tenant. Also use the User`**` pattern to log into the SAP Integration Suite tenant and not the IN162-`***` pattern as you have used in the previous exercise.
 
 ## Step 2 - Create a package in your Integration Suite tenant
 
