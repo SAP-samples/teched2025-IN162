@@ -113,20 +113,20 @@ In the next few steps, we will enrich the sales order data received from the Ada
     
 <br>
 
-5. Next, after the script step, go ahead and add a new Flow Step.
+5. Next, after the script step, go ahead and **add a new Flow Step.**
 
 <br>![](../ex3/images/ex162-3-13-1.png)
 
-6. Add a 'JSON to XML Converter' step. The default settings of this step are sufficient. No additional settings are needed in the property sheet.
+6. **Add a 'JSON to XML Converter' step.** The default settings of this step are sufficient. No additional settings are needed in the property sheet.
 
     In this step, we are converting the JSON representation of the notification event to its XML equivalent so that it can be easily extracted later.
 
 <br>![](../ex3/images/ex162-3-13-2.png)
 
-7. Next, after this Converter step, go ahead and add a new flow step.
+7. Next, after this Converter step, go ahead and **add a new flow step.**
 
 <br>![](../ex3/images/ex162-3-14.png)
-8. Select the 'Content Modifier' step in this dialog that pops out.
+8. **Select the 'Content Modifier' step** in this dialog that pops out.
 
 <br>![](../ex3/images/ex162-3-15.png)
 <br>
@@ -137,7 +137,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
 <br>![](../ex3/images/ex162-3-16-1.png)
 
 
-9. Title this step as 'Extract Sales Order ID'. As you may have guessed, we will extract the Sales Order ID from the XML document's XPath expression.
+9. **Title this step as 'Extract Sales Order ID'.** As you may have guessed, we will extract the Sales Order ID from the XML document's XPath expression.
    
     Go to the 'Exchange Property' tab of the property sheet of this step. Click on 'Add' twice to add two Properties.
 <br>![](../ex3/images/ex162-3-16-2.png)
@@ -154,10 +154,10 @@ In the next few steps, we will enrich the sales order data received from the Ada
 ## Step 4 - Call the S/4HANA system to get the full data object
 As you may have observed, the event triggered upon Sales Order creation provides only the Sales Order ID — essentially serving as a notification event. To retrieve the complete details, we must use this ID to query the S/4HANA system and obtain the full set of Sales Order attributes.
 
-1. Add a new Flow Step after the 'Extract Sales Order ID' content modifier step.
+1. **Add a new Flow Step after the 'Extract Sales Order ID'** content modifier step.
 <br>![](../ex3/images/ex162-3-18.png)
 
-2. Select 'Request-Reply' step in the 'Add Flow Step' dialog.
+2. **Select 'Request-Reply' step** in the 'Add Flow Step' dialog.
 
 <br>![](../ex3/images/ex162-3-19.png)
 
@@ -165,7 +165,7 @@ As you may have observed, the event triggered upon Sales Order creation provides
 > Format the diagram if required, select the main process, select Arrange Horizontally
 <br>![](../ex3/images/ex162-3-20-1.png)
 
-3. Title the Request-Reply step as 'Get Sales Order Details'. Next, hold and drag the 'Receiver' shape from the right corner of the editor and place it near the 'request-reply' shape.
+3. **Title the Request-Reply step as 'Get Sales Order Details'.** Next, hold and drag the 'Receiver' shape from the right corner of the editor and place it near the 'request-reply' shape.
 
 <br>![](../ex3/images/ex162-3-20-2.png)
 
@@ -173,15 +173,15 @@ As you may have observed, the event triggered upon Sales Order creation provides
 
 <br>![](../ex3/images/ex162-3-21-0.png)
 
-6. Click and hold on the 'Connector' button and drag it all the way down onto the 'Receiver' shape and release your mouse pointer after the 'ends' are joined.
+6. **Click and hold on the 'Connector' button and drag it all the way down onto the 'Receiver' shape** and release your mouse pointer after the 'ends' are joined.
 <br><img src="../ex3/images/image24.png" width=100% height=100%>
 
 
-7. A dialog pops out with a list of Adapters to choose from. Select the 'OData' Adapter.
+7. A dialog pops out with a list of Adapters to choose from. **Select the 'OData' Adapter.**
 
 <br>![](../ex3/images/ex162-3-21.png)
 
-8. Select OData version V2.
+8. **Select OData version V2.**
 
 <br>![](../ex3/images/ex162-3-22.png)
 
@@ -192,20 +192,29 @@ As you may have observed, the event triggered upon Sales Order creation provides
     | Proxy Type | `Internet` |
     | Authentication | `Basic`|
     | Credentials Name  | `s4hana_credentials` (has been pre-created) |
-    
+
 
       <br>![](../ex3/images/ex162-3-23.png)
 
 11. Next, proceed to the 'Processing' section. Enter the following values in the 'Processing Details' section:
   
-    | Field | Value |
-    | ----- | ----- |
-    | Operation Details | Query (GET) |
-    | Resource path| ````SalesOrder(SalesOrder='${property.salesOrderID}')```` |
-    | Query Options | ````$select=SalesOrder,SoldToParty,SalesOrderDate,PurchaseOrderByCustomer,RequestedDeliveryDate,TotalNetAmount,TransactionCurrency&$expand=_Item($select=SalesOrder,SalesOrderItem,SalesOrderItemText,Product,RequestedQuantity,RequestedQuantityISOUnit,NetAmount,TransactionCurrency,ConfirmedDeliveryDate),_Partner($select=SalesOrder,PartnerFunction,Customer,BusinessPartnerName1,StreetName,CityName,PostalCode,Region,Country)````|
+**Fields:**\
+Operation Details : Query (GET)
+
+Resource Path
+```
+SalesOrder(SalesOrder='${property.salesOrderID}')
+```
+Query Option
+
+```
+
+$select=SalesOrder,SoldToParty,SalesOrderDate,PurchaseOrderByCustomer,RequestedDeliveryDate,TotalNetAmount,TransactionCurrency&$expand=_Item($select=SalesOrder,SalesOrderItem,SalesOrderItemText,Product,RequestedQuantity,RequestedQuantityISOUnit,NetAmount,TransactionCurrency,ConfirmedDeliveryDate),_Partner($select=SalesOrder,PartnerFunction,Customer,BusinessPartnerName1,StreetName,CityName,PostalCode,Region,Country)
+```
 
 
-    <br>![](../ex3/images/ex162-3-24.png)
+
+<br>![](../ex3/images/ex162-3-24.png)
 
 ## Step 5 - Filter out 'noisy' events and keep your Sales Order data clean and accurate 
 Since we have subscribed to the Sales Order Create event, an event will be emitted on the shared topic (`sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1`) each time a participant creates a sales order. You may recall this step from [Exercise 1](../ex1/README.md#sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1).
