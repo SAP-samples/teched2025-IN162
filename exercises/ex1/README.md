@@ -13,7 +13,7 @@ After completing these steps, you will have familiarized yourself with AEM. Thes
 
 	<img src="/exercises/ex1/images/ex11-1.png" alt="Pic 11-1" width=40% height=40%>
 
-2. Explore **SAP Integration Suite, advanced event mesh (AEM)** tenant.
+2. **Learning purpose only** - Explore **SAP Integration Suite, advanced event mesh (AEM)** tenant.
    <br>Check out the areas in the AEM cockpit to discover the different categories of services AEM offers:
 
 	- **Event Portal:** Event Portal provides event management services. This subscribed service provides powerful tools to create, design, share, and manage various aspects of an EDA based on event brokers or other streaming technologies (such as Kafka).
