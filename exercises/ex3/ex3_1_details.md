@@ -10,9 +10,13 @@ In this exercise, you will build an integration flow from scratch. Please ensure
    <br>![](../ex3/images/ex162-3-4.png)
 2. In the create dialog, name your integration flow as:
 
+>[!NOTE]
+>Replace `000` with your assigned user identifier.
+
+
 **Name**
 ```
-'IN162-`000` Sales Order Event to Hana Vector DB for AI Grounding'
+IN162-000 Sales Order Event to Hana Vector DB for AI Grounding
 ```
 
 **Description**
@@ -21,9 +25,6 @@ In this exercise, you will build an integration flow from scratch. Please ensure
 Integration flow to receive an event from S4/HANA and process it further
 ```
 
-
->[!NOTE]
->Replace `000` with your assigned user identifier.
 
 
 **Click on 'Add and Open in Editor'.**
