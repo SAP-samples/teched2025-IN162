@@ -1,25 +1,28 @@
-# Exercise 3 - Integration Suite – IFlow S/4HANA Sales Order to embedding model to SAP HANA Vector DB
-
-In this exercise, we will put together an IFlow to receive the notification event that is emitted upon the [creation](../ex5/README.md) of a Sales Order in S/4HANA with an AEM Adapter. Using the Sales Order ID, we will then retrieve the complete Sales Order details from the S/4HANA system. These details will be transformed into text embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs, as we accomplished in the [previous](../ex2/README.md) exercise. 
+# Exercise 3 - Create an Integration Flow for S/4HANA Sales Order to embedding model to SAP HANA Vector DB in SAP Integration Suite
+In this exercise, we will put together an integration flow to receive the notification event that is emitted upon the [creation](../ex5/README.md) of a Sales Order in **SAP S/4HANA Cloud** system using an AEM Adapter. Using the Sales Order ID, we will then retrieve the complete Sales Order details from the S/4HANA system. These details will be transformed into text embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs, as we accomplished in the [previous](../ex2/README.md) exercise. 
 
 The resulting embeddings will be stored in a connected SAP HANA Vector Database, enabling efficient retrieval and text summarization when queried through the Joule assistant.
 
 For your convenience, this exercise is offered in two formats:
 
-- Recommended Approach ([Exercise 3.1](./ex3_1_details.md)): Build the IFlow from scratch by following step-by-step instructions. This method provides a deeper hands-on experience and a better understanding of the flow design.
-- Alternate Approach ([Exercise 3.2](./ex3_2_details.md)): Skip the build steps and instead copy a fully prepared IFlow, applying only minimal configuration before deployment. This option is ideal for participants who have limited time or prefer to work with pre-built content.
+- Recommended Approach ([Exercise 3.1](./ex3_1_details.md)): Build the integration flow from scratch by following step-by-step instructions. This method provides a deeper hands-on experience and a better understanding of the flow design.
+- Alternate Approach ([Exercise 3.2](./ex3_2_details.md)): Skip the build steps and instead copy a fully prepared integration flow, applying only minimal configuration before deployment. This option is ideal for participants who have limited time or prefer to work with pre-built content.
 
 Irrespective of the approach you choose, let's begin the exercise by logging into your designated tenant and creating a package to get started.
 
-## Step 1 - Log into your designated Integration Suite tenant
+## Step 1 - Log into your assigned SAP Integration Suite tenant
 
-1. Identify your assigned SAP Integration Suite tenant to log into. Note that we are running this workshop across multiple events/geographies. So, it is important that you log into the right tenant. Refer to [this](https://github.com/SAP-samples/teched2025-IN162/tree/main?tab=readme-ov-file#-sap-teched-berlin-and--sap-teched-on-tour-bangalore-event) section to locate your tenant URL, if you are attending this session from SAP TechEd in Berlin or TechEd on Tour Bangalore. 
+1. Identify your assigned SAP Integration Suite tenant to log into. Note that we are running this workshop across multiple events/geographies. So, it is important that you log into the right tenant. Refer to [this](../../README.md#system-url-and-login-information) section to locate your SAP Integration Suite tenant URL.
 
-    If you are attending this session from ASUG TechConnect, refer to [this](https://github.com/SAP-samples/teched2025-IN162/tree/main?tab=readme-ov-file#-asug-tech-connect-2025-event) section to identify your tenant based on your assigned participant identifier. 
+> [!NOTE]
+> If you are attending **ASUG TechConnect**, you are currently in the wrong GitHub branch — please switch to the [**asug2025 branch**](https://github.com/SAP-samples/teched2025-IN162/tree/asug2025) and follow the instructions provided there. If you are uncertain about which tenant to use, consult your **workshop instructors**.
 
-2. Log in to the right SAP Integration Suite tenant using the user ID and password that has been provided by the instructors.
-     <br><img src="../ex3/images/image106.png" width=40% height=40%>
-     > **Note**: Pay attention that we are using the user`**` pattern to log into the Integration Suite tenant and not the IN162-`***` pattern as you have used in the previous exercise. However, for the subsequent steps of the exercise, you will need to present your corresponding IN162-`***` as the unique user identifier.
+2. Log in to the SAP Integration Suite tenant using the user ID and password that has been provided by the instructors.
+
+   <br><img src="../ex3/images/image106.png" width=40% height=40%>
+
+> [!NOTE]
+> Pay attention that we are using different user and password only for SAP Integration Suite tenant. Also use the User`**` pattern to log into the SAP Integration Suite tenant and not the IN162-`***` pattern as you have used in the previous exercise.
 
 ## Step 2 - Create a package in your Integration Suite tenant
 
