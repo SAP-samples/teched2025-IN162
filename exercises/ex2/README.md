@@ -80,7 +80,7 @@ After completing these steps, your deployment will be created and running in SAP
    
 >[!TIP]
 >This may take a **few minutes**, so you can **proceed with the next exercise** in this hands-on session.\
->Once the status turns to **RUNNING** and URL is available, please use only the **copy button** to copy URL correctly and avoid manual errors
+>Once the **Current status** turns to **RUNNING** and URL is available, please use only the **copy button** to copy URL correctly and avoid manual errors
 
 
 ![Pic 22-4](./images/IN162-15-1.png)
