@@ -20,7 +20,7 @@ Irrespective of the approach you choose, let's begin the exercise by logging int
     Make sure you refer to [this](../../README.md#system-url-and-login-information) section to identify your tenant based on your assigned participant identifier. 
 2. Log in to the SAP Integration Suite tenant using the user ID and password that has been provided by the instructors.
 
-   <br><img src="../ex3/images/image106.png" width=40% height=40%>
+   <img src="../ex3/images/image106.png" width=40% height=40%>
 
 > [!NOTE]
 > Pay attention that we are using different user and password only for SAP Integration Suite tenant. Also use the User`**` pattern to log into the SAP Integration Suite tenant and not the IN162-`***` pattern as you have used in the previous exercise.
