@@ -26,21 +26,7 @@ In this exercise, we will monitor the message processing logs in the Integration
 
    <img src="../ex5/images/image20.png" width=100% height=100%>
 
-7. If you are curious to see the entries that correspond to other participants and were discarded, go back to the **Overview -> Monitoring Message Processing** tile. Click on the expand **'>'** button located in the top left side of the screen to open a detailed panel.
-
-   <img src="../ex5/images/image21.png" width=100% height=100%>
-
-8. Look for the **'Custom Status'** drop-down and select **'Terminated: Customer ID mismatch'** from the value help.
-
-   <img src="../ex5/images/image22.png" width=100% height=100%>
-
-9. You can see messages to the same Integration Flow, but classified with the **'Terminated: Customer ID mismatch'** custom status. Additionally, you can look at the 'attachments' section and verify that the `SalesOrder` attribute carries a different identifier from yours. 
-
-   <img src="../ex5/images/image23.png" width=100% height=100%>
-
-   <img src="../ex5/images/image24.png" width=100% height=100%>
-
-10. Though inspecting the HANA Database is not part of our hands-on execise, here is a screenshot of the `TechEd25_IN162_Table` table in HANA, that is populated with the SalesOrder payload and the corresponding vectorized text embeddings.
+7. Though inspecting the HANA Database is not part of our hands-on execise, here is a screenshot of the `TechEd25_IN162_Table` table in HANA, that is populated with the SalesOrder payload and the corresponding vectorized text embeddings.
     <img src="../ex5/images/image25.png" width=100% height=100%>
 
 ## Summary
