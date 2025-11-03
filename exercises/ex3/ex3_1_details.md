@@ -369,6 +369,7 @@ In this step, we will utilize the 'message mapping' functionality to cleanse the
 7. Navigate to the 'Global Resources' tab from the 'Select Mapping Resource' dialog. Click on the imported message mapping resource and select OK.
 
 <br>![](../ex3/images/ex162-3-48-1.png)
+Title the step in General tab 'MM_SalesOrder_S4Hana_to_HanaVectorDB' 
 <br>![](../ex3/images/ex162-3-48-2.png)
 
 8. Verify that the mapping resource is listed in the 'Processing' tab of the flow step. Click on the resource; this will open a new window.
