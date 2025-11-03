@@ -30,7 +30,7 @@ Irrespective of the approach you choose, let's begin the exercise by logging int
 1. Now that you are logged into the tenant,  '**Create**' a new Package from the '**Integration and APIs'** sub-menu under the '**Design**' menu (Click on the 'hamburger' icon on the left to launch the menu, if it's hidden).
 <br>![](../ex3/images/ex162-3-2.png)
 
-2. Enter the following details to describe the package and '**Save**' it.
+2. Enter the following details to describe the package and '**Save**' it. After the Package is successfully created, go to the '**Artifacts**' tab.
     | Field | Value |
     | ----- | ----- |
     | Name | TechEd 2025 IN162-`000` (replace `000` with your assigned user identifier) |
@@ -39,7 +39,6 @@ Irrespective of the approach you choose, let's begin the exercise by logging int
     | Vendor | SAP |
 
     <br>![](../ex3/images/ex162-3-3.png)
-After the Package is successfully created, go to the '**Artifacts**' tab.
 
 3. Your Integration Package has been created, and now, at this point, you are ready to either create an IFlow from scratch or copy / import an existing one. 
     <br>![](../ex3/images/ex162-3-3-1.png)
