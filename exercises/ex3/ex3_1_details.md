@@ -41,7 +41,7 @@ Integration flow to receive an event from S4/HANA and process it further
 ## Step 2 - AEM Sender Adapter to receive events from S/4HANA
 In this step, we will configure the AEM Adapter to receive events from S/4HANA.
 
-1. Connect the 'Sender' system to the 'Start' block by click-holding and dragging your mouse pointer. 
+1. Connect the 'Sender' system to the 'Start' block by **click-holding and dragging your mouse pointer.** 
 
 <br>![](../ex3/images/ex162-3-7.png)
 
@@ -49,7 +49,7 @@ In this step, we will configure the AEM Adapter to receive events from S/4HANA.
 
 <br>![](../ex3/images/ex162-3-8.png)
 
-3. Click on this newly added Adapter and navigate to the 'Connection' tab from the properties sheet at the bottom of the screen. Add the following attributes to the 'Sender Connection Details' section.
+3. **Click on this newly added Adapter and navigate to the 'Connection' tab** from the properties sheet at the bottom of the screen. Add the following attributes to the 'Sender Connection Details' section.
     | Field | Value |
     | ----- | ----- |
     | Host | tcps://mr-connection-sq0b51wu6s3.messaging.solace.cloud:55443 |
