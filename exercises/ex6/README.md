@@ -1,12 +1,12 @@
 # Exercise 6 - Customer Success Digital Assistant: Extending Joule with Joule Skill using Real-Time Vector Grounding
 In this last exercise, you will provide a user input as a prompt to the Joule-powered Customer Success Digital Assistant to generate a summary of talking points for a customer meeting with the latest information on Sales Orders and Support Tickets.
-The focus of this hands-on session is to build and run real-time grounding for LLMs using the SAP Integration Suite. In this exercise, you will use a pre-built Integration Flow and a pre-built Joule Skill. The Integration Flow, **“Joule Skill Prompt to GenAI Summarization with Vector Grounding”** is exposed as an API, which is invoked by the Joule Skill **“Customer Success Assistant”** using the SAP Build Action to generate contextually grounded responses.
+The focus of this hands-on session is to build and run real-time grounding for LLMs using the SAP Integration Suite. In this exercise, you will use a pre-built integration flow and a pre-built Joule Skill. The integration flow, **“Joule Skill Prompt to GenAI Summarization with Vector Grounding”** is exposed as an API, which is invoked by the Joule Skill **“Customer Success Assistant”** using the SAP Build Action to generate contextually grounded responses.
 
 ### No artifact development is required in this exercise. You will use the pre-built artifacts to generate a summary for the customer meeting as a Customer Success Manager.
 
 ## Exercise 6.1 - Go through pre-built Integration Flow to summarize the current status of the customer using Generative AI Hub (Optional)
 
-1. You can view the pre-built Integration Flow on this system
+1. You can view the pre-built integration flow on this system
     1. https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design
     2. Moderators will provide you the credentials
      
@@ -21,7 +21,7 @@ The focus of this hands-on session is to build and run real-time grounding for L
    ![Pic 21-2](./images/ex61-4.png)
    <br><br>
 4. Go through the steps to understand it
-   1. Integration Flows is triggered using HTTPS sender adapter, this helps us to easily expose Integration Flow as Action in SAP Build Process Automation (see Exercise 6.2 for details)
+   1. Integration flow is triggered using HTTPS sender adapter, this helps us to easily expose as an Action in SAP Build Process Automation (see Exercise 6.2 for details)
    2. The user input (entered in Joule) is send to AI Core for generation of embeddings. An embedding model
    3. These embedding are used to search the matching historical information (sales orders and service tickets) from HANA Vector DB through JDBC call
    4. The response is then summarized using AI Adapter and sent back 
