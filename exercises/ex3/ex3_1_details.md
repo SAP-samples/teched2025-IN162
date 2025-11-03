@@ -275,7 +275,12 @@ We will now create two processing routes based on the customer ID retrieved from
 12. You will notice two route paths created (Route 1 and Route 2). Click on Route 1 and title it 'Assigned'.
 <br>![](../ex3/images/ex162-3-32-2.png)
 
-13. Click on the 'Assigned' path and navigate to the 'Processing' tab in the property sheet. Set the expression type to 'Non-XML' and the condition as `${property.customerID} = ${property.assignedParticipantID}`.
+13. Click on the 'Assigned' path and navigate to the 'Processing' tab in the property sheet. Set the expression type to 'Non-XML' and the condition as
+```
+${property.customerID} = ${property.assignedParticipantID}
+```
+
+
 <br>![](../ex3/images/ex162-3-33.png)
 
 14. Next, click on Route 2 and title it 'Others'. In the 'processing' tab, check this as the 'default' route.
