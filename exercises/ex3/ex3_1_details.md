@@ -58,7 +58,7 @@ In this step, we will configure the AEM Adapter to receive events from S/4HANA.
  
    <br>![](../ex3/images/ex162-3-9.png)
 
-4. Next, head over to the 'Processing' tab and enter IN162-`000`_Sales_Order in the Queue Name field (replace `000` with your assigned user identifier). 
+4. Next, head over to the **'Processing' tab** and enter IN162-000_Sales_Order in the Queue Name field **(replace `000` with your assigned user identifier)**. 
    
    Set the 'Acknowledgement Mode' to 'Automatic on Exchange Complete'.
 > [!IMPORTANT]
@@ -74,11 +74,11 @@ We are done with the first block.
 ## Step 3 - Enrich the event data by fetching complete Sales Order information from S/4HANA
 In the next few steps, we will enrich the sales order data received from the Adapter and prepare it for further processing.
 
-1. Click on the (+) Add Flow Step button (on the 'Start' message block) to add a new step.
+1. **Click on the (+) Add Flow Step button** (on the 'Start' message block) to add a new step.
 
 <br>![](../ex3/images/ex162-3-11-0.png)
 
-2. Select a 'Groovy Script' in the 'Add Flow Step' dialog.
+2. **Select a 'Groovy Script'** in the 'Add Flow Step' dialog.
 
 <br>![](../ex3/images/ex162-3-11.png)
 
