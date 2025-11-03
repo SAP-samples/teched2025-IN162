@@ -1,13 +1,13 @@
-# Exercise 3.2 - Copy an existing IFlow to receive a Sales Order creation event, transform into embeddings, and persist to HANA Vector DB
+# Exercise 3.2 - Copy an existing Integration Flow to receive a Sales Order creation event, transform into embeddings, and persist to HANA Vector DB
 Make sure you come to this exercise after completing [Exercise 3](./README.md).
 
-In this exercise, instead of building an IFlow from scratch, we will copy a completed IFlow from the source package and configure the parameters that have been externalized for the participants.
+In this exercise, instead of building an integration flow from scratch, we will copy a completed integration flow from the source package and configure the parameters that have been externalized for the participants.
 
 > [!IMPORTANT]  
 > Note that we will be accessing the main solution package in this exercise. Please don't change anything in the solution package in any way. 
 
 
-## Step 1 - Copy the IFlow from the source Package 
+## Step 1 - Copy the Integration Flow from the source Package 
 
 1. Navigate to the 'Integration and APIs' section from the 'Design' tab of your Integration Suite tenant.
    
@@ -31,7 +31,7 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
    <br>![](../ex3/images/ex162-32-4.png)
    <br>
    
-5. Back in the 'Copy' dialog, title the Name of the IFlow as
+5. Back in the 'Copy' dialog, title the Name of the integration flow as
    ```
    Sales Order Event to Hana Vector DB for AI Grounding - IN162-0**
    ```
@@ -45,10 +45,10 @@ In this exercise, instead of building an IFlow from scratch, we will copy a comp
 
    <br>![](../ex3/images/ex162-32-6.png)
    <br>
-## Step 2 - Configure the IFlow with your user settings 
-Now that the IFlow has been copied, we will configure it with certain externalized parameters in the next few steps. 
+## Step 2 - Configure the Integration Flow with your user settings 
+Now that the integration flow has been copied, we will configure it with certain externalized parameters in the next few steps. 
 
-1. Make sure you are in the target package (TechEd 2025 IN162-`0**`). Go to the 'Artifact' tab. Select the '**Sales Order Event to Hana Vector DB for AI Grounding**' IFlow, click on the '...' Action menu button, and click 'Configure'.
+1. Make sure you are in the target package (TechEd 2025 IN162-`0**`). Go to the 'Artifact' tab. Select the '**Sales Order Event to Hana Vector DB for AI Grounding**' Integration Flow, click on the '...' Action menu button, and click 'Configure'.
 > [!NOTE]
 > Replace the `0**` with your assigned user identifier.
 
@@ -76,8 +76,8 @@ Click on 'Save' to save your configuration settings.
 
  <br>![](../ex3/images/ex162-32-10.png)
    <br>
-## Step 3 - Deploy the IFlow 
-Now that the configuration is complete, we will move ahead and deploy the IFlow.
+## Step 3 - Deploy the Integration Flow 
+Now that the configuration is complete, we will move ahead and deploy the integration flow.
 
 1. Click on 'Deploy' in the configuration dialog from the previous step. OR you can open the editor to 'Deploy' the flow
    Select the default 'Cloud Integration' as the runtime profile to deploy the content into.
@@ -95,12 +95,12 @@ Now that the configuration is complete, we will move ahead and deploy the IFlow.
 
 <br>![](../ex3/images/ex162-32-11-0.png)
    <br>
-4. The IFLow is in the 'starting' phase now. Click on the IFlow to bring up the model. After a minute or so, you should see the 'Runtime Status' change to 'Started'. This means that the IFlow is ready and listening for changes.
+4. The integration flow is in the '**starting**' phase now. Click on the integration flow to bring up the model. After a minute or so, you should see the 'Runtime Status' change to 'Started'. This means that the integration flow is ready and listening for changes.
 
 <br>![](../ex3/images/ex162-32-11-1.png)
    <br>
-## Step 4 - Study the sequence of steps in the IFlow 
-It is highly recommended that you review the IFlow in detail to gain a broader understanding of its functionality. You can do so by navigating to [Exercise 3.1](./ex3_1_details.md) and inspecting the complete sequence.
+## Step 4 - Study the sequence of steps in the Integration Flow 
+It is highly recommended that you review the integration flow in detail to gain a broader understanding of its functionality. You can do so by navigating to [Exercise 3.1](./ex3_1_details.md) and inspecting the complete sequence.
 <br>![](../ex3/images/ex162-32-11.png)
    <br>
 ## Summary
