@@ -648,7 +648,7 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 
 <br>![](../ex3/images/ex162-3-75.png)
 <br>
-1. Access to the HANA Database itself is not part of this hands-on exercise, but just for your understadnding here is how the structure for the table `TechEd25_IN162_Table` has been defined in the default `DBADMIN` schema. 
+12. Access to the HANA Database itself is not part of this hands-on exercise, but just for your understadnding here is how the structure for the table `TechEd25_IN162_Table` has been defined in the default `DBADMIN` schema. 
 <br><img src="../ex3/images/image107.png" width=80% height=100%>
 
 ## Step 9 - Deploying the IFlow
