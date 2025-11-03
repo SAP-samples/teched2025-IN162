@@ -53,7 +53,7 @@ To enable the publishing of **Support Case event** to **SAP Integration Suite, a
 
 ## Summary
 
-You should now be familiar with all the configurations that have been done in the **SAP Service Cloud Version 2** system to enable the publishing of the new support case event.
+You should now be familiar with all the configurations that have been done in the **SAP Service Cloud Version 2** system to **enable the publishing of the new support case event**.
 Now that you have gone through all the introductory chapters, you should have a clear picture of the overall integration scenario and the pre-configuration steps that have been performed on the systems.
 
 
