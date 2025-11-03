@@ -88,9 +88,9 @@ The complete list of exercise steps are listed below, run through them in the gi
     - [Exercise 5.3 - Create a new Support Case in SAP Service Cloud Version 2 system](./exercises/ex5/ex5_3_details.md)
     - [Exercise 5.4 - Monitor Message Processing Logs in Cloud Integration after Support Case Creation](./exercises/ex5/ex5_4_details.md)
 - [Exercise 6 - Customer Success Digital Assistant: Extending Joule with Joule Skill using Real-Time Vector Grounding](./exercises/ex6/README.md)
-    - [Exercise 6.1 - Go through pre-built Integration Flow to summarize the current status of the customer using Generative AI Hub (Optional)](exercises/ex6#exercise-61---go-through-pre-built-integration-flow-to-summarize-the-current-status-of-the-customer-using-generative-ai-hub-optional) 
-    - [Exercise 6.2 - Go through pre-built Joule Skill to trigger the generation of key talking points for customer meeting (Optional)](exercises/ex6#exercise-62---go-through-pre-built-joule-skill-to-trigger-the-generation-of-key-talking-points-for-customer-meeting-optional)
-    - [Exercise 6.3 - Generate customer specific sales order and support ticket summary of talking points](exercises/ex6#exercise-63---generate-customer-specific-sales-order-and-support-ticket-summary-of-talking-points)
+    - [Exercise 6.1 - Generate summary of talking points for a customer meeting considering latest customer's sales orders and support tickets](exercises/ex6#exercise-61---generate-summary-of-talking-points-for-a-customer-meeting-considering-latest-customers-sales-orders-and-support-tickets) 
+    - [Exercise 6.2 - Go through pre-built Integration Flow that summarize the current status of the customer using Generative AI Hub (Optional)](exercises/ex6#exercise-62---learning-purpose---go-through-pre-built-integration-flow-that-summarize-the-current-status-of-the-customer-using-generative-ai-hub-optional)
+    - [Exercise 6.3 - Go through pre-built Joule Skill to trigger the Integration Flow as an Action for generation of key talking points for customer meeting](exercises/ex6#exercise-63---learning-purpose---go-through-pre-built-joule-skill-to-trigger-the-integration-flow-as-an-action-for-generation-of-key-talking-points-for-customer-meeting-optional)
 
 ## Feedback
 Kindly provide your feedback on session **IN162** by scanning the QR code.
