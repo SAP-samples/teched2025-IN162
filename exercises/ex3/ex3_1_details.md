@@ -257,7 +257,7 @@ We will now create two processing routes based on the customer ID retrieved from
 
 <br>![](../ex3/images/ex162-3-30.png)
 
-9. Title the content modifier step as 'set Customer Status'.
+9. Title the content modifier step as 'Set Customer Status'.
 
 <br>![](../ex3/images/ex162-3-31.png)
 
