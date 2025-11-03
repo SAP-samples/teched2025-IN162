@@ -93,3 +93,4 @@ The focus of this hands-on session is to build and run real-time grounding for L
 
 # Summary
 We have successfully executed the completed the hands-on exercise from real time ingestion of Sales Order and Service Ticket data to the generation of talking points along with proposal for remedial actions and proposals to avoid issues in future based on the latest information available.
+
