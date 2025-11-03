@@ -10,7 +10,7 @@ There are no dedicated requirement for this session. You would be able to execut
 
 However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite, SAP Joule Studio and SAP Build Process Automation Actions.<br/>
 
-You can explore the following SAP Discovery Center missions to get started and build expertise with the SAP BTP services used in this hands-on workshop session.
+You can explore the following **SAP Discovery Center missions** to get started and build expertise with the SAP BTP services used in this hands-on workshop session.
 
 * [SAP Integration Suite](https://discovery-center.cloud.sap/serviceCatalog/integration-suite)
 * [SAP Integration Suite, advanced event mesh](https://discovery-center.cloud.sap/serviceCatalog/advanced-event-mesh)
