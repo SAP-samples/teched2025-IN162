@@ -4,7 +4,37 @@ The focus of this hands-on session is to build and run real-time grounding for L
 
 ### No artifact development is required in this exercise. You will use the pre-built artifacts to generate a summary for the customer meeting as a Customer Success Manager.
 
-## Exercise 6.1 - Go through pre-built Integration Flow to summarize the current status of the customer using Generative AI Hub (Optional)
+## Exercise 6.1 - Generate summary of talking points for a customer meeting considering latest customer's sales orders and support tickets
+
+1. Open the standalone Joule for testing purposes
+	1. https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant
+ 	2. Moderators will provide you the credentials
+ 	<br><br>
+		![Pic 21-2](./images/ex63-1.png)
+	<br><br>
+2. Provide below prompt as per your assigned user identifier
+   1. "I am Customer Success Partner for BestRun <b>IN162-0**</b> *(replace ** with your assigned participant number)*. Could you prepare talking points and summary for my meeting with customer. Search and show all the recent sales orders and service tickets raised by this customer. Also, summarize what the response in 3 categories list of sale orders, list of service tickets and propose actions to resolve issues in service tickets."
+ 	<br><br>
+	![Pic 21-2](./images/ex63-2.png)
+	<br><br>
+	2. Click Send and wait for the response
+	<br><br>
+    ![Pic 21-2](./images/ex63-3.png)
+    3. In case Joule assistant again asked for any confirmation, write "Proceed with the given information".
+	<br><br>
+    ![Pic 21-2](./images/ex63-3-1.png)
+	<br><br>
+4. Check and observe the response from Joule
+	1. Response will have a list of recent and old sales order and support tickets raised by the customer IN162-0**
+    <br><br>
+    ![Pic 21-2](./images/ex63-4.png)
+	<br><br>
+	2. You can also find the propose actions to resolve and reduce the issues in future
+    <br><br>
+    ![Pic 21-2](./images/ex63-5.png)
+	<br><br>
+
+## Exercise 6.2 - Go through pre-built Integration Flow that summarize the current status of the customer using Generative AI Hub (Optional)
 
 1. You can view the pre-built integration flow on this system
     1. https://workshop-eu-01a.integrationsuite-cpi033.cfapps.eu10-005.hana.ondemand.com/shell/design
@@ -28,7 +58,7 @@ The focus of this hands-on session is to build and run real-time grounding for L
    ![Pic 21-2](./images/ex61-5.png)
    <br><br>
 
-## Exercise 6.2 - Go through pre-built Joule Skill to trigger the generation of key talking points for customer meeting (Optional)
+## Exercise 6.3 - Go through pre-built Joule Skill to trigger the Integration Flow as an Action for generation of key talking points for customer meeting (Optional)
 
 1. You can access the pre-built Joule skill on this system
 	1. https://in162-ntn259xc.eu10.build.cloud.sap/
@@ -61,33 +91,6 @@ The focus of this hands-on session is to build and run real-time grounding for L
 		![Pic 21-2](./images/ex62-10.png)
 	<br><br>
 		![Pic 21-2](./images/ex62-11.png)
-	<br><br>
-
-## Exercise 6.3 - Generate customer specific sales order and support ticket summary of talking points
-
-1. Open the standalone Joule for testing purposes
-	1. https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant
- 	2. Moderators will provide you the credentials
- 	<br><br>
-		![Pic 21-2](./images/ex63-1.png)
-	<br><br>
-2. Change below prompt as per your assigned user / customer name
-	1. "I am Customer Success Partner for BestRun <b>IN162-0**</b> *(replace ** with your assigned participant number)*. Could you prepare talking points and summary for my meeting with customer. Search and show all the recent sales orders and service tickets raised by this customer. Also, summarize what the response in 3 categories list of sale orders, list of service tickets and propose actions to resolve issues in service tickets."
- 	<br><br>
-	![Pic 21-2](./images/ex63-2.png)
-	<br><br>
-	2. Click Send and wait for the response
-	<br><br>
-    ![Pic 21-2](./images/ex63-3.png)
-	<br><br>
-3. Check and observe the response from Joule
-	1. Response will have a list of historical sales order and list of tickets raised by the customer IN162-0**
-    <br><br>
-    ![Pic 21-2](./images/ex63-4.png)
-	<br><br>
-	2. You can also find the propose actions to resolve and reduce the issues in future
-    <br><br>
-    ![Pic 21-2](./images/ex63-5.png)
 	<br><br>
 
 # Summary
