@@ -86,4 +86,4 @@ It is highly recommended that you review the integration flow in detail to gain 
 
 ## Summary
 
-This completes Exercise 3, Next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted from **support case creation in SAP Service Cloud V2 system**.
+This completes Exercise 3, next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted from **support case creation in SAP Service Cloud V2 system**.
