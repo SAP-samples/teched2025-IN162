@@ -1,4 +1,4 @@
-# Exercise 3 - Create an Integration Flow for S/4HANA Sales Order to embedding model to SAP HANA Vector DB in SAP Integration Suite
+# Exercise 3 - Create an Integration Flow for S/4HANA Sales Order event to embedding model to SAP HANA Vector DB for AI Grounding in SAP Integration Suite
 In this exercise, we will put together an integration flow to receive the notification event that is emitted upon the [creation](../ex5/README.md) of a Sales Order in **SAP S/4HANA Cloud** system using an AEM Adapter. Using the Sales Order ID, we will then retrieve the complete Sales Order details from SAP S/4HANA Cloud system. These details will be transformed into text embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs, as we accomplished in the [previous](../ex2/README.md) exercise. 
 
 The resulting embeddings will be stored in a connected SAP HANA Vector Database, enabling efficient retrieval and text summarization when queried through the Joule assistant.
