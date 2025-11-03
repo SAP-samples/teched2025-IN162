@@ -675,4 +675,4 @@ In this step, the generated embeddings are inserted into the SAP HANA Cloud vect
 <br>
 ## Summary
 
-This completes Exercise 3, Next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted upon support case creation in SAP Service Cloud V2.
+This completes Exercise 3, Next proceed to [Exercise 4](../ex4/README.md), where we will achieve a similar flow to consume events emitted upon support case creation in SAP Service Cloud V2 system.
