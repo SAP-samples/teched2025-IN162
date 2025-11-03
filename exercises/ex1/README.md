@@ -78,10 +78,14 @@ After completing these steps, you will have created the first queue subscribed t
 4. A new browser tab or window will open, listing all the available Queues.
    <br>As mentioned earlier, each participant needs to create 2 queues and subscribe to the relevant topic.
    <br>In this exercise, we will create the first queue and subscribe to the given topic:
-   
-    - Queue Name: <b>IN162-0**_Sales_Order</b> *(replace ** with the participant number that is assigned to you)*
-   		- Topic Subscription: **"sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1"**
+	<br>
 
+	- Queue Name: <b>IN162-0**_Sales_Order</b> *(replace ** with the participant number that is assigned to you)*
+	- Topic Subscription: **"sap/teched/2025/ce/sap/s4/beh/salesorder/v1/SalesOrder/Created/v1"**
+	<br>
+	
+	**HINT:** You will be able to see Queues created by other participants
+   
    Click the **+ Queue** button on the top right to create a queue.
    
 	![Pic 5](./images/ex1-5.png)        
