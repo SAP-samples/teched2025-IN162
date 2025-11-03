@@ -473,15 +473,16 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 <br>
 
 11. Manage the attribute entries as follows:
-   | Action | Name | Source Type | Source Value |
-    | ----- | ----- | ----- |----- |
-    | Create | content-type | Constant | application/json |
-    | Create |  ai-resource-group | Property | assignedParticipantID |
+
+| Action | Name | Source Type | Source Value |
+| ----- | ----- | ----- |----- |
+| Create | content-type | Constant | application/json |
+| Create |  ai-resource-group | Property | assignedParticipantID |
    
     
 <br>![](../ex3/images/ex162-3-58.png)
 <br>
-12. Click on the 'Message Body' tab and enter the following text as an 'Expression'.
+12. Click on the 'Message Body' tab and enter the following text as an 'Expression' **(select 'Expression from drop down)**.
 ```json
     {
         "config": {
