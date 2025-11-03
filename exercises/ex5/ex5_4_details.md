@@ -17,20 +17,8 @@ In this exercise, we will monitor the message processing logs in the Integration
 4. Scroll down further, and in the **'Attachments'** section, you will be able to see 2 files as attachments. These files represent the incoming event payload and the final flattened JSON payload produced after the message mapping step. 
 
    <img src="../ex5/images/image12png.png" width=100% height=100%>
-   
-5. If you are curious to see the entries that correspond to other participants and were discarded, go back to the **Overview -> Monitoring Message Processing** tile. Click on the expand **'>'** button located in the top left side of the screen to open a detailed panel.
-   
-   <img src="../ex5/images/image13.png" width=100% height=100%>
 
-6. Look for the **'Custom Status'** drop-down and select **'Terminated: Customer ID mismatch'** from the value help.
-
-   <img src="../ex5/images/image14.png" width=100% height=100%>
-
-8. You can see messages to the same Integration Flow, but classified with the **'Terminated: Customer ID mismatch'** custom status. Additionally, you can look at the 'attachments' section and verify that the `SalesOrder` attribute carries a different identifier from yours.
-
-   <img src="../ex5/images/image15.png" width=100% height=100%>
-
-9.  Though inspecting the HANA Database is not part of our hands-on execise, here is a screenshot of the `TechEd25_IN162_Table` table in HANA, that is populated with the SalesOrder and SupportCase payload and the corresponding vectorized text embeddings.
+5.  Though inspecting the HANA Database is not part of our hands-on execise, here is a screenshot of the `TechEd25_IN162_Table` table in HANA, that is populated with the SalesOrder and SupportCase payload and the corresponding vectorized text embeddings.
     <img src="../ex5/images/image26.png" width=100% height=100%>
 
 ## Summary
