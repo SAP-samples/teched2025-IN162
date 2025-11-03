@@ -76,7 +76,7 @@ The complete list of exercise steps are listed below, run through them in the gi
 - [Exercise 2 - Expose Embedding and Summarization Models as an API Using Gen AI Hub (AI Core)](exercises/ex2/README.md)
     - [Exercise 2.1 - Log on to SAP AI Launchpad and Create Configuration](exercises/ex2#exercise-21---log-on-to-sap-ai-launchpad-and-create-configuration)
     - [Exercise 2.2 - Create Deployment](exercises/ex2#exercise-22---create-deployment)
-- [Exercise 3 - Create an Integration Flow for S/4HANA Sales Order to embedding model to SAP HANA Vector DB in SAP Integration Suite(./exercises/ex3/README.md)
+- [Exercise 3 - Create an Integration Flow for S/4HANA Sales Order to embedding model to SAP HANA Vector DB in SAP Integration Suite](./exercises/ex3/README.md)
     - [Exercise 3.1 - Create an Integration FLow from scratch to receive a Sales Order creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex3/ex3_1_details.md)
     - [Exercise 3.2 (Optional and an alternate to Exercise 3.1)  - Copy an existing Integration FLow to reciever a Sales Order creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex3/ex3_2_details.md)
 - [Exercise 4 - Integration Suite - IFlow Service Cloud Support Case to Embedding Model to SAP HANA Vector DB](./exercises/ex4/README.md)
