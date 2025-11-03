@@ -10,7 +10,7 @@ For your convenience, this exercise is offered in two formats:
 
 Irrespective of the approach you choose, let's begin the exercise by logging into your designated tenant and creating a package to get started.
 
-## Step 1 - Log into your assigned SAP Integration Suite tenant
+## Step 1 - Log on to your assigned SAP Integration Suite tenant
 
 1. Identify your assigned **SAP Integration Suite** tenant to log into. Note that we are running this workshop across multiple events/geographies. So, it is important that you log into the right tenant. Refer to [this](../../README.md#system-url-and-login-information) section to locate your SAP Integration Suite tenant URL.
 
