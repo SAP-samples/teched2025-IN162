@@ -79,7 +79,7 @@ Now that the configuration is complete, we will move ahead and deploy the integr
 
    ![](../ex3/images/ex162-32-11-1.png)
 
-## Step 4 - Learning Purpose - Explore the sequence of steps used in the Integration Flow 
+## Step 4 - Explore the sequence of steps used in the Integration Flow 
 It is highly recommended that you review the integration flow in detail to gain a broader understanding of its functionality. You can do so by navigating to [Exercise 3.1](./ex3_1_details.md) and inspecting the complete sequence.
 
 ![](../ex3/images/ex162-32-11.png)
