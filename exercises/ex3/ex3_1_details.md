@@ -67,7 +67,7 @@ In this step, we will configure the AEM Adapter to receive events from S/4HANA.
 > [!IMPORTANT]
 > Refer to [Exercise 1](../ex1/README.md#exercise-12---create-a-queue-in-advanced-event-mesh) where we created this Queue.
    
-Leave all other attributes with their default values.
+   Leave all other attributes with their default values.
 
 <br>![](../ex3/images/ex162-3-10.png)
 We are done with the first block. 
