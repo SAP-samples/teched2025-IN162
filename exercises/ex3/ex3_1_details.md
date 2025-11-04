@@ -58,13 +58,11 @@ In this step, we will configure the AEM Adapter to receive events from S/4HANA.
  
    <br>![](../ex3/images/ex162-3-9.png)
 
-4. Next, head over to the **'Processing' tab** and enter IN162-000_Sales_Order in the Queue Name field **(replace `000` with your assigned user identifier)**. 
+4. Next, head over to the **'Processing' tab** and enter **IN162-0`**`_Sales_Order** in the Queue Name field **(replace `**` with your assigned user identifier)**. 
    
    Set the 'Acknowledgement Mode' to 'Automatic on Exchange Complete'.
-> [!IMPORTANT]
-> Refer to [Exercise 1](../ex1/README.md#exercise-12---create-a-queue-in-advanced-event-mesh) where we created this Queue.
    
-Leave all other attributes with their default values.
+   Leave all other attributes with their default values.
 
 <br>![](../ex3/images/ex162-3-10.png)
 We are done with the first block. 
@@ -147,7 +145,7 @@ In the next few steps, we will enrich the sales order data received from the Ada
     | Action | Name | Source Type | Source Value | Data Type |
     | ----- | ----- | ----- | ----- | ----- |
     | Create | salesOrderID | XPath | `root/data/SalesOrder` | java.lang.String
-    | Create | assignedParticipantID | Constant | IN162-`000` (replace `000` with your assiged participant ID)|
+    | Create | assignedParticipantID | Constant | IN162-`0**` (replace `**` with your assiged participant ID)|
       
 <br>![](../ex3/images/ex162-3-17.png)
 
