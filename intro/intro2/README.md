@@ -81,4 +81,4 @@ In our scenario we will only use the **sap/s4/beh/salesorder/v1/SalesOrder/Creat
 
 You should now be familiar with all the configurations that have been done in the **SAP S/4Hana Cloud** system to enable the Sales Order event and API.
 
-Now, to learn more about the configuration that has been done in **SAP Service Cloud Version 2** system to enable new support case event publication to **SAP Integration Suite, advanced event mesh**, you can navigate to [SAP Service Cloud Version 2 System Configuration]((/intro/intro3/README.md)) section.
+Now, to learn more about the configuration that has been done in **SAP Service Cloud Version 2** system to enable new support case event publication to **SAP Integration Suite, advanced event mesh**, you can navigate to [SAP Service Cloud Version 2 System Configuration](../intro3/README.md) section.
