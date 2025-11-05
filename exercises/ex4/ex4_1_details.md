@@ -509,8 +509,8 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 | Request Headers | * |
 
 > **Note:** In case your deployment from exercise 2 does not show the **RUNNING** status even after some minutes, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
-> <br><br>Deployment ID: **db1ce5ede0291ce0** 
-> <br>Deployment URL: **https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0**
+> <br><br>Deployment ID: **df940ac23b6e5949** 
+> <br>Deployment URL: **https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/df940ac23b6e5949**
 
 ![](../ex4/images/ex162-4-52.png)
 <br><br>
