@@ -556,6 +556,7 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
 > <br><br>Deployment ID: **df940ac23b6e5949** 
 > <br>Deployment URL: **https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/df940ac23b6e5949**
 
+> **Note**: Also note that you will need to follow [troubleshooting](./troubleshooting.md) section and follow further instructions
 
 <br>![](../ex3/images/ex162-3-64-3.png)
 <br>
