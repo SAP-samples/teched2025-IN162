@@ -1,3 +1,6 @@
+
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2025-IN162)](https://api.reuse.software/info/github.com/SAP-samples/teched2025-IN162)
+
 # Hands-on Lab: Real-Time Data for AI Agents: Grounding with Event-Driven Architecture
 
 ## Description
@@ -89,21 +92,24 @@ The complete list of exercise steps is listed below; run through them in the giv
 - [Exercise 2 - Expose Embedding and Summarization Models as an API Using Gen AI Hub (AI Core)](exercises/ex2/README.md)
     - [Exercise 2.1 - Log on to SAP AI Launchpad and Create Configuration](exercises/ex2#exercise-21---log-on-to-sap-ai-launchpad-and-create-configuration)
     - [Exercise 2.2 - Create Deployment](exercises/ex2#exercise-22---create-deployment)
-- [Exercise 3 - Integration Suite – IFlow S/4HANA Sales Order to Embedding Model to SAP Hana Vector DB](./exercises/ex3/README.md)
-    - [Exercise 3.1 - Create an IFlow from scratch to receive a Sales Order creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex3/ex3_1_details.md)
-    - [Exercise 3.2 (Optional and an alternate to Exercise 3.1)  - Copy an existing IFlow to receive a Sales Order creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex3/ex3_2_details.md)
+- [Exercise 3 - Integration Suite – Integration Flow S/4HANA Sales Order to Embedding Model to SAP Hana Vector DB](./exercises/ex3/README.md)
+    - [Exercise 3.2 (Recommended)  - Copy an existing IFlow to receive a Sales Order creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex3/ex3_2_details.md)
+    - [Exercise 3.1 (Optional and an alternate to Exercise 3.2) - Create an IFlow from scratch to receive a Sales Order creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex3/ex3_1_details.md)
+   
 - [Exercise 4 - Integration Suite - IFlow Service Cloud Support Case to Embedding Model to SAP HANA Vector DB](./exercises/ex4/README.md)
-    - [Exercise 4.1 - Create an IFlow from scratch to receive a Support Case creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex4/ex4_1_details.md)
-    - [Exercise 4.2 (Optional and an alternate to Exercise 4.1) - Copy an existing IFlow to receive a Support Case creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex4/ex4_2_details.md)
+    - [Exercise 4.2 (Recommended) - Copy an existing IFlow to receive a Support Case creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex4/ex4_2_details.md)
+    - [Exercise 4.1 (Optional and an alternate to Exercise 4.2) - Create an IFlow from scratch to receive a Support Case creation event, transform into embeddings, and persist to SAP HANA Vector DB](./exercises/ex4/ex4_1_details.md)
+
 - [Exercise 5 - Create a new Sales Order and a Support Case to trigger the respective integrations using an event-driven pattern](./exercises/ex5/README.md)
     - [Exercise 5.1 - Create a new Sales Order in SAP S/4HANA Cloud system](./exercises/ex5/ex5_1_details.md)
     - [Exercise 5.2 - Monitor Message Processing Logs in Cloud Integration after Sales Order Creation](./exercises/ex5/ex5_2_details.md)
     - [Exercise 5.3 - Create a new Support Case in SAP Service Cloud Version 2 system](./exercises/ex5/ex5_3_details.md)
     - [Exercise 5.4 - Monitor Message Processing Logs in Cloud Integration after Support Case Creation](./exercises/ex5/ex5_4_details.md)
 - [Exercise 6 - Customer Success Digital Assistant: Extending Joule with Joule Skill using Real-Time Vector Grounding](./exercises/ex6/README.md)
+    - [Exercise 6.3 - Generate customer-specific sales order and support ticket summary of talking points](exercises/ex6#exercise-63---generate-customer-specific-sales-order-and-support-ticket-summary-of-talking-points)
     - [Exercise 6.1 - Go through pre-built Integration Flow to summarize the current status of the customer using Generative AI Hub (Optional)](exercises/ex6#exercise-61---go-through-pre-built-integration-flow-to-summarize-the-current-status-of-the-customer-using-generative-ai-hub-optional) 
     - [Exercise 6.2 - Go through pre-built Joule Skill to trigger the generation of key talking points for customer meeting (Optional)](exercises/ex6#exercise-62---go-through-pre-built-joule-skill-to-trigger-the-generation-of-key-talking-points-for-customer-meeting-optional)
-    - [Exercise 6.3 - Generate customer-specific sales order and support ticket summary of talking points](exercises/ex6#exercise-63---generate-customer-specific-sales-order-and-support-ticket-summary-of-talking-points)
+
 
 ## Pre-configured Setup
 Chapters in this section are purely educational and are not part of the hands-on exercises. We go through some of the configuration steps within **SAP S/4HANA Cloud** and **SAP Service Cloud Version 2** needed to support the hands-on.
@@ -111,8 +117,6 @@ Chapters in this section are purely educational and are not part of the hands-on
 - [SAP S/4HANA Cloud System Configurations (for your information only)](intro/intro2/README.md)
 - [SAP Service Cloud Version 2 System Configurations (for your information only)](intro/intro3/README.md)
 
-
-## Troubleshooting Guide
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
