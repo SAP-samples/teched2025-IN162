@@ -546,11 +546,15 @@ In this step, we will utilize the deployment URL of the AI model we consumed in 
     
 | Field | Value |
 | ----- | ----- |
-| Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<your-deployment-id>/v2/embeddings` (copy the deployment id from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) after you created the deployment) |
+| Address | `https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/<your-deployment-id>/v2/embeddings` (copy the deployment id from [Exercise 2](../ex2/README.md#exercise-22---create-deployment) after you created the deployment)  |
 | Method | POST |
 | Authentication | OAuth2Client Credentials|
 | Credential Name  | `aicore_credentials` |
 | Request Headers | * |
+
+> **Note:** In case your deployment from exercise 2 does not show the **RUNNING** status even after some minutes, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
+> <br><br>Deployment ID: **db1ce5ede0291ce0** 
+> <br>Deployment URL: **https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0**
 
 
 <br>![](../ex3/images/ex162-3-64-3.png)

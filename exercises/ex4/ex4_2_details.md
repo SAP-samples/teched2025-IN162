@@ -51,6 +51,10 @@ Now that the integration flow has been copied, we will configure it with certain
    ![](../ex4/images/ex162-42-8.png)
 
 3. Next, navigate to the '**Receiver**' tab and replace the entire value with deployment URL that you copied in [Exercise 2](../ex2/README.md#exercise-22---create-deployment) i.e. 'https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/`your-deployment-id-here`' in the '**AI_Launchpad_URL**' textbox.
+      > **Note:** In case your deployment from exercise 2 does not show the **RUNNING** status even after some minutes, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
+   > <br><br>Deployment ID: **db1ce5ede0291ce0** 
+   > <br>Deployment URL: **https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/db1ce5ede0291ce0**
+
 
    ![](../ex4/images/ex162-42-9.png)
 
