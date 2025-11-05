@@ -53,6 +53,7 @@ Now that the integration flow has been copied, we will configure it with certain
       > **Note:** In case your deployment from exercise 2 does not show the **RUNNING** status even after some minutes, you can use the following Deployment ID and URL to be used in the integration flows of the Cloud Integration: 
    > <br><br>Deployment ID: **df940ac23b6e5949** 
    > <br>Deployment URL: **https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com/v2/inference/deployments/df940ac23b6e5949**
+   > Also note that you will need to 
 
    ![](../ex3/images/ex162-32-9.png)
    
