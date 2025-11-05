@@ -9,7 +9,7 @@ For your convenience, this exercise is offered in two formats:
 - **Alternate Approach** ([Exercise 3.1](./ex3_1_details.md)): Build the IFlow from scratch by following step-by-step instructions. This method provides a deeper hands-on experience and a better understanding of the flow design.
 
 > [!TIP] 
-> Even if you follow the recommended approach, it is strongly advised to review **Exercise 3.1** in detail to gain a comprehensive understanding of its functionality.
+> For this hands-on, while it makes sense to follow the recommended approach, you are  strongly advised to review **Exercise 3.1** in detail to gain a comprehensive understanding of its functionality.
 
 Irrespective of the approach you choose, let's begin the exercise by logging into your designated tenant and creating a package to get started.
 

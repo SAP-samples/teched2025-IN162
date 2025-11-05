@@ -1,13 +1,13 @@
 # Exercise 4 - Create an Integration Flow for Service Cloud Support Case event to embedding model to SAP HANA Vector DB for AI Grounding in SAP Integration Suite
 
-In this exercise, we will build an integration flow to receive the data event triggered when a Support Case is created in SAP Service Cloud Version 2 using an AEM Adapter. Unlike the scenario in Exercise 3, where SAP S/4HANA emitted only a notification event, SAP Service Cloud includes the complete data payload as part of its event framework. Although the standard Support Case business event is the data event but still the integration flow will call the Support Case API to fetch the additional details. These relevant details from the Support Case event will be transformed into text embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs, as we accomplished in the [previous](../ex2/README.md) exercise. 
+In this exercise, we will build an integration flow to receive the data event triggered when a Support Case is created in SAP Service Cloud Version 2 using an AEM Adapter. Unlike the scenario in Exercise 3, where SAP S/4HANA emitted only a notification event, SAP Service Cloud includes the complete data payload as part of its event framework. Although the standard Support Case business event is a data event but still the integration flow will still call the Support Case API to fetch additional details. These relevant details from the Support Case event will be transformed into text embeddings through the `text-embedding-3-small` model via SAP Generative Hub’s REST APIs, as we accomplished in the [previous](../ex2/README.md) exercise. 
 
 The resulting embeddings will be stored in a connected SAP HANA Vector Database, enabling efficient retrieval and text summarization when queried through the Joule assistant.
 
 For your convenience, this exercise is provided in two formats, following the same approach as Exercise 3:
 
-- Recommended Approach ([Exercise 4.2](./ex4_2_details.md)): Copy a fully prepared IFlow, applying only minimal configuration before deployment. This option is ideal for participants who have limited time or prefer to work with pre-built content.
-- Alternate Approach ([Exercise 4.1](./ex4_1_details.md)): Build the IFlow from scratch by following step-by-step instructions. This approach offers a more immersive hands-on experience and a clearer understanding of the flow design.
+- **Recommended Approach** ([Exercise 4.2](./ex4_2_details.md)): Copy a fully prepared IFlow, applying only minimal configuration before deployment. This option is ideal for participants who have limited time or prefer to work with pre-built content.
+- **Alternate Approach** ([Exercise 4.1](./ex4_1_details.md)): Build the IFlow from scratch by following step-by-step instructions. This approach offers a more immersive hands-on experience and a clearer understanding of the flow design.
 
 > [!TIP] 
 > Even if you follow the recommended approach, it is strongly advised to review Exercise 4.1 in detail to gain a comprehensive understanding of its functionality.
