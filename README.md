@@ -12,15 +12,6 @@ There are no dedicated requirement for this session. You would be able to execut
 
 However, you will be able to derive more value from this session, if you have some knowledge and understanding of event-driven architectures, namely events, queues, topics, event subscriptions along with SAP Integration Suite, SAP Joule Studio and SAP Build Process Automation Actions.<br/>
 
-You can explore the following **SAP Discovery Center missions** to get started and build expertise with the SAP BTP services used in this hands-on workshop session.
-
-* [SAP Integration Suite](https://discovery-center.cloud.sap/serviceCatalog/integration-suite)
-* [SAP Integration Suite, advanced event mesh](https://discovery-center.cloud.sap/serviceCatalog/advanced-event-mesh)
-* [SAP AI Launchpad](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-launchpad)
-* [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core)
-* [Joule Studio, skill builder](https://discovery-center.cloud.sap/ai-feature/e93aa292-e7f4-449d-9586-f1a8510d5ab6/)
-* [SAP Build Process Automation](https://discovery-center.cloud.sap/serviceCatalog/sap-build-process-automation)
-
 ## Session Overview
 
 This session introduces attendees to the power of event-driven integration pattern to deliver real-time grounding data, equipping AI system's with the latest business context to make informed and accurate decisions
