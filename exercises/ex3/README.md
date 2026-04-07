@@ -3,13 +3,7 @@ In this exercise, we will put together an integration flow to receive the notifi
 
 The resulting embeddings will be stored in a connected SAP HANA Vector Database, enabling efficient retrieval and text summarization when queried through the Joule assistant.
 
-For your convenience, this exercise is offered in two formats:
-
-- **Recommended Approach ([Exercise 3.1](./ex3_1_details.md))**: Copy a fully prepared integration flow, applying only minimal configuration before deployment. This option is recommended and ideal for participants who likes to focus on the overall scenario and prefer to work with pre-built content.
-<br><br>**OR**<br><br>
-- **Alternate Approach ([Exercise 3.2](./ex3_2_details.md))**: Build the integration flow from scratch by following step-by-step instructions. This method provides a deeper hands-on experience and a better understanding of the flow design.
-
-Irrespective of the approach you choose, let's begin the exercise by logging into your designated tenant and creating a package to get started.
+Let's begin the exercise by logging into your designated tenant and creating a package to get started.
 
 ## Step 1 - Log on to your assigned SAP Integration Suite tenant
 
@@ -40,8 +34,5 @@ Irrespective of the approach you choose, let's begin the exercise by logging int
 
     <br>![](../ex3/images/ex162-3-3.png)
 
-3. Your Integration Package has been created, and now at this point, you are ready to either [copy an existing one - Exercise 3.1 (Recommended Approach)](./ex3_1_details.md) or [create an integration flow from scratch - Exercise 3.2 (Alternate Approach)](./ex3_1_details.md).
+3. Your Integration Package has been created, and now at this point, you are ready to [copy an existing integration flow - Exercise 3.1](./ex3_1_details.md)
     <br>![](../ex3/images/ex162-3-3-1.png)
-
-
-
