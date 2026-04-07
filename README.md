@@ -74,13 +74,9 @@ The complete list of exercise steps are listed below, run through them in the gi
     - [Exercise 2.1 - Log on to SAP AI Launchpad and Create Configuration](exercises/ex2#exercise-21---log-on-to-sap-ai-launchpad-and-create-configuration)
     - [Exercise 2.2 - Create Deployment](exercises/ex2#exercise-22---create-deployment)
 - [Exercise 3 - Create an Integration Flow for S/4HANA Sales Order event to embedding model to SAP HANA Vector DB for AI Grounding in SAP Integration Suite](./exercises/ex3/README.md)
-    - [Exercise 3.1 (Recommended and an alternate to Exercise 3.2) - Copy an existing Integration FLow to reciever a Sales Order creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex3/ex3_1_details.md)
-       <br>OR<br>
-    - [Exercise 3.2 - Create an Integration Flow from scratch to receive a Sales Order creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex3/ex3_2_details.md)
+    - [Exercise 3.1 - Copy an existing Integration FLow to reciever a Sales Order creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex3/ex3_1_details.md)
 - [Exercise 4 - Create an Integration Flow for Service Cloud Support Case event to embedding model to SAP HANA Vector DB for AI Grounding in SAP Integration Suite](./exercises/ex4/README.md)
-    - [Exercise 4.1 (Recommended and an alternate to Exercise 4.2) - Copy an existing Integration FLow to receive a Support Case creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex4/ex4_1_details.md)
-      <br>OR<br>
-    - [Exercise 4.2 - Create an Integration Flow from scratch to receive a Support Case creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex4/ex4_2_details.md)
+    - [Exercise 4.1 - Copy an existing Integration FLow to receive a Support Case creation event, transform into embeddings and persist to SAP HANA Vector DB](./exercises/ex4/ex4_1_details.md)
 - [Exercise 5 - Create a new Sales Order and a Support Case to trigger the respective integrations using an event-driven pattern](./exercises/ex5/README.md)
     - [Exercise 5.1 - Create a new Sales Order in SAP S/4HANA Cloud system](./exercises/ex5/ex5_1_details.md)
     - [Exercise 5.2 - Monitor Message Processing Logs in Cloud Integration after Sales Order Creation](./exercises/ex5/ex5_2_details.md)
@@ -88,8 +84,6 @@ The complete list of exercise steps are listed below, run through them in the gi
     - [Exercise 5.4 - Monitor Message Processing Logs in Cloud Integration after Support Case Creation](./exercises/ex5/ex5_4_details.md)
 - [Exercise 6 - Customer Success Digital Assistant: Extending Joule with Joule Skill using Real-Time Vector Grounding](./exercises/ex6/README.md)
     - [Exercise 6.1 - Generate summary of talking points for a customer meeting considering latest customer's sales orders and support tickets](exercises/ex6#exercise-61---generate-summary-of-talking-points-for-a-customer-meeting-considering-latest-customers-sales-orders-and-support-tickets) 
-    - [Exercise 6.2 - Go through pre-built Integration Flow that summarize the current status of the customer using Generative AI Hub (Optional)](exercises/ex6#exercise-62---learning-purpose---go-through-pre-built-integration-flow-that-summarize-the-current-status-of-the-customer-using-generative-ai-hub-optional)
-    - [Exercise 6.3 - Go through pre-built Joule Skill to trigger the Integration Flow as an Action for generation of key talking points for customer meeting (Optional)](exercises/ex6#exercise-63---learning-purpose---go-through-pre-built-joule-skill-to-trigger-the-integration-flow-as-an-action-for-generation-of-key-talking-points-for-customer-meeting-optional)
 
 ## Feedback
 Kindly provide your feedback on session **IN162**.
