@@ -7,7 +7,7 @@ The focus of this hands-on session is to build and run real-time grounding for L
 ## Exercise 6.1 - Generate summary of talking points for a customer meeting considering latest customer's sales orders and support tickets
 
 1. Open the standalone Joule for testing purposes
-	1. https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant
+	1. https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/sap_digital_assistant . **L2WW particpants use** https://in162-ntn259xc.eu10.sapdas.cloud.sap/webclient/standalone/da_teched2025in162backup
  	2. Moderators will provide you the credentials
  	<br><br>
 		![Pic 21-2](./images/ex63-1.png)
